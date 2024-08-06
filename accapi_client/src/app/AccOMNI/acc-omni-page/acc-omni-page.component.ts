@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'acc-omni-page',
@@ -7,7 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AccOmniPageComponent implements OnInit {
 
-  constructor() { }
+  @Input() property1:
+      | "Send"
+      | "Answer"
+      | "Hang"
+      | "Pause"
+      | "Release"
+      | "ActiveCall"
+      | "PhoneBook"
+      | "Dial"
+      | "Reject" = "Send";
 
   ngOnInit(): void {
   }

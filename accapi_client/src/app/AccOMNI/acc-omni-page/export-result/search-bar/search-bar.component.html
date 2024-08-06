@@ -1,0 +1,54 @@
+<div class="root">
+  <app-icon-small-7 class="iconSmall7"></app-icon-small-7>
+  <span *ngIf="property1 === 'normal'" class="a">חיפוש</span>
+  <span *ngIf="property1 === 'type'" class="a">|</span>
+  <div *ngIf="property1 === 'with text'" class="frame546">
+    <span class="a">|</span>
+    <span class="a">דור כ</span>
+  </div>
+  <app-search-option
+    *ngIf="property1 === 'with text'"
+    [property1]="'1'"
+    class="searchOption"
+  ></app-search-option>
+  <div
+    *ngIf="
+      property1 === 'Variant4' ||
+      property1 === 'Variant5' ||
+      property1 === 'Variant6'
+    "
+    class="frame545"
+  >
+    <span *ngIf="property1 === 'Variant4'" class="a">|</span>
+    <app-button
+      [active]="'Yes'"
+      [bold]="'Yes'"
+      [icon]="'Yes'"
+      [size]="'small'"
+      [purpose]="'Default'"
+      class="button"
+    ></app-button>
+    <div
+      *ngIf="property1 === 'Variant5' || property1 === 'Variant6'"
+      class="frame547"
+    >
+      <span class="a">|</span>
+      <span *ngIf="property1 === 'Variant5'" class="a054976">054976</span>
+      <span *ngIf="property1 === 'Variant6'" class="a">טקסט חופשי</span>
+    </div>
+    <app-button
+      *ngIf="property1 === 'Variant6'"
+      [active]="'Yes'"
+      [bold]="'Yes'"
+      [icon]="'Yes'"
+      [size]="'small'"
+      [purpose]="'Default'"
+      class="button"
+    ></app-button>
+  </div>
+  <app-search-option
+    *ngIf="property1 === 'Variant5'"
+    [property1]="'Variant2'"
+    class="searchOption"
+  ></app-search-option>
+</div>

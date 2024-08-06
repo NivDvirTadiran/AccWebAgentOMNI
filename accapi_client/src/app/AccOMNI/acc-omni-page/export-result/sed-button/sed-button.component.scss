@@ -1,0 +1,304 @@
+@import "~src/app/tokens.scss";
+
+.root {
+  position: relative;
+  box-sizing: border-box;
+}
+.ellipse6 {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  display: flex;
+  box-sizing: content-box;
+}
+
+.ellipse6_property1Send {
+  display: flex;
+}
+
+.ellipse6_property1AnswerProperty1ActiveCall {
+  display: flex;
+}
+
+.ellipse6_property1PhoneBookProperty1Dial {
+  display: flex;
+}
+
+.ellipse6_property1HangProperty1Reject {
+  display: flex;
+}
+
+.ellipse6_property1PauseProperty1Release {
+  display: flex;
+}
+
+.eossendfilled {
+  top: 13px;
+  left: 37px;
+  position: absolute;
+  display: flex;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 27px;
+  height: 26px;
+}
+.vector {
+  top: 3px;
+  left: 2px;
+  position: absolute;
+  display: flex;
+  box-sizing: content-box;
+}
+
+.vector {
+  display: flex;
+  box-sizing: content-box;
+}
+
+.vector_property1AnswerProperty1ActiveCall {
+  display: flex;
+}
+
+.vector_property1Hang {
+  display: flex;
+}
+
+.vector_property1Answer {
+  display: flex;
+}
+
+.vector_property1ActiveCall {
+  display: flex;
+}
+
+.union {
+  top: 10px;
+  left: 23px;
+  position: absolute;
+  display: flex;
+  box-sizing: content-box;
+  border-top-left-radius: [object Object]px;
+  border-top-right-radius: [object Object]px;
+  border-bottom-right-radius: [object Object]px;
+  border-bottom-left-radius: [object Object]px;
+  width: 13px;
+  height: 16px;
+}
+
+.rectangle184 {
+  top: 13px;
+  left: 15px;
+  position: absolute;
+  display: flex;
+  box-sizing: content-box;
+}
+
+.frame362 {
+  top: 18px;
+  left: 14px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 3px;
+  box-sizing: border-box;
+}
+.rectangle186 {
+  display: flex;
+  box-sizing: content-box;
+}
+
+.rectangle187 {
+  display: flex;
+  box-sizing: content-box;
+}
+
+.rectangle188 {
+  display: flex;
+  box-sizing: content-box;
+}
+
+.statusIcon {
+  top: 19px;
+  left: 20px;
+  position: absolute;
+  display: flex;
+  box-sizing: border-box;
+  background: #ffffff;
+  width: 10px;
+  height: 10px;
+}
+.group179 {
+  top: 0px;
+  left: 1px;
+  position: absolute;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: [object Object]px;
+  box-sizing: content-box;
+  border-top-left-radius: [object Object]px;
+  border-top-right-radius: [object Object]px;
+  border-bottom-right-radius: [object Object]px;
+  border-bottom-left-radius: [object Object]px;
+  border-image-source: #ff0000;
+  border-image-slice: 1;
+  border-style: solid;
+  border-width: [object Object]px;
+  width: 8px;
+  height: 10px;
+}
+.user2Ldpi1 {
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: #ffffff;
+  width: 8px;
+  height: 10px;
+}
+.layer12 {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: [object Object]px;
+  box-sizing: content-box;
+  border-top-left-radius: [object Object]px;
+  border-top-right-radius: [object Object]px;
+  border-bottom-right-radius: [object Object]px;
+  border-bottom-left-radius: [object Object]px;
+  border-image-source: #ff0000;
+  border-image-slice: 1;
+  border-style: solid;
+  border-width: [object Object]px;
+  width: 8px;
+  height: 10px;
+}
+.group {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: [object Object]px;
+  box-sizing: content-box;
+  border-top-left-radius: [object Object]px;
+  border-top-right-radius: [object Object]px;
+  border-bottom-right-radius: [object Object]px;
+  border-bottom-left-radius: [object Object]px;
+  border-image-source: #ff0000;
+  border-image-slice: 1;
+  border-style: solid;
+  border-width: [object Object]px;
+  width: 8px;
+  height: 10px;
+}
+.vector {
+  display: flex;
+  box-sizing: content-box;
+}
+
+.vector {
+  display: flex;
+  box-sizing: content-box;
+}
+
+.iconLarge30 {
+  top: 12px;
+  left: 10px;
+  position: absolute;
+  display: flex;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+}
+
+.union {
+  top: 34px;
+  left: 12px;
+  position: absolute;
+  display: flex;
+  box-sizing: content-box;
+  border-top-left-radius: [object Object]px;
+  border-top-right-radius: [object Object]px;
+  border-bottom-right-radius: [object Object]px;
+  border-bottom-left-radius: [object Object]px;
+  width: 18px;
+  height: 19px;
+}
+
+.vector53 {
+  top: 17px;
+  left: 35px;
+  position: absolute;
+  display: flex;
+  box-sizing: content-box;
+}
+
+.group185 {
+  top: 16px;
+  left: 19px;
+  position: absolute;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: [object Object]px;
+  box-sizing: content-box;
+  border-top-left-radius: [object Object]px;
+  border-top-right-radius: [object Object]px;
+  border-bottom-right-radius: [object Object]px;
+  border-bottom-left-radius: [object Object]px;
+  border-image-source: #ff0000;
+  border-image-slice: 1;
+  border-style: solid;
+  border-width: [object Object]px;
+  width: 12px;
+  height: 19px;
+}
+.group182 {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: [object Object]px;
+  box-sizing: content-box;
+  border-top-left-radius: [object Object]px;
+  border-top-right-radius: [object Object]px;
+  border-bottom-right-radius: [object Object]px;
+  border-bottom-left-radius: [object Object]px;
+  border-image-source: #ff0000;
+  border-image-slice: 1;
+  border-style: solid;
+  border-width: [object Object]px;
+  width: 4px;
+  height: 19px;
+}
+.rectangle183 {
+  display: flex;
+  box-sizing: content-box;
+}
+
+.group184 {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: [object Object]px;
+  box-sizing: content-box;
+  border-top-left-radius: [object Object]px;
+  border-top-right-radius: [object Object]px;
+  border-bottom-right-radius: [object Object]px;
+  border-bottom-left-radius: [object Object]px;
+  border-image-source: #ff0000;
+  border-image-slice: 1;
+  border-style: solid;
+  border-width: [object Object]px;
+  width: 4px;
+  height: 19px;
+}
+.rectangle183 {
+  display: flex;
+  box-sizing: content-box;
+}
+
+.polygon1 {
+  top: 14px;
+  left: 36px;
+  position: absolute;
+  display: flex;
+  box-sizing: content-box;
+}

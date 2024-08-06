@@ -108,6 +108,18 @@ import {MenuPopoverDirective} from "../stories/directive/bubble-windows-menu/men
 import {BubbleWindowsMenuComponent} from "../stories/directive/bubble-windows-menu/bubble-windows-menu.component";
 import {SseComponent} from "./AccAgent/sse/sse.component";
 import {AccOmniPageComponent} from './AccOMNI/acc-omni-page/acc-omni-page.component';
+import {TelephoneTestComponent} from "./AccOMNI/acc-omni-page/export-result/telephone-test/telephone-test.component";
+import {SearchBarComponent} from "./AccOMNI/acc-omni-page/export-result/search-bar/search-bar.component";
+import {IconLarge17Component} from "./AccOMNI/acc-omni-page/export-result/icon-large-17/icon-large-17.component";
+import {SedButtonComponent} from "./AccOMNI/acc-omni-page/export-result/sed-button/sed-button.component";
+import {IconSmall30Component} from "./AccOMNI/acc-omni-page/export-result/icon-small-30/icon-small-30.component";
+import {IconSmall10Component} from "./AccOMNI/acc-omni-page/export-result/icon-small-10/icon-small-10.component";
+import {ButtonComponent} from "./AccOMNI/acc-omni-page/export-result/button/button.component";
+import {IconSmall33Component} from "./AccOMNI/acc-omni-page/export-result/icon-small-33/icon-small-33.component";
+import {IconSmall11Component} from "./AccOMNI/acc-omni-page/export-result/icon-small-11/icon-small-11.component";
+import {IconSmall12Component} from "./AccOMNI/acc-omni-page/export-result/icon-small-12/icon-small-12.component";
+import {IconRecordComponent} from "./AccOMNI/acc-omni-page/export-result/icon-record/icon-record.component";
+import {TopBarComponent} from "./AccOMNI/acc-omni-page/export-result/top-bar/top-bar.component";
 
 
 @NgModule({
@@ -195,7 +207,7 @@ import {AccOmniPageComponent} from './AccOMNI/acc-omni-page/acc-omni-page.compon
         PhoneBook,
         SseComponent,
         Background1Component, ChatComponent, MenuPopoverDirective, PopoverDirective, ActionAvatarComponent, ActionWindowsMenuComponent,
-        HighlightDirective, BubbleAvatarComponent, BubbleWindowsMenuComponent, DynamicCompDirective, StatusBoardComponent, ButtonsBoardComponent, IntroComponent, AccOmniPageComponent/*PopoverMdbDropdownDirective, DynamicCompDirective, */
+        HighlightDirective, BubbleAvatarComponent, BubbleWindowsMenuComponent, DynamicCompDirective, StatusBoardComponent, ButtonsBoardComponent, IntroComponent, AccOmniPageComponent, TelephoneTestComponent, SearchBarComponent, IconLarge17Component, SedButtonComponent, IconSmall30Component, IconSmall10Component, ButtonComponent, IconSmall33Component, IconSmall11Component, IconSmall12Component, IconRecordComponent, TopBarComponent,/*PopoverMdbDropdownDirective, DynamicCompDirective, */
     ],
   providers: [
     {provide: APP_CONFIG, useValue: AppConfig},
