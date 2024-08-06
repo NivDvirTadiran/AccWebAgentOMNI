@@ -1,0 +1,24 @@
+<component name="libraryTable">
+  <library name="lib1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/accapi_server/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/accagentapi/WEB-INF/lib/slf4j-api-1.7.25.jar!/" />
+      <root url="jar://$PROJECT_DIR$/accapi_server/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/accagentapi/WEB-INF/lib/spring-core-5.0.7.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/accapi_server/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/accagentapi/WEB-INF/lib/spring-web-5.0.7.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/accapi_server/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/accagentapi/WEB-INF/lib/spring-jcl-5.0.7.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/accapi_server/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/accagentapi/WEB-INF/lib/spring-beans-5.0.7.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/accapi_server/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/accagentapi/WEB-INF/lib/spring-expression-5.0.7.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/accapi_server/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/accagentapi/WEB-INF/lib/javax.ws.rs-api-2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/accapi_server/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/accagentapi/WEB-INF/lib/jackson-databind-2.9.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/accapi_server/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/accagentapi/WEB-INF/lib/jackson-core-2.9.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/accapi_server/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/accagentapi/WEB-INF/lib/lombok-1.16.22.jar!/" />
+      <root url="jar://$PROJECT_DIR$/accapi_server/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/accagentapi/WEB-INF/lib/validation-api-1.1.0.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/accapi_server/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/accagentapi/WEB-INF/lib/spring-context-5.0.7.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/accapi_server/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/accagentapi/WEB-INF/lib/jackson-annotations-2.9.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/accapi_server/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/accagentapi/WEB-INF/lib/log4j-1.2.17.jar!/" />
+      <root url="jar://$PROJECT_DIR$/accapi_server/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/accagentapi/WEB-INF/lib/spring-webmvc-5.0.7.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/accapi_server/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/accagentapi/WEB-INF/lib/spring-aop-5.0.7.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,115 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="AccGate (3)" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="temurin-1.8 (2)">
+    <option name="OPEN_IN_BROWSER_URL" value="https://localhost:8445/accAgent/" />
+    <option name="BROWSER_ID" value="75871e39-2c56-4e7a-93cc-61f12f9476f5" />
+    <option name="START_JAVASCRIPT_DEBUGGER" value="true" />
+    <option name="UPDATING_POLICY" value="restart-server" />
+    <deployment>
+      <artifact name="accOMNI">
+        <settings>
+          <option name="CONTEXT_PATH" value="/accAgent" />
+        </settings>
+      </artifact>
+    </deployment>
+    <server-settings>
+      <option name="AJP_PORT" value="8011" />
+      <option name="BASE_DIRECTORY_NAME" value="909f1717-ea33-4fd3-8692-149cb9c86f87" />
+      <option name="DEPLOY_TOMCAT_APPS" value="true" />
+      <option name="HTTPS_PORT" value="8445" />
+    </server-settings>
+    <output_file path="%IDEA_RUN:TOMCAT_HOME%/logs/accAgent.log" is_save="true" />
+    <log_file alias="Tomcat Manager Log" path="$USER_HOME$/AppData/Local/JetBrains/IntelliJIdea2021.3/tomcat/55001373-061f-4384-b14c-376b94748f04/logs/manager.*" />
+    <log_file alias="Tomcat Host Manager Log" path="$USER_HOME$/AppData/Local/JetBrains/IntelliJIdea2021.3/tomcat/55001373-061f-4384-b14c-376b94748f04/logs/host-manager.*" />
+    <log_file alias="Tomcat Localhost Access Log" path="$USER_HOME$/AppData/Local/JetBrains/IntelliJIdea2021.3/tomcat/55001373-061f-4384-b14c-376b94748f04/logs/localhost_access_log.*" />
+    <log_file alias="accAgent Log" path="%IDEA_RUN:TOMCAT_HOME%/logs/accAgent.log" />
+    <predefined_log_file enabled="true" id="Tomcat" />
+    <predefined_log_file enabled="true" id="Tomcat Catalina" />
+    <RunnerSettings RunnerId="Debug">
+      <option name="DEBUG_PORT" value="64611" />
+    </RunnerSettings>
+    <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+      <option name="USE_ENV_VARIABLES" value="true" />
+      <STARTUP>
+        <option name="USE_DEFAULT" value="true" />
+        <option name="SCRIPT" value="" />
+        <option name="VM_PARAMETERS" value="" />
+        <option name="PROGRAM_PARAMETERS" value="" />
+      </STARTUP>
+      <SHUTDOWN>
+        <option name="USE_DEFAULT" value="true" />
+        <option name="SCRIPT" value="" />
+        <option name="VM_PARAMETERS" value="" />
+        <option name="PROGRAM_PARAMETERS" value="" />
+      </SHUTDOWN>
+    </ConfigurationWrapper>
+    <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+      <option name="USE_ENV_VARIABLES" value="true" />
+      <STARTUP>
+        <option name="USE_DEFAULT" value="true" />
+        <option name="SCRIPT" value="" />
+        <option name="VM_PARAMETERS" value="" />
+        <option name="PROGRAM_PARAMETERS" value="" />
+      </STARTUP>
+      <SHUTDOWN>
+        <option name="USE_DEFAULT" value="true" />
+        <option name="SCRIPT" value="" />
+        <option name="VM_PARAMETERS" value="" />
+        <option name="PROGRAM_PARAMETERS" value="" />
+      </SHUTDOWN>
+    </ConfigurationWrapper>
+    <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+      <option name="USE_ENV_VARIABLES" value="true" />
+      <STARTUP>
+        <option name="USE_DEFAULT" value="true" />
+        <option name="SCRIPT" value="" />
+        <option name="VM_PARAMETERS" value="" />
+        <option name="PROGRAM_PARAMETERS" value="" />
+      </STARTUP>
+      <SHUTDOWN>
+        <option name="USE_DEFAULT" value="true" />
+        <option name="SCRIPT" value="" />
+        <option name="VM_PARAMETERS" value="" />
+        <option name="PROGRAM_PARAMETERS" value="" />
+      </SHUTDOWN>
+    </ConfigurationWrapper>
+    <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+      <option name="USE_ENV_VARIABLES" value="false" />
+      <STARTUP>
+        <option name="USE_DEFAULT" value="true" />
+        <option name="SCRIPT" value="" />
+        <option name="VM_PARAMETERS" value="" />
+        <option name="PROGRAM_PARAMETERS" value="" />
+      </STARTUP>
+      <SHUTDOWN>
+        <option name="USE_DEFAULT" value="true" />
+        <option name="SCRIPT" value="" />
+        <option name="VM_PARAMETERS" value="" />
+        <option name="PROGRAM_PARAMETERS" value="" />
+      </SHUTDOWN>
+    </ConfigurationWrapper>
+    <method v="2">
+      <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/accapi_server/accagentapi/pom.xml" goal="clean" />
+      <option name="NpmBeforeRunTask" enabled="true">
+        <package-json value="$PROJECT_DIR$/accapi_client/package.json" />
+        <command value="install" />
+        <arguments value="--force" />
+        <node-interpreter value="project" />
+        <envs />
+      </option>
+      <option name="NpmBeforeRunTask" enabled="true">
+        <package-json value="$PROJECT_DIR$/accapi_client/package.json" />
+        <command value="run" />
+        <scripts>
+          <script value="build" />
+        </scripts>
+        <node-interpreter value="project" />
+        <envs />
+      </option>
+      <option name="ToolBeforeRunTask" enabled="true" actionId="Tool_loadWebXml_loadWebXml_Agent" />
+      <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/accapi_server/accagentapi/pom.xml" goal="install" />
+      <option name="BuildArtifacts" enabled="true">
+        <artifact name="accOMNI" />
+      </option>
+    </method>
+  </configuration>
+</component>

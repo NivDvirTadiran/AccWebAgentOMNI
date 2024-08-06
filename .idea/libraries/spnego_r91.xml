@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="spnego-r91">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/accapi_server/accagentapi/libs/spnego-r9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="AccGateBackend:war">
+    <output-path>$PROJECT_DIR$/AccGateBackend/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>AccGateBackend</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="AccGate-0.0.1.war">
+      <element id="artifact" artifact-name="AccGateBackend:war exploded" />
+    </root>
+  </artifact>
+</component>

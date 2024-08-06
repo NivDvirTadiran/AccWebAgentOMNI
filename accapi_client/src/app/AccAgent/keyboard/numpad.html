@@ -1,0 +1,66 @@
+<mat-form-field style="height: 40px">
+      <input #numpadId matInput #kpinput  [(ngModel)]="PhoneNo" name="PhoneNo" type="text" maxlength="16"
+      [placeholder]=AAC.callTypetxt (click)="getposiotion(kpinput)" (keypress)="keypress($event)"
+       (enterClick)="submitForm()" (keyup.enter)="submitForm()">
+       
+</mat-form-field>
+<span *ngIf="!AAC.isTelephony"><i class="numberCircle" style="text-align: right;cursor: pointer;" (click)="focusOutFunction()"  class='fa fa-times'></i></span>
+    <mat-grid-list [cols]="3" class="container_numpad" rowHeight="5:3">
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+            <div class="pad" (click)="KeyPadClick('1')"> <span>1</span></div>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+            <div class="pad" (click)="KeyPadClick('2')"> <span>2</span></div>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+            <div class="pad" (click)="KeyPadClick('3')"> <span>3</span></div>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+            <div class="pad" (click)="KeyPadClick('4')"> <span>4</span></div>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+            <div class="pad" (click)="KeyPadClick('5')"> <span>5</span></div>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+            <div class="pad" (click)="KeyPadClick('6')"> <span>6</span></div>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+            <div class="pad" (click)="KeyPadClick('7')"> <span>7</span></div>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+            <div class="pad" (click)="KeyPadClick('8')"> <span>8</span></div>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+            <div class="pad" (click)="KeyPadClick('9')"> <span>9</span></div>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+            <div class="pad" (click)="KeyPadClick('*')"><span>*</span></div>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+            <div class="pad" (click)="KeyPadClick('0')"><span>0</span></div>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+            <div class="pad" (click)="KeyPadClick('#')"> <span>#</span></div>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+              <!-- <div class="pad" (click)="KeyPadDel()">del</div> -->
+              <div class="pad" ></div>
+            </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+            <div class="pad" (click)="SetCallButton()"><i>SET</i></div>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+            <div class="pad" (click)="KeyPadBackDel()"><i class="fa fa-arrow-left"></i></div>
+        </mat-grid-tile>
+        <!-- <mat-grid-tile *ngIf="AAC.telNumber == false" [colspan]="3" [rowspan]="1"> -->
+        <mat-grid-tile  [colspan]="3" [rowspan]="1">
+            <div class="call" (click)="submitForm()" title="CALL \nwith ctrl key - save in seperate Button,\nat end toolbar"><i class="fa fa-phone"></i></div>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="3" [rowspan]="1"></mat-grid-tile>
+                
+         </mat-grid-list>
+    <!-- </div> -->
+    <!-- <div class="container" class="mobile-btn">
+        <div class="row">
+        </div>
+    </div> -->

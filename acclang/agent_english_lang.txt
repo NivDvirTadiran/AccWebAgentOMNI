@@ -1,0 +1,1409 @@
+10937, 3, 'cp_mandatory_AGENT_PSW', 'EtasAcdContainer_c::SetSystemProfile', 'AGENT_PSW', 435
+24658, 3, 'cp_mandatory_Alternative Call Back Destination 1', 'EtasAcdContainer_c::SetSystemProfile', 'Alternative Call Back Destination 1', 600
+24659, 3, 'cp_mandatory_Alternative Call Back Destination 2', 'EtasAcdContainer_c::SetSystemProfile', 'Alternative Call Back Destination 2', 600
+24660, 3, 'cp_mandatory_Alternative Call ID', 'EtasAcdContainer_c::SetSystemProfile', 'Alternative Call ID', 600
+26903, 3, 'cp_mandatory_Announcement to Agent', 'EtasAcdContainer_c::SetSystemProfile', 'Announcement to Agent', 600
+11742, 3, 'cp_mandatory_Average Queue Time', 'EtasAcdContainer_c::SetSystemProfile', 'Average Queue Time', 435
+601, 3, 'cp_mandatory_AVERAGE_Q_TIME', 'EtasAcdContainer_c::SetSystemProfile', 'AVERAGE_Q_TIME', 435
+26095, 3, 'cp_mandatory_Call Attachment1', 'EtasAcdContainer_c::SetSystemProfile', 'Call Attachment1', 600
+26096, 3, 'cp_mandatory_Call Attachment2', 'EtasAcdContainer_c::SetSystemProfile', 'Call Attachment2', 600
+26097, 3, 'cp_mandatory_Call Attachment3', 'EtasAcdContainer_c::SetSystemProfile', 'Call Attachment3', 600
+26098, 3, 'cp_mandatory_Call Attachment4', 'EtasAcdContainer_c::SetSystemProfile', 'Call Attachment4', 600
+11743, 3, 'cp_mandatory_Call Back Destination', 'EtasAcdContainer_c::SetSystemProfile', 'Call Back Destination', 435
+11744, 3, 'cp_mandatory_Call Back Time', 'EtasAcdContainer_c::SetSystemProfile', 'Call Back Time', 435
+24661, 3, 'cp_mandatory_Call Type', 'EtasAcdContainer_c::SetSystemProfile', 'Call Type', 600
+602, 3, 'cp_mandatory_CALLBACK_DEST', 'EtasAcdContainer_c::SetSystemProfile', 'CALLBACK_DEST', 435
+603, 3, 'cp_mandatory_CALLBACK_TIME', 'EtasAcdContainer_c::SetSystemProfile', 'CALLBACK_TIME', 435
+606, 3, 'cp_mandatory_Calling', 'EtasAcdContainer_c::SetSystemProfile', 'Calling', 435
+11745, 3, 'cp_mandatory_Customer Name', 'EtasAcdContainer_c::SetSystemProfile', 'Customer Name', 435
+11746, 3, 'cp_mandatory_Customer Number', 'EtasAcdContainer_c::SetSystemProfile', 'Customer Number', 435
+604, 3, 'cp_mandatory_CUSTOMER_NAME', 'EtasAcdContainer_c::SetSystemProfile', 'CUSTOMER_NAME', 435
+605, 3, 'cp_mandatory_CUSTOMER_NUMBER', 'EtasAcdContainer_c::SetSystemProfile', 'CUSTOMER_NUMBER', 435
+11747, 3, 'cp_mandatory_Dial List ID', 'EtasAcdContainer_c::SetSystemProfile', 'Dial List ID', 435
+607, 3, 'cp_mandatory_DIAL_LIST_ID', 'EtasAcdContainer_c::SetSystemProfile', 'DIAL_LIST_ID', 435
+608, 3, 'cp_mandatory_DNIS', 'EtasAcdContainer_c::SetSystemProfile', 'DNIS', 435
+12534, 3, 'cp_mandatory_Email CC', 'EtasAcdContainer_c::SetSystemProfile', 'Email CC', 435
+12535, 3, 'cp_mandatory_Email Enter OMS Date', 'EtasAcdContainer_c::SetSystemProfile', 'Email Enter OMS Date', 435
+12536, 3, 'cp_mandatory_Email Enter OMS Time', 'EtasAcdContainer_c::SetSystemProfile', 'Email Enter OMS Time', 435
+12537, 3, 'cp_mandatory_Email From', 'EtasAcdContainer_c::SetSystemProfile', 'Email From', 435
+26054, 3, 'cp_mandatory_Email Reply To', 'EtasAcdContainer_c::SetSystemProfile', 'Email Reply To', 600
+12538, 3, 'cp_mandatory_Email Sent Date', 'EtasAcdContainer_c::SetSystemProfile', 'Email Sent Date', 435
+12539, 3, 'cp_mandatory_Email Sent Time', 'EtasAcdContainer_c::SetSystemProfile', 'Email Sent Time', 435
+12540, 3, 'cp_mandatory_Email Subject', 'EtasAcdContainer_c::SetSystemProfile', 'Email Subject', 435
+12541, 3, 'cp_mandatory_Email To', 'EtasAcdContainer_c::SetSystemProfile', 'Email To', 435
+10938, 3, 'cp_mandatory_EXECUTE_REQ', 'EtasAcdContainer_c::SetSystemProfile', 'EXECUTE_REQ', 435
+26025, 3, 'cp_mandatory_Global Cid', 'EtasAcdContainer_c::SetSystemProfile', 'Global Cid', 600
+24662, 3, 'cp_mandatory_Group', 'EtasAcdContainer_c::SetSystemProfile', 'Group', 600
+609, 3, 'cp_mandatory_Language', 'EtasAcdContainer_c::SetSystemProfile', 'Language', 435
+25621, 3, 'cp_mandatory_Last Time To Initiate Callback', 'EtasAcdContainer_c::SetSystemProfile', 'Last Time To Initiate Callback', 600
+610, 3, 'cp_mandatory_Media', 'EtasAcdContainer_c::SetSystemProfile', 'Media', 435
+25622, 3, 'cp_mandatory_Outbound Caller Id', 'EtasAcdContainer_c::SetSystemProfile', 'Outbound Caller Id', 600
+25623, 3, 'cp_mandatory_Primary Call Back Destination', 'EtasAcdContainer_c::SetSystemProfile', 'Primary Call Back Destination', 600
+611, 3, 'cp_mandatory_Priority', 'EtasAcdContainer_c::SetSystemProfile', 'Priority', 435
+11750, 3, 'cp_mandatory_Queue Position', 'EtasAcdContainer_c::SetSystemProfile', 'Queue Position', 435
+612, 3, 'cp_mandatory_Q_POSITION', 'EtasAcdContainer_c::SetSystemProfile', 'Q_POSITION', 435
+26099, 3, 'cp_mandatory_Recording File Name', 'EtasAcdContainer_c::SetSystemProfile', 'Recording File Name', 600
+615, 3, 'cp_mandatory_Service', 'EtasAcdContainer_c::SetSystemProfile', 'Service', 435
+11751, 3, 'cp_mandatory_Session ID', 'EtasAcdContainer_c::SetSystemProfile', 'Session ID', 435
+613, 3, 'cp_mandatory_SESSION_ID', 'EtasAcdContainer_c::SetSystemProfile', 'SESSION_ID', 435
+11752, 3, 'cp_mandatory_Start Queue Time', 'EtasAcdContainer_c::SetSystemProfile', 'Start Queue Time', 435
+614, 3, 'cp_mandatory_START_QUEUE_TIME', 'EtasAcdContainer_c::SetSystemProfile', 'START_QUEUE_TIME', 435
+12544, 3, 'cp_mandatory_Trunk Number', 'EtasAcdContainer_c::SetSystemProfile', 'Trunk Number', 435
+26100, 3, 'cp_mandatory_User Request', 'EtasAcdContainer_c::SetSystemProfile', 'User Request', 600
+26181, 3, 'DDListReleaseAlwaysAsk', 'DDList Setup Dialog', '<Always Ask>', 600
+26180, 3, 'DDListReleaseNoCode', 'DDList Setup Dialog', 'No Code', 600
+26167, 3, 'Download_started_indication', 'Download_started_indication', 'Waiting for the email download to complete', 600
+26164, 3, 'ed', 'Your extension is set to do not disturb', 'Your extension is set to do not disturb', 600
+26119, 3, 'Epic_Agent_Alert_Email_Dowload_Error', 'Epic_Agent_Alert_Email_Dowload_Error', 'Email contact has been rejected.', 600
+26088, 3, 'Epic_Agent_Alert_Email_Guide', 'Epic_Agent_Alert_Email_Guide', 'Please use the email client to retrieve your email messages from the email server', 600
+25918, 3, 'Epic_Agent_Alert_New_Agent', 'Epic_Agent_Alert_New_Agent', '
+New agent with same ID and Extension has entered the system', 600
+26205, 3, 'EtasAfxMSG_Max_um_buttons', 'EtasAfxMSG', 'Maximum number of buttons in a single toolbar line (32) is exceeded', 600
+16207, 3, 'File_does_not_exist_error', 'File does not exist', 'File does not exist.
+Press Yes to change the file or No to revert to default.', 435
+587, 3, 'FirstStartDlg1001CTempWnd', 'First Start Dialog', ' :', 435
+585, 3, 'FirstStartDlg1146CTempWnd', 'First Start Dialog', 'Extension number :', 435
+12520, 3, 'FirstStartDlg1146CWnd', 'First Start Dialog', 'Extension Number :', 435
+586, 3, 'FirstStartDlg1147CTempWnd', 'First Start Dialog', 'Server Address:', 435
+12521, 3, 'FirstStartDlg1147CWnd', 'First Start Dialog', 'Server IP Address:', 435
+584, 3, 'FirstStartDlg1148CTempWnd', 'First Start Dialog', 'Welcome to the Epic Agent Station Application', 435
+12519, 3, 'FirstStartDlg1148CWnd', 'First Start Dialog', 'Welcome to the Epic Agent Station Application', 435
+588, 3, 'FirstStartDlg1149CTempWnd', 'First Start Dialog', 'Position Email address :', 435
+12522, 3, 'FirstStartDlg1149CWnd', 'First Start Dialog', 'Mail Account Username :', 435
+12524, 3, 'FirstStartDlg1150CWnd', 'First Start Dialog', 'Mail Account Password :', 435
+11097, 3, 'FirstStartDlg1155CIPAddressCtrl', 'First Start Dialog', '192.168.15.10', 435
+11098, 3, 'FirstStartDlg1155CTempWnd', 'First Start Dialog', '10', 435
+12523, 3, 'FirstStartDlg1155CWnd', 'First Start Dialog', '204', 435
+24655, 3, 'FirstStartDlg1CButton', 'First Start Dialog', 'OK', 600
+583, 3, 'FirstStartDlg1CTempWnd', 'First Start Dialog', 'Continue', 435
+12518, 3, 'FirstStartDlg1CWnd', 'First Start Dialog', 'Continue', 435
+24656, 3, 'FirstStartDlg2CButton', 'First Start Dialog', 'Cancel', 600
+589, 3, 'FirstStartDlg_Alert_THIS_DIR_IS_NOT_OK', 'First Start Dialog alert = This directory does not contain AgentServer.ini file !!!', 'This directory does not contain AgentServer.ini file !!!', 435
+590, 3, 'FirstStartDlg_Alert_THIS_DIR_OK', 'First Start Dialog alert = This directory does not contain AgentServer.ini file !!!', 'The chosen directory is Ok !!!', 435
+581, 3, 'FirstStartDlg_title_APPNAME_word', 'First Start Dialog AGENT word (part of the title)', 'Agent', 435
+582, 3, 'FirstStartDlg_title_INSTANCE_word', 'First Start Dialog INSTANCE word (part of the title)', 'Instance', 435
+26094, 3, 'FirstStart_CEtas_Progress_Dlg', 'Msg ProgressDlg', 'Connecting to server...', 600
+16241, 3, 'FuncAgentsSetupTelDlg-1CWnd', 'Function Agents Setup Telephony Dialog', 'Order agents by:', 435
+16238, 3, 'FuncAgentsSetupTelDlg1146CWnd', 'Function Agents Setup Telephony Dialog', 'Select destination number:', 435
+26045, 3, 'FuncAgentsSetupTelDlg1147CWnd', 'Function Agents Setup Telephony Dialog', 'Order agents by:', 600
+16239, 3, 'FuncAgentsSetupTelDlg1159CButton', 'Function Agents Setup Telephony Dialog', 'Agent name', 435
+16240, 3, 'FuncAgentsSetupTelDlg1173CButton', 'Function Agents Setup Telephony Dialog', 'Agent number', 435
+16236, 3, 'FuncAgentsSetupTelDlg1CButton', 'Function Agents Setup Telephony Dialog', 'OK', 435
+16237, 3, 'FuncAgentsSetupTelDlg2CButton', 'Function Agents Setup Telephony Dialog', 'Cancel', 435
+26173, 3, 'FuncGroupsDlg1110CWnd', 'Function setup dialog', 'Enter ACD group:', 600
+26171, 3, 'FuncGroupsDlg1CButton', 'Function setup dialog', 'OK', 600
+26172, 3, 'FuncGroupsDlg2CButton', 'Function setup dialog', 'Cancel', 600
+26170, 3, 'FuncGroupsDlgSetup1110CWnd', 'Function setup dialog', 'Enter default ACD group:', 600
+26168, 3, 'FuncGroupsDlgSetup1CButton', 'Function setup dialog', 'Save', 600
+26169, 3, 'FuncGroupsDlgSetup2CButton', 'Function setup dialog', 'Cancel', 600
+26316, 3, 'FuncReleasesDlg1110CWnd', 'Function setup dialog', 'Select a release code:', 600
+26314, 3, 'FuncReleasesDlg1CButton', 'Function setup dialog', 'OK', 600
+26315, 3, 'FuncReleasesDlg2CButton', 'Function setup dialog', 'Cancel', 600
+26176, 3, 'FuncReleasesDlgSetup1110CWnd', 'Function setup dialog', 'Select a default release code:', 600
+26174, 3, 'FuncReleasesDlgSetup1CButton', 'Function setup dialog', 'Save', 600
+26175, 3, 'FuncReleasesDlgSetup2CButton', 'Function setup dialog', 'Cancel', 600
+25999, 3, 'FuncSetupExecuteDlg1059CWnd', 'Function Setup Execute Dialog', 'C:Program FilesEPICAcce VisorBina_db.exe', 600
+26000, 3, 'FuncSetupExecuteDlg1061CWnd', 'Function Setup Execute Dialog', 'jhg;lihg.', 600
+26001, 3, 'FuncSetupExecuteDlg1063CWnd', 'Function Setup Execute Dialog', 'kljhglkjhg', 600
+660, 3, 'FuncSetupExecuteDlg1146CTempWnd', 'Function Setup Execute Dialog', 'Program', 435
+16199, 3, 'FuncSetupExecuteDlg1146CWnd', 'Function Setup Execute Dialog', 'Program', 435
+661, 3, 'FuncSetupExecuteDlg1147CTempWnd', 'Function Setup Execute Dialog', 'Working Directory', 435
+16200, 3, 'FuncSetupExecuteDlg1147CWnd', 'Function Setup Execute Dialog', 'Working Directory', 435
+662, 3, 'FuncSetupExecuteDlg1148CTempWnd', 'Function Setup Execute Dialog', 'Parameters', 435
+16201, 3, 'FuncSetupExecuteDlg1148CWnd', 'Function Setup Execute Dialog', 'Parameters', 435
+658, 3, 'FuncSetupExecuteDlg1CButton', 'Function Setup Execute Dialog', 'OK', 435
+659, 3, 'FuncSetupExecuteDlg2CButton', 'Function Setup Execute Dialog', 'Cancel', 435
+665, 3, 'FuncSetupExecuteDlg_Open_file_dlg_programs', 'Function Setup Execute Open file dialog Programs)', 'Programs', 435
+664, 3, 'FuncSetupExecuteDlg_Open_file_dlg_select_file', 'Function Setup Execute Open file dialog Select)', 'Select File', 435
+663, 3, 'FuncSetupExecuteDlg_title', 'Function Setup Execute Dialog title)', 'Execute Program Setup', 435
+16181, 3, 'FuncSetupTelDlg-1CWnd', 'Function Setup Telephony Dialog', 'Arrange agents list according to:', 435
+25917, 3, 'FuncSetupTelDlg1146CStatic', 'Function Setup Telephony Dialog', 'Enter destination number', 600
+642, 3, 'FuncSetupTelDlg1146CTempWnd', 'Function Setup Telephony Dialog', 'Enter destination number', 435
+12550, 3, 'FuncSetupTelDlg1146CWnd', 'Function Setup Telephony Dialog', 'Enter destination number', 435
+16179, 3, 'FuncSetupTelDlg1159CButton', 'Function Setup Telephony Dialog', 'Agent name', 435
+16180, 3, 'FuncSetupTelDlg1173CButton', 'Function Setup Telephony Dialog', 'Agent number', 435
+640, 3, 'FuncSetupTelDlg1CButton', 'Function Setup Telephony Dialog', 'OK', 435
+641, 3, 'FuncSetupTelDlg2CButton', 'Function Setup Telephony Dialog', 'Cancel', 435
+11104, 3, 'FunctionAcdEmailState_descr', 'Email state change function', 'Enter Email state ', 435
+715, 3, 'FunctionDescription_About', 'Function description', 'About', 435
+11115, 3, 'FunctionDescription_ActivateBargeIn', 'Function description', 'Break-In', 435
+25981, 3, 'FunctionDescription_ActivateRecording', 'Function description', 'Recording', 600
+11114, 3, 'FunctionDescription_ActivateSilentMonitor', 'Function description', 'Silent Monitor', 435
+25980, 3, 'FunctionDescription_ActivateWhisper', 'Function description', 'Whisper', 600
+634, 3, 'FunctionDescription_AgentReady', 'Function description', 'Ready', 435
+7786, 3, 'FunctionDescription_Alternate', 'Function description', 'Swap Calls', 435
+652, 3, 'FunctionDescription_Answer', 'Function description', 'Answer', 435
+11113, 3, 'FunctionDescription_BUSY', 'Function description', 'Set the agent state to busy \ not busy', 435
+650, 3, 'FunctionDescription_Call back reinsert busy', 'Function description', 'Set Call back reinsert busy', 435
+649, 3, 'FunctionDescription_Call back reinsert No Answer', 'Function description', 'Set Call back reinsert No Answer', 435
+648, 3, 'FunctionDescription_Call back reinsert treminate', 'Function description', 'Set Call back reinsert treminate', 435
+25977, 3, 'FunctionDescription_CallbackReinsertBusy', 'Function description', 'Set Call back reinsert busy', 600
+25978, 3, 'FunctionDescription_CallbackReinsertNoAnswer', 'Function description', 'Set Call back reinsert No Answer', 600
+25979, 3, 'FunctionDescription_CallbackReinsertTerminate', 'Function description', 'Set Call back reinsert Terminate', 600
+25984, 3, 'FunctionDescription_ChatWithAgent', 'Function description', 'Chat With Agent', 600
+723, 3, 'FunctionDescription_ClearConnection', 'Function description', 'Disconnect', 435
+635, 3, 'FunctionDescription_CloseAll', 'Function description', 'Logout and Exit', 435
+651, 3, 'FunctionDescription_CompleteConference', 'Function description', 'Complete Conference', 435
+25961, 3, 'FunctionDescription_CompleteTransfer', 'Function description', 'Complete Transfer', 600
+643, 3, 'FunctionDescription_Conference', 'Function description', 'Start Conference', 435
+644, 3, 'FunctionDescription_Divert', 'Function description', 'Divert Call', 435
+26087, 3, 'FunctionDescription_ExecProgram', 'Function description', 'Run', 600
+11238, 3, 'FunctionDescription_GroupsManager', 'Function description', 'Groups Manager', 435
+721, 3, 'FunctionDescription_Help', 'Function description', 'Supervisor Help', 435
+645, 3, 'FunctionDescription_Hold', 'Function description', 'Hold', 435
+720, 3, 'FunctionDescription_Html with Chat Tree ', 'Function description', 'Chat Tree', 435
+25983, 3, 'FunctionDescription_HtmlWithChatTree', 'Function description', 'Chat Tree', 600
+11102, 3, 'FunctionDescription_LoginGroup', 'Function description', 'Login Group', 435
+637, 3, 'FunctionDescription_LoginPrimaryGroups', 'Function description', 'Login Primary Groups', 435
+11103, 3, 'FunctionDescription_LogoutFromGroup', 'Function description', 'Logout Group', 435
+10940, 3, 'FunctionDescription_LogoutFromPrimaryGroups', 'Function description', 'Logout from Primary ACD Groups', 435
+646, 3, 'FunctionDescription_MakeCall', 'Function description', 'Call', 435
+11101, 3, 'FunctionDescription_MakeNACall', 'Function description', 'Call', 435
+10943, 3, 'FunctionDescription_Net meeting', 'Function description', 'Net meeting', 435
+699, 3, 'FunctionDescription_OpenAcdCalls', 'Function description', 'ACD Calls', 435
+724, 3, 'FunctionDescription_OpenAgentBoard', 'Function description', 'Agent board', 435
+676, 3, 'FunctionDescription_OpenCallsLog', 'Function description', 'Calls Log', 435
+698, 3, 'FunctionDescription_OpenCallsStatus', 'Function description', 'Calls Status', 435
+638, 3, 'FunctionDescription_OpenSetup', 'Function description', 'Agent Setup', 435
+712, 3, 'FunctionDescription_OpenTelephony', 'Function description', 'Telephony', 435
+717, 3, 'FunctionDescription_Reconnect', 'Function description', 'Reconnect', 435
+636, 3, 'FunctionDescription_Release', 'Function description', 'Release', 435
+16212, 3, 'FunctionDescription_Release with Code', 'Function description', 'Release with Code', 435
+25963, 3, 'FunctionDescription_ReleasewithCode', 'Function description', 'Release with Code', 600
+10974, 3, 'FunctionDescription_Resume', 'Function description', 'Resume', 435
+719, 3, 'FunctionDescription_Retrieve', 'Function description', 'Retrieve', 435
+11240, 3, 'FunctionDescription_RouteMoreEmails', 'Function description', 'Route More Emails', 435
+11111, 3, 'FunctionDescription_SendDTMF', 'Function description', 'Send Dial Tones', 435
+11284, 3, 'FunctionDescription_SetCallProfile', 'Function description', 'Set Call Profile', 435
+11112, 3, 'FunctionDescription_SingleStepConference', 'Function description', 'Single Step Conference', 435
+647, 3, 'FunctionDescription_SingleStepTransfer', 'Function description', 'Single Step Transfer', 435
+11239, 3, 'FunctionDescription_ToggleEmailState', 'Function description', 'Toggle Email state', 435
+718, 3, 'FunctionDescription_Transfer', 'Function description', 'Complete Transfer', 435
+639, 3, 'FunctionDescription_TransferCall', 'Function description', 'Start Transfer', 435
+653, 3, 'FunctionDescription_TransferToAgent', 'Function description', 'Transfer to Agent', 435
+716, 3, 'FunctionDescription_WinHelp', 'Function description', 'Help', 435
+654, 3, 'FunctionDescription_Wrapup Code', 'Function description', 'WrapUp Code', 435
+722, 3, 'FunctionDescription_Wrapup manual control', 'Function description', 'Wrapup manual control', 435
+25962, 3, 'FunctionDescription_WrapupCode', 'Function description', 'WrapUp Code', 600
+25982, 3, 'FunctionDescription_WrapupManualControl', 'Function description', 'Wrapup manual control', 600
+954, 3, 'FunctionHelpStr_About', 'Function help string', 'About Agent', 435
+11269, 3, 'FunctionHelpStr_ActivateBargeIn', 'Function help string', 'Break-In', 435
+25950, 3, 'FunctionHelpStr_ActivateRecording', 'Function help string', 'Recording', 600
+11268, 3, 'FunctionHelpStr_ActivateSilentMonitor', 'Function help string', 'Silent Monitor', 435
+25951, 3, 'FunctionHelpStr_ActivateWhisper', 'Function help string', 'Whisper', 600
+939, 3, 'FunctionHelpStr_AgentReady', 'Function help string', 'Manually end the WrapUp state and become ready for ACD', 435
+931, 3, 'FunctionHelpStr_Alternate', 'Function help string', 'Swaps the call on HOLD with the Connected call', 435
+915, 3, 'FunctionHelpStr_Answer', 'Function help string', 'Answer incoming call', 435
+922, 3, 'FunctionHelpStr_BUSY', 'Function help string', 'Set the agent state to busy \ not busy', 435
+921, 3, 'FunctionHelpStr_Call back reinsert busy', 'Function help string', 'Set Call back reinsert busy', 435
+919, 3, 'FunctionHelpStr_Call back reinsert No Answer', 'Function help string', 'Set Call back reinsert No Answer', 435
+920, 3, 'FunctionHelpStr_Call back reinsert treminate', 'Function help string', 'Set Call back reinsert treminate', 435
+25954, 3, 'FunctionHelpStr_CallbackReinsertBusy', 'Function help string', 'Set Call back reinsert busy', 600
+25953, 3, 'FunctionHelpStr_CallbackReinsertNoAnswer', 'Function help string', 'Set Call back reinsert No Answer', 600
+25952, 3, 'FunctionHelpStr_CallbackReinsertTerminate', 'Function help string', 'Set Call back reinsert Terminate', 600
+25959, 3, 'FunctionHelpStr_ChatWithAgent', 'Function help string', 'Chat With Agent', 600
+916, 3, 'FunctionHelpStr_ClearConnection', 'Function help string', 'Disconnect the current call', 435
+951, 3, 'FunctionHelpStr_CloseAll', 'Function help string', 'Logout and Exit', 435
+917, 3, 'FunctionHelpStr_CompleteConference', 'Function help string', 'Complete the Conference procedure', 435
+25955, 3, 'FunctionHelpStr_CompleteTransfer', 'Function help string', 'Complete the transfer procedure', 600
+929, 3, 'FunctionHelpStr_Conference', 'Function help string', 'Start the conference procedure', 435
+928, 3, 'FunctionHelpStr_Divert', 'Function help string', 'Divert the incoming call', 435
+935, 3, 'FunctionHelpStr_Email state', 'Function help string', 'Email state', 435
+956, 3, 'FunctionHelpStr_ExecProgram', 'Function help string', 'Execute an application', 435
+941, 3, 'FunctionHelpStr_GroupsManager', 'Function help string', 'Manage the list of Login/Logout groups', 435
+932, 3, 'FunctionHelpStr_Help', 'Function help string', 'Ask for Supervisor Help', 435
+924, 3, 'FunctionHelpStr_Hold', 'Function help string', 'Place the call on HOLD', 435
+953, 3, 'FunctionHelpStr_Html with Chat Tree ', 'Function help string', 'Chat Tree', 435
+25960, 3, 'FunctionHelpStr_HtmlWithChatTree', 'Function help string', 'Chat Tree', 600
+943, 3, 'FunctionHelpStr_LoginGroup', 'Function help string', 'Login to ACD group', 435
+945, 3, 'FunctionHelpStr_LoginPrimaryGroups', 'Function help string', 'Login/Logout Primary ACD Groups', 435
+942, 3, 'FunctionHelpStr_LogoutFromGroup', 'Function help string', 'Logout from Group', 435
+944, 3, 'FunctionHelpStr_LogoutFromPrimaryGroups', 'Function help string', 'Login/Logout Primary Groups', 435
+925, 3, 'FunctionHelpStr_MakeCall', 'Function help string', 'Call the selected telephone number', 435
+11100, 3, 'FunctionHelpStr_MakeNACall', 'Function help string', 'Call the selected telephone number', 435
+957, 3, 'FunctionHelpStr_Net meeting', 'Function help string', 'Net meeting application', 435
+948, 3, 'FunctionHelpStr_OpenAcdCalls', 'Function help string', 'Open ACD Calls window', 435
+952, 3, 'FunctionHelpStr_OpenAgentBoard', 'Function help string', 'Open Agent board window', 435
+946, 3, 'FunctionHelpStr_OpenCallsLog', 'Function help string', 'Open Calls Log window', 435
+947, 3, 'FunctionHelpStr_OpenCallsStatus', 'Function help string', 'Open Calls Status window', 435
+949, 3, 'FunctionHelpStr_OpenSetup', 'Function help string', 'Open Setup window', 435
+950, 3, 'FunctionHelpStr_OpenTelephony', 'Function help string', 'Open Telephony window', 435
+923, 3, 'FunctionHelpStr_Reconnect', 'Function help string', 'Reconnect', 435
+940, 3, 'FunctionHelpStr_Release', 'Function help string', 'Release', 435
+12680, 3, 'FunctionHelpStr_Release with Code', 'Function help string', 'Release with Code', 435
+25958, 3, 'FunctionHelpStr_ReleasewithCode', 'Function help string', 'Release with Code', 600
+934, 3, 'FunctionHelpStr_Resume', 'Function help string', 'Resume', 435
+918, 3, 'FunctionHelpStr_Retrieve', 'Function help string', 'Retrieve the call from HOLD', 435
+936, 3, 'FunctionHelpStr_Route More Emails', 'Function help string', 'Bring more emails', 435
+10941, 3, 'FunctionHelpStr_RouteMoreEmails', 'Function help string', 'Ask Server to route more emails to me', 435
+11283, 3, 'FunctionHelpStr_SetCallProfile', 'Function help string', 'Set active call's profile', 435
+926, 3, 'FunctionHelpStr_SingleStepTransfer', 'Function help string', 'Perform single step transfer', 435
+10942, 3, 'FunctionHelpStr_ToggleEmailState', 'Function help string', 'Toggle Email state', 435
+927, 3, 'FunctionHelpStr_Transfer', 'Function help string', 'Complete the transfer procedure', 435
+930, 3, 'FunctionHelpStr_TransferCall', 'Function help string', 'Start the transfer procedure', 435
+933, 3, 'FunctionHelpStr_TransferToAgent', 'Function help string', 'Perform transfer to Agent', 435
+955, 3, 'FunctionHelpStr_WinHelp', 'Function help string', 'Show Help Topics', 435
+937, 3, 'FunctionHelpStr_Wrapup Code', 'Function help string', 'Enter WrapUp Code', 435
+938, 3, 'FunctionHelpStr_Wrapup manual control', 'Function help string', 'Control WrapUp state', 435
+25956, 3, 'FunctionHelpStr_WrapupCode', 'Function help string', 'Enter WrapUp Code', 600
+25957, 3, 'FunctionHelpStr_WrapupManualControl', 'Function help string', 'Control WrapUp state', 600
+26204, 3, 'FuncWrapupsDlg1110CWnd', 'Function setup dialog', 'Select a wrapup code:', 600
+26202, 3, 'FuncWrapupsDlg1CButton', 'Function setup dialog', 'OK', 600
+26203, 3, 'FuncWrapupsDlg2CButton', 'Function setup dialog', 'Cancel', 600
+26179, 3, 'FuncWrapupsDlgSetup1110CWnd', 'Function setup dialog', 'Select a default wrapup code:', 600
+26177, 3, 'FuncWrapupsDlgSetup1CButton', 'Function setup dialog', 'Save', 600
+26178, 3, 'FuncWrapupsDlgSetup2CButton', 'Function setup dialog', 'Cancel', 600
+24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Available Groups', 600
+596, 3, 'GroupManagerDlg1002CButton', 'Group Manager Dialog', 'Login', 435
+597, 3, 'GroupManagerDlg1003CButton', 'Group Manager Dialog', 'Logout', 435
+12548, 3, 'GroupManagerDlg1146CWnd', 'Group Manager Dialog', 'Logged Groups', 435
+26036, 3, 'GroupManagerDlg1147CWnd', 'Group Manager Dialog', 'Logged Groups', 600
+12547, 3, 'GroupManagerDlg2CWnd', 'Group Manager Dialog', 'Cancel', 435
+595, 3, 'GroupManagerDlg65535CTempWnd', 'Group Manager Dialog', 'Available Groups', 435
+12545, 3, 'GroupManagerDlg65535CWnd', 'Group Manager Dialog', 'Available Groups', 435
+594, 3, 'GroupManagerDlg_title', 'Group Manager Dialog', 'Group manager', 435
+26637, 3, 'HelpAboutDlgDlg1CWnd', 'Help About', 'Application Information', 600
+26640, 3, 'HelpAboutDlgDlg23015CStatic', 'Help About', 'Static', 600
+26653, 3, 'HelpAboutDlgDlg2CWnd', 'Help About', 'Product Information', 600
+26638, 3, 'HelpAboutDlgDlg3CWnd', 'Help About', 'Application Information', 600
+26639, 3, 'HelpAboutDlgDlg4CWnd', 'Help About', 'Product Information', 600
+26870, 3, 'HelpAboutDlg_BUTTON_OK', 'OK', 'Ok', 600
+26632, 3, 'HelpAboutDlg_Name', 'Name: ', 'Name: ', 600
+26634, 3, 'HelpAboutDlg_ProductName', 'Product Name: ', 'Product Name: ', 600
+26636, 3, 'HelpAboutDlg_ProductVendor', 'Product Vendor: ', 'Product Vendor: ', 600
+26635, 3, 'HelpAboutDlg_ProductVersion', 'Product Version: ', 'Product Version: ', 600
+26633, 3, 'HelpAboutDlg_Version', 'Version: ', 'Version: ', 600
+26166, 3, 'iled', 'Your extension is set to call forward all', 'Your extension is set to call forward all', 600
+11108, 3, 'InsertColoumn_title', 'Insert Coloumn', 'Insert Coloumn', 435
+964, 3, 'Launching_the_Agent_application', 'Launching the Agent application dialog', 'Launching the Agent application dialog', 435
+26114, 3, 'led', 'An agent can be logged in to only one group while handling predictive outbound', 'An agent can be logged in to only one group while handling predictive outbound', 600
+16205, 3, 'License_update_error', 'License_update_error', 'Due to licensing update you have been loged out.
+Please login to continue.', 435
+25222, 3, 'LogonDlg-1CWnd', 'Epic Agent Logon Dialog', 'Language:', 600
+11413, 3, 'LogonDlg1001CTempWnd', 'Epic Agent Logon Dialog', 'SPANISH', 435
+25223, 3, 'LogonDlg1001CWnd', 'Epic Agent Logon Dialog', 'ENGLISH', 600
+959, 3, 'LogonDlg1146CTempWnd', 'Epic Agent Logon Dialog', 'Enter agent id and password to logon to Epic Agent', 435
+12529, 3, 'LogonDlg1146CWnd', 'Epic Agent Logon Dialog', 'Enter agent id and password to logon to Epic Agent', 435
+960, 3, 'LogonDlg1147CTempWnd', 'Epic Agent Logon Dialog', 'Agent id', 435
+12530, 3, 'LogonDlg1147CWnd', 'Epic Agent Logon Dialog', 'Agent id:', 435
+961, 3, 'LogonDlg1148CTempWnd', 'Epic Agent Logon Dialog', 'Password', 435
+12531, 3, 'LogonDlg1148CWnd', 'Epic Agent Logon Dialog', 'Password:', 435
+11266, 3, 'LogonDlg1149CTempWnd', 'Epic Agent Logon Dialog', 'Extension', 435
+12532, 3, 'LogonDlg1149CWnd', 'Epic Agent Logon Dialog', 'Extension:', 435
+26040, 3, 'LogonDlg1150CWnd', 'Epic Agent Logon Dialog', 'Language:', 600
+11264, 3, 'LogonDlg1CTempWnd', 'Epic Agent Logon Dialog', 'OK', 435
+12527, 3, 'LogonDlg1CWnd', 'Epic Agent Logon Dialog', 'OK', 435
+11265, 3, 'LogonDlg2CTempWnd', 'Epic Agent Logon Dialog', 'Cancel', 435
+12528, 3, 'LogonDlg2CWnd', 'Epic Agent Logon Dialog', 'Cancel', 435
+11267, 3, 'LogonDlg65535CTempWnd', 'Epic Agent Logon Dialog', 'Language', 435
+12533, 3, 'LogonDlg65535CWnd', 'Epic Agent Logon Dialog', 'Language', 435
+958, 3, 'LogonDlg_title', 'Epic Agent Logon Dialog', 'Epic Agent Logon', 435
+12427, 3, 'LRL_SvcReplyCode_description', 'LRL return code', 'Invalid ID', 435
+26101, 3, 'LRL_SvcReplyCode_description_1', 'LRL return code', 'Call cannot be picked-up from queue', 600
+26154, 3, 'LRL_SvcReplyCode_description_12', 'LRL return code', 'Your extension has lost connection to the telephony system.
+You are now logged out of all your groups', 600
+26165, 3, 'LRL_SvcReplyCode_description_13', 'LRL return code', 'Your extension is set to call forward all', 600
+26113, 3, 'LRL_SvcReplyCode_description_14', 'LRL return code', 'An agent can be logged in to only one group while handling predictive outbound', 600
+26163, 3, 'LRL_SvcReplyCode_description_15', 'LRL return code', 'Your extension is set to do not disturb', 600
+26115, 3, 'LRL_SvcReplyCode_description_18', 'LRL return code', 'Agent is not idle.', 600
+26116, 3, 'LRL_SvcReplyCode_description_19', 'LRL return code', 'Call is ringing.', 600
+26120, 3, 'LRL_SvcReplyCode_description_24', 'LRL return code', 'You try to login to more groups then allowed', 600
+26104, 3, 'LRL_SvcReplyCode_description_5', 'LRL return code', 'No assigned group', 600
+26354, 3, 'LRL_SvcReplyCode_description_9', 'LRL return code', 'Email address or Email password 
+is not defined on server.', 600
+16208, 3, 'Msg_box_error', 'Error', 'Error', 435
+11753, 3, 'Not_Added_Button_Text', '. (This button cannot be added)', '. (This button cannot be added)', 435
+26355, 3, 'n_Failed', 'Email address or Email password 
+is not defined on server.', 'Email address or Email password 
+is not defined on server.', 600
+26071, 3, 'OutboundCallConfirmation_title', 'Outbound Call Confirmation', 'Outbound Call Confirmation', 600
+11412, 3, 'ProgressDlg1109CProgressCtrl', 'Progress Dialog', 'Progress1', 435
+11411, 3, 'ProgressDlg2CTempWnd', 'Progress Dialog', 'Cancel', 435
+12526, 3, 'ProgressDlg2CWnd', 'ProgressDlg', 'Cancel', 435
+11410, 3, 'ProgressDlg3CTempWnd', 'Progress Dialog', 'Continue', 435
+12525, 3, 'ProgressDlg3CWnd', 'ProgressDlg', 'Continue', 435
+965, 3, 'ProgressDlg_title', 'Progress Dialog', 'Agent', 435
+12428, 3, 'rning_Login_Failed', 'Invalid ID', 'Invalid ID', 435
+25908, 3, 'sec_msg', 'sec_msg', 'sec', 600
+593, 3, 'SendingLoginDlg1146CTempWnd', 'SendingLoginDlg', 'Sending Login Info... Please wait...', 435
+12653, 3, 'SendingLoginDlg1146CWnd', 'SendingLoginDlg', 'Sending Login Info... Please wait...', 435
+592, 3, 'SendingLoginDlg2CTempWnd', 'SendingLoginDlg', 'Cancel', 435
+12652, 3, 'SendingLoginDlg2CWnd', 'SendingLoginDlg', 'Cancel', 435
+591, 3, 'SendingLoginDlg3CTempWnd', 'SendingLoginDlg', 'Continue', 435
+12651, 3, 'SendingLoginDlg3CWnd', 'SendingLoginDlg', 'Continue', 435
+11094, 3, 'SendingLogonDlg_title', 'Epic Agent Sending Login Dialog', 'Sending Login Dialog', 435
+16198, 3, 'SetupExtAddr-1CWnd', 'Setup Address Dialog', 'Mail Account Password:', 435
+666, 3, 'SetupExtAddr1069CTempWnd', 'Setup Address Dialog', '&Set New Values', 435
+12552, 3, 'SetupExtAddr1069CWnd', 'Setup Address Dialog', '&Set New Values...', 435
+667, 3, 'SetupExtAddr1146CTempWnd', 'Setup Address Dialog', 'Extension Number:', 435
+12555, 3, 'SetupExtAddr1146CWnd', 'Setup Address Dialog', 'Extension Number:', 435
+668, 3, 'SetupExtAddr1147CTempWnd', 'Setup Address Dialog', 'Server Address:', 435
+12556, 3, 'SetupExtAddr1147CWnd', 'Setup Address Dialog', 'Server IP Address:', 435
+669, 3, 'SetupExtAddr1148CTempWnd', 'Setup Address Dialog', 'Position Email address :', 435
+12557, 3, 'SetupExtAddr1148CWnd', 'Setup Address Dialog', 'Mail Account Username:', 435
+26043, 3, 'SetupExtAddr1149CWnd', 'Setup Address Dialog', 'Mail Account Password:', 600
+12558, 3, 'SetupExtAddr65535CWnd', 'Setup Address Dialog', 'Mail Account Password :', 435
+14157, 3, 'SetupOptions1000CWnd', 'Setup Options Dialog', 'Popup on ring', 435
+14158, 3, 'SetupOptions1001CWnd', 'Setup Options Dialog', 'Minimize on answer', 435
+672, 3, 'SetupOptions1117CButton', 'Setup Options Dialog', 'Start minimized', 435
+673, 3, 'SetupOptions1118CButton', 'Setup Options Dialog', 'Enable closing via the system menu "x" button', 435
+674, 3, 'SetupOptions1136CButton', 'Setup Options Dialog', 'Open Toolbar on "Forced Release" state', 435
+675, 3, 'SetupOptions1137CButton', 'Setup Options Dialog', 'Allow to minimize the toolbar in "Release" state', 435
+14185, 3, 'SetupOptions1170CButton', 'Setup Options Dialog', 'Open Toolbar on Ring', 435
+14181, 3, 'SetupOptions1170CWnd', 'Setup Options Dialog', 'Popup on ring', 435
+14186, 3, 'SetupOptions1171CButton', 'Setup Options Dialog', 'Minimize on Answer', 435
+14182, 3, 'SetupOptions1171CWnd', 'Setup Options Dialog', 'Minimize on answer', 435
+25905, 3, 'SetupOptions1199CButton', 'Setup Options Dialog', 'Open Toolbar on Queued Call', 600
+670, 3, 'SetupOptions1CTempWnd', 'Setup Options Dialog', 'OK', 435
+12681, 3, 'SetupOptions1CWnd', 'Setup Options Dialog', 'OK', 435
+671, 3, 'SetupOptions2CTempWnd', 'Setup Options Dialog', 'Cancel', 435
+12682, 3, 'SetupOptions2CWnd', 'Setup Options Dialog', 'Cancel', 435
+16227, 3, 'SetupToolbar-1CWnd', 'Setup toolbar dialog', 'Select a category.
+Click a button to see its description or drag it to a toolbar.', 435
+16226, 3, 'SetupToolbar1069CButton', 'Setup toolbar dialog', '...', 435
+627, 3, 'SetupToolbar1112CButton', 'Setup toolbar dialog', 'Always on top', 435
+628, 3, 'SetupToolbar1113CButton', 'Setup toolbar dialog', '2 lines', 435
+630, 3, 'SetupToolbar1114CButton', 'Setup toolbar dialog', 'Statusbar', 435
+631, 3, 'SetupToolbar1115CButton', 'Setup toolbar dialog', 'Large Icons', 435
+632, 3, 'SetupToolbar1116CButton', 'Setup toolbar dialog', 'Auto resize', 435
+633, 3, 'SetupToolbar1138CButton', 'Setup toolbar dialog', 'Options', 435
+26044, 3, 'SetupToolbar1146CWnd', 'Setup toolbar dialog', 'Ring Options For Voice / Chat / Email Calls:', 600
+26030, 3, 'SetupToolbar1147CWnd', 'Setup toolbar dialog', 'Apply to:', 600
+16222, 3, 'SetupToolbar1159CButton', 'Setup toolbar dialog', 'Continuous Ring', 435
+16223, 3, 'SetupToolbar1160CButton', 'Setup toolbar dialog', 'Ring Once', 435
+16224, 3, 'SetupToolbar1161CButton', 'Setup toolbar dialog', 'Default   (Speaker Beep)', 435
+16225, 3, 'SetupToolbar1162CButton', 'Setup toolbar dialog', 'File', 435
+16220, 3, 'SetupToolbar1164CStatic', 'Setup toolbar dialog', 'Ring Alert', 435
+16221, 3, 'SetupToolbar1165CStatic', 'Setup toolbar dialog', 'Ring Tone', 435
+16219, 3, 'SetupToolbar1166CButton', 'Setup toolbar dialog', 'Voice', 435
+16228, 3, 'SetupToolbar1167CButton', 'Setup toolbar dialog', 'Save', 435
+16230, 3, 'SetupToolbar1168CButton', 'Setup toolbar dialog', 'Chat', 435
+16229, 3, 'SetupToolbar1169CButton', 'Setup toolbar dialog', 'Email', 435
+25911, 3, 'SetupToolbar1190CButton', 'Setup toolbar dialog', 'Speaker Beep (Ring Once)', 600
+25912, 3, 'SetupToolbar1191CButton', 'Setup toolbar dialog', 'File: ', 600
+25913, 3, 'SetupToolbar1193CButton', 'Setup toolbar dialog', '...', 600
+25910, 3, 'SetupToolbar1195CButton', 'Setup toolbar dialog', 'Queue Alert', 600
+25914, 3, 'SetupToolbar1196CButton', 'Setup toolbar dialog', 'Save', 600
+25906, 3, 'SetupToolbar1201CButton', 'Setup toolbar dialog', 'Outbound Call Confirmation Window', 600
+26032, 3, 'SetupToolbar1202CWnd', 'Setup toolbar dialog', 'View', 600
+26034, 3, 'SetupToolbar1203CWnd', 'Setup toolbar dialog', 'Category', 600
+26031, 3, 'SetupToolbar1204CWnd', 'Setup toolbar dialog', 'Select a category.
+Click a button to see its description or drag it to a toolbar.', 600
+26035, 3, 'SetupToolbar1205CWnd', 'Setup toolbar dialog', 'Category:', 600
+26033, 3, 'SetupToolbar1206CWnd', 'Setup toolbar dialog', 'Buttons:', 600
+26110, 3, 'SetupToolbar1207CWnd', 'Setup toolbar dialog', 'Category:', 600
+26107, 3, 'SetupToolbar1208CWnd', 'Setup toolbar dialog', 'Description:', 600
+26109, 3, 'SetupToolbar1209CWnd', 'Setup toolbar dialog', 'Category', 600
+26108, 3, 'SetupToolbar1210CWnd', 'Setup toolbar dialog', 'View', 600
+629, 3, 'SetupToolbar65535CTempWnd', 'Setup toolbar dialog', 'Available Buttons', 435
+12549, 3, 'SetupToolbar65535CWnd', 'Setup toolbar dialog', 'Available Buttons', 435
+623, 3, 'SetupToolbarCComboBox0', 'Setup toolbar dialog', 'Telephony', 435
+624, 3, 'SetupToolbarCComboBox1', 'Setup toolbar dialog', 'ACD', 435
+625, 3, 'SetupToolbarCComboBox2', 'Setup toolbar dialog', 'Window', 435
+626, 3, 'SetupToolbarCComboBox3', 'Setup toolbar dialog', 'Other', 435
+620, 3, 'Setup_Dialog_Title', 'Setup Dialog', 'Setup', 435
+622, 3, 'Setup_ExtADdr_Tab_Caption', 'Setup_ExtADdr_Tab_Caption', 'Extension/Address', 435
+25903, 3, 'Setup_Personal_Settings_Tab_Caption', 'Setup_Personal_Settings_Tab_Caption', 'Personal Settings', 600
+25904, 3, 'Setup_Queue_Alert_Tab_Caption', 'Setup_Queue_Alert_Tab_Caption', 'Queue Alert', 600
+12656, 3, 'Setup_Ring_Tab_Caption', 'Setup_Ring_Tab_Caption', 'Ring', 435
+621, 3, 'Setup_ToolBar_Tab_Caption', 'Setup_ToolBar_Tab_Caption', 'ToolBar', 435
+16206, 3, 'Shortcut_already_exists', 'The Shortcut already exists', 'The Shortcut already exists', 435
+617, 3, 'skils_separator', 'EtasAcdContainer_c::SetSystemProfile', '========Skills=======', 435
+678, 3, 'SortList_Menu', 'SortList_Menu', 'Insert Column', 435
+11106, 3, 'SortList_Menu_Delete Column', 'SortList_Menu', 'Delete Column', 435
+11105, 3, 'SortList_Menu_Insert Column', 'SortList_Menu', 'Insert Column', 435
+26160, 3, 'StatusBar_String_Barge_In', 'Part of the main window statusbar', 'Barge In', 600
+7783, 3, 'StatusBar_String_Busy', 'Part of the main window statusbar', 'Busy', 435
+16185, 3, 'StatusBar_String_Connected', 'Part of the main window statusbar', 'Connected', 435
+16191, 3, 'StatusBar_String_Failed', 'Part of the main window statusbar', 'Failed', 435
+16187, 3, 'StatusBar_String_Held', 'Part of the main window statusbar', 'Held', 435
+619, 3, 'StatusBar_String_Idle', 'Part of the main window statusbar', 'Idle', 435
+16186, 3, 'StatusBar_String_Initiated', 'Part of the main window statusbar', 'Initiated', 435
+16188, 3, 'StatusBar_String_NA', 'Part of the main window statusbar', 'NA', 435
+16189, 3, 'StatusBar_String_Null', 'Part of the main window statusbar', 'Null', 435
+16192, 3, 'StatusBar_String_Queued', 'Part of the main window statusbar', 'Queued', 435
+26313, 3, 'StatusBar_String_Release_with_Code', 'Part of the main window statusbar', 'Release with Code', 600
+26075, 3, 'StatusBar_String_Reserved', 'Part of the main window statusbar', 'Reserved', 600
+16184, 3, 'StatusBar_String_Ringing', 'Part of the main window statusbar', 'Ringing', 435
+16190, 3, 'StatusBar_String_Route_Wait', 'Part of the main window statusbar', 'Route Wait', 435
+26161, 3, 'StatusBar_String_Silent_Monitor', 'Part of the main window statusbar', 'Silent Monitor', 600
+16193, 3, 'StatusBar_String_Unknown', 'Part of the main window statusbar', 'Unknown', 435
+26162, 3, 'StatusBar_String_Whisper', 'Part of the main window statusbar', 'Whisper', 600
+26317, 3, 'StatusBar_String_Wrap', 'Part of the main window statusbar', 'Wrap Up', 600
+26121, 3, 'tasacdlrlreply_c.cpp', 'You try to login to more groups then allowed', 'You try to login to more groups then allowed', 600
+10982, 3, 'TelBtnSetupDlg_1068CTempWnd', 'Telephony Window Buttons Setup Dialog', 'Setup', 435
+25985, 3, 'TelBtnSetupDlg_1068CWnd', 'Telephony Window Buttons Setup Dialog', 'Setup', 600
+10985, 3, 'TelBtnSetupDlg_1146CTempWnd', 'Telephony Window Buttons Setup Dialog', 'Caption', 435
+25988, 3, 'TelBtnSetupDlg_1146CWnd', 'Telephony Window Buttons Setup Dialog', 'Caption:', 600
+10986, 3, 'TelBtnSetupDlg_1148CTempWnd', 'Telephony Window Buttons Setup Dialog', 'Category', 435
+25989, 3, 'TelBtnSetupDlg_1148CWnd', 'Telephony Window Buttons Setup Dialog', 'Category:', 600
+10987, 3, 'TelBtnSetupDlg_1149CTempWnd', 'Telephony Window Buttons Setup Dialog', 'Function', 435
+25990, 3, 'TelBtnSetupDlg_1149CWnd', 'Telephony Window Buttons Setup Dialog', 'Function:', 600
+10983, 3, 'TelBtnSetupDlg_1CTempWnd', 'Telephony Window Buttons Setup Dialog', 'OK', 435
+25986, 3, 'TelBtnSetupDlg_1CWnd', 'Telephony Window Buttons Setup Dialog', 'OK', 600
+10984, 3, 'TelBtnSetupDlg_2CTempWnd', 'Telephony Window Buttons Setup Dialog', 'Cancel', 435
+25987, 3, 'TelBtnSetupDlg_2CWnd', 'Telephony Window Buttons Setup Dialog', 'Cancel', 600
+10976, 3, 'TelBtnSetupDlg_Category_ComboBox_<not selected>', 'Telephony Window Buttons Setup Dialog', '<not selected>', 435
+10978, 3, 'TelBtnSetupDlg_Category_ComboBox_ACD', 'Telephony Window Buttons Setup Dialog', 'ACD', 435
+10980, 3, 'TelBtnSetupDlg_Category_ComboBox_Other', 'Telephony Window Buttons Setup Dialog', 'Other', 435
+10977, 3, 'TelBtnSetupDlg_Category_ComboBox_Telephony', 'Telephony Window Buttons Setup Dialog', 'Telephony', 435
+10979, 3, 'TelBtnSetupDlg_Category_ComboBox_Window', 'Telephony Window Buttons Setup Dialog', 'Window', 435
+10981, 3, 'TelBtnSetupDlg_Functions_ComboBox_<not selected>', 'Telephony Window Buttons Setup Dialog', '<not selected>', 435
+10988, 3, 'TelBtnSetupDlg_title', 'Telephony Window Buttons Setup Dialog', 'Button Properties', 435
+11109, 3, 'TelBtn_Clear', 'Telephony window button', 'Clear', 435
+11110, 3, 'TelBtn_Properties', 'Telephony window button', 'Properties', 435
+714, 3, 'TelDialerPageWnd_Send_Button', 'Telephony Dialer Page Tab', 'Call', 435
+26105, 3, 'TelDialerPageWnd_Tab_0', 'Telephony Dialer Page Tab', 'Telephony', 600
+26106, 3, 'TelDialerPageWnd_Tab_1', 'Telephony Dialer Page Tab', 'Windows', 600
+10975, 3, 'Telephony window button', 'Telephony window button', 'Clear', 435
+26720, 3, 'TelephonyPage0Button0', 'Answer', 'Answer', 600
+26721, 3, 'TelephonyPage0Button3', 'Disconnect', 'Disconnect', 600
+26722, 3, 'TelephonyPage0Button6', 'Call', 'Call', 600
+26723, 3, 'TelephonyPage1Button0', 'ACD Calls', 'ACD Calls', 600
+26725, 3, 'TelephonyPage1Button10', 'Calls Log', 'Calls Log', 600
+26724, 3, 'TelephonyPage1Button5', 'Calls Status', 'Calls Status', 600
+713, 3, 'Telephony_Window_Title', 'Telephony Window', 'Telephony', 435
+25997, 3, 'TelPageCaptionDlg1146CWnd', 'Telephony Page Caption Dialog', 'New Name:', 600
+25995, 3, 'TelPageCaptionDlg1CButton', 'Telephony Page Caption Dialog', 'OK', 600
+25996, 3, 'TelPageCaptionDlg2CWnd', 'Telephony Page Caption Dialog', 'Cancel', 600
+25994, 3, 'TelPageCaptionDlg_Insert_title', 'Telephony Page Caption Dialog', 'Insert Page', 600
+25998, 3, 'TelPageCaptionDlg_Rename_title', 'Telephony Page Caption Dialog', 'Rename Page', 600
+25991, 3, 'TelTabCtrl_menu_Insert', 'Telephony window tab menu', 'Insert', 600
+25992, 3, 'TelTabCtrl_menu_Remove', 'Telephony window tab menu', 'Remove', 600
+25993, 3, 'TelTabCtrl_menu_Rename', 'Telephony window tab menu', 'Rename', 600
+11107, 3, 'ToolbarOptions_title', 'Toolbar options', 'Toolbar options', 435
+616, 3, 'user_field_separator', 'EtasAcdContainer_c::SetSystemProfile', '=====User Fields=====', 435
+26089, 3, 'Waiting_for_download_to_start', 'Waiting_for_download_to_start', 'Waiting for the email download to begin', 600
+12517, 3, 'Warning_Agent_Is_Going_Down', 'Warning Agent Is Going Down', 'The agent is deactivating. Please try logging in again in a few seconds!', 435
+11099, 3, 'Warning_Changes_After_Restart', 'Changes will take effect only after restarting The Agent !', 'Changes will take effect only after restarting The Agent !', 435
+26102, 3, 'Warning_ETAS_Denied_14', 'Logon Failed: Invalid Agent id', 'Logon Failed: Invalid Agent id', 600
+11738, 3, 'Warning_ETAS_Denied_3', 'Logon fail: Wrong agent number', 'Logon fail: Wrong agent number', 435
+11739, 3, 'Warning_ETAS_Denied_4', 'Logon fail: Wrong password', 'Logon fail: Wrong password', 435
+11263, 3, 'Warning_ETAS_Denied_8', 'Logon Failed: Agent number is already in use', 'Logon Failed: Agent number is already in use', 435
+11414, 3, 'Warning_ETAS_Denied_9', 'Logon fail: Extension is already in use', 'Logon fail: Extension is already in use', 435
+16202, 3, 'Warning_Extension_Cannot_Be_Empty', 'Extension cannot be empty !', 'Extension cannot be empty !', 435
+11436, 3, 'Warning_Instance_Already_Running', 'Agent instance is already active. The instance is:', 'Agent instance is already active. The instance is:', 435
+26103, 3, 'Warning_Pickup_In_Process', 'Pick Up is now in process !', 'Pick Up is now in process !', 600
+12566, 3, 'Warning_Transfer_To_Agent_Could_Not_Completed', 'The transfer could not be completed. Agent %EXT% is not available', 'The transfer could not be completed. Agent %EXT% is not available', 435
+16233, 3, 'Wave_files_only_msg', 'Wave_files_only_msg', '(Wave files only. Requires sound card):', 435
+12551, 3, '_Failed', 'Email address is not valid.', 'Email address is not valid.', 435
+
+1386, 24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Available Groups', 'Logged Groups'
+1387, 24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Logged Groups', 'Available Groups'
+1388, 24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Available Groups', 'Logged Groups'
+1405, 24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Logged Groups', 'Available Groups'
+1406, 24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Available Groups', 'Logged Groups'
+1407, 24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Logged Groups', 'Available Groups'
+1408, 24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Available Groups', 'Logged Groups'
+1409, 24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Logged Groups', 'Available Groups'
+1410, 24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Available Groups', 'Logged Groups'
+1411, 24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Logged Groups', 'Available Groups'
+1412, 24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Available Groups', 'Logged Groups'
+1650, 12530, 3, 'LogonDlg1147CWnd', 'Epic Agent Logon Dialog', 'Agent id', 'Agent id:'
+1651, 12531, 3, 'LogonDlg1148CWnd', 'Epic Agent Logon Dialog', 'Password', 'Password:'
+1652, 12532, 3, 'LogonDlg1149CWnd', 'Epic Agent Logon Dialog', 'Extension', 'Extension:'
+1653, 11263, 3, 'Warning_ETAS_Denied_8', 'Logon fail: Agent number is already in use', 'Logon fail: Agent number is already in use', 'Logon Failed: Agent number is already in use'
+1654, 24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Logged Groups', 'Available Groups'
+1655, 24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Available Groups', 'Logged Groups'
+1656, 963, 3, 'Agent_Toolbar_Title', 'Agent', 'Agent Toolbar', 'EPICAgent'
+1676, 24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Logged Groups', 'Available Groups'
+1677, 24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Available Groups', 'Logged Groups'
+1721, 24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Logged Groups', 'Available Groups'
+1722, 24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Available Groups', 'Logged Groups'
+1723, 24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Logged Groups', 'Available Groups'
+1724, 24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Available Groups', 'Logged Groups'
+1725, 24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Logged Groups', 'Available Groups'
+1726, 24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Available Groups', 'Logged Groups'
+1731, 24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Logged Groups', 'Available Groups'
+1732, 24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Available Groups', 'Logged Groups'
+1738, 24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Logged Groups', 'Available Groups'
+1739, 24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Available Groups', 'Logged Groups'
+1740, 24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Logged Groups', 'Available Groups'
+1741, 24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Available Groups', 'Logged Groups'
+1750, 24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Logged Groups', 'Available Groups'
+1751, 24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Available Groups', 'Logged Groups'
+1752, 24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Logged Groups', 'Available Groups'
+1753, 24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Available Groups', 'Logged Groups'
+1754, 24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Logged Groups', 'Available Groups'
+1755, 24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Available Groups', 'Logged Groups'
+1773, 24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Logged Groups', 'Available Groups'
+1774, 24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Available Groups', 'Logged Groups'
+1775, 24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Logged Groups', 'Available Groups'
+1776, 24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Available Groups', 'Logged Groups'
+1796, 24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Logged Groups', 'Available Groups'
+1797, 24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Available Groups', 'Logged Groups'
+1798, 622, 3, 'Setup_ExtADdr_Tab_Caption', 'Setup_ExtADdr_Tab_Caption', 'Extention/Address', 'Extension/Address'
+1799, 16227, 3, 'SetupToolbar-1CWnd', 'Setup toolbar dialog', 'Ring Options For Voice / Chat / Email Calls:', 'Description:'
+1800, 16227, 3, 'SetupToolbar-1CWnd', 'Setup toolbar dialog', 'Description:', 'Select a category.
+Click a button to see its description or drag it to a toolbar.'
+1801, 16227, 3, 'SetupToolbar-1CWnd', 'Setup toolbar dialog', 'Select a category.
+Click a button to see its description or drag it to a toolbar.', 'View'
+1802, 16227, 3, 'SetupToolbar-1CWnd', 'Setup toolbar dialog', 'View', 'Buttons:'
+1803, 16227, 3, 'SetupToolbar-1CWnd', 'Setup toolbar dialog', 'Buttons:', 'Category'
+1804, 16227, 3, 'SetupToolbar-1CWnd', 'Setup toolbar dialog', 'Category', 'Category:'
+1805, 24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Logged Groups', 'Available Groups'
+1806, 24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Available Groups', 'Logged Groups'
+1807, 12548, 3, 'GroupManagerDlg1146CWnd', 'Group Manager Dialog', 'Sending Login Info... Please wait...', 'Available Groups'
+1808, 638, 3, 'FunctionDescription_OpenSetup', 'Function description', 'EPICAgent Setup', 'Agent Setup'
+1809, 11107, 3, 'ToolbarOptions_title', 'Toolbar options', 'Agent', 'Toolbar options'
+1810, 673, 3, 'SetupOptions1118CButton', 'Setup Options Dialog', 'Enable closing via the system menu "x" button  ', 'Enable closing via the system menu "x" button'
+1811, 674, 3, 'SetupOptions1136CButton', 'Setup Options Dialog', 'PopUp toolbar in "Forced release" state', 'Open Toolbar on "Forced Release" state'
+1812, 675, 3, 'SetupOptions1137CButton', 'Setup Options Dialog', 'Let minimize the toolbar during "Release" state', 'Allow to minimize the toolbar in "Release" state'
+1813, 14185, 3, 'SetupOptions1170CButton', 'Setup Options Dialog', 'Popup on ring', 'Open Toolbar on Ring'
+1814, 14186, 3, 'SetupOptions1171CButton', 'Setup Options Dialog', 'Minimize on answer', 'Minimize on Answer'
+1815, 12552, 3, 'SetupExtAddr1069CWnd', 'Setup Address Dialog', '&Set New Values', '&Set New Values...'
+1816, 12557, 3, 'SetupExtAddr1148CWnd', 'Setup Address Dialog', 'Mail Account Username :', 'Mail Account Username:'
+1817, 16198, 3, 'SetupExtAddr-1CWnd', 'Setup Address Dialog', 'Mail Account Password :', 'Mail Account Password:'
+1818, 16233, 3, 'Wave_files_only_msg', 'Wave_files_only_msg', 'Wave files only. Requires sound card.', '(Wave files only. Requires sound card):'
+1819, 16224, 3, 'SetupToolbar1161CButton', 'Setup toolbar dialog', 'Default (Speaker Beep)', 'Default   (Speaker Beep)'
+1820, 16225, 3, 'SetupToolbar1162CButton', 'Setup toolbar dialog', 'File: ', 'File'
+1821, 16227, 3, 'SetupToolbar-1CWnd', 'Setup toolbar dialog', 'Category:', 'Ring Options For Voice / Chat / Email Calls:'
+1822, 16227, 3, 'SetupToolbar-1CWnd', 'Setup toolbar dialog', 'Ring Options For Voice / Chat / Email Calls:', 'Apply to:'
+1823, 16233, 3, 'Wave_files_only_msg', 'Wave_files_only_msg', '(Wave files only. Requires sound card):', 'Wave files only. Requires sound card.'
+1824, 946, 3, 'FunctionHelpStr_OpenCallsLog', 'Function help string', 'Open Calls Log Window', 'Open Calls Log window'
+1825, 947, 3, 'FunctionHelpStr_OpenCallsStatus', 'Function help string', 'Open Calls Status Window', 'Open Calls Status window'
+1826, 948, 3, 'FunctionHelpStr_OpenAcdCalls', 'Function help string', 'Open ACD Calls Window', 'Open ACD Calls window'
+1827, 949, 3, 'FunctionHelpStr_OpenSetup', 'Function help string', 'Open the EPICAgent Setup Window', 'Open Setup window'
+1828, 950, 3, 'FunctionHelpStr_OpenTelephony', 'Function help string', 'Open Telephony Window', 'Open Telephony window'
+1829, 952, 3, 'FunctionHelpStr_OpenAgentBoard', 'Function help string', 'Open the Agent board Window', 'Open Agent board window'
+1830, 954, 3, 'FunctionHelpStr_About', 'Function help string', 'About Epic Agent', 'About Agent'
+1833, 16233, 3, 'Wave_files_only_msg', 'Wave_files_only_msg', 'Wave files only. Requires sound card.', '(Wave files only. Requires sound card):'
+1834, 26030, 3, 'SetupToolbar1147CWnd', 'Setup toolbar dialog', 'Description:', 'Apply to:'
+1835, 16233, 3, 'Wave_files_only_msg', 'Wave_files_only_msg', '(Wave files only. Requires sound card):', 'Wave files only. Requires sound card.'
+1836, 635, 3, 'FunctionDescription_CloseAll', 'Function description', 'Exit', 'Logout and Exit'
+1837, 714, 3, 'TelDialerPageWnd_Send_Button', 'Telephony Dialer Page Tab', 'Send', 'Call'
+1838, 16238, 3, 'FuncAgentsSetupTelDlg1146CWnd', 'Function Agents Setup Telephony Dialog', 'Enter destination number', 'Select destination number:'
+1839, 16211, 3, '1110CWnd', 'Function setup dialog', 'Enter wrapup code:', 'Select a release code:'
+1840, 26030, 3, 'SetupToolbar1147CWnd', 'Setup toolbar dialog', 'Apply to:', 'Description:'
+1841, 951, 3, 'FunctionHelpStr_CloseAll', 'Function help string', 'Close EPICAgent', 'Logout and Exit'
+1842, 16233, 3, 'Wave_files_only_msg', 'Wave_files_only_msg', 'Wave files only. Requires sound card.', '(Wave files only. Requires sound card):'
+1843, 26030, 3, 'SetupToolbar1147CWnd', 'Setup toolbar dialog', 'Description:', 'Apply to:'
+1909, 24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Logged Groups', 'Available Groups'
+1910, 24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Available Groups', 'Logged Groups'
+1915, 24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Logged Groups', 'Available Groups'
+1916, 24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Available Groups', 'Logged Groups'
+1917, 16227, 3, 'SetupToolbar-1CWnd', 'Setup toolbar dialog', 'Apply to:', 'Description:'
+1918, 16227, 3, 'SetupToolbar-1CWnd', 'Setup toolbar dialog', 'Description:', 'Select a category.
+Click a button to see its description or drag it to a toolbar.'
+1923, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Destination Number:', 'Customer Number:'
+1924, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Customer Number:', 'Customer Name:'
+1925, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Customer Name:', 'Response countdown:'
+1926, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Response countdown:', 'Press Yes to accept the call or No to reject'
+1927, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Press Yes to accept the call or No to reject', 'An outbound call was assigned to you:'
+1928, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'An outbound call was assigned to you:', 'Destination Number:'
+1929, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Destination Number:', 'Customer Number:'
+1930, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Customer Number:', 'Customer Name:'
+1931, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Customer Name:', 'Response countdown:'
+1932, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Response countdown:', 'Press Yes to accept the call or No to reject'
+1933, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Press Yes to accept the call or No to reject', 'An outbound call was assigned to you:'
+1934, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'An outbound call was assigned to you:', 'Destination Number:'
+1935, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Destination Number:', 'Customer Number:'
+1936, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Customer Number:', 'Customer Name:'
+1937, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Customer Name:', 'Response countdown:'
+1938, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Response countdown:', 'Press Yes to accept the call or No to reject'
+1939, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Press Yes to accept the call or No to reject', 'An outbound call was assigned to you:'
+1940, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'An outbound call was assigned to you:', 'Destination Number:'
+1941, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Destination Number:', 'Customer Number:'
+1942, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Customer Number:', 'Customer Name:'
+1943, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Customer Name:', 'Response countdown:'
+1944, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Response countdown:', 'Press Yes to accept the call or No to reject'
+1945, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Press Yes to accept the call or No to reject', 'An outbound call was assigned to you:'
+1946, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'An outbound call was assigned to you:', 'Destination Number:'
+1947, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Destination Number:', 'Customer Number:'
+1948, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Customer Number:', 'Customer Name:'
+1949, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Customer Name:', 'Response countdown:'
+1950, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Response countdown:', 'Press Yes to accept the call or No to reject'
+1951, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Press Yes to accept the call or No to reject', 'An outbound call was assigned to you:'
+1952, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'An outbound call was assigned to you:', 'Destination Number:'
+1953, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Destination Number:', 'Customer Number:'
+1954, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Customer Number:', 'Customer Name:'
+1955, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Customer Name:', 'Response countdown:'
+1956, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Response countdown:', 'Press Yes to accept the call or No to reject'
+1957, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Press Yes to accept the call or No to reject', 'An outbound call was assigned to you:'
+1958, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'An outbound call was assigned to you:', 'Destination Number:'
+1959, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Destination Number:', 'Customer Number:'
+1960, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Customer Number:', 'Customer Name:'
+1961, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Customer Name:', 'Response countdown:'
+1962, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Response countdown:', 'Press Yes to accept the call or No to reject'
+1963, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Press Yes to accept the call or No to reject', 'An outbound call was assigned to you:'
+1964, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'An outbound call was assigned to you:', 'Destination Number:'
+1965, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Destination Number:', 'Customer Number:'
+1966, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Customer Number:', 'Customer Name:'
+1967, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Customer Name:', 'Response countdown:'
+1968, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Response countdown:', 'Press Yes to accept the call or No to reject'
+1969, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Press Yes to accept the call or No to reject', 'An outbound call was assigned to you:'
+1970, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'An outbound call was assigned to you:', 'Destination Number:'
+1971, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Destination Number:', 'Customer Number:'
+1972, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Customer Number:', 'Customer Name:'
+1973, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Customer Name:', 'Response countdown:'
+1974, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Response countdown:', 'Press Yes to accept the call or No to reject'
+1975, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Press Yes to accept the call or No to reject', 'An outbound call was assigned to you:'
+1976, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'An outbound call was assigned to you:', 'Destination Number:'
+1977, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Destination Number:', 'Customer Number:'
+1978, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Customer Number:', 'Customer Name:'
+1979, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Customer Name:', 'Response countdown:'
+1980, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Response countdown:', 'Press Yes to accept the call or No to reject'
+1981, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Press Yes to accept the call or No to reject', 'An outbound call was assigned to you:'
+1982, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'An outbound call was assigned to you:', 'Destination Number:'
+1983, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Destination Number:', 'Customer Number:'
+1984, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Customer Number:', 'Customer Name:'
+1985, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Customer Name:', 'Response countdown:'
+1986, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Response countdown:', 'Press Yes to accept the call or No to reject'
+1987, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Press Yes to accept the call or No to reject', 'An outbound call was assigned to you:'
+1988, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'An outbound call was assigned to you:', 'Destination Number:'
+1989, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Destination Number:', 'Customer Number:'
+1990, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Customer Number:', 'Customer Name:'
+1991, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Customer Name:', 'Response countdown:'
+1992, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Response countdown:', 'Press Yes to accept the call or No to reject'
+1993, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Press Yes to accept the call or No to reject', 'An outbound call was assigned to you:'
+1994, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'An outbound call was assigned to you:', 'Destination Number:'
+1995, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Destination Number:', 'Customer Number:'
+1996, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Customer Number:', 'Customer Name:'
+1997, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Customer Name:', 'Response countdown:'
+1998, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Response countdown:', 'Press Yes to accept the call or No to reject'
+1999, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Press Yes to accept the call or No to reject', 'An outbound call was assigned to you:'
+2000, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'An outbound call was assigned to you:', 'Destination Number:'
+2001, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Destination Number:', 'Customer Number:'
+2002, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Customer Number:', 'Customer Name:'
+2003, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Customer Name:', 'Response countdown:'
+2004, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Response countdown:', 'Press Yes to accept the call or No to reject'
+2005, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Press Yes to accept the call or No to reject', 'An outbound call was assigned to you:'
+2006, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'An outbound call was assigned to you:', 'Destination Number:'
+2007, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Destination Number:', 'Customer Number:'
+2008, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Customer Number:', 'Customer Name:'
+2009, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Customer Name:', 'Response countdown:'
+2010, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Response countdown:', 'Press Yes to accept the call or No to reject'
+2011, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Press Yes to accept the call or No to reject', 'An outbound call was assigned to you:'
+2012, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'An outbound call was assigned to you:', 'Destination Number:'
+2013, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Destination Number:', 'Customer Number:'
+2014, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Customer Number:', 'Customer Name:'
+2015, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Customer Name:', 'Response countdown:'
+2016, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Response countdown:', 'Press Yes to accept the call or No to reject'
+2017, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Press Yes to accept the call or No to reject', 'An outbound call was assigned to you:'
+2018, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'An outbound call was assigned to you:', 'Destination Number:'
+2019, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Destination Number:', 'Customer Number:'
+2020, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Customer Number:', 'Customer Name:'
+2021, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Customer Name:', 'Response countdown:'
+2022, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Response countdown:', 'Press Yes to accept the call or No to reject'
+2023, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Press Yes to accept the call or No to reject', 'An outbound call was assigned to you:'
+2024, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'An outbound call was assigned to you:', 'Destination Number:'
+2025, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Destination Number:', 'Customer Number:'
+2026, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Customer Number:', 'Customer Name:'
+2027, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Customer Name:', 'Response countdown:'
+2028, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Response countdown:', 'Press Yes to accept the call or No to reject'
+2029, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Press Yes to accept the call or No to reject', 'An outbound call was assigned to you:'
+2030, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'An outbound call was assigned to you:', 'Destination Number:'
+2031, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Destination Number:', 'Customer Number:'
+2032, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Customer Number:', 'Customer Name:'
+2033, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Customer Name:', 'Response countdown:'
+2034, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Response countdown:', 'Press Yes to accept the call or No to reject'
+2035, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Press Yes to accept the call or No to reject', 'An outbound call was assigned to you:'
+2036, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'An outbound call was assigned to you:', 'Destination Number:'
+2037, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Destination Number:', 'Customer Number:'
+2038, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Customer Number:', 'Customer Name:'
+2039, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Customer Name:', 'Response countdown:'
+2040, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Response countdown:', 'Press Yes to accept the call or No to reject'
+2041, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Press Yes to accept the call or No to reject', 'An outbound call was assigned to you:'
+2042, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'An outbound call was assigned to you:', 'Destination Number:'
+2043, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Destination Number:', 'Customer Number:'
+2044, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Customer Number:', 'Customer Name:'
+2045, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Customer Name:', 'Response countdown:'
+2046, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Response countdown:', 'Press Yes to accept the call or No to reject'
+2047, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Press Yes to accept the call or No to reject', 'An outbound call was assigned to you:'
+2048, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'An outbound call was assigned to you:', 'Destination Number:'
+2049, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Destination Number:', 'Customer Number:'
+2050, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Customer Number:', 'Customer Name:'
+2051, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Customer Name:', 'Response countdown:'
+2052, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Response countdown:', 'Press Yes to accept the call or No to reject'
+2053, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Press Yes to accept the call or No to reject', 'An outbound call was assigned to you:'
+2054, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'An outbound call was assigned to you:', 'Destination Number:'
+2055, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Destination Number:', 'Customer Number:'
+2056, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Customer Number:', 'Customer Name:'
+2057, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Customer Name:', 'Response countdown:'
+2058, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Response countdown:', 'Press Yes to accept the call or No to reject'
+2059, 26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'Press Yes to accept the call or No to reject', 'An outbound call was assigned to you:'
+2097, 609, 3, 'cp_mandatory_Language', 'EtasAcdContainer_c::SetSystemProfile', 'LANGUAGE', 'Language'
+2098, 610, 3, 'cp_mandatory_Media', 'EtasAcdContainer_c::SetSystemProfile', 'MEDIA', 'Media'
+2127, 24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Logged Groups', 'Available Groups'
+2128, 12548, 3, 'GroupManagerDlg1146CWnd', 'Group Manager Dialog', 'Available Groups', 'Logged Groups'
+2409, 963, 3, 'Agent_Toolbar_Title', 'Agent', 'EPICAgent', 'Aeonix Contact Center Agent'
+2421, 26637, 3, 'HelpAboutDlgDlg1CWnd', 'Help About', 'OK', 'Application Information'
+2469, 26637, 3, 'HelpAboutDlgDlg1CWnd', 'Help About', 'Application Information', 'OK'
+2470, 26637, 3, 'HelpAboutDlgDlg1CWnd', 'Help About', 'OK', 'Application Information'
+2489, 11115, 3, 'FunctionDescription_ActivateBargeIn', 'Function description', 'Barge In', 'Break-In'
+2490, 11269, 3, 'FunctionHelpStr_ActivateBargeIn', 'Function help string', 'Barge In', 'Break-In'
+16250, 3, '1001CWnd', 'Function setup dialog', '11', 435
+657, 3, '1110CTempWnd', 'Function setup dialog', 'Enter wrapup code:', 435
+16211, 3, '1110CWnd', 'Function setup dialog', 'Select a release code:', 435
+655, 3, '1CButton', 'Function setup dialog', 'OK', 435
+656, 3, '2CButton', 'Function setup dialog', 'Cancel', 435
+10973, 3, 'AcdCallsFrame_ToolBarButtonToolTip_Help', 'Acd Calls Frame Tool Bar', 'Help', 435
+10972, 3, 'ACDCalls_AlwaysOnTop_Menu', 'ACD Calls Window', 'Always on Top', 435
+706, 3, 'AcdColumnDlg1146CTempWnd', 'ACD Insert Column Dialog', 'Column', 435
+26004, 3, 'AcdColumnDlg1146CWnd', 'ACD Insert Column Dialog', 'Column:', 600
+707, 3, 'AcdColumnDlg1147CTempWnd', 'ACD Insert Column Dialog', 'Header', 435
+26005, 3, 'AcdColumnDlg1147CWnd', 'ACD Insert Column Dialog', 'Header:', 600
+708, 3, 'AcdColumnDlg1148CTempWnd', 'ACD Insert Column Dialog', 'Alignment', 435
+26006, 3, 'AcdColumnDlg1148CWnd', 'ACD Insert Column Dialog', 'Alignment:', 600
+709, 3, 'AcdColumnDlg1149CTempWnd', 'ACD Insert Column Dialog', 'Width', 435
+26007, 3, 'AcdColumnDlg1149CWnd', 'ACD Insert Column Dialog', 'Width:', 600
+704, 3, 'AcdColumnDlg1CTempWnd', 'ACD Insert Column Dialog', 'OK', 435
+26002, 3, 'AcdColumnDlg1CWnd', 'ACD Insert Column Dialog', 'OK', 600
+705, 3, 'AcdColumnDlg2CTempWnd', 'ACD Insert Column Dialog', 'Cancel', 435
+26003, 3, 'AcdColumnDlg2CWnd', 'ACD Insert Column Dialog', 'Cancel', 600
+702, 3, 'AcdColumnDlg_Center', 'ACD Insert Column Dialog', 'Center', 435
+701, 3, 'AcdColumnDlg_Left', 'ACD Insert Column Dialog', 'Left', 435
+703, 3, 'AcdColumnDlg_Right', 'ACD Insert Column Dialog', 'Right', 435
+700, 3, 'ACD_Calls_Window_Title', 'ACD Calls Window', 'ACD Calls', 435
+711, 3, 'AgbxFrame_AlwaysOnTop_Menu', 'Agent Board Window', 'Always on Top', 435
+710, 3, 'Agent_Board_Window_Title', 'Agent Board Window', 'Agent Board', 435
+963, 3, 'Agent_Toolbar_Title', 'Agent', 'Aeonix Contact Center Agent', 435
+25909, 3, 'Alert_every_msg', 'Alert_every_msg', 'Alert every', 600
+25907, 3, 'Alert_Interval_msg', 'Alert_Interval_msg', 'Alert Interval (Calls in queue and agent is not on call)', 600
+26090, 3, 'arning_Pickup_Failed', '???????????? ?????', '???????????? ?????', 600
+25915, 3, 'ButtonSetup_Menu_Configure Default', 'ButtonSetup_Menu', 'Configure Default', 600
+25916, 3, 'ButtonSetup_Menu_Reset to <Always Ask>', 'ButtonSetup_Menu', 'Reset to <Always Ask>', 600
+26200, 3, 'CallAttachDlg1204CWnd', 'CallAttachDlg', 'Save', 600
+26201, 3, 'CallAttachDlg1205CWnd', 'CallAttachDlg', 'Quit', 600
+11463, 3, 'CallLog_Menu_ Help On Log', 'CallLog_Menu', 'Help On Log', 435
+11465, 3, 'CallLog_Menu_Clear Log', 'CallLog_Menu', 'Clear Log', 435
+11464, 3, 'CallLog_Menu_Delete Record', 'CallLog_Menu', 'Delete_Record', 435
+25964, 3, 'CallLog_Menu_Help On Log', 'CallLog_Menu', 'Help On Log', 600
+11462, 3, 'CallLog_Menu_Properties', 'CallLog_Menu', 'Properties', 435
+697, 3, 'CallsLogColumnDlg1065CTempWnd', 'CallsLog Insert Column Dialog', '0', 435
+26022, 3, 'CallsLogColumnDlg1065CWnd', 'CallsLog Insert Column Dialog', '0', 600
+693, 3, 'CallsLogColumnDlg1146CTempWnd', 'CallsLog Insert Column Dialog', 'Column', 435
+26018, 3, 'CallsLogColumnDlg1146CWnd', 'CallsLog Insert Column Dialog', 'Column:', 600
+694, 3, 'CallsLogColumnDlg1147CTempWnd', 'CallsLog Insert Column Dialog', 'Header', 435
+26019, 3, 'CallsLogColumnDlg1147CWnd', 'CallsLog Insert Column Dialog', 'Header:', 600
+695, 3, 'CallsLogColumnDlg1148CTempWnd', 'CallsLog Insert Column Dialog', 'Alignment', 435
+26020, 3, 'CallsLogColumnDlg1148CWnd', 'CallsLog Insert Column Dialog', 'Alignment:', 600
+696, 3, 'CallsLogColumnDlg1149CTempWnd', 'CallsLog Insert Column Dialog', 'Width', 435
+26021, 3, 'CallsLogColumnDlg1149CWnd', 'CallsLog Insert Column Dialog', 'Width:', 600
+691, 3, 'CallsLogColumnDlg1CTempWnd', 'CallsLog Insert Column Dialog', 'OK', 435
+26016, 3, 'CallsLogColumnDlg1CWnd', 'CallsLog Insert Column Dialog', 'OK', 600
+692, 3, 'CallsLogColumnDlg2CTempWnd', 'CallsLog Insert Column Dialog', 'Cancel', 435
+26017, 3, 'CallsLogColumnDlg2CWnd', 'CallsLog Insert Column Dialog', 'Cancel', 600
+679, 3, 'CallsLogColumnDlg_cols_ACD Group', 'CallsLogColumnDlg static columns', 'ACD Group', 435
+680, 3, 'CallsLogColumnDlg_cols_Called', 'CallsLogColumnDlg static columns', 'Called', 435
+26015, 3, 'CallsLogColumnDlg_cols_Caller', 'CallsLogColumnDlg static columns', 'Caller', 600
+681, 3, 'CallsLogColumnDlg_cols_Calling', 'CallsLogColumnDlg static columns', 'Calling', 435
+689, 3, 'CallsLogColumnDlg_cols_Center', 'CallsLog Insert Column Dialog Alingment combo', 'Center', 435
+682, 3, 'CallsLogColumnDlg_cols_Creation Time', 'CallsLogColumnDlg static columns', 'Creation Time', 435
+683, 3, 'CallsLogColumnDlg_cols_Deletion Time', 'CallsLogColumnDlg static columns', 'Deletion Time', 435
+26558, 3, 'CallsLogColumnDlg_cols_Elapsed', 'CallsLogColumnDlg static columns', 'Elapsed', 600
+684, 3, 'CallsLogColumnDlg_cols_Last Redirection', 'CallsLogColumnDlg static columns', 'Last Redirection', 435
+685, 3, 'CallsLogColumnDlg_cols_Last State', 'CallsLogColumnDlg static columns', 'Last State', 435
+688, 3, 'CallsLogColumnDlg_cols_Left', 'CallsLog Insert Column Dialog Alingment combo', 'Left', 435
+686, 3, 'CallsLogColumnDlg_cols_Originally Called', 'CallsLogColumnDlg static columns', 'Originally Called', 435
+690, 3, 'CallsLogColumnDlg_cols_Right', 'CallsLog Insert Column Dialog Alingment combo', 'Right', 435
+26557, 3, 'CallsLogColumnDlg_cols_Status', 'CallsLogColumnDlg static columns', 'Status', 600
+687, 3, 'CallsLogColumnDlg_cols_Trunk', 'CallsLogColumnDlg static columns', 'Trunk', 435
+26192, 3, 'CallsLogColumnDlg_cols_Waiting Time', 'CallsLogColumnDlg static columns', 'Waiting Time', 600
+10947, 3, 'CallsLogFrame_ToolBarButtonToolTip_Clear Log', 'Calls Log Frame Tool Bar', 'Clear Log', 435
+10946, 3, 'CallsLogFrame_ToolBarButtonToolTip_Delete Record', 'Calls Log Frame Tool Bar', 'Delete Record', 435
+10948, 3, 'CallsLogFrame_ToolBarButtonToolTip_Help On Log', 'Calls Log Frame Tool Bar', 'Help On Log', 435
+10945, 3, 'CallsLogFrame_ToolBarButtonToolTip_Properties', 'Calls Log Frame Tool Bar', 'Properties', 435
+11277, 3, 'CallsLogPropDlg1007CTempWnd', 'Calls Log Property Dialog', 'Connected', 435
+25972, 3, 'CallsLogPropDlg1007CWnd', 'Calls Log Property Dialog', 'Connected', 600
+25967, 3, 'CallsLogPropDlg1090CWnd', 'Calls Log Property Dialog', '2003', 600
+11275, 3, 'CallsLogPropDlg1091CTempWnd', 'Calls Log Property Dialog', '1108', 435
+25970, 3, 'CallsLogPropDlg1091CWnd', 'Calls Log Property Dialog', '2002', 600
+11278, 3, 'CallsLogPropDlg1092CTempWnd', 'Calls Log Property Dialog', 'Creation Time', 435
+25973, 3, 'CallsLogPropDlg1092CWnd', 'Calls Log Property Dialog', 'Creation Time', 600
+11279, 3, 'CallsLogPropDlg1093CTempWnd', 'Calls Log Property Dialog', 'Deletion Time', 435
+25974, 3, 'CallsLogPropDlg1093CWnd', 'Calls Log Property Dialog', 'Deletion Time', 600
+11280, 3, 'CallsLogPropDlg1094CTempWnd', 'Calls Log Property Dialog', '28/12/2003 17:49:44', 435
+25975, 3, 'CallsLogPropDlg1094CWnd', 'Calls Log Property Dialog', '09/15/2009 03:46:04 AM', 600
+11281, 3, 'CallsLogPropDlg1095CTempWnd', 'Calls Log Property Dialog', '28/12/2003 17:49:44', 435
+25976, 3, 'CallsLogPropDlg1095CWnd', 'Calls Log Property Dialog', '09/15/2009 03:46:08 AM', 600
+11282, 3, 'CallsLogPropDlg1134CTempWnd', 'Calls Log Property Dialog', 'wkefdlkfwqr', 435
+11272, 3, 'CallsLogPropDlg1146CTempWnd', 'Calls Log Property Dialog', 'Caller', 435
+25966, 3, 'CallsLogPropDlg1146CWnd', 'Calls Log Property Dialog', 'Caller', 600
+11276, 3, 'CallsLogPropDlg1147CTempWnd', 'Calls Log Property Dialog', 'Last State', 435
+25971, 3, 'CallsLogPropDlg1147CWnd', 'Calls Log Property Dialog', 'Last State', 600
+11273, 3, 'CallsLogPropDlg1149CTempWnd', 'Calls Log Property Dialog', 'Called', 435
+25968, 3, 'CallsLogPropDlg1149CWnd', 'Calls Log Property Dialog', 'Called', 600
+11274, 3, 'CallsLogPropDlg1150CTempWnd', 'Calls Log Property Dialog', 'Notes', 435
+25969, 3, 'CallsLogPropDlg1150CWnd', 'Calls Log Property Dialog', 'Notes', 600
+11271, 3, 'CallsLogPropDlg1CTempWnd', 'Calls Log Property Dialog', 'OK', 435
+25965, 3, 'CallsLogPropDlg1CWnd', 'Calls Log Property Dialog', 'OK', 600
+11270, 3, 'CallsLogPropDlg_title', 'Calls Log Property Dialog', 'Call Properties', 435
+10944, 3, 'CallsLog_AlwaysOnTop_Menu', 'Calls Log Window', 'Always on Top', 435
+10968, 3, 'CallsStatusColumnDlg1146CTempWnd', 'CallsStatus_Column_Dlg', 'Column', 435
+26011, 3, 'CallsStatusColumnDlg1146CWnd', 'CallsStatus_Column_Dlg', 'Column:', 600
+10969, 3, 'CallsStatusColumnDlg1147CTempWnd', 'CallsStatus_Column_Dlg', 'Header', 435
+26012, 3, 'CallsStatusColumnDlg1147CWnd', 'CallsStatus_Column_Dlg', 'Header:', 600
+10970, 3, 'CallsStatusColumnDlg1148CTempWnd', 'CallsStatus_Column_Dlg', 'Alignment', 435
+26013, 3, 'CallsStatusColumnDlg1148CWnd', 'CallsStatus_Column_Dlg', 'Alignment:', 600
+10971, 3, 'CallsStatusColumnDlg1149CTempWnd', 'CallsStatus_Column_Dlg', 'Width', 435
+26014, 3, 'CallsStatusColumnDlg1149CWnd', 'CallsStatus_Column_Dlg', 'Width:', 600
+10966, 3, 'CallsStatusColumnDlg1CTempWnd', 'CallsStatus_Column_Dlg', 'OK', 435
+26009, 3, 'CallsStatusColumnDlg1CWnd', 'CallsStatus_Column_Dlg', 'OK', 600
+10967, 3, 'CallsStatusColumnDlg2CTempWnd', 'CallsStatus_Column_Dlg', 'Cancel', 435
+26010, 3, 'CallsStatusColumnDlg2CWnd', 'CallsStatus_Column_Dlg', 'Cancel', 600
+10964, 3, 'CallsStatusColumnDlg_Center', 'CallsStatus Insert Column Dialog', 'Center', 435
+10963, 3, 'CallsStatusColumnDlg_Left', 'CallsStatus Insert Column Dialog', 'Left', 435
+10965, 3, 'CallsStatusColumnDlg_Right', 'CallsStatus Insert Column Dialog', 'Right', 435
+10951, 3, 'CallsStatusColumns_reg_cols_ACD Group', 'EtasCallsStatusColumnDlg regular columns', 'ACD Group', 435
+10952, 3, 'CallsStatusColumns_reg_cols_Called', 'EtasCallsStatusColumnDlg regular columns', 'Called', 435
+10953, 3, 'CallsStatusColumns_reg_cols_Calling', 'EtasCallsStatusColumnDlg regular columns', 'Calling', 435
+10954, 3, 'CallsStatusColumns_reg_cols_Elapsed', 'EtasCallsStatusColumnDlg regular columns', 'Elapsed', 435
+10955, 3, 'CallsStatusColumns_reg_cols_Last Redirection', 'EtasCallsStatusColumnDlg regular columns', 'Last Redirection', 435
+10962, 3, 'CallsStatusColumns_reg_cols_Media', 'EtasCallsStatusColumnDlg regular columns', 'Media', 435
+10956, 3, 'CallsStatusColumns_reg_cols_Originally Called', 'EtasCallsStatusColumnDlg regular columns', 'Originally Called', 435
+10957, 3, 'CallsStatusColumns_reg_cols_Status', 'EtasCallsStatusColumnDlg regular columns', 'Status', 435
+10958, 3, 'CallsStatusColumns_reg_cols_Time', 'EtasCallsStatusColumnDlg regular columns', 'Time', 435
+10959, 3, 'CallsStatusColumns_reg_cols_Trunk', 'EtasCallsStatusColumnDlg regular columns', 'Trunk', 435
+10961, 3, 'CallsStatusColumns_reg_cols_Type', 'EtasCallsStatusColumnDlg regular columns', 'Type', 435
+26008, 3, 'CallsStatusColumns_reg_cols_Waiting Time', 'EtasCallsStatusColumnDlg regular columns', 'Waiting Time', 600
+10960, 3, 'CallsStatusColumns_reg_cols_Waiting_Time', 'EtasCallsStatusColumnDlg regular columns', 'Waiting_Time', 435
+10949, 3, 'CallsStatusFrame_ToolBarButtonToolTip_Call Properties', 'Calls Status Frame Tool Bar', 'Call Properties', 435
+10950, 3, 'CallsStatusFrame_ToolBarButtonToolTip_Help', 'Calls Status Frame Tool Bar', 'Help', 435
+26079, 3, 'CallsStatusPropDlg1090CWnd', 'Calls Status Properties Dialog', '3004', 600
+26349, 3, 'CallsStatusPropDlg1091CWnd', 'Calls Status Properties Dialog', '3002', 600
+26084, 3, 'CallsStatusPropDlg1092CWnd', 'Calls Status Properties Dialog', 'Creation Time', 600
+26085, 3, 'CallsStatusPropDlg1094CWnd', 'Calls Status Properties Dialog', '07.04.2011 20:08:00', 600
+26350, 3, 'CallsStatusPropDlg1097CWnd', 'Calls Status Properties Dialog', '3002', 600
+26351, 3, 'CallsStatusPropDlg1098CWnd', 'Calls Status Properties Dialog', '3102', 600
+26078, 3, 'CallsStatusPropDlg1146CWnd', 'Calls Status Properties Dialog', 'Caller', 600
+26080, 3, 'CallsStatusPropDlg1147CWnd', 'Calls Status Properties Dialog', 'Originally Called', 600
+26083, 3, 'CallsStatusPropDlg1149CWnd', 'Calls Status Properties Dialog', 'Notes', 600
+26086, 3, 'CallsStatusPropDlg1150CWnd', 'Calls Status Properties Dialog', 'Voice Notes', 600
+26081, 3, 'CallsStatusPropDlg1151CWnd', 'Calls Status Properties Dialog', 'Called', 600
+26082, 3, 'CallsStatusPropDlg1152CWnd', 'Calls Status Properties Dialog', 'Last Redirection', 600
+26077, 3, 'CallsStatusPropDlg1CWnd', 'Calls Status Properties Dialog', 'OK', 600
+26076, 3, 'CallsStatusPropDlg_title', 'Calls Status Properties Dialog', 'Call Properties', 600
+10939, 3, 'CallsStatus_AlwaysOnTop_Menu', 'Calls Status Window', 'Always on Top', 435
+11415, 3, 'CallStatus_Menu_Answer', 'CallStatus_Menu', 'Answer', 435
+11416, 3, 'CallStatus_Menu_Drop', 'CallStatus_Menu', 'Drop', 435
+11417, 3, 'CallStatus_Menu_Hold', 'CallStatus_Menu', 'Hold', 435
+11418, 3, 'CallStatus_Menu_Retrieve', 'CallStatus_Menu', 'Retrieve', 435
+677, 3, 'Calls_Log_Window_Title', 'Calls Log Window', 'Calls Log', 435
+618, 3, 'Calls_Status_Window_Title', 'Calls Status Window', 'Calls Status', 435
+26074, 3, 'ConfirmOutboundCall-1CWnd', 'Outbound Call Confirmation', 'An outbound call was assigned to you:', 600
+26195, 3, 'ConfirmOutboundCall1146CWnd', 'Outbound Call Confirmation', 'Destination Number:', 600
+26196, 3, 'ConfirmOutboundCall1147CWnd', 'Outbound Call Confirmation', 'Customer Number:', 600
+26197, 3, 'ConfirmOutboundCall1148CWnd', 'Outbound Call Confirmation', 'Customer Name:', 600
+26198, 3, 'ConfirmOutboundCall1149CWnd', 'Outbound Call Confirmation', 'Response countdown:', 600
+26199, 3, 'ConfirmOutboundCall1150CWnd', 'Outbound Call Confirmation', 'Press Yes to accept the call or No to reject', 600
+26072, 3, 'ConfirmOutboundCall1CWnd', 'Outbound Call Confirmation', 'Yes', 600
+26073, 3, 'ConfirmOutboundCall2CWnd', 'Outbound Call Confirmation', 'No', 600
+26193, 3, 'ConfirmOutboundCall_Unavailable', 'Outbound Call Confirmation', 'Unavailable', 600
+26194, 3, 'ConfirmOutboundCall_Unknown', 'Outbound Call Confirmation', 'Unknown', 600
+25626, 3, 'ConnectionLostDlg-1CWnd', 'Connection Lost Dialog', 'Connection lost... Trying to renew connection...', 600
+11443, 3, 'ConnectionLostDlg1109CProgressCtrl', 'Connection Lost Dialog', 'Progress1', 435
+11442, 3, 'ConnectionLostDlg2CTempWnd', 'Connection Lost Dialog', 'Cancel', 435
+25625, 3, 'ConnectionLostDlg2CWnd', 'Connection Lost Dialog', 'Cancel', 600
+11441, 3, 'ConnectionLostDlg3CTempWnd', 'Connection Lost Dialog', 'Continue', 435
+25624, 3, 'ConnectionLostDlg3CWnd', 'Connection Lost Dialog', 'Continue', 600
+11444, 3, 'ConnectionLostDlg65535CTempWnd', 'Connection Lost Dialog', 'Connection Lost… Trying to renew connection…', 435
+966, 3, 'ConnectionLostDlg_title', 'Connection Lost Dialog title', 'EpicAgent connection lost', 435
+598, 3, 'cp_field_separator', 'EtasAcdContainer_c::SetSystemProfile', '=====Call Profiles=====', 435
+11740, 3, 'cp_mandatory_ACD Enter Date', 'EtasAcdContainer_c::SetSystemProfile', 'ACD Enter Date', 435
+11741, 3, 'cp_mandatory_ACD Enter Time', 'EtasAcdContainer_c::SetSystemProfile', 'ACD Enter Time', 435
+599, 3, 'cp_mandatory_ACD_ENTER_DATE', 'EtasAcdContainer_c::SetSystemProfile', 'ACD_ENTER_DATE', 435
+600, 3, 'cp_mandatory_ACD_ENTER_TIME', 'EtasAcdContainer_c::SetSystemProfile', 'ACD_ENTER_TIME', 435
+12421, 3, 'cp_mandatory_Agent Extension', 'EtasAcdContainer_c::SetSystemProfile', 'Agent Extension', 435
+12422, 3, 'cp_mandatory_Agent Number', 'EtasAcdContainer_c::SetSystemProfile', 'Agent Number', 435
+10935, 3, 'cp_mandatory_AGENT_EXT', 'EtasAcdContainer_c::SetSystemProfile', 'AGENT_EXT', 435
+10936, 3, 'cp_mandatory_AGENT_NUMBER', 'EtasAcdContainer_c::SetSystemProfile', 'AGENT_NUMBER', 435
+10937, 3, 'cp_mandatory_AGENT_PSW', 'EtasAcdContainer_c::SetSystemProfile', 'AGENT_PSW', 435
+24658, 3, 'cp_mandatory_Alternative Call Back Destination 1', 'EtasAcdContainer_c::SetSystemProfile', 'Alternative Call Back Destination 1', 600
+24659, 3, 'cp_mandatory_Alternative Call Back Destination 2', 'EtasAcdContainer_c::SetSystemProfile', 'Alternative Call Back Destination 2', 600
+24660, 3, 'cp_mandatory_Alternative Call ID', 'EtasAcdContainer_c::SetSystemProfile', 'Alternative Call ID', 600
+26903, 3, 'cp_mandatory_Announcement to Agent', 'EtasAcdContainer_c::SetSystemProfile', 'Announcement to Agent', 600
+11742, 3, 'cp_mandatory_Average Queue Time', 'EtasAcdContainer_c::SetSystemProfile', 'Average Queue Time', 435
+601, 3, 'cp_mandatory_AVERAGE_Q_TIME', 'EtasAcdContainer_c::SetSystemProfile', 'AVERAGE_Q_TIME', 435
+26095, 3, 'cp_mandatory_Call Attachment1', 'EtasAcdContainer_c::SetSystemProfile', 'Call Attachment1', 600
+26096, 3, 'cp_mandatory_Call Attachment2', 'EtasAcdContainer_c::SetSystemProfile', 'Call Attachment2', 600
+26097, 3, 'cp_mandatory_Call Attachment3', 'EtasAcdContainer_c::SetSystemProfile', 'Call Attachment3', 600
+26098, 3, 'cp_mandatory_Call Attachment4', 'EtasAcdContainer_c::SetSystemProfile', 'Call Attachment4', 600
+11743, 3, 'cp_mandatory_Call Back Destination', 'EtasAcdContainer_c::SetSystemProfile', 'Call Back Destination', 435
+11744, 3, 'cp_mandatory_Call Back Time', 'EtasAcdContainer_c::SetSystemProfile', 'Call Back Time', 435
+24661, 3, 'cp_mandatory_Call Type', 'EtasAcdContainer_c::SetSystemProfile', 'Call Type', 600
+602, 3, 'cp_mandatory_CALLBACK_DEST', 'EtasAcdContainer_c::SetSystemProfile', 'CALLBACK_DEST', 435
+603, 3, 'cp_mandatory_CALLBACK_TIME', 'EtasAcdContainer_c::SetSystemProfile', 'CALLBACK_TIME', 435
+606, 3, 'cp_mandatory_Calling', 'EtasAcdContainer_c::SetSystemProfile', 'Calling', 435
+11745, 3, 'cp_mandatory_Customer Name', 'EtasAcdContainer_c::SetSystemProfile', 'Customer Name', 435
+11746, 3, 'cp_mandatory_Customer Number', 'EtasAcdContainer_c::SetSystemProfile', 'Customer Number', 435
+604, 3, 'cp_mandatory_CUSTOMER_NAME', 'EtasAcdContainer_c::SetSystemProfile', 'CUSTOMER_NAME', 435
+605, 3, 'cp_mandatory_CUSTOMER_NUMBER', 'EtasAcdContainer_c::SetSystemProfile', 'CUSTOMER_NUMBER', 435
+11747, 3, 'cp_mandatory_Dial List ID', 'EtasAcdContainer_c::SetSystemProfile', 'Dial List ID', 435
+607, 3, 'cp_mandatory_DIAL_LIST_ID', 'EtasAcdContainer_c::SetSystemProfile', 'DIAL_LIST_ID', 435
+608, 3, 'cp_mandatory_DNIS', 'EtasAcdContainer_c::SetSystemProfile', 'DNIS', 435
+12534, 3, 'cp_mandatory_Email CC', 'EtasAcdContainer_c::SetSystemProfile', 'Email CC', 435
+12535, 3, 'cp_mandatory_Email Enter OMS Date', 'EtasAcdContainer_c::SetSystemProfile', 'Email Enter OMS Date', 435
+12536, 3, 'cp_mandatory_Email Enter OMS Time', 'EtasAcdContainer_c::SetSystemProfile', 'Email Enter OMS Time', 435
+12537, 3, 'cp_mandatory_Email From', 'EtasAcdContainer_c::SetSystemProfile', 'Email From', 435
+26054, 3, 'cp_mandatory_Email Reply To', 'EtasAcdContainer_c::SetSystemProfile', 'Email Reply To', 600
+12538, 3, 'cp_mandatory_Email Sent Date', 'EtasAcdContainer_c::SetSystemProfile', 'Email Sent Date', 435
+12539, 3, 'cp_mandatory_Email Sent Time', 'EtasAcdContainer_c::SetSystemProfile', 'Email Sent Time', 435
+12540, 3, 'cp_mandatory_Email Subject', 'EtasAcdContainer_c::SetSystemProfile', 'Email Subject', 435
+12541, 3, 'cp_mandatory_Email To', 'EtasAcdContainer_c::SetSystemProfile', 'Email To', 435
+10938, 3, 'cp_mandatory_EXECUTE_REQ', 'EtasAcdContainer_c::SetSystemProfile', 'EXECUTE_REQ', 435
+26025, 3, 'cp_mandatory_Global Cid', 'EtasAcdContainer_c::SetSystemProfile', 'Global Cid', 600
+24662, 3, 'cp_mandatory_Group', 'EtasAcdContainer_c::SetSystemProfile', 'Group', 600
+609, 3, 'cp_mandatory_Language', 'EtasAcdContainer_c::SetSystemProfile', 'Language', 435
+25621, 3, 'cp_mandatory_Last Time To Initiate Callback', 'EtasAcdContainer_c::SetSystemProfile', 'Last Time To Initiate Callback', 600
+610, 3, 'cp_mandatory_Media', 'EtasAcdContainer_c::SetSystemProfile', 'Media', 435
+25622, 3, 'cp_mandatory_Outbound Caller Id', 'EtasAcdContainer_c::SetSystemProfile', 'Outbound Caller Id', 600
+25623, 3, 'cp_mandatory_Primary Call Back Destination', 'EtasAcdContainer_c::SetSystemProfile', 'Primary Call Back Destination', 600
+611, 3, 'cp_mandatory_Priority', 'EtasAcdContainer_c::SetSystemProfile', 'Priority', 435
+11750, 3, 'cp_mandatory_Queue Position', 'EtasAcdContainer_c::SetSystemProfile', 'Queue Position', 435
+612, 3, 'cp_mandatory_Q_POSITION', 'EtasAcdContainer_c::SetSystemProfile', 'Q_POSITION', 435
+26099, 3, 'cp_mandatory_Recording File Name', 'EtasAcdContainer_c::SetSystemProfile', 'Recording File Name', 600
+615, 3, 'cp_mandatory_Service', 'EtasAcdContainer_c::SetSystemProfile', 'Service', 435
+11751, 3, 'cp_mandatory_Session ID', 'EtasAcdContainer_c::SetSystemProfile', 'Session ID', 435
+613, 3, 'cp_mandatory_SESSION_ID', 'EtasAcdContainer_c::SetSystemProfile', 'SESSION_ID', 435
+11752, 3, 'cp_mandatory_Start Queue Time', 'EtasAcdContainer_c::SetSystemProfile', 'Start Queue Time', 435
+614, 3, 'cp_mandatory_START_QUEUE_TIME', 'EtasAcdContainer_c::SetSystemProfile', 'START_QUEUE_TIME', 435
+12544, 3, 'cp_mandatory_Trunk Number', 'EtasAcdContainer_c::SetSystemProfile', 'Trunk Number', 435
+26100, 3, 'cp_mandatory_User Request', 'EtasAcdContainer_c::SetSystemProfile', 'User Request', 600
+26181, 3, 'DDListReleaseAlwaysAsk', 'DDList Setup Dialog', '<Always Ask>', 600
+26180, 3, 'DDListReleaseNoCode', 'DDList Setup Dialog', 'No Code', 600
+26167, 3, 'Download_started_indication', 'Download_started_indication', 'Waiting for the email download to complete', 600
+26164, 3, 'ed', 'Your extension is set to do not disturb', 'Your extension is set to do not disturb', 600
+26119, 3, 'Epic_Agent_Alert_Email_Dowload_Error', 'Epic_Agent_Alert_Email_Dowload_Error', 'Email contact has been rejected.', 600
+26088, 3, 'Epic_Agent_Alert_Email_Guide', 'Epic_Agent_Alert_Email_Guide', 'Please use the email client to retrieve your email messages from the email server', 600
+25918, 3, 'Epic_Agent_Alert_New_Agent', 'Epic_Agent_Alert_New_Agent', '
+New agent with same ID and Extension has entered the system', 600
+26205, 3, 'EtasAfxMSG_Max_um_buttons', 'EtasAfxMSG', 'Maximum number of buttons in a single toolbar line (32) is exceeded', 600
+16207, 3, 'File_does_not_exist_error', 'File does not exist', 'File does not exist.
+Press Yes to change the file or No to revert to default.', 435
+587, 3, 'FirstStartDlg1001CTempWnd', 'First Start Dialog', ' :', 435
+585, 3, 'FirstStartDlg1146CTempWnd', 'First Start Dialog', 'Extension number :', 435
+12520, 3, 'FirstStartDlg1146CWnd', 'First Start Dialog', 'Extension Number :', 435
+586, 3, 'FirstStartDlg1147CTempWnd', 'First Start Dialog', 'Server Address:', 435
+12521, 3, 'FirstStartDlg1147CWnd', 'First Start Dialog', 'Server IP Address:', 435
+584, 3, 'FirstStartDlg1148CTempWnd', 'First Start Dialog', 'Welcome to the Epic Agent Station Application', 435
+12519, 3, 'FirstStartDlg1148CWnd', 'First Start Dialog', 'Welcome to the Epic Agent Station Application', 435
+588, 3, 'FirstStartDlg1149CTempWnd', 'First Start Dialog', 'Position Email address :', 435
+12522, 3, 'FirstStartDlg1149CWnd', 'First Start Dialog', 'Mail Account Username :', 435
+12524, 3, 'FirstStartDlg1150CWnd', 'First Start Dialog', 'Mail Account Password :', 435
+11097, 3, 'FirstStartDlg1155CIPAddressCtrl', 'First Start Dialog', '192.168.15.10', 435
+11098, 3, 'FirstStartDlg1155CTempWnd', 'First Start Dialog', '10', 435
+12523, 3, 'FirstStartDlg1155CWnd', 'First Start Dialog', '204', 435
+24655, 3, 'FirstStartDlg1CButton', 'First Start Dialog', 'OK', 600
+583, 3, 'FirstStartDlg1CTempWnd', 'First Start Dialog', 'Continue', 435
+12518, 3, 'FirstStartDlg1CWnd', 'First Start Dialog', 'Continue', 435
+24656, 3, 'FirstStartDlg2CButton', 'First Start Dialog', 'Cancel', 600
+589, 3, 'FirstStartDlg_Alert_THIS_DIR_IS_NOT_OK', 'First Start Dialog alert = This directory does not contain AgentServer.ini file !!!', 'This directory does not contain AgentServer.ini file !!!', 435
+590, 3, 'FirstStartDlg_Alert_THIS_DIR_OK', 'First Start Dialog alert = This directory does not contain AgentServer.ini file !!!', 'The chosen directory is Ok !!!', 435
+581, 3, 'FirstStartDlg_title_APPNAME_word', 'First Start Dialog AGENT word (part of the title)', 'Agent', 435
+582, 3, 'FirstStartDlg_title_INSTANCE_word', 'First Start Dialog INSTANCE word (part of the title)', 'Instance', 435
+26094, 3, 'FirstStart_CEtas_Progress_Dlg', 'Msg ProgressDlg', 'Connecting to server...', 600
+16241, 3, 'FuncAgentsSetupTelDlg-1CWnd', 'Function Agents Setup Telephony Dialog', 'Order agents by:', 435
+16238, 3, 'FuncAgentsSetupTelDlg1146CWnd', 'Function Agents Setup Telephony Dialog', 'Select destination number:', 435
+26045, 3, 'FuncAgentsSetupTelDlg1147CWnd', 'Function Agents Setup Telephony Dialog', 'Order agents by:', 600
+16239, 3, 'FuncAgentsSetupTelDlg1159CButton', 'Function Agents Setup Telephony Dialog', 'Agent name', 435
+16240, 3, 'FuncAgentsSetupTelDlg1173CButton', 'Function Agents Setup Telephony Dialog', 'Agent number', 435
+16236, 3, 'FuncAgentsSetupTelDlg1CButton', 'Function Agents Setup Telephony Dialog', 'OK', 435
+16237, 3, 'FuncAgentsSetupTelDlg2CButton', 'Function Agents Setup Telephony Dialog', 'Cancel', 435
+26173, 3, 'FuncGroupsDlg1110CWnd', 'Function setup dialog', 'Enter ACD group:', 600
+26171, 3, 'FuncGroupsDlg1CButton', 'Function setup dialog', 'OK', 600
+26172, 3, 'FuncGroupsDlg2CButton', 'Function setup dialog', 'Cancel', 600
+26170, 3, 'FuncGroupsDlgSetup1110CWnd', 'Function setup dialog', 'Enter default ACD group:', 600
+26168, 3, 'FuncGroupsDlgSetup1CButton', 'Function setup dialog', 'Save', 600
+26169, 3, 'FuncGroupsDlgSetup2CButton', 'Function setup dialog', 'Cancel', 600
+26316, 3, 'FuncReleasesDlg1110CWnd', 'Function setup dialog', 'Select a release code:', 600
+26314, 3, 'FuncReleasesDlg1CButton', 'Function setup dialog', 'OK', 600
+26315, 3, 'FuncReleasesDlg2CButton', 'Function setup dialog', 'Cancel', 600
+26176, 3, 'FuncReleasesDlgSetup1110CWnd', 'Function setup dialog', 'Select a default release code:', 600
+26174, 3, 'FuncReleasesDlgSetup1CButton', 'Function setup dialog', 'Save', 600
+26175, 3, 'FuncReleasesDlgSetup2CButton', 'Function setup dialog', 'Cancel', 600
+25999, 3, 'FuncSetupExecuteDlg1059CWnd', 'Function Setup Execute Dialog', 'C:Program FilesEPICAcce VisorBina_db.exe', 600
+26000, 3, 'FuncSetupExecuteDlg1061CWnd', 'Function Setup Execute Dialog', 'jhg;lihg.', 600
+26001, 3, 'FuncSetupExecuteDlg1063CWnd', 'Function Setup Execute Dialog', 'kljhglkjhg', 600
+660, 3, 'FuncSetupExecuteDlg1146CTempWnd', 'Function Setup Execute Dialog', 'Program', 435
+16199, 3, 'FuncSetupExecuteDlg1146CWnd', 'Function Setup Execute Dialog', 'Program', 435
+661, 3, 'FuncSetupExecuteDlg1147CTempWnd', 'Function Setup Execute Dialog', 'Working Directory', 435
+16200, 3, 'FuncSetupExecuteDlg1147CWnd', 'Function Setup Execute Dialog', 'Working Directory', 435
+662, 3, 'FuncSetupExecuteDlg1148CTempWnd', 'Function Setup Execute Dialog', 'Parameters', 435
+16201, 3, 'FuncSetupExecuteDlg1148CWnd', 'Function Setup Execute Dialog', 'Parameters', 435
+658, 3, 'FuncSetupExecuteDlg1CButton', 'Function Setup Execute Dialog', 'OK', 435
+659, 3, 'FuncSetupExecuteDlg2CButton', 'Function Setup Execute Dialog', 'Cancel', 435
+665, 3, 'FuncSetupExecuteDlg_Open_file_dlg_programs', 'Function Setup Execute Open file dialog Programs)', 'Programs', 435
+664, 3, 'FuncSetupExecuteDlg_Open_file_dlg_select_file', 'Function Setup Execute Open file dialog Select)', 'Select File', 435
+663, 3, 'FuncSetupExecuteDlg_title', 'Function Setup Execute Dialog title)', 'Execute Program Setup', 435
+16181, 3, 'FuncSetupTelDlg-1CWnd', 'Function Setup Telephony Dialog', 'Arrange agents list according to:', 435
+25917, 3, 'FuncSetupTelDlg1146CStatic', 'Function Setup Telephony Dialog', 'Enter destination number', 600
+642, 3, 'FuncSetupTelDlg1146CTempWnd', 'Function Setup Telephony Dialog', 'Enter destination number', 435
+12550, 3, 'FuncSetupTelDlg1146CWnd', 'Function Setup Telephony Dialog', 'Enter destination number', 435
+16179, 3, 'FuncSetupTelDlg1159CButton', 'Function Setup Telephony Dialog', 'Agent name', 435
+16180, 3, 'FuncSetupTelDlg1173CButton', 'Function Setup Telephony Dialog', 'Agent number', 435
+640, 3, 'FuncSetupTelDlg1CButton', 'Function Setup Telephony Dialog', 'OK', 435
+641, 3, 'FuncSetupTelDlg2CButton', 'Function Setup Telephony Dialog', 'Cancel', 435
+11104, 3, 'FunctionAcdEmailState_descr', 'Email state change function', 'Enter Email state ', 435
+715, 3, 'FunctionDescription_About', 'Function description', 'About', 435
+11115, 3, 'FunctionDescription_ActivateBargeIn', 'Function description', 'Break-In', 435
+25981, 3, 'FunctionDescription_ActivateRecording', 'Function description', 'Recording', 600
+11114, 3, 'FunctionDescription_ActivateSilentMonitor', 'Function description', 'Silent Monitor', 435
+25980, 3, 'FunctionDescription_ActivateWhisper', 'Function description', 'Whisper', 600
+634, 3, 'FunctionDescription_AgentReady', 'Function description', 'Ready', 435
+7786, 3, 'FunctionDescription_Alternate', 'Function description', 'Swap Calls', 435
+652, 3, 'FunctionDescription_Answer', 'Function description', 'Answer', 435
+11113, 3, 'FunctionDescription_BUSY', 'Function description', 'Set the agent state to busy \ not busy', 435
+650, 3, 'FunctionDescription_Call back reinsert busy', 'Function description', 'Set Call back reinsert busy', 435
+649, 3, 'FunctionDescription_Call back reinsert No Answer', 'Function description', 'Set Call back reinsert No Answer', 435
+648, 3, 'FunctionDescription_Call back reinsert treminate', 'Function description', 'Set Call back reinsert treminate', 435
+25977, 3, 'FunctionDescription_CallbackReinsertBusy', 'Function description', 'Set Call back reinsert busy', 600
+25978, 3, 'FunctionDescription_CallbackReinsertNoAnswer', 'Function description', 'Set Call back reinsert No Answer', 600
+25979, 3, 'FunctionDescription_CallbackReinsertTerminate', 'Function description', 'Set Call back reinsert Terminate', 600
+25984, 3, 'FunctionDescription_ChatWithAgent', 'Function description', 'Chat With Agent', 600
+723, 3, 'FunctionDescription_ClearConnection', 'Function description', 'Disconnect', 435
+635, 3, 'FunctionDescription_CloseAll', 'Function description', 'Logout and Exit', 435
+651, 3, 'FunctionDescription_CompleteConference', 'Function description', 'Complete Conference', 435
+25961, 3, 'FunctionDescription_CompleteTransfer', 'Function description', 'Complete Transfer', 600
+643, 3, 'FunctionDescription_Conference', 'Function description', 'Start Conference', 435
+644, 3, 'FunctionDescription_Divert', 'Function description', 'Divert Call', 435
+26087, 3, 'FunctionDescription_ExecProgram', 'Function description', 'Run', 600
+11238, 3, 'FunctionDescription_GroupsManager', 'Function description', 'Groups Manager', 435
+721, 3, 'FunctionDescription_Help', 'Function description', 'Supervisor Help', 435
+645, 3, 'FunctionDescription_Hold', 'Function description', 'Hold', 435
+720, 3, 'FunctionDescription_Html with Chat Tree ', 'Function description', 'Chat Tree', 435
+25983, 3, 'FunctionDescription_HtmlWithChatTree', 'Function description', 'Chat Tree', 600
+11102, 3, 'FunctionDescription_LoginGroup', 'Function description', 'Login Group', 435
+637, 3, 'FunctionDescription_LoginPrimaryGroups', 'Function description', 'Login Primary Groups', 435
+11103, 3, 'FunctionDescription_LogoutFromGroup', 'Function description', 'Logout Group', 435
+10940, 3, 'FunctionDescription_LogoutFromPrimaryGroups', 'Function description', 'Logout from Primary ACD Groups', 435
+646, 3, 'FunctionDescription_MakeCall', 'Function description', 'Call', 435
+11101, 3, 'FunctionDescription_MakeNACall', 'Function description', 'Call', 435
+10943, 3, 'FunctionDescription_Net meeting', 'Function description', 'Net meeting', 435
+699, 3, 'FunctionDescription_OpenAcdCalls', 'Function description', 'ACD Calls', 435
+724, 3, 'FunctionDescription_OpenAgentBoard', 'Function description', 'Agent board', 435
+676, 3, 'FunctionDescription_OpenCallsLog', 'Function description', 'Calls Log', 435
+698, 3, 'FunctionDescription_OpenCallsStatus', 'Function description', 'Calls Status', 435
+638, 3, 'FunctionDescription_OpenSetup', 'Function description', 'Agent Setup', 435
+712, 3, 'FunctionDescription_OpenTelephony', 'Function description', 'Telephony', 435
+717, 3, 'FunctionDescription_Reconnect', 'Function description', 'Reconnect', 435
+636, 3, 'FunctionDescription_Release', 'Function description', 'Release', 435
+16212, 3, 'FunctionDescription_Release with Code', 'Function description', 'Release with Code', 435
+25963, 3, 'FunctionDescription_ReleasewithCode', 'Function description', 'Release with Code', 600
+10974, 3, 'FunctionDescription_Resume', 'Function description', 'Resume', 435
+719, 3, 'FunctionDescription_Retrieve', 'Function description', 'Retrieve', 435
+11240, 3, 'FunctionDescription_RouteMoreEmails', 'Function description', 'Route More Emails', 435
+11111, 3, 'FunctionDescription_SendDTMF', 'Function description', 'Send Dial Tones', 435
+11284, 3, 'FunctionDescription_SetCallProfile', 'Function description', 'Set Call Profile', 435
+11112, 3, 'FunctionDescription_SingleStepConference', 'Function description', 'Single Step Conference', 435
+647, 3, 'FunctionDescription_SingleStepTransfer', 'Function description', 'Single Step Transfer', 435
+11239, 3, 'FunctionDescription_ToggleEmailState', 'Function description', 'Toggle Email state', 435
+718, 3, 'FunctionDescription_Transfer', 'Function description', 'Complete Transfer', 435
+639, 3, 'FunctionDescription_TransferCall', 'Function description', 'Start Transfer', 435
+653, 3, 'FunctionDescription_TransferToAgent', 'Function description', 'Transfer to Agent', 435
+716, 3, 'FunctionDescription_WinHelp', 'Function description', 'Help', 435
+654, 3, 'FunctionDescription_Wrapup Code', 'Function description', 'WrapUp Code', 435
+722, 3, 'FunctionDescription_Wrapup manual control', 'Function description', 'Wrapup manual control', 435
+25962, 3, 'FunctionDescription_WrapupCode', 'Function description', 'WrapUp Code', 600
+25982, 3, 'FunctionDescription_WrapupManualControl', 'Function description', 'Wrapup manual control', 600
+954, 3, 'FunctionHelpStr_About', 'Function help string', 'About Agent', 435
+11269, 3, 'FunctionHelpStr_ActivateBargeIn', 'Function help string', 'Break-In', 435
+25950, 3, 'FunctionHelpStr_ActivateRecording', 'Function help string', 'Recording', 600
+11268, 3, 'FunctionHelpStr_ActivateSilentMonitor', 'Function help string', 'Silent Monitor', 435
+25951, 3, 'FunctionHelpStr_ActivateWhisper', 'Function help string', 'Whisper', 600
+939, 3, 'FunctionHelpStr_AgentReady', 'Function help string', 'Manually end the WrapUp state and become ready for ACD', 435
+931, 3, 'FunctionHelpStr_Alternate', 'Function help string', 'Swaps the call on HOLD with the Connected call', 435
+915, 3, 'FunctionHelpStr_Answer', 'Function help string', 'Answer incoming call', 435
+922, 3, 'FunctionHelpStr_BUSY', 'Function help string', 'Set the agent state to busy \ not busy', 435
+921, 3, 'FunctionHelpStr_Call back reinsert busy', 'Function help string', 'Set Call back reinsert busy', 435
+919, 3, 'FunctionHelpStr_Call back reinsert No Answer', 'Function help string', 'Set Call back reinsert No Answer', 435
+920, 3, 'FunctionHelpStr_Call back reinsert treminate', 'Function help string', 'Set Call back reinsert treminate', 435
+25954, 3, 'FunctionHelpStr_CallbackReinsertBusy', 'Function help string', 'Set Call back reinsert busy', 600
+25953, 3, 'FunctionHelpStr_CallbackReinsertNoAnswer', 'Function help string', 'Set Call back reinsert No Answer', 600
+25952, 3, 'FunctionHelpStr_CallbackReinsertTerminate', 'Function help string', 'Set Call back reinsert Terminate', 600
+25959, 3, 'FunctionHelpStr_ChatWithAgent', 'Function help string', 'Chat With Agent', 600
+916, 3, 'FunctionHelpStr_ClearConnection', 'Function help string', 'Disconnect the current call', 435
+951, 3, 'FunctionHelpStr_CloseAll', 'Function help string', 'Logout and Exit', 435
+917, 3, 'FunctionHelpStr_CompleteConference', 'Function help string', 'Complete the Conference procedure', 435
+25955, 3, 'FunctionHelpStr_CompleteTransfer', 'Function help string', 'Complete the transfer procedure', 600
+929, 3, 'FunctionHelpStr_Conference', 'Function help string', 'Start the conference procedure', 435
+928, 3, 'FunctionHelpStr_Divert', 'Function help string', 'Divert the incoming call', 435
+935, 3, 'FunctionHelpStr_Email state', 'Function help string', 'Email state', 435
+956, 3, 'FunctionHelpStr_ExecProgram', 'Function help string', 'Execute an application', 435
+941, 3, 'FunctionHelpStr_GroupsManager', 'Function help string', 'Manage the list of Login/Logout groups', 435
+932, 3, 'FunctionHelpStr_Help', 'Function help string', 'Ask for Supervisor Help', 435
+924, 3, 'FunctionHelpStr_Hold', 'Function help string', 'Place the call on HOLD', 435
+953, 3, 'FunctionHelpStr_Html with Chat Tree ', 'Function help string', 'Chat Tree', 435
+25960, 3, 'FunctionHelpStr_HtmlWithChatTree', 'Function help string', 'Chat Tree', 600
+943, 3, 'FunctionHelpStr_LoginGroup', 'Function help string', 'Login to ACD group', 435
+945, 3, 'FunctionHelpStr_LoginPrimaryGroups', 'Function help string', 'Login/Logout Primary ACD Groups', 435
+942, 3, 'FunctionHelpStr_LogoutFromGroup', 'Function help string', 'Logout from Group', 435
+944, 3, 'FunctionHelpStr_LogoutFromPrimaryGroups', 'Function help string', 'Login/Logout Primary Groups', 435
+925, 3, 'FunctionHelpStr_MakeCall', 'Function help string', 'Call the selected telephone number', 435
+11100, 3, 'FunctionHelpStr_MakeNACall', 'Function help string', 'Call the selected telephone number', 435
+957, 3, 'FunctionHelpStr_Net meeting', 'Function help string', 'Net meeting application', 435
+948, 3, 'FunctionHelpStr_OpenAcdCalls', 'Function help string', 'Open ACD Calls window', 435
+952, 3, 'FunctionHelpStr_OpenAgentBoard', 'Function help string', 'Open Agent board window', 435
+946, 3, 'FunctionHelpStr_OpenCallsLog', 'Function help string', 'Open Calls Log window', 435
+947, 3, 'FunctionHelpStr_OpenCallsStatus', 'Function help string', 'Open Calls Status window', 435
+949, 3, 'FunctionHelpStr_OpenSetup', 'Function help string', 'Open Setup window', 435
+950, 3, 'FunctionHelpStr_OpenTelephony', 'Function help string', 'Open Telephony window', 435
+923, 3, 'FunctionHelpStr_Reconnect', 'Function help string', 'Reconnect', 435
+940, 3, 'FunctionHelpStr_Release', 'Function help string', 'Release', 435
+12680, 3, 'FunctionHelpStr_Release with Code', 'Function help string', 'Release with Code', 435
+25958, 3, 'FunctionHelpStr_ReleasewithCode', 'Function help string', 'Release with Code', 600
+934, 3, 'FunctionHelpStr_Resume', 'Function help string', 'Resume', 435
+918, 3, 'FunctionHelpStr_Retrieve', 'Function help string', 'Retrieve the call from HOLD', 435
+936, 3, 'FunctionHelpStr_Route More Emails', 'Function help string', 'Bring more emails', 435
+10941, 3, 'FunctionHelpStr_RouteMoreEmails', 'Function help string', 'Ask Server to route more emails to me', 435
+11283, 3, 'FunctionHelpStr_SetCallProfile', 'Function help string', 'Set active call's profile', 435
+926, 3, 'FunctionHelpStr_SingleStepTransfer', 'Function help string', 'Perform single step transfer', 435
+10942, 3, 'FunctionHelpStr_ToggleEmailState', 'Function help string', 'Toggle Email state', 435
+927, 3, 'FunctionHelpStr_Transfer', 'Function help string', 'Complete the transfer procedure', 435
+930, 3, 'FunctionHelpStr_TransferCall', 'Function help string', 'Start the transfer procedure', 435
+933, 3, 'FunctionHelpStr_TransferToAgent', 'Function help string', 'Perform transfer to Agent', 435
+955, 3, 'FunctionHelpStr_WinHelp', 'Function help string', 'Show Help Topics', 435
+937, 3, 'FunctionHelpStr_Wrapup Code', 'Function help string', 'Enter WrapUp Code', 435
+938, 3, 'FunctionHelpStr_Wrapup manual control', 'Function help string', 'Control WrapUp state', 435
+25956, 3, 'FunctionHelpStr_WrapupCode', 'Function help string', 'Enter WrapUp Code', 600
+25957, 3, 'FunctionHelpStr_WrapupManualControl', 'Function help string', 'Control WrapUp state', 600
+26204, 3, 'FuncWrapupsDlg1110CWnd', 'Function setup dialog', 'Select a wrapup code:', 600
+26202, 3, 'FuncWrapupsDlg1CButton', 'Function setup dialog', 'OK', 600
+26203, 3, 'FuncWrapupsDlg2CButton', 'Function setup dialog', 'Cancel', 600
+26179, 3, 'FuncWrapupsDlgSetup1110CWnd', 'Function setup dialog', 'Select a default wrapup code:', 600
+26177, 3, 'FuncWrapupsDlgSetup1CButton', 'Function setup dialog', 'Save', 600
+26178, 3, 'FuncWrapupsDlgSetup2CButton', 'Function setup dialog', 'Cancel', 600
+24657, 3, 'GroupManagerDlg-1CWnd', 'Group Manager Dialog', 'Available Groups', 600
+596, 3, 'GroupManagerDlg1002CButton', 'Group Manager Dialog', 'Login', 435
+597, 3, 'GroupManagerDlg1003CButton', 'Group Manager Dialog', 'Logout', 435
+12548, 3, 'GroupManagerDlg1146CWnd', 'Group Manager Dialog', 'Logged Groups', 435
+26036, 3, 'GroupManagerDlg1147CWnd', 'Group Manager Dialog', 'Logged Groups', 600
+12547, 3, 'GroupManagerDlg2CWnd', 'Group Manager Dialog', 'Cancel', 435
+595, 3, 'GroupManagerDlg65535CTempWnd', 'Group Manager Dialog', 'Available Groups', 435
+12545, 3, 'GroupManagerDlg65535CWnd', 'Group Manager Dialog', 'Available Groups', 435
+594, 3, 'GroupManagerDlg_title', 'Group Manager Dialog', 'Group manager', 435
+26637, 3, 'HelpAboutDlgDlg1CWnd', 'Help About', 'Application Information', 600
+26640, 3, 'HelpAboutDlgDlg23015CStatic', 'Help About', 'Static', 600
+26653, 3, 'HelpAboutDlgDlg2CWnd', 'Help About', 'Product Information', 600
+26638, 3, 'HelpAboutDlgDlg3CWnd', 'Help About', 'Application Information', 600
+26639, 3, 'HelpAboutDlgDlg4CWnd', 'Help About', 'Product Information', 600
+26870, 3, 'HelpAboutDlg_BUTTON_OK', 'OK', 'Ok', 600
+26632, 3, 'HelpAboutDlg_Name', 'Name: ', 'Name: ', 600
+26634, 3, 'HelpAboutDlg_ProductName', 'Product Name: ', 'Product Name: ', 600
+26636, 3, 'HelpAboutDlg_ProductVendor', 'Product Vendor: ', 'Product Vendor: ', 600
+26635, 3, 'HelpAboutDlg_ProductVersion', 'Product Version: ', 'Product Version: ', 600
+26633, 3, 'HelpAboutDlg_Version', 'Version: ', 'Version: ', 600
+26166, 3, 'iled', 'Your extension is set to call forward all', 'Your extension is set to call forward all', 600
+11108, 3, 'InsertColoumn_title', 'Insert Coloumn', 'Insert Coloumn', 435
+964, 3, 'Launching_the_Agent_application', 'Launching the Agent application dialog', 'Launching the Agent application dialog', 435
+26114, 3, 'led', 'An agent can be logged in to only one group while handling predictive outbound', 'An agent can be logged in to only one group while handling predictive outbound', 600
+16205, 3, 'License_update_error', 'License_update_error', 'Due to licensing update you have been loged out.
+Please login to continue.', 435
+25222, 3, 'LogonDlg-1CWnd', 'Epic Agent Logon Dialog', 'Language:', 600
+11413, 3, 'LogonDlg1001CTempWnd', 'Epic Agent Logon Dialog', 'SPANISH', 435
+25223, 3, 'LogonDlg1001CWnd', 'Epic Agent Logon Dialog', 'ENGLISH', 600
+959, 3, 'LogonDlg1146CTempWnd', 'Epic Agent Logon Dialog', 'Enter agent id and password to logon to Epic Agent', 435
+12529, 3, 'LogonDlg1146CWnd', 'Epic Agent Logon Dialog', 'Enter agent id and password to logon to Epic Agent', 435
+960, 3, 'LogonDlg1147CTempWnd', 'Epic Agent Logon Dialog', 'Agent id', 435
+12530, 3, 'LogonDlg1147CWnd', 'Epic Agent Logon Dialog', 'Agent id:', 435
+961, 3, 'LogonDlg1148CTempWnd', 'Epic Agent Logon Dialog', 'Password', 435
+12531, 3, 'LogonDlg1148CWnd', 'Epic Agent Logon Dialog', 'Password:', 435
+11266, 3, 'LogonDlg1149CTempWnd', 'Epic Agent Logon Dialog', 'Extension', 435
+12532, 3, 'LogonDlg1149CWnd', 'Epic Agent Logon Dialog', 'Extension:', 435
+26040, 3, 'LogonDlg1150CWnd', 'Epic Agent Logon Dialog', 'Language:', 600
+11264, 3, 'LogonDlg1CTempWnd', 'Epic Agent Logon Dialog', 'OK', 435
+12527, 3, 'LogonDlg1CWnd', 'Epic Agent Logon Dialog', 'OK', 435
+11265, 3, 'LogonDlg2CTempWnd', 'Epic Agent Logon Dialog', 'Cancel', 435
+12528, 3, 'LogonDlg2CWnd', 'Epic Agent Logon Dialog', 'Cancel', 435
+11267, 3, 'LogonDlg65535CTempWnd', 'Epic Agent Logon Dialog', 'Language', 435
+12533, 3, 'LogonDlg65535CWnd', 'Epic Agent Logon Dialog', 'Language', 435
+958, 3, 'LogonDlg_title', 'Epic Agent Logon Dialog', 'Epic Agent Logon', 435
+12427, 3, 'LRL_SvcReplyCode_description', 'LRL return code', 'Invalid ID', 435
+26101, 3, 'LRL_SvcReplyCode_description_1', 'LRL return code', 'Call cannot be picked-up from queue', 600
+26154, 3, 'LRL_SvcReplyCode_description_12', 'LRL return code', 'Your extension has lost connection to the telephony system.
+You are now logged out of all your groups', 600
+26165, 3, 'LRL_SvcReplyCode_description_13', 'LRL return code', 'Your extension is set to call forward all', 600
+26113, 3, 'LRL_SvcReplyCode_description_14', 'LRL return code', 'An agent can be logged in to only one group while handling predictive outbound', 600
+26163, 3, 'LRL_SvcReplyCode_description_15', 'LRL return code', 'Your extension is set to do not disturb', 600
+26115, 3, 'LRL_SvcReplyCode_description_18', 'LRL return code', 'Agent is not idle.', 600
+26116, 3, 'LRL_SvcReplyCode_description_19', 'LRL return code', 'Call is ringing.', 600
+26120, 3, 'LRL_SvcReplyCode_description_24', 'LRL return code', 'You try to login to more groups then allowed', 600
+26104, 3, 'LRL_SvcReplyCode_description_5', 'LRL return code', 'No assigned group', 600
+26354, 3, 'LRL_SvcReplyCode_description_9', 'LRL return code', 'Email address or Email password 
+is not defined on server.', 600
+16208, 3, 'Msg_box_error', 'Error', 'Error', 435
+11753, 3, 'Not_Added_Button_Text', '. (This button cannot be added)', '. (This button cannot be added)', 435
+26355, 3, 'n_Failed', 'Email address or Email password 
+is not defined on server.', 'Email address or Email password 
+is not defined on server.', 600
+26071, 3, 'OutboundCallConfirmation_title', 'Outbound Call Confirmation', 'Outbound Call Confirmation', 600
+11412, 3, 'ProgressDlg1109CProgressCtrl', 'Progress Dialog', 'Progress1', 435
+11411, 3, 'ProgressDlg2CTempWnd', 'Progress Dialog', 'Cancel', 435
+12526, 3, 'ProgressDlg2CWnd', 'ProgressDlg', 'Cancel', 435
+11410, 3, 'ProgressDlg3CTempWnd', 'Progress Dialog', 'Continue', 435
+12525, 3, 'ProgressDlg3CWnd', 'ProgressDlg', 'Continue', 435
+965, 3, 'ProgressDlg_title', 'Progress Dialog', 'Agent', 435
+12428, 3, 'rning_Login_Failed', 'Invalid ID', 'Invalid ID', 435
+25908, 3, 'sec_msg', 'sec_msg', 'sec', 600
+593, 3, 'SendingLoginDlg1146CTempWnd', 'SendingLoginDlg', 'Sending Login Info... Please wait...', 435
+12653, 3, 'SendingLoginDlg1146CWnd', 'SendingLoginDlg', 'Sending Login Info... Please wait...', 435
+592, 3, 'SendingLoginDlg2CTempWnd', 'SendingLoginDlg', 'Cancel', 435
+12652, 3, 'SendingLoginDlg2CWnd', 'SendingLoginDlg', 'Cancel', 435
+591, 3, 'SendingLoginDlg3CTempWnd', 'SendingLoginDlg', 'Continue', 435
+12651, 3, 'SendingLoginDlg3CWnd', 'SendingLoginDlg', 'Continue', 435
+11094, 3, 'SendingLogonDlg_title', 'Epic Agent Sending Login Dialog', 'Sending Login Dialog', 435
+16198, 3, 'SetupExtAddr-1CWnd', 'Setup Address Dialog', 'Mail Account Password:', 435
+666, 3, 'SetupExtAddr1069CTempWnd', 'Setup Address Dialog', '&Set New Values', 435
+12552, 3, 'SetupExtAddr1069CWnd', 'Setup Address Dialog', '&Set New Values...', 435
+667, 3, 'SetupExtAddr1146CTempWnd', 'Setup Address Dialog', 'Extension Number:', 435
+12555, 3, 'SetupExtAddr1146CWnd', 'Setup Address Dialog', 'Extension Number:', 435
+668, 3, 'SetupExtAddr1147CTempWnd', 'Setup Address Dialog', 'Server Address:', 435
+12556, 3, 'SetupExtAddr1147CWnd', 'Setup Address Dialog', 'Server IP Address:', 435
+669, 3, 'SetupExtAddr1148CTempWnd', 'Setup Address Dialog', 'Position Email address :', 435
+12557, 3, 'SetupExtAddr1148CWnd', 'Setup Address Dialog', 'Mail Account Username:', 435
+26043, 3, 'SetupExtAddr1149CWnd', 'Setup Address Dialog', 'Mail Account Password:', 600
+12558, 3, 'SetupExtAddr65535CWnd', 'Setup Address Dialog', 'Mail Account Password :', 435
+14157, 3, 'SetupOptions1000CWnd', 'Setup Options Dialog', 'Popup on ring', 435
+14158, 3, 'SetupOptions1001CWnd', 'Setup Options Dialog', 'Minimize on answer', 435
+672, 3, 'SetupOptions1117CButton', 'Setup Options Dialog', 'Start minimized', 435
+673, 3, 'SetupOptions1118CButton', 'Setup Options Dialog', 'Enable closing via the system menu "x" button', 435
+674, 3, 'SetupOptions1136CButton', 'Setup Options Dialog', 'Open Toolbar on "Forced Release" state', 435
+675, 3, 'SetupOptions1137CButton', 'Setup Options Dialog', 'Allow to minimize the toolbar in "Release" state', 435
+14185, 3, 'SetupOptions1170CButton', 'Setup Options Dialog', 'Open Toolbar on Ring', 435
+14181, 3, 'SetupOptions1170CWnd', 'Setup Options Dialog', 'Popup on ring', 435
+14186, 3, 'SetupOptions1171CButton', 'Setup Options Dialog', 'Minimize on Answer', 435
+14182, 3, 'SetupOptions1171CWnd', 'Setup Options Dialog', 'Minimize on answer', 435
+25905, 3, 'SetupOptions1199CButton', 'Setup Options Dialog', 'Open Toolbar on Queued Call', 600
+670, 3, 'SetupOptions1CTempWnd', 'Setup Options Dialog', 'OK', 435
+12681, 3, 'SetupOptions1CWnd', 'Setup Options Dialog', 'OK', 435
+671, 3, 'SetupOptions2CTempWnd', 'Setup Options Dialog', 'Cancel', 435
+12682, 3, 'SetupOptions2CWnd', 'Setup Options Dialog', 'Cancel', 435
+16227, 3, 'SetupToolbar-1CWnd', 'Setup toolbar dialog', 'Select a category.
+Click a button to see its description or drag it to a toolbar.', 435
+16226, 3, 'SetupToolbar1069CButton', 'Setup toolbar dialog', '...', 435
+627, 3, 'SetupToolbar1112CButton', 'Setup toolbar dialog', 'Always on top', 435
+628, 3, 'SetupToolbar1113CButton', 'Setup toolbar dialog', '2 lines', 435
+630, 3, 'SetupToolbar1114CButton', 'Setup toolbar dialog', 'Statusbar', 435
+631, 3, 'SetupToolbar1115CButton', 'Setup toolbar dialog', 'Large Icons', 435
+632, 3, 'SetupToolbar1116CButton', 'Setup toolbar dialog', 'Auto resize', 435
+633, 3, 'SetupToolbar1138CButton', 'Setup toolbar dialog', 'Options', 435
+26044, 3, 'SetupToolbar1146CWnd', 'Setup toolbar dialog', 'Ring Options For Voice / Chat / Email Calls:', 600
+26030, 3, 'SetupToolbar1147CWnd', 'Setup toolbar dialog', 'Apply to:', 600
+16222, 3, 'SetupToolbar1159CButton', 'Setup toolbar dialog', 'Continuous Ring', 435
+16223, 3, 'SetupToolbar1160CButton', 'Setup toolbar dialog', 'Ring Once', 435
+16224, 3, 'SetupToolbar1161CButton', 'Setup toolbar dialog', 'Default   (Speaker Beep)', 435
+16225, 3, 'SetupToolbar1162CButton', 'Setup toolbar dialog', 'File', 435
+16220, 3, 'SetupToolbar1164CStatic', 'Setup toolbar dialog', 'Ring Alert', 435
+16221, 3, 'SetupToolbar1165CStatic', 'Setup toolbar dialog', 'Ring Tone', 435
+16219, 3, 'SetupToolbar1166CButton', 'Setup toolbar dialog', 'Voice', 435
+16228, 3, 'SetupToolbar1167CButton', 'Setup toolbar dialog', 'Save', 435
+16230, 3, 'SetupToolbar1168CButton', 'Setup toolbar dialog', 'Chat', 435
+16229, 3, 'SetupToolbar1169CButton', 'Setup toolbar dialog', 'Email', 435
+25911, 3, 'SetupToolbar1190CButton', 'Setup toolbar dialog', 'Speaker Beep (Ring Once)', 600
+25912, 3, 'SetupToolbar1191CButton', 'Setup toolbar dialog', 'File: ', 600
+25913, 3, 'SetupToolbar1193CButton', 'Setup toolbar dialog', '...', 600
+25910, 3, 'SetupToolbar1195CButton', 'Setup toolbar dialog', 'Queue Alert', 600
+25914, 3, 'SetupToolbar1196CButton', 'Setup toolbar dialog', 'Save', 600
+25906, 3, 'SetupToolbar1201CButton', 'Setup toolbar dialog', 'Outbound Call Confirmation Window', 600
+26032, 3, 'SetupToolbar1202CWnd', 'Setup toolbar dialog', 'View', 600
+26034, 3, 'SetupToolbar1203CWnd', 'Setup toolbar dialog', 'Category', 600
+26031, 3, 'SetupToolbar1204CWnd', 'Setup toolbar dialog', 'Select a category.
+Click a button to see its description or drag it to a toolbar.', 600
+26035, 3, 'SetupToolbar1205CWnd', 'Setup toolbar dialog', 'Category:', 600
+26033, 3, 'SetupToolbar1206CWnd', 'Setup toolbar dialog', 'Buttons:', 600
+26110, 3, 'SetupToolbar1207CWnd', 'Setup toolbar dialog', 'Category:', 600
+26107, 3, 'SetupToolbar1208CWnd', 'Setup toolbar dialog', 'Description:', 600
+26109, 3, 'SetupToolbar1209CWnd', 'Setup toolbar dialog', 'Category', 600
+26108, 3, 'SetupToolbar1210CWnd', 'Setup toolbar dialog', 'View', 600
+629, 3, 'SetupToolbar65535CTempWnd', 'Setup toolbar dialog', 'Available Buttons', 435
+12549, 3, 'SetupToolbar65535CWnd', 'Setup toolbar dialog', 'Available Buttons', 435
+623, 3, 'SetupToolbarCComboBox0', 'Setup toolbar dialog', 'Telephony', 435
+624, 3, 'SetupToolbarCComboBox1', 'Setup toolbar dialog', 'ACD', 435
+625, 3, 'SetupToolbarCComboBox2', 'Setup toolbar dialog', 'Window', 435
+626, 3, 'SetupToolbarCComboBox3', 'Setup toolbar dialog', 'Other', 435
+620, 3, 'Setup_Dialog_Title', 'Setup Dialog', 'Setup', 435
+622, 3, 'Setup_ExtADdr_Tab_Caption', 'Setup_ExtADdr_Tab_Caption', 'Extension/Address', 435
+25903, 3, 'Setup_Personal_Settings_Tab_Caption', 'Setup_Personal_Settings_Tab_Caption', 'Personal Settings', 600
+25904, 3, 'Setup_Queue_Alert_Tab_Caption', 'Setup_Queue_Alert_Tab_Caption', 'Queue Alert', 600
+12656, 3, 'Setup_Ring_Tab_Caption', 'Setup_Ring_Tab_Caption', 'Ring', 435
+621, 3, 'Setup_ToolBar_Tab_Caption', 'Setup_ToolBar_Tab_Caption', 'ToolBar', 435
+16206, 3, 'Shortcut_already_exists', 'The Shortcut already exists', 'The Shortcut already exists', 435
+617, 3, 'skils_separator', 'EtasAcdContainer_c::SetSystemProfile', '========Skills=======', 435
+678, 3, 'SortList_Menu', 'SortList_Menu', 'Insert Column', 435
+11106, 3, 'SortList_Menu_Delete Column', 'SortList_Menu', 'Delete Column', 435
+11105, 3, 'SortList_Menu_Insert Column', 'SortList_Menu', 'Insert Column', 435
+26160, 3, 'StatusBar_String_Barge_In', 'Part of the main window statusbar', 'Barge In', 600
+7783, 3, 'StatusBar_String_Busy', 'Part of the main window statusbar', 'Busy', 435
+16185, 3, 'StatusBar_String_Connected', 'Part of the main window statusbar', 'Connected', 435
+16191, 3, 'StatusBar_String_Failed', 'Part of the main window statusbar', 'Failed', 435
+16187, 3, 'StatusBar_String_Held', 'Part of the main window statusbar', 'Held', 435
+619, 3, 'StatusBar_String_Idle', 'Part of the main window statusbar', 'Idle', 435
+16186, 3, 'StatusBar_String_Initiated', 'Part of the main window statusbar', 'Initiated', 435
+16188, 3, 'StatusBar_String_NA', 'Part of the main window statusbar', 'NA', 435
+16189, 3, 'StatusBar_String_Null', 'Part of the main window statusbar', 'Null', 435
+16192, 3, 'StatusBar_String_Queued', 'Part of the main window statusbar', 'Queued', 435
+26313, 3, 'StatusBar_String_Release_with_Code', 'Part of the main window statusbar', 'Release with Code', 600
+26075, 3, 'StatusBar_String_Reserved', 'Part of the main window statusbar', 'Reserved', 600
+16184, 3, 'StatusBar_String_Ringing', 'Part of the main window statusbar', 'Ringing', 435
+16190, 3, 'StatusBar_String_Route_Wait', 'Part of the main window statusbar', 'Route Wait', 435
+26161, 3, 'StatusBar_String_Silent_Monitor', 'Part of the main window statusbar', 'Silent Monitor', 600
+16193, 3, 'StatusBar_String_Unknown', 'Part of the main window statusbar', 'Unknown', 435
+26162, 3, 'StatusBar_String_Whisper', 'Part of the main window statusbar', 'Whisper', 600
+26317, 3, 'StatusBar_String_Wrap', 'Part of the main window statusbar', 'Wrap Up', 600
+26121, 3, 'tasacdlrlreply_c.cpp', 'You try to login to more groups then allowed', 'You try to login to more groups then allowed', 600
+10982, 3, 'TelBtnSetupDlg_1068CTempWnd', 'Telephony Window Buttons Setup Dialog', 'Setup', 435
+25985, 3, 'TelBtnSetupDlg_1068CWnd', 'Telephony Window Buttons Setup Dialog', 'Setup', 600
+10985, 3, 'TelBtnSetupDlg_1146CTempWnd', 'Telephony Window Buttons Setup Dialog', 'Caption', 435
+25988, 3, 'TelBtnSetupDlg_1146CWnd', 'Telephony Window Buttons Setup Dialog', 'Caption:', 600
+10986, 3, 'TelBtnSetupDlg_1148CTempWnd', 'Telephony Window Buttons Setup Dialog', 'Category', 435
+25989, 3, 'TelBtnSetupDlg_1148CWnd', 'Telephony Window Buttons Setup Dialog', 'Category:', 600
+10987, 3, 'TelBtnSetupDlg_1149CTempWnd', 'Telephony Window Buttons Setup Dialog', 'Function', 435
+25990, 3, 'TelBtnSetupDlg_1149CWnd', 'Telephony Window Buttons Setup Dialog', 'Function:', 600
+10983, 3, 'TelBtnSetupDlg_1CTempWnd', 'Telephony Window Buttons Setup Dialog', 'OK', 435
+25986, 3, 'TelBtnSetupDlg_1CWnd', 'Telephony Window Buttons Setup Dialog', 'OK', 600
+10984, 3, 'TelBtnSetupDlg_2CTempWnd', 'Telephony Window Buttons Setup Dialog', 'Cancel', 435
+25987, 3, 'TelBtnSetupDlg_2CWnd', 'Telephony Window Buttons Setup Dialog', 'Cancel', 600
+10976, 3, 'TelBtnSetupDlg_Category_ComboBox_<not selected>', 'Telephony Window Buttons Setup Dialog', '<not selected>', 435
+10978, 3, 'TelBtnSetupDlg_Category_ComboBox_ACD', 'Telephony Window Buttons Setup Dialog', 'ACD', 435
+10980, 3, 'TelBtnSetupDlg_Category_ComboBox_Other', 'Telephony Window Buttons Setup Dialog', 'Other', 435
+10977, 3, 'TelBtnSetupDlg_Category_ComboBox_Telephony', 'Telephony Window Buttons Setup Dialog', 'Telephony', 435
+10979, 3, 'TelBtnSetupDlg_Category_ComboBox_Window', 'Telephony Window Buttons Setup Dialog', 'Window', 435
+10981, 3, 'TelBtnSetupDlg_Functions_ComboBox_<not selected>', 'Telephony Window Buttons Setup Dialog', '<not selected>', 435
+10988, 3, 'TelBtnSetupDlg_title', 'Telephony Window Buttons Setup Dialog', 'Button Properties', 435
+11109, 3, 'TelBtn_Clear', 'Telephony window button', 'Clear', 435
+11110, 3, 'TelBtn_Properties', 'Telephony window button', 'Properties', 435
+714, 3, 'TelDialerPageWnd_Send_Button', 'Telephony Dialer Page Tab', 'Call', 435
+26105, 3, 'TelDialerPageWnd_Tab_0', 'Telephony Dialer Page Tab', 'Telephony', 600
+26106, 3, 'TelDialerPageWnd_Tab_1', 'Telephony Dialer Page Tab', 'Windows', 600
+10975, 3, 'Telephony window button', 'Telephony window button', 'Clear', 435
+26720, 3, 'TelephonyPage0Button0', 'Answer', 'Answer', 600
+26721, 3, 'TelephonyPage0Button3', 'Disconnect', 'Disconnect', 600
+26722, 3, 'TelephonyPage0Button6', 'Call', 'Call', 600
+26723, 3, 'TelephonyPage1Button0', 'ACD Calls', 'ACD Calls', 600
+26725, 3, 'TelephonyPage1Button10', 'Calls Log', 'Calls Log', 600
+26724, 3, 'TelephonyPage1Button5', 'Calls Status', 'Calls Status', 600
+713, 3, 'Telephony_Window_Title', 'Telephony Window', 'Telephony', 435
+25997, 3, 'TelPageCaptionDlg1146CWnd', 'Telephony Page Caption Dialog', 'New Name:', 600
+25995, 3, 'TelPageCaptionDlg1CButton', 'Telephony Page Caption Dialog', 'OK', 600
+25996, 3, 'TelPageCaptionDlg2CWnd', 'Telephony Page Caption Dialog', 'Cancel', 600
+25994, 3, 'TelPageCaptionDlg_Insert_title', 'Telephony Page Caption Dialog', 'Insert Page', 600
+25998, 3, 'TelPageCaptionDlg_Rename_title', 'Telephony Page Caption Dialog', 'Rename Page', 600
+25991, 3, 'TelTabCtrl_menu_Insert', 'Telephony window tab menu', 'Insert', 600
+25992, 3, 'TelTabCtrl_menu_Remove', 'Telephony window tab menu', 'Remove', 600
+25993, 3, 'TelTabCtrl_menu_Rename', 'Telephony window tab menu', 'Rename', 600
+11107, 3, 'ToolbarOptions_title', 'Toolbar options', 'Toolbar options', 435
+616, 3, 'user_field_separator', 'EtasAcdContainer_c::SetSystemProfile', '=====User Fields=====', 435
+26089, 3, 'Waiting_for_download_to_start', 'Waiting_for_download_to_start', 'Waiting for the email download to begin', 600
+12517, 3, 'Warning_Agent_Is_Going_Down', 'Warning Agent Is Going Down', 'The agent is deactivating. Please try logging in again in a few seconds!', 435
+11099, 3, 'Warning_Changes_After_Restart', 'Changes will take effect only after restarting The Agent !', 'Changes will take effect only after restarting The Agent !', 435
+26102, 3, 'Warning_ETAS_Denied_14', 'Logon Failed: Invalid Agent id', 'Logon Failed: Invalid Agent id', 600
+11738, 3, 'Warning_ETAS_Denied_3', 'Logon fail: Wrong agent number', 'Logon fail: Wrong agent number', 435
+11739, 3, 'Warning_ETAS_Denied_4', 'Logon fail: Wrong password', 'Logon fail: Wrong password', 435
+11263, 3, 'Warning_ETAS_Denied_8', 'Logon Failed: Agent number is already in use', 'Logon Failed: Agent number is already in use', 435
+11414, 3, 'Warning_ETAS_Denied_9', 'Logon fail: Extension is already in use', 'Logon fail: Extension is already in use', 435
+16202, 3, 'Warning_Extension_Cannot_Be_Empty', 'Extension cannot be empty !', 'Extension cannot be empty !', 435
+11436, 3, 'Warning_Instance_Already_Running', 'Agent instance is already active. The instance is:', 'Agent instance is already active. The instance is:', 435
+12673, 3, 'Warning_Min_Agents_In_Group', 'You are attempting to release from group '%GRP%', which is part of service '%SRV%'.
+Preforming this action will leave the service with less than the minimum required non-released agents.
+Are you sure you want to release?', 'You are attempting to release from group '%GRP%', which is part of service '%SRV%'.
+Preforming this action will leave the service with less than the minimum required non-released agents.
+Are you sure you want to release?', 435
+26103, 3, 'Warning_Pickup_In_Process', 'Pick Up is now in process !', 'Pick Up is now in process !', 600
+12566, 3, 'Warning_Transfer_To_Agent_Could_Not_Completed', 'The transfer could not be completed. Agent %EXT% is not available', 'The transfer could not be completed. Agent %EXT% is not available', 435
+16233, 3, 'Wave_files_only_msg', 'Wave_files_only_msg', '(Wave files only. Requires sound card):', 435
+12551, 3, '_Failed', 'Email address is not valid.', 'Email address is not valid.', 435
+12673, 3, 'Warning_Min_Agents_In_Group', 'You are attempting to release from group '%GRP%', which is part of service '%SRV%'.
+Preforming this action will leave the service with less than the minimum required non-released agents.
+Are you sure you want to release?', 'You are attempting to release from group '%GRP%', which is part of service '%SRV%'.
+Preforming this action will leave the service with less than the minimum required non-released agents.
+Are you sure you want to release?', 435

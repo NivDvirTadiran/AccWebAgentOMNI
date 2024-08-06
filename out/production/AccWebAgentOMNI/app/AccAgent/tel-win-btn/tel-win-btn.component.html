@@ -1,0 +1,123 @@
+<div class="telBtnForm">
+  <div>
+    <mat-grid-list [cols]="4" rowHeight="50px">
+      <div *ngIf="AAC.ChooseCategoryAndAction">
+        <mat-grid-tile [colspan]="2" [rowspan]="1">
+          <mat-form-field class="cp_form_filed">
+            <mat-select placeholder="{{'Category' | translate}}" [(value)]="AAC.category_idx" [(ngModel)]="category_idx"
+              (selectionChange)="PrepareSubCategory($event)">
+              <mat-option value="Telephony">{{'Telephony' | translate}}</mat-option>
+              <mat-option value="ACD">{{'ACD' | translate}}</mat-option>
+              <!-- <mat-option value="Window">{{'Window' | translate}}</mat-option> -->
+              <!-- <mat-option value="Othres">{{'Others' | translate}}</mat-option> -->
+            </mat-select>
+          </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="2" [rowspan]="1">
+          <mat-form-field class="cp_form_filed">
+            <mat-select placeholder="{{'Column' | translate}}" [(ngModel)]="action_idx" name="action" (selectionChange)="PrepareAction($event, 1)">
+              <mat-option *ngFor="let action of AAC.CurActionList" 
+                [value]="action.code" style="font-size:100%;height:19px;">
+                {{action.titlesrc | translate}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </mat-grid-tile>
+      </div>
+      <div *ngIf="AAC.ShowCategoryAndAction">
+        <mat-grid-tile [colspan]="2" [rowspan]="1">
+          <mat-form-field class="cp_form_filed">
+            <input matInput placeholder="{{'Category' | translate}}" [value]="AAC.category_idx" readonly>
+          </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="2" [rowspan]="1">
+          <mat-form-field class="cp_form_filed">
+            <input matInput placeholder="{{'Action' | translate}}" [value]="AAC.action_desc" readonly>
+          </mat-form-field>
+        </mat-grid-tile>
+      </div>
+      <mat-grid-tile [colspan]="2" [rowspan]="1">
+        <mat-form-field class="cp_form_filed">
+          <input matInput placeholder="{{'Caption' | translate}}" [value]="AAC.TelCurrAction.titlesrc" [(ngModel)]="AAC.TelCurrAction.titlesrc"
+          maxlength="16">
+        </mat-form-field>
+      </mat-grid-tile>
+      <mat-grid-tile *ngIf="AAC.telNumber" [colspan]="2" [rowspan]="5" style="font-size: 90%; border: 2px solid rgb(221, 221, 221);">
+        <div style="position: sticky;width: 90%;background-color: white">
+          <my_keyboard></my_keyboard>
+        </div>
+      </mat-grid-tile>
+
+      <mat-grid-tile [colspan]="2" [rowspan]="1">
+      </mat-grid-tile>
+      <!--  ======================== action with data ============ -->
+      <!-- <mat-grid-tile   *ngIf="! AAC.telNumber" [colspan]="2" [rowspan]="1" > -->
+      <!-- get phone number  -->
+      <mat-grid-tile *ngIf="AAC.telNumber" [colspan]="2" [rowspan]="1">
+        <mat-form-field class="cp_form_filed">
+          <input matInput placeholder="{{'Enter destination number' | translate}}" [value]="AAC.TelCurrAction.data" [(ngModel)]="AAC.TelCurrAction.data"
+          maxlength="20">
+        </mat-form-field>
+      </mat-grid-tile>
+      <!-- get release code  -->
+      <mat-grid-tile *ngIf="AAC.telReleaseCode" [colspan]="2" [rowspan]="1">
+        <mat-form-field class="cp_form_filed">
+          <mat-select placeholder="{{'Release with Code' | translate}}" [(ngModel)]="selectedRC" name="code" (selectionChange)="RCchanged($event)">
+            <mat-option *ngFor="let code of AAC.ACC.m_SelectRC"
+              [value]="code.Key" style="font-size:100%;;height:19px;">
+              {{code.Desc}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </mat-grid-tile>
+      <mat-grid-tile *ngIf="AAC.telTransferToAgent" [colspan]="2" [rowspan]="1">
+        <mat-form-field class="cp_form_filed">
+            <mat-select placeholder="{{'Perform transfer to Agent' |translate}}" [(ngModel)]="selectedTtA" name="code"
+            (selectionChange)="TaACchanged($event)">
+            <mat-option style="font-size:100%;;height:19px;">None</mat-option>
+            <mat-option *ngFor="let code of AAC.agentsReadyList" style="font-size:100%;;height:19px;" [value]="code.name">
+                {{code.name}}
+            </mat-option>
+        </mat-select>
+      </mat-form-field>
+      </mat-grid-tile>
+      <!-- get WU code  -->
+      <mat-grid-tile *ngIf="AAC.telWUCode" [colspan]="2" [rowspan]="1">
+        <mat-form-field class="cp_form_filed">
+          <mat-select placeholder="{WrapUp Code' | translate}}" [(ngModel)]="selectedWC" name="code" (selectionChange)="WCchanged($event)">
+            <mat-option style="font-size:100%;;height:19px;">None</mat-option>
+            <mat-option *ngFor="let code of AAC.ACC.m_WrapUpCodesList" 
+              [value]="code.Key" style="font-size:100%;;height:19px;">
+              {{code.Desc}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </mat-grid-tile>
+      <!-- get group code  -->
+      <mat-grid-tile *ngIf="AAC.telGrp" [colspan]="2" [rowspan]="1">
+        <mat-form-field class="cp_form_filed">
+          <mat-select placeholder="{{'Login to ACD group' | translate}}" [(ngModel)]="selectedOneGroup" (selectionChange)="SelctedOneGroup($event)">
+            <mat-option *ngFor="let group of AAC.ACC.m_GroupsList"
+             [value]="group.Key" style="font-size:100%;;height:19px;">
+            {{group.Desc}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </mat-grid-tile>
+      <!-- comlete grid row -->
+      <mat-grid-tile *ngIf="AAC.telNumber || AAC.telReleaseCode || AAC.telWUCode || AAC.telGrp || AAC.telTransferToAgent" [colspan]="2" [rowspan]="1">
+      </mat-grid-tile>
+      <!-- ================================ update/delete/cancel  ==================================-->
+      <mat-grid-tile [colspan]="1" [rowspan]="1" style="font-size: 90%; border: 2px solid rgb(221, 221, 221);">
+        <button mat-button (click)="Update()">{{'Save' | translate}}</button>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="1" [rowspan]="1" style="font-size: 90%; border: 2px solid rgb(221, 221, 221);">
+        <button mat-button (click)="Remove()">{{'Remove' | translate}}</button>
+      </mat-grid-tile>
+      <!--mat-grid-tile [colspan]="1" [rowspan]="1" style="font-size: 90%; border: 2px solid rgb(221, 221, 221);">
+        <button mat-button (click)="Cancel()">{{'Cancel' | translate}}</button>
+      </mat-grid-tile-->
+
+    </mat-grid-list>
+
+    
+  </div>
+</div>

@@ -1,0 +1,512 @@
+
+@import '../../../scss/_all-vars-and-mixins.scss';
+//@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
+//@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
+@import "../../../assets/css/font-awesome.min.css";
+//@import '~bootstrap/dist/css/bootstrap.min.css';
+@import "~node_modules/angular-bootstrap-md/assets/scss/bootstrap/bootstrap.scss";
+// @import '~responsive-css/_responsive.scss';
+.content {
+  margin: 40px 32px;
+}
+
+
+.container_numpad {
+      /*  not needed styles to reflect it */ 
+      padding: 0px;
+      color: rgb(22, 21, 21);
+      /* needed styles below */
+      display: float;
+      // height: 30px;
+      float: left ;
+      //background: rgba(88, 184, 90, 0.103);
+      background-size: cover;
+      width: 95%;
+      //border: 2px solid #ddd;
+      //border-radius: 10px 10px 15px 15px;
+}
+
+
+.row {
+  align-items: flex-end;
+  display: grid;
+  grid-gap: 10px;
+  // grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+  padding: 8px;
+
+  .content-test-form &:last-of-type > .col:last-of-type {
+    align-self: flex-start;
+    padding-top: 8px;
+  }
+}
+
+.col {
+  position: relative;
+
+  > .mat-form-field {
+    display: block;
+  }
+}
+.testx{
+  max-width:  10%;
+}
+
+.mat-raised-button {
+  width: 100%;
+
+  .mat-select + & {
+    margin-top: 24px;
+  }
+}
+
+.mat-select {
+  display: block;
+}
+
+pre {
+  background-color: #e0e0e0;
+  border-radius: 3px;
+  display: block;
+  font: 11px/1.5 Monospaced, monospace;
+  margin: 8px 0;
+  min-height: 16px;
+  padding: 4px 8px;
+  white-space: normal;
+}
+
+.mat-keyboard-container {
+  min-width: 100% !important;
+  padding: unset !important;
+  position: absolute !important;
+  bottom: 0% !important;
+}
+.mat-keyboard-key{
+//padding: unset !important;
+padding: 0 0.485rem !important;
+color: gold !important;
+}
+.mat-keyboard-col{
+padding: 1px !important;
+}
+.mat-keyboard-wrapper{
+padding:0 !important;
+}
+.mat-keyboard .mat-raised-button {
+  font-size: 25px !important;
+  line-height: 16px !important;
+  padding: 0 8px !important;
+}
+mat-button {
+  font-size: 13px;
+  line-height: 16px;
+  padding: 0 8px;
+}
+matKeyboard{
+  max-width: 5%;
+}
+
+/*============================
+		General Style
+==============================*/
+
+body {
+  font-family: 'Raleway', sans-serif;
+  text-align: left;
+  font-size: 14px;
+  line-height: 17px;
+  word-wrap: break-word;
+  color: #666;
+  background: #ddd;
+  overflow-x: hidden;
+
+}
+
+.alignleft {
+  float: left;
+  margin-right: 15px;
+}
+
+.alignright {
+  float: right;
+  margin-left: 15px;
+}
+
+.aligncenter {
+  display: block;
+  margin: 0 auto 15px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/*============================
+  Typography
+==============================*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 15px;
+  font-weight: 400;
+
+}
+
+a {
+  text-decoration: none !important;
+
+
+}
+
+a:focus {
+  outline: 0 solid
+}
+
+a:hover {
+  text-decoration: none
+}
+
+p {
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  color: #888;
+  line-height: 24px;
+  font-weight: 400;
+  left: -1px;
+  margin-top: 20px;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+.task {
+  display: inline-flex;
+  float: right;
+}
+
+.right-side {
+  width: 200px;
+  background: #fff;
+  border: 2px solid #cccccc;
+}
+
+.left-side {
+  display: inline-block;
+  margin-top: 45%;
+  width: 210px;
+
+
+}
+
+/*============================
+  (1)left-side
+==============================*/
+section.mobile-btn {
+  padding: 10px;
+  border: 2px solid #cccccc;
+  background: #ffffff;
+}
+
+.top-icon span {
+  font-size: 25px;
+  line-height: 0px;
+  cursor: pointer;
+}
+
+.top-icon .f-icon {
+  margin-bottom: -10px;
+}
+
+.cross span {
+  font-size: 18px;
+  margin-top: 5px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.number span {
+  border: 1px solid #ddd;
+  padding: 8px 28px;
+}
+
+.number {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.file-icn .fa {
+  font-size: 28px;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.left-side .col-md-4 {
+  max-width: 29%;
+}
+
+
+.pad {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  cursor: pointer;
+  background: #29ABE2;
+  color: #fff;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  border: 2px solid #ddd;
+  box-shadow: 0px 3px #0070C0;
+  border-radius: 10px 10px 10px 10px;
+  margin: 2px;
+}
+.call {
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  background: #A5CC74;
+  color: #fff;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  border: 2px solid #ddd;
+  //box-shadow: 0px 3px #0070C0;
+  border-radius: 10px 10px 10px 10px;
+  margin: 2px;
+}
+
+// .call .fa {
+//   background: #A5CC74;
+//   width: 100%;
+//   margin-top: 15px;
+//   text-align: center;
+//   color: #fff;
+//   font-size: 26px;
+//   cursor: pointer;
+// }
+
+.side-logo img{
+  width: 44%;
+}
+.side-logo {
+  position: absolute;
+  content: "";
+  left: -53px;
+  top: 162px;
+}
+/*============================
+  (2)location
+==============================*/
+.location {
+  padding: 20px;
+}
+
+.logo img {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.version {
+  margin-top: 15px;
+
+}
+
+.location span {
+  margin-bottom: 200px;
+  display: inherit;
+  cursor: pointer;
+}
+
+.version img {
+  width: 50%;
+  margin: 10px;
+
+
+}
+
+.btn {
+  width: 100%;
+  background: #A5CC74;
+  border: #A5CC74;
+  border-radius: 0px;
+}
+
+input.form-control::-webkit-input-placeholder {
+  text-align: center;
+}
+
+.form-control {
+  border-radius: 0px;
+
+}
+
+/*============================
+  (5)Icon
+==============================*/
+.icon {
+  margin-bottom: 25px;
+}
+
+.social-icon .fa {
+  font-size: 30px;
+  color: #56A5D0;
+  cursor: pointer;
+}
+
+.social-icon {
+  margin-top: 15px;
+}
+
+.wrench .fa {
+  font-size: 17px;
+  color: #56A5D0;
+  height: 30px;
+  width: 30px;
+  border: 1px solid #56A5D0;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.question:after {
+  position: absolute;
+  content: "";
+  background: #ddd;
+  height: 3px;
+  width: 20px;
+  bottom: -3px;
+  left: 29px;
+}
+
+/************End**************/
+/*============================
+		General Style
+==============================*/
+
+body {
+  font-family: 'Raleway', sans-serif;
+  text-align: left;
+  font-size: 14px;
+  line-height: 17px;
+  word-wrap: break-word;
+  color: #666;
+  background: #ddd;
+  overflow-x: hidden;
+
+}
+
+.alignleft {
+  float: left;
+  margin-right: 15px;
+}
+
+.alignright {
+  float: right;
+  margin-left: 15px;
+}
+
+.aligncenter {
+  display: block;
+  margin: 0 auto 15px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/*============================
+  Typography
+==============================*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 15px;
+  font-weight: 400;
+
+}
+
+a {
+  text-decoration: none !important;
+
+
+}
+
+a:focus {
+  outline: 0 solid
+}
+
+a:hover {
+  text-decoration: none
+}
+
+p {
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  color: #888;
+  line-height: 24px;
+  font-weight: 400;
+  left: -1px;
+  margin-top: 20px;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+.task {
+  display: inline-flex;
+  float: right;
+}
+
+.right-side {
+  width: 200px;
+  background: #fff;
+  border: 2px solid #cccccc;
+}
+
+.left-side {
+  display: inline-block;
+  margin-top: 45%;
+  width: 210px;
+
+
+}
+
+.numberCircle {
+  //border-radius: 50%;
+  //behavior: url(PIE.htc);
+  /* remove if you don't care about IE8 */
+  width: 7px;
+  height: 7px;
+  vertical-align: top;
+  //padding: 8px;
+  background: #fff;
+  //border: 2px solid #666;
+  color: #666;
+  text-align: center;
+  font: 10px Arial, sans-serif;
+}
+
+/*============================
+  (1)left-side
+==============================*/
+
+/************End**************/

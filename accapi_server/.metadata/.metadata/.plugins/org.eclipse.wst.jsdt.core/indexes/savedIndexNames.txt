@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\Projects\4.xx\source\AccWebAgent\accapi_server\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1022613510.index
+380774741.index
+4192516444.index
+2010692285.index
+212918713.index
+3323003693.index

@@ -1,0 +1,6 @@
+[1106/155654.513:ERROR:file_io_win.cc(179)] CreateFile C:\Chrome dev session\Crashpad\settings.dat: Access is denied. (0x5)
+[1106/155654.566:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[1106/155654.569:ERROR:file_io_win.cc(179)] CreateFile C:\Chrome dev session\Crashpad\settings.dat: Access is denied. (0x5)
+[1106/155747.998:ERROR:file_io_win.cc(179)] CreateFile C:\Chrome dev session\Crashpad\settings.dat: Access is denied. (0x5)
+[1106/155748.005:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[1106/155748.008:ERROR:file_io_win.cc(179)] CreateFile C:\Chrome dev session\Crashpad\settings.dat: Access is denied. (0x5)

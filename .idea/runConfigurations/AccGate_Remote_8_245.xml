@@ -1,0 +1,73 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="AccGate Remote 8.245" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Remote" APPLICATION_SERVER_NAME="Tomcat 9.0" ALTERNATIVE_JRE_ENABLED="false">
+    <option name="HOST" value="172.28.8.245" />
+    <option name="PORT" value="8445" />
+    <option name="LOCAL" value="false" />
+    <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8445/AccGarw" />
+    <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+    <deployment>
+      <artifact name="accOMNI">
+        <settings>
+          <option name="CONTEXT_PATH" value="/AccGate" />
+        </settings>
+      </artifact>
+    </deployment>
+    <server-settings>
+      <data>
+        <option name="targets">
+          <list>
+            <WatchedTargetModelImpl>
+              <option name="name" value="CONTEXT_XML" />
+              <option name="transportStagingTarget">
+                <TransportTarget>
+                  <option name="id" value="ea3947f3-e59f-4df0-9f3a-343f83e22850" />
+                  <id>ea3947f3-e59f-4df0-9f3a-343f83e22850</id>
+                </TransportTarget>
+              </option>
+              <option name="watchedLocalPath" value="" />
+              <watched-path />
+              <name>CONTEXT_XML</name>
+              <transport-target>
+                <TransportTarget>
+                  <option name="id" value="ea3947f3-e59f-4df0-9f3a-343f83e22850" />
+                  <id>ea3947f3-e59f-4df0-9f3a-343f83e22850</id>
+                </TransportTarget>
+              </transport-target>
+            </WatchedTargetModelImpl>
+            <StagingTargetModelImpl>
+              <option name="name" value="STAGING" />
+              <option name="stagingRemotePath" value="/AccGate" />
+              <option name="transportStagingTarget">
+                <TransportTarget>
+                  <option name="id" value="5cb2b466-231e-48d7-a085-aa2e655b591b" />
+                  <id>5cb2b466-231e-48d7-a085-aa2e655b591b</id>
+                </TransportTarget>
+              </option>
+              <staging-path>/AccGate</staging-path>
+              <name>STAGING</name>
+              <transport-target>
+                <TransportTarget>
+                  <option name="id" value="5cb2b466-231e-48d7-a085-aa2e655b591b" />
+                  <id>5cb2b466-231e-48d7-a085-aa2e655b591b</id>
+                </TransportTarget>
+              </transport-target>
+            </StagingTargetModelImpl>
+          </list>
+        </option>
+        <option name="transportHostId" />
+      </data>
+    </server-settings>
+    <predefined_log_file enabled="true" id="Tomcat" />
+    <predefined_log_file enabled="true" id="TOMCAT_LOCALHOST_LOG_ID" />
+    <RunnerSettings RunnerId="Debug">
+      <option name="DEBUG_PORT" value="57692" />
+      <option name="LOCAL" value="false" />
+    </RunnerSettings>
+    <method v="2">
+      <option name="Make" enabled="true" />
+      <option name="BuildArtifacts" enabled="true">
+        <artifact name="accOMNI" />
+      </option>
+    </method>
+  </configuration>
+</component>

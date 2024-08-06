@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{25AF6382-D7EE-4F2F-A719-20A253237986}</ProjectGuid>
+    <RootNamespace>accapi</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.31613.86</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>t:\debug\crm\bin\</OutDir>
+    <IntDir>t:\debug\interm\crm\accapi\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>t:\$(Configuration)\crm\bin\</OutDir>
+    <IntDir>t:\$(Configuration)\interm\crm\$(ProjectName)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/we4013 /we4024 /we4028 /we4029 /we4047 /we4133 /we4700 /we4715 /we4806 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>p:\source\include;m:\source\include;p:\source\c2g\include;m:\source\c2g\include;p:\source\async_hooks\fullhttps_hook;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <StructMemberAlignment>4Bytes</StructMemberAlignment>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>bswD.lib;sea_providerD.lib;bswlogD.lib;lrl_cpD.lib;bswsocketd.lib;dbiclassesD.lib;gen_utilsd.lib;lrl_utilsD.lib;c2g_utilsD.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)accapi.exe</OutputFile>
+      <AdditionalLibraryDirectories>t:\debug\lib;m:\target\debug\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)accapi.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/we4013 /we4024 /we4028 /we4029 /we4047 /we4133 /we4700 /we4715 /we4806 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>p:\source\include;p:\source\SolLib;p:\source\eos\include;p:\source\bsw\include;p:\source\bswlog\include;p:\source\c2g\include;p:\source\dbi\dbiserver;p:\source\lrl\lrl_le_provider;p:\source\bai\include;p:\source\sup\include;p:\source\gccsserver;p:\source\async_hooks\fullhttps_hook;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_USE_32BIT_TIME_T;%(PreprocessorDefinitions);VS_2019</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <StructMemberAlignment>8Bytes</StructMemberAlignment>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ShowIncludes>false</ShowIncludes>
+      <UseFullPaths>false</UseFullPaths>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;bsw.lib;sea_provider.lib;bswlog.lib;lrl_cp.lib;bswsocket.lib;sapi.lib;dbiclasses.lib;gen_utils.lib;lrl_utils.lib;c2g_utils.lib;rini.lib;dbbroker.lib;eos.lib;lrl_core.lib;sollib.lib;adu_iface.lib;bli_idd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)accapi.exe</OutputFile>
+      <AdditionalLibraryDirectories>t:\release\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="accapi_CEMax.cpp" />
+    <ClCompile Include="accapi_entities.cpp" />
+    <ClCompile Include="accapi_main.cpp" />
+    <ClCompile Include="accapi_sm_manager.cpp" />
+    <ClCompile Include="accapi_tcp_server.cpp" />
+    <ClCompile Include="accapi_ps_work_thread.cpp" />
+    <ClCompile Include="accapi_crm_types.cpp" />
+    <ClCompile Include="filebrowser.cpp" />
+    <ClCompile Include="accapi_web_gccs.cpp">
+      <ShowIncludes Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ShowIncludes>
+    </ClCompile>
+    <ClCompile Include="accapi_main_thread.cpp" />
+    <ClCompile Include="accapi_sea_reply.cpp" />
+    <ClCompile Include="accapi_timer.cpp" />
+    <ClCompile Include="accapi_work_thread.cpp" />
+    <ClCompile Include="accapi_web_admin.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="accapi_CEMax.h" />
+    <ClInclude Include="accapi_entities.h" />
+    <ClInclude Include="accapi_sm_manager.h" />
+    <ClInclude Include="accapi_ps_work_thread.h" />
+    <ClInclude Include="accapi_web_admin.h" />
+    <ClInclude Include="base64.h" />
+    <ClInclude Include="accapi_crm_types.h" />
+    <ClInclude Include="accapi_web_gccs.h" />
+    <ClInclude Include="accapi_main_thread.h" />
+    <ClInclude Include="accapi_sea_reply.h" />
+    <ClInclude Include="accapi_timer.h" />
+    <ClInclude Include="accapi_work_thread.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

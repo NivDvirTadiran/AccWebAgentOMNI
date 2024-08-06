@@ -1,0 +1,14 @@
+{
+  "/accOMNI": {
+    "target": "https://localhost:8445",
+    "pathRewrite": {"^/accOMNI" : "https://localhost:8445/accOMNI"},
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  },
+  "/#" : {
+    "target": "https://localhost:8445/accOMNI/#",
+    "secure": false,
+    "logLevel": "debug"
+  }
+}

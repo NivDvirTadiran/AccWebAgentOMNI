@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/accapi_server/.metadata/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/conf/web.xml" />
+    <file type="web" url="file://$PROJECT_DIR$/accapi_server/.metadata/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/accagentapi/WEB-INF/web.xml" />
+    <file type="web" url="file://$PROJECT_DIR$/accapi_server/.metadata/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/ROOT/WEB-INF/web.xml" />
+    <file type="web" url="file://$PROJECT_DIR$/accapi_server/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/conf/web.xml" />
+    <file type="web" url="file://$PROJECT_DIR$/accapi_server/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/accagentapi/WEB-INF/web.xml" />
+    <file type="web" url="file://$PROJECT_DIR$/accapi_server/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/ROOT/WEB-INF/web.xml" />
+    <file type="web" url="file://$PROJECT_DIR$/accapi_server/accagentapi" />
+    <file type="web" url="file://$PROJECT_DIR$/accapi_server/Servers/Tomcat v8.0 Server at localhost-config/web.xml" />
+    <file type="web" url="file://$PROJECT_DIR$/accapi_server/Servers/Tomcat v9.0 Server at localhost-config/web.xml" />
+    <file type="web" url="file://$PROJECT_DIR$/out/artifacts/accOMNI/WEB-INF/web.xml" />
+    <file type="web" url="file://$PROJECT_DIR$/out/artifacts/accWebAgent/WEB-INF/web.xml" />
+    <file type="web" url="file://$PROJECT_DIR$/out/production/AccWebAgent/main/webapp/WEB-INF/web.xml" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/accapi_server/accagentapi/pom.xml" />
+      </list>
+    </option>
+    <option name="workspaceImportForciblyTurnedOn" value="true" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="temurin-1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="jpab" />
+  </component>
+  <component name="SvnBranchConfigurationManager">
+    <option name="myConfigurationMap">
+      <map>
+        <entry key="$PROJECT_DIR$/../..">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="branchUrls">
+                <list>
+                  <option value="svn://tadiran845:3695/acc_repository/branches" />
+                </list>
+              </option>
+              <option name="trunkUrl" value="svn://tadiran845:3695/acc_repository/trunk" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="branchUrls">
+                <list>
+                  <option value="svn://tadiran845:3695/acc_repository/branches" />
+                </list>
+              </option>
+              <option name="trunkUrl" value="svn://tadiran845:3695/acc_repository/trunk" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,487 @@
+{
+	"INDICATIONS" : {
+		"Display_WaitForEmailDownload" : "YES",
+		"Display_EmailRejected" : "YES"
+	},
+	"Chat" : {
+		"ChatTree_HTML" : "AgentChatTree.htm",
+		"ChatService_Home" : "http://tomcat.cs.com/epicChat/",
+		"ChatService_Servlet" : "EpicChat",
+		"ChatService_OpenAgent" : "EPChat_OpenAgent.htm",
+		"ChatService_StartPage" : "EPChat_StartAgent.jsp"
+	},
+	"DDE" : {
+		"ActivateServer" : "False",
+		"Server" : "CRM",
+		"Topic" : "Events",
+		"Command" : {
+			"OnStarted" : "started %AgentID",
+			"DDE_OnReStarted" : "restarted",
+			"DDE_OnDenied" : "denied %cause",
+			"DDE_OnStoped" : "stopped",
+			"DDE_OnLoggedIn" : "loggedin %group",
+			"DDE_OnLoggedOut" : "loggedout %group",
+			"DDE_OnHeld" : "held %callid",
+			"DDE_OnRetrieved" : "retrieved %callid",
+			"DDE_OnConferenced" : "conferenced %callid",
+			"DDE_OnReleased" : "released",
+			"DDE_OnReleasedWithCode" : "releasedwithcode %release_code",
+			"DDE_OnResumed" : "resumed",
+			"DDE_OnWrapUp" : "wrapup",
+			"DDE_OnReady" : "ready",
+			"DDE_OnCleared" : "cleared %callid",
+			"DDE_OnReserved" : "reserved %callid, %Call Back Destination, %DNIS, %Service, %acd_group, %Customer Name",
+			"DDE_OnSystemAvailable" : "systemavailable %available",
+			"DDE_OnFailed" : "failed %cause",
+			"DDE_OnSilentStarted" : "silentstarted",
+			"DDE_OnIncoming" : "incomingex %callid, %calltyp, %DNIS, %calling, %Service, %Priority, %ACD ENTER TIME",
+			"DDE_OnIncomingEx" : "incomingex %callid, %calltyp, %DNIS, %calling, %Service, %Priority, %ACD ENTER TIME, %Alternative Call ID",
+			"DDE_OnConnected" : "connectedex %callid, %calltyp, %DNIS, %calling, %Service, %Priority, %ACD ENTER TIME",
+			"DDE_OnConnectedEx" : "connectedex %callid, %calltyp, %DNIS, %calling, %Service, %Priority, %ACD ENTER TIME, %Alternative Call ID",
+			"DDE_OnSilentSupStarted" : "silentsupstarted",
+			"DDE_OnSupStarted" : "supstarted %app",
+			"DDE_OnSupStoped" : "supstoped",
+			"DDE_OnSupAppStoped" : "supappstoped %app",
+			"DDE_OnSupSystemAvailable" : "supsystemavailable %available",
+			"DDE_OnLogoutAll" : "loggedoutall",
+			"DDE_OnMakeOACDCallResult" : "makeoacdcallresult %user_req, %result"
+		}
+	},
+	"HTTP-Config" : {
+		"activate_http" : "N",
+		"in_server_cmd_port" : "8081",
+		"HTTP-1_SilentLogonCmd" : "SilentLogon?agentid=%AGENT_NUMBER%&password=%AGENT_PSW%&ext :%extension%",
+		"HTTP-1_SilentLogoffCmd" : "SilentLogoff",
+		" Command " : {
+			"HTTP - 1_LoginPrimaryGroupsCmd " : "LoginPrimaryGroups",
+			"HTTP-1_LogoutFromPrimaryGroupsCmd" : "LogoutFromPrimaryGroups",
+			"HTTP-1_LoginGroupCmd" : "LoginGroup?groupname : %groupname%",
+			"HTTP-1_LogoutFromGroupCmd" : "LogoutFromGroup?groupname : %groupname%",
+			"HTTP-1_ReleaseCmd" : "Release",
+			"HTTP-1_ResumeCmd" : "Resume",
+			"HTTP-1_WrapupCodeCmd" : "WrapupCode?wrapupcode : %wrapupcode%",
+			"HTTP-1_AgentReadyCmd" : "AgentReady",
+			"HTTP-1_SetCallProfiledCmd" : "SetCallProfile?fieldname=%cp_field_name%&value : %cp_value%",
+			"HTTP-1_AnswerCmd" : "Answer",
+			"HTTP-1_HangUpCmd" : "HangUp",
+			"HTTP-1_MakeNACallCmd" : "MakeNACall?destnum : %dialnumber%",
+			"HTTP-1_HoldCmd" : "Hold",
+			"HTTP-1_RetrieveCmd" : "Retrieve",
+			"HTTP-1_DivertCmd" : "Divert?destnum : %destinatioNumber%",
+			"HTTP-1_TransferCallCmd" : "TransferCall?destnum : %destinatioNumber%",
+			"HTTP-1_CompleteTransferCmd" : "CompleteTransfer",
+			"HTTP-1_SingleStepTransferCmd" : "SingleStepTransfer?destnum : %destinatioNumber%",
+			"HTTP-1_ConferenceCmd" : "Conference?destnum : %destinatioNumber%",
+			"HTTP-1_CompleteConferenceCmd" : "CompleteConference",
+			"HTTP-1_AlternateCmd" : "Alternate",
+			"HTTP-1_ReconnectCmd" : "Reconnect",
+			"HTTP-1_TransferByAgentIdCmd" : "TransferByAgentId?agentid : %agent_id%",
+			"HTTP-1_GetListOfWrapUpCodesCmd" : "GetListOfWrapUpCodes",
+			"HTTP-1_GetListOfLogedInAgentsCmd" : "GetListOfLogedInAgents",
+			"HTTP-1_GetListOfACDGroupsCmd" : "GetListOfACDGroups",
+			"HTTP-1_TransferCallWithCPCmd" : "TransferCallWithCallProfile?destnum=%destinatioNumber%&fieldname=%cp_field_name%&value : %cp_value%",
+			"HTTP-1_GetCallProfileFieldCmd" : "GetCallProfileField?fieldname : %cp_field_name%",
+			"HTTP-1_ReleaseCodeCmd" : "ReleaseCode?releasecode : %releasecode%",
+			"HTTP-1_GetListOfReleaseCodesCmd" : "GetListOfReleaseCodes",
+			"HTTP-2_SilentLogonCmd" : "SilentLogon?agentid=%AGENT_NUMBER%&password=%AGENT_PSW%&ext : %extension%",
+			"HTTP-2_SilentLogoffCmd" : "SilentLogoff",
+			"HTTP-2_LoginPrimaryGroupsCmd" : "LoginPrimaryGroups",
+			"HTTP-2_LogoutFromPrimaryGroupsCmd" : "LogoutFromPrimaryGroups",
+			"HTTP-2_LoginGroupCmd" : "LoginGroup?groupname : %groupname%",
+			"HTTP-2_LogoutFromGroupCmd" : "LogoutFromGroup?groupname : %groupname%",
+			"HTTP-2_ReleaseCmd" : "Release",
+			"HTTP-2_ResumeCmd" : "Resume",
+			"HTTP-2_WrapupCodeCmd" : "WrapupCode?wrapupcode : %wrapupcode%",
+			"HTTP-2_AgentReadyCmd" : "AgentReady",
+			"HTTP-2_SetCallProfiledCmd" : "SetCallProfile?fieldname=%cp_field_name%&value : %cp_value%",
+			"HTTP-2_AnswerCmd" : "Answer",
+			"HTTP-2_HangUpCmd" : "HangUp",
+			"HTTP-2_MakeNACallCmd" : "MakeNACall?destnum : %dialnumber%",
+			"HTTP-2_HoldCmd" : "Hold",
+			"HTTP-2_RetrieveCmd" : "Retrieve",
+			"HTTP-2_DivertCmd" : "Divert?destnum : %destinatioNumber%",
+			"HTTP-2_TransferCallCmd" : "TransferCall?destnum : %destinatioNumber%",
+			"HTTP-2_CompleteTransferCmd" : "CompleteTransfer",
+			"HTTP-2_SingleStepTransferCmd" : "SingleStepTransfer?destnum : %destinatioNumber%",
+			"HTTP-2_ConferenceCmd" : "Conference?destnum : %destinatioNumber%",
+			"HTTP-2_CompleteConferenceCmd" : "CompleteConference",
+			"HTTP-2_AlternateCmd" : "Alternate",
+			"HTTP-2_ReconnectCmd" : "Reconnect",
+			"HTTP-2_TransferByAgentIdCmd" : "TransferByAgentId?agentid : %agent_id%",
+			"HTTP-2_GetListOfWrapUpCodesCmd" : "GetListOfWrapUpCodes",
+			"HTTP-2_GetListOfLogedInAgentsCmd" : "GetListOfLogedInAgents",
+			"HTTP-2_GetListOfACDGroupsCmd" : "GetListOfACDGroups",
+			"HTTP-2_TransferCallWithCPCmd" : "TransferCallWithCallProfile?destnum=%destinatioNumber%&fieldname=%cp_field_name%&value : %cp_value%",
+			"HTTP-2_GetCallProfileFieldCmd" : "GetCallProfileField?fieldname : %cp_field_name%",
+			"HTTP-2_ReleaseCodeCmd" : "ReleaseCode?releasecode : %releasecode%",
+			"HTTP-2_GetListOfReleaseCodesCmd" : "GetListOfReleaseCodes"
+		}
+	},
+	"TRIGGERS" : {
+		"OperateTriggers" : "0",
+		"Command" : {
+			"TRIG_OnStarted" : "started %AgentID",
+			"TRIG_OnReStarted" : "restarted",
+			"TRIG_OnDenied" : "denied %cause",
+			"TRIG_OnStoped" : "stopped",
+			"TRIG_OnLoggedIn" : "loggedin %group",
+			"TRIG_OnLoggedOut" : "loggedout %group",
+			"TRIG_OnHeld" : "held %callid",
+			"TRIG_OnRetrieved" : "retrieved %callid",
+			"TRIG_OnIncoming" : "incoming %callid, %calltyp, %DNIS, %calling, %Service, %Priority, %ACD ENTER TIME",
+			"TRIG_OnConnected" : "connected %callid, %calltyp, %DNIS, %calling, %Service, %Priority, %ACD ENTER TIME",
+			"TRIG_OnConferenced" : "conferenced %callid",
+			"TRIG_OnReleased" : "released",
+			"TRIG_OnResumed" : "resumed",
+			"TRIG_OnWrapUp" : "wrapup",
+			"TRIG_OnReady" : "ready",
+			"TRIG_OnCleared" : "cleared %callid",
+			"TRIG_OnReserved" : "reserved %callid, %Call Back Destination, %DNIS, %Service, %acd_group, %Customer Name",
+			"TRIG_OnSystemAvailable" : "systemavailable %available",
+			"TRIG_OnFailed" : "failed %cause",
+			"TRIG_OnSilentStarted" : "silentstarted",
+			"TRIG_OnIncomingEx" : "incomingex %callid, %calltyp, %DNIS, %calling, %Service, %Priority, %ACD ENTER TIME, %Alternative Call ID",
+			"TRIG_OnConnectedEx" : "connectedex %callid, %calltyp, %DNIS, %calling, %Service, %Priority, %ACD ENTER TIME, %Alternative Call ID"
+		}
+	},
+	"ToolBar" : {
+		"SystemMenu" : "YES",
+		"Minimize" : "0",
+		"CloseViaSystemMenu" : "1",
+		"ToolBars" : "2",
+		"X" : "733",
+		"Y" : "319",
+		"Style" : "0",
+		"CX" : "136",
+		"CY" : "55",
+		"ShowStatus" : "1",
+		"AllwaysOnTop" : "1",
+		"BigIcons" : "1",
+		"AutoResize" : "0",
+		"LetMinimizeOnRelease" : "1",
+		"PopUpOnForcedRelease" : "0",
+		"PopOnRing" : "0",
+		"MinimizeOnAnswer" : "0",
+		"Visible" : "0",
+		"RestoreOnQueuedCall" : "0",
+		"tbLastWidth" : "498",
+		"ToolBar0" : "ButtonsNumber : 14",
+		"ToolBar1" : "ButtonsNumber : 13",
+		"Function" : {
+			"ToolBar0_Button0" : "OpenSetup",
+			"ToolBar0_Button1" : "LoginPrimaryGroups",
+			"ToolBar0_Button2" : "Release",
+			"ToolBar0_Button3" : "AgentReady",
+			"ToolBar0_Button4" : "WinHelp",
+			"ToolBar0_Button5" : "Help",
+			"ToolBar0_Button6" : "CloseAll",
+			"ToolBar0_Button7" : "WrapupCode",
+			"ToolBar0_Button8" : "OpenCallsLog",
+			"ToolBar0_Button9" : "WrapupManualControl",
+			"ToolBar0_Button10" : "WrapupCode",
+			"ToolBar0_Button11" : "OpenAgentBoard",
+			"ToolBar0_Button12" : "OpenAcdCalls",
+			"ToolBar0_Button13" : "OpenCallsStatus",
+			"ToolBar0_Button14" : "",
+			"ToolBar0_Button15" : "",
+			"ToolBar0_Button16" : "",
+			"ToolBar0_Button17" : "",
+			"ToolBar0_Button18" : "",
+			"ToolBar0_Button19" : "",
+			"ToolBar0_Button20" : "",
+			"ToolBar1_Button0" : "Answer",
+			"ToolBar1_Button1" : "MakeNACall",
+			"ToolBar1_Button2" : "ClearConnection",
+			"ToolBar1_Button3" : "Hold",
+			"ToolBar1_Button4" : "Retrieve",
+			"ToolBar1_Button5" : "TransferCall",
+			"ToolBar1_Button6" : "CompleteTransfer",
+			"ToolBar1_Button7" : "LoginGroup",
+			"ToolBar1_Button8" : "LogoutFromGroup",
+			"ToolBar1_Button9" : "GroupsManager",
+			"ToolBar1_Button10" : "ReleasewithCode",
+			"Code" : "1 - No Code",
+			"ToolBar1_Button11" : "OpenTelephony",
+			"ToolBar1_Button12" : {
+				"TransferToAgent" : {
+					"DestAddr" : "2003"
+				},
+				"ToolBar1_Button13" : "",
+				"ToolBar1_Button14" : "",
+				"ToolBar1_Button15" : "",
+				"ToolBar1_Button16" : "",
+				"ToolBar1_Button17" : "",
+				"ToolBar1_Button18" : "",
+				"ToolBar1_Button19" : "",
+				"ToolBar1_Button20" : ""
+			}
+		}
+	},
+	"CallsStatus" : {
+		"X" : "259",
+		"Y" : "566",
+		"CX" : "780",
+		"CY" : "152",
+		"ColumnsNo" : "10",
+		"ActiveColumn" : "0",
+		"Open" : "0",
+		"AlwaysOnTop" : "1",
+		"Columns" : [{
+				"Index" : "10000",
+				"Sort" : "1",
+				"Header" : "ACD Group",
+				"Width" : "100",
+				"Format" : "0"
+			}, {
+				"Index" : "10009",
+				"Sort" : "1",
+				"Header" : "Trunk",
+				"Width" : "100",
+				"Format" : "0"
+			}, {
+				"Index" : "3",
+				"Format" : "0",
+				"Header" : "Called",
+				"Sort" : "0",
+				"Width" : "100"
+			}, {
+				"Index" : "10002",
+				"Format" : "0",
+				"Header" : "Called",
+				"Sort" : "1",
+				"Width" : "68"
+			}, {
+				"Index" : "10007",
+				"Format" : "0",
+				"Header" : "Status",
+				"Sort" : "1",
+				"Width" : "100"
+			}, {
+				"Index" : "4",
+				"Format" : "0",
+				"Header" : "Service",
+				"Sort" : "1",
+				"Width" : "100"
+			}, {
+				"Index" : "10000",
+				"Format" : "0",
+				"Header" : "ACD Group",
+				"Sort" : "1",
+				"Width" : "100"
+			}, {
+				"Index" : "3",
+				"Format" : "0",
+				"Header" : "Priority",
+				"Sort" : "1",
+				"Width" : "55"
+			}, {
+				"Index" : "8",
+				"Format" : "0",
+				"Header" : "ACD Enter Time",
+				"Sort" : "1",
+				"Width" : "100"
+			}, {
+				"Index" : "10004",
+				"Format" : "0",
+				"Header" : "Elapsed",
+				"Sort" : "1",
+				"Width" : "61"
+			}
+		]
+	},
+	"ACDCalls" : {
+		"X" : "414",
+		"Y" : "769",
+		"CX" : "778",
+		"CY" : "151",
+		"ColumnsNo" : "9",
+		"ActiveColumn" : "-1",
+		"Open" : "0",
+		"AlwaysOnTop" : "1",
+		"Columns" : [{
+				"Index" : "2",
+				"Format" : "0",
+				"Header" : "Calling",
+				"Sort" : "1",
+				"Width" : "100"
+			}, {
+				"Index" : "1",
+				"Format" : "0",
+				"Header" : "DNIS",
+				"Sort" : "1",
+				"Width" : "75"
+			}, {
+				"Index" : "4",
+				"Format" : "0",
+				"Header" : "Service",
+				"Sort" : "1",
+				"Width" : "100"
+			}, {
+				"Index" : "10000",
+				"Format" : "0",
+				"Header" : "ACD Group",
+				"Sort" : "1",
+				"Width" : "100"
+			}, {
+				"Index" : "3",
+				"Format" : "0",
+				"Header" : "Priority",
+				"Sort" : "1",
+				"Width" : "53"
+			}, {
+				"Index" : "9",
+				"Format" : "0",
+				"Header" : "Queue Position",
+				"Sort" : "1",
+				"Width" : "100"
+			}, {
+				"Index" : "8",
+				"Format" : "0",
+				"Header" : "ACD Enter Time",
+				"Sort" : "1",
+				"Width" : "100"
+			}, {
+				"Index" : "10001",
+				"Format" : "0",
+				"Header" : "Waiting Time",
+				"Sort" : "1",
+				"Width" : "100"
+			}, {
+				"Index" : "15",
+				"Format" : "0",
+				"Header" : "Media",
+				"Sort" : "1",
+				"Width" : "100"
+			}
+		]
+	},
+	"CallsLog" : {
+		"X" : "253",
+		"Y" : "524",
+		"CX" : "782",
+		"CY" : "163",
+		"ColumnsNo" : "8",
+		"ActiveColumn" : "-1",
+		"LogEnable" : "1",
+		"Open" : "0",
+		"AlwaysOnTop" : "1",
+		"Columns" : [{
+				"Index" : "3",
+				"Sort" : "1",
+				"Header" : "Creation Time",
+				"Width" : "100",
+				"Format" : "0"
+			}, {
+				"Index" : "2",
+				"Sort" : "1",
+				"Header" : "Caller",
+				"Width" : "100",
+				"Format" : "0"
+			}, {
+				"Index" : "8",
+				"Format" : "0",
+				"Header" : "Trunk",
+				"Sort" : "1",
+				"Width" : "100"
+			}, {
+				"Index" : "1",
+				"Format" : "0",
+				"Header" : "Called",
+				"Sort" : "1",
+				"Width" : "100"
+			}, {
+				"Index" : "0",
+				"Format" : "0",
+				"Header" : "ACD Group",
+				"Sort" : "1",
+				"Width" : "100"
+			}, {
+				"Index" : "6",
+				"Format" : "0",
+				"Header" : "Last State",
+				"Sort" : "1",
+				"Width" : "100"
+			}, {
+				"Index" : "7",
+				"Format" : "0",
+				"Header" : "Originally Called",
+				"Sort" : "1",
+				"Width" : "100"
+			}, {
+				"Index" : "4",
+				"Format" : "0",
+				"Header" : "Deletion Time",
+				"Sort" : "1",
+				"Width" : "100"
+			}
+		]
+	},
+	"Telephony" : {
+		"NumberOfPages" : "2",
+		"ActivePages" : "0",
+		"TelephoneDisplay" : "1",
+		"TelephonyDisplayLines" : "2",
+		"X" : "782",
+		"Y" : "236",
+		"CX" : "414",
+		"CY" : "233",
+		"Open" : "1",
+		"pages" : [{
+				"Caption" : "Telephony"
+			}, {
+				"Caption" : "Windows"
+			}, 
+			{
+				"Caption" : "Answer",
+				"Function" : "Answer"
+			}, {
+				"Caption" : "aaaaa",
+				"Function" : "MakeNACall",
+				"DestAddr" : "2002"
+			}, {
+				"Caption" : "Disconnect",
+				"Function" : "ClearConnection"
+			}, {
+				"Caption" : "bbbbb",
+				"Function" : "MakeNACall",
+				"DestAddr" : "2003"
+			}, {
+				"Caption" : "Call",
+				"Function" : "MakeNACall"
+			}, {
+				"Caption" : "cccc",
+				"Function" : "Hold"
+			},  {
+				"Caption" : "ACD Calls",
+				"Function" : "OpenAcdCalls"
+			}, {
+				"Caption" : "Calls Status",
+				"Function" : "OpenCallsStatus"
+			}, {
+				"Caption" : "Calls Log",
+				"Function" : "OpenCallsLog"
+			}
+		]
+	},
+
+	"AgentBoard" : {
+		"Open" : "0",
+		"X" : "427",
+		"Y" : "492",
+		"CX" : "456",
+		"CY" : "84",
+		"AlwaysOnTop" : "1",
+		"Font_Bold" : "0",
+		"Font_CharSet" : "177",
+		"Font_Italic" : "0",
+		"Font_Name" : "Arial",
+		"Font_Size_hi" : "0",
+		"Font_Size_lo" : "82500",
+		"Font_Strikethrough" : "0",
+		"Font_Underline" : "0",
+		"Font_Weight" : "400"
+	},
+	"SAVED_NUMBERS" : {
+		"MakeCallNumbers" : "2003;2002;"
+	}
+}

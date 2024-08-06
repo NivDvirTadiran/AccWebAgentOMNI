@@ -1,0 +1,23 @@
+.password-alert-text {
+
+  /* D Regular */
+  text-align: start;
+  font-family: Noto Sans, ui-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 31px;
+  /* or 183% */
+
+  letter-spacing: -0.011em;
+
+  color: #000000;
+
+}
+
+.action-text {
+  text-decoration-line: underline;
+}
+
+
+

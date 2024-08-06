@@ -1,0 +1,23 @@
+<div  class="password-alert-text">
+<p>
+  {{this.actionHeader}}
+</p>
+    <!--a [highlight]="'red'" [colorName]="'blue'" (click)="this.actionButton.emit()" class="action-text" >{{'Change it now >'}}</a-->
+
+    <button *ngIf="AAC.enableCallStatusWin" mat-menu-item
+            (click)='actionButton.emit(0)'>{{'Calls Status' }}</button>
+        <button *ngIf="AAC.enableCallLogWin" mat-menu-item
+                (click)='actionButton.emit(1)'>{{'Calls Log' }}</button>
+        <button *ngIf="AAC.enableCallQWin" mat-menu-item
+                (click)='actionButton.emit(2)'>{{'ACD Calls' }}</button>
+        <button *ngIf="AAC.enableTelephonyWin" mat-menu-item
+                (click)='actionButton.emit(3)'>{{'Telephony' }}</button>
+        <button *ngIf="AAC.enablePhonebookWin" mat-menu-item
+                (click)='actionButton.emit(4)'>{{'Phonebook' }}</button>
+        <button *ngIf="AAC.enableSetupWin" mat-menu-item
+                (click)='actionButton.emit(5)'>{{'Setup' }}</button>
+        <button *ngIf="AAC.enablePhonebookWin" mat-menu-item
+                (click)='actionButton.emit(6)'>{{'Personal Statistics' }}</button>
+    <!--mat-menu #menu="matMenu" class="mat-menu-panel">
+    </mat-menu-->
+</div>

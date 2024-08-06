@@ -1,0 +1,43 @@
+//@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import "../assets/css/font-awesome.min.css";
+//@import "~src/scss/fontawesome.scss";
+$custom-file-text: (); // --> Warning: 1 rules skipped due to selector errors: .custom-file-input:lang(en) ~ .custom-file-label -> unmatched pseudo-class :lang
+@import "~node_modules/angular-bootstrap-md/assets/scss/bootstrap/bootstrap.scss";
+.mat-grid-tile .mat-figure.mat-figure {
+  justify-content: center;
+  align-items: start;
+}  
+// .mat-menu-content{
+// 	background:white !important;
+// 	font-family: "Roboto", sans-serif !important;
+//   }
+  .mat-menu-panel{
+	  background:white !important;
+	  font-family: "Roboto", sans-serif !important;
+  }
+ 
+.alertStyle{
+  background-color: aliceblue;
+  color: black;
+  position: sticky;
+}
+
+.matoptionStyle{
+  font-size:100%;
+  height:14px;
+}
+/* .mat-grid-tile .mat-figure {
+  justify-content: flex-start !important ;
+  align-items: flex-start !important;
+} */
+.btn-on {
+	border-style: inset;
+}
+
+canvas{
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+

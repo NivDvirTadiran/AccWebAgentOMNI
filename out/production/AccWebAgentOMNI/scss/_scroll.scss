@@ -1,0 +1,42 @@
+// scroll css !
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c6c6c6;
+    border: 0px none none;
+    border-radius: 51px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a8acb0;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #a8acb0;
+}
+
+::-webkit-scrollbar-track {
+    background: none;
+    border: 0px none none;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-track:hover {
+    background: none;
+}
+
+::-webkit-scrollbar-track:active {
+    background: none;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}

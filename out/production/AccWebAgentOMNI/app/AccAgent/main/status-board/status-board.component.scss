@@ -1,0 +1,6 @@
+@import "~src/scss/_all-vars-and-mixins.scss";
+//@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
+//@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
+//@import "~src/scss/fontawesome.scss";
+$custom-file-text: (); // --> Warning: 1 rules skipped due to selector errors: .custom-file-input:lang(en) ~ .custom-file-label -> unmatched pseudo-class :lang
+@import "~node_modules/angular-bootstrap-md/assets/scss/bootstrap/bootstrap.scss";

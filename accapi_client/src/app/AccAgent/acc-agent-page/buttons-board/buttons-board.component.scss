@@ -1,0 +1,31 @@
+@import "~src/scss/_all-vars-and-mixins.scss";
+@import "~node_modules/angular-bootstrap-md/assets/scss/bootstrap/bootstrap.scss";
+@import "~../acc-agent-page.component";
+
+.accimg {
+    width: 50%;
+    height: 10%;
+    //border: 1px solid white;
+    text-align: center;
+    //-webkit-transition: all 1s;
+    // cursor: pointer;
+}
+.accimg1 {
+    width: 130%;
+    height: auto;
+    //border: 1px solid white;
+    text-align: center;
+    -webkit-transition: all 1s;
+    // cursor: pointer;
+}
+
+/* (Optional) Apply a "closed-hand" cursor during drag operation. */
+.grabbable:active {
+    cursor: grabbing;
+    /*cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;*/
+}
+
+pushed {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}

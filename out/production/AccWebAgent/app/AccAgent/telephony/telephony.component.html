@@ -1,0 +1,37 @@
+ 
+<div style="padding: 25px;">
+    <mat-form-field class="cp_form_filed">
+      <input matInput type="number"  (change)="rebuldActions()"
+          placeholder="{{'No. of actions' | translate}}" [value]="NumberOfActions" [(ngModel)]="NumberOfActions">
+  </mat-form-field>
+<!-- <div class="example-section">
+      <label class="example-margin">{{'Call Mode'|translate}}:&nbsp;&nbsp;</label>
+      <mat-radio-group [(ngModel)]="labelPosition" (change)="radioChange($event)">
+          <mat-radio-button class="example-margin"  labelPosition='before'
+            value="call">{{'Call'|translate}}</mat-radio-button>
+          <mat-radio-button class="example-margin" labelPosition='before'
+            value="Transfer"><a>&nbsp;&nbsp;</a>{{'Transfer'|translate}}</mat-radio-button>
+          <mat-radio-button class="example-margin" labelPosition='before'
+            value="StartConsultation"><a>&nbsp;&nbsp;</a>{{'Start Consultation'|translate}}</mat-radio-button>
+      </mat-radio-group>
+  </div>   -->
+
+  <mat-grid-list [cols]="Telphony_imgcols" rowHeight="83px">
+    <mat-grid-tile *ngFor="let tile of AAC.TelephonyActions ;index as i" style="font-size: 80%;" [colspan]=1 [rowspan]="1" [style.background]="tile.color" >
+        <div class="pad1">
+      <span>
+        <button  (click)='actionClicks(i)' class="pad" style="cursor: pointer;">
+         <mat-icon  title="{{'set action' | translate}}" (click)='actionDblClick(i)' style="color:lightsteelblue; float: right;vertical-align: top;">settings</mat-icon>
+         <a style="float: left;font-size: 0.7vw;">{{tile.title}}</a>
+        </button>
+      </span>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+  <div id="telNewBtnDialog" *ngIf="AAC.telNewBtnDialog">
+    <app-tel-win-btn></app-tel-win-btn>
+  </div>
+</div>
+
+
+<!--  -->

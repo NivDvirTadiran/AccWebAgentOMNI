@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" build-on-make="true" name="accOMNI">
+    <output-path>$PROJECT_DIR$/out/artifacts/accOMNI</output-path>
+    <properties id="ant-postprocessing">
+      <options enabled="true" />
+    </properties>
+    <root id="root">
+      <element id="dir-copy" path="$PROJECT_DIR$/accapi_server/accagentapi/target/accagentapi" />
+      <element id="dir-copy" path="$PROJECT_DIR$/accapi_client/dist" />
+    </root>
+  </artifact>
+</component>

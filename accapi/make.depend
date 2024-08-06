@@ -1,0 +1,375 @@
+acc_api_tcp_server.o: acc_api_tcp_server.cpp SolTcpServer.h \
+ /opt/acc/source/SolLib/sollib.h \
+ /opt/acc/source/SolLib/SolRecordException.h \
+ /opt/acc/source/SolLib/SolRecordException.h \
+ ../../include/../SolLib/sollib.h ../../include/ha_defs.h \
+ ../../include/ogen.h ../../include/projdefs.h \
+ ../../include/er_win_ext_funcs.h ../../include/otim.h \
+ ../../include/oeve.h /opt/acc/source/nt2unix/include/windows.h \
+ /opt/acc/source/nt2unix/include/nt2unix.h \
+ /opt/acc/source/nt2unix/include/winerror.h \
+ ../../include/anx_alarms_def.h ../../include/sgen.h \
+ /opt/acc/source/nt2unix/include/winsock2.h \
+ /opt/acc/source/nt2unix/include/winsock.h
+accapi_main.o: accapi_main.cpp ../../include/er_std_override.h \
+ ../../include/bswipc.h ../../include/bswgen.h ../../include/projdefs.h \
+ ../../include/er_win_ext_funcs.h ../../include/bswobject.h \
+ ../../include/bswerror.h ../../include/bswstream.h \
+ ../../include/gen_util.h ../../include/bswthread.h \
+ ../../include/bswthrdimpl.h ../../include/ogen.h \
+ ../../include/projdefs.h ../../include/oeve.h ../../include/ogen.h \
+ /opt/acc/source/nt2unix/include/windows.h \
+ /opt/acc/source/nt2unix/include/nt2unix.h \
+ /opt/acc/source/nt2unix/include/winerror.h ../../include/bswservaddr.h \
+ ../../include/net.h ../../include/proj_gen.h ../../include/bswgen.h \
+ ../../include/bswexception.h ../../include/bswlog.h \
+ ../../include/bswmemstream.h ../../include/bswmem.h \
+ ../../include/bswlogdefs.h ../../include/bswtimer.h \
+ ../../include/ldsdefs.h ../../include/oeve.h sbc_main_thread.h \
+ sbc_work_thread.h sbc_sea_reply.h ../../include/sea_ipreply.h \
+ ../../include/bcc_evt.h ../../include/bcc_defs.h \
+ ../../include/er_csta_defs.h ../../include/er_gen_defs.h \
+ ../../include/util_funcdefs.h ../../include/util_mapdefs.h \
+ ../../include/util_vectdefs.h ../../include/pbi_gen_defs.h \
+ ../../include/bcc_enum_names.h ../../include/er_win_ext.h \
+ /opt/acc/source/nt2unix/include/winsock2.h \
+ /opt/acc/source/nt2unix/include/winsock.h ../../include/cp.h \
+ ../../include/ertable.h ../../include/delphireader.h \
+ ../../include/delphiwriter.h ../../include/dbi_statement.h \
+ ../../include/util_structs.h ../../include/util_dbidefs.h \
+ ../../include/dbi_resultset.h ../../include/util_dbifuncdefs.h \
+ ../../include/util_dbcellcol.h ../../include/dbi_dbmanager.h \
+ ../../include/dbi_serviceiface.h ../../include/dbi_facilities.h \
+ ../../include/lrl_evt.h ../../include/lrl_defs.h \
+ ../../include/er_ptr_map.h ../../include/c2g_evt.h \
+ ../../include/c2g_defs.h /opt/acc/source/c2g/include/c2g_enum_names.h \
+ ../../include/ha_defs.h ../../include/otim.h \
+ ../../include/ccsa_actions.h ../../include/ccsa.h \
+ ../../include/proj_gen.h ../../include/cp.h ../../include/mgen_iddgen.h \
+ ../../include/mgen_projdefs.h ../../include/svc_reply_code.h \
+ ../../include/ccsa_actions.h crmalltypes.h sbc_timer.h \
+ ../../include/lrl_le_defs.h ../../include/lrlserviceiface.h \
+ ../../include/mccn_pbiccn.h ../../include/mgen_iddgen.h \
+ ../../include/bli_typ.h ../../include/lrl_str_defs.h \
+ ../../include/er_map.h accapi_smmanager_c.h \
+ ../../include/sm_serviceiface.h accapi_CEMax.h \
+ acc_personal_stataistics_work_thread.h
+sbc_main_thread.o: sbc_main_thread.cpp sbc_main_thread.h \
+ ../../include/bswthread.h ../../include/bswobject.h \
+ ../../include/bswgen.h ../../include/projdefs.h \
+ ../../include/er_win_ext_funcs.h ../../include/bswerror.h \
+ ../../include/bswthrdimpl.h ../../include/ogen.h \
+ ../../include/projdefs.h ../../include/oeve.h ../../include/ogen.h \
+ /opt/acc/source/nt2unix/include/windows.h \
+ /opt/acc/source/nt2unix/include/nt2unix.h \
+ /opt/acc/source/nt2unix/include/winerror.h
+sbc_sea_reply.o: sbc_sea_reply.cpp ../../include/er_std_override.h \
+ sbc_sea_reply.h ../../include/sea_ipreply.h ../../include/bswgen.h \
+ ../../include/projdefs.h ../../include/er_win_ext_funcs.h \
+ ../../include/bcc_evt.h ../../include/bswstream.h \
+ ../../include/bswerror.h ../../include/gen_util.h \
+ ../../include/bcc_defs.h ../../include/er_csta_defs.h \
+ ../../include/er_gen_defs.h ../../include/bswlog.h \
+ ../../include/bswipc.h ../../include/bswobject.h \
+ ../../include/bswthread.h ../../include/bswthrdimpl.h \
+ ../../include/ogen.h ../../include/projdefs.h ../../include/oeve.h \
+ ../../include/ogen.h /opt/acc/source/nt2unix/include/windows.h \
+ /opt/acc/source/nt2unix/include/nt2unix.h \
+ /opt/acc/source/nt2unix/include/winerror.h ../../include/bswservaddr.h \
+ ../../include/net.h ../../include/bswmemstream.h ../../include/bswmem.h \
+ ../../include/bswlogdefs.h ../../include/bswtimer.h \
+ ../../include/ldsdefs.h ../../include/oeve.h \
+ ../../include/util_funcdefs.h ../../include/util_mapdefs.h \
+ ../../include/util_vectdefs.h ../../include/pbi_gen_defs.h \
+ ../../include/proj_gen.h ../../include/bswgen.h \
+ ../../include/bswexception.h ../../include/bcc_enum_names.h \
+ ../../include/er_win_ext.h /opt/acc/source/nt2unix/include/winsock2.h \
+ /opt/acc/source/nt2unix/include/winsock.h ../../include/cp.h \
+ ../../include/ertable.h ../../include/delphireader.h \
+ ../../include/delphiwriter.h ../../include/dbi_statement.h \
+ ../../include/util_structs.h ../../include/util_dbidefs.h \
+ ../../include/dbi_resultset.h ../../include/util_dbifuncdefs.h \
+ ../../include/util_dbcellcol.h ../../include/dbi_dbmanager.h \
+ ../../include/dbi_serviceiface.h ../../include/dbi_facilities.h \
+ ../../include/lrl_evt.h ../../include/lrl_defs.h \
+ ../../include/er_ptr_map.h ../../include/c2g_evt.h \
+ ../../include/c2g_defs.h /opt/acc/source/c2g/include/c2g_enum_names.h \
+ ../../include/ha_defs.h ../../include/otim.h \
+ ../../include/ccsa_actions.h ../../include/ccsa.h \
+ ../../include/proj_gen.h ../../include/cp.h ../../include/mgen_iddgen.h \
+ ../../include/mgen_projdefs.h ../../include/svc_reply_code.h \
+ ../../include/ccsa_actions.h crmalltypes.h sbc_timer.h \
+ ../../include/lrl_le_defs.h ../../include/lrlserviceiface.h \
+ ../../include/mccn_pbiccn.h ../../include/mgen_iddgen.h \
+ ../../include/bli_typ.h ../../include/lrl_str_defs.h \
+ ../../include/er_map.h ../../include/sea_provider.h \
+ ../../include/sea_iserver.h accapi_CEMax.h ../../include/sgen.h \
+ ../../include/othr.h
+sbc_work_thread.o: sbc_work_thread.cpp ../../include/er_std_override.h \
+ /opt/acc/source/SolLib/sollib.h \
+ /opt/acc/source/SolLib/SolRecordException.h \
+ /opt/acc/source/SolLib/SolRecordException.h ../../include/bswlog.h \
+ ../../include/bswipc.h ../../include/bswgen.h ../../include/projdefs.h \
+ ../../include/er_win_ext_funcs.h ../../include/bswobject.h \
+ ../../include/bswerror.h ../../include/bswstream.h \
+ ../../include/gen_util.h ../../include/bswthread.h \
+ ../../include/bswthrdimpl.h ../../include/ogen.h \
+ ../../include/projdefs.h ../../include/oeve.h ../../include/ogen.h \
+ /opt/acc/source/nt2unix/include/windows.h \
+ /opt/acc/source/nt2unix/include/nt2unix.h \
+ /opt/acc/source/nt2unix/include/winerror.h ../../include/bswservaddr.h \
+ ../../include/net.h ../../include/bswmemstream.h ../../include/bswmem.h \
+ ../../include/bswlogdefs.h ../../include/bswtimer.h \
+ ../../include/ldsdefs.h ../../include/oeve.h ../../include/proj_gen.h \
+ ../../include/bswgen.h ../../include/bswexception.h \
+ ../../include/dbi_statement.h ../../include/util_mapdefs.h \
+ ../../include/util_vectdefs.h ../../include/util_structs.h \
+ ../../include/util_dbidefs.h ../../include/dbi_resultset.h \
+ ../../include/util_dbifuncdefs.h ../../include/util_dbcellcol.h \
+ ../../include/dbi_dbmanager.h ../../include/dbi_serviceiface.h \
+ ../../include/dbi_facilities.h crmalltypes.h \
+ ../../include/bswcritsection.h acc_personal_stataistics_work_thread.h \
+ sbc_work_thread.h sbc_sea_reply.h ../../include/sea_ipreply.h \
+ ../../include/bcc_evt.h ../../include/bcc_defs.h \
+ ../../include/er_csta_defs.h ../../include/er_gen_defs.h \
+ ../../include/util_funcdefs.h ../../include/pbi_gen_defs.h \
+ ../../include/bcc_enum_names.h ../../include/er_win_ext.h \
+ /opt/acc/source/nt2unix/include/winsock2.h \
+ /opt/acc/source/nt2unix/include/winsock.h ../../include/cp.h \
+ ../../include/ertable.h ../../include/delphireader.h \
+ ../../include/delphiwriter.h ../../include/lrl_evt.h \
+ ../../include/lrl_defs.h ../../include/er_ptr_map.h \
+ ../../include/c2g_evt.h ../../include/c2g_defs.h \
+ /opt/acc/source/c2g/include/c2g_enum_names.h ../../include/ha_defs.h \
+ ../../include/otim.h ../../include/ccsa_actions.h ../../include/ccsa.h \
+ ../../include/proj_gen.h ../../include/cp.h ../../include/mgen_iddgen.h \
+ ../../include/mgen_projdefs.h ../../include/svc_reply_code.h \
+ ../../include/ccsa_actions.h sbc_timer.h ../../include/lrl_le_defs.h \
+ ../../include/lrlserviceiface.h ../../include/mccn_pbiccn.h \
+ ../../include/mgen_iddgen.h ../../include/bli_typ.h \
+ ../../include/lrl_str_defs.h ../../include/er_map.h accapi_smmanager_c.h \
+ ../../include/sm_serviceiface.h accapi_CEMax.h base64.h \
+ ../../include/ivr_ivrserveriface.h ../../include/ccsa_ivractions.h \
+ ../../include/ccsa_types.h ../../include/lrl_ccs_schema_defs.h \
+ ../../include/delphireader.h ../../include/ivredefs.h accapi_entities.h \
+ ../../include/bswinifile.h ../../include/rinifile.h \
+ ../../include/third_party_actions.h ../../include/openssl/md5.h \
+ ../../include/openssl/e_os2.h ../../include/openssl/opensslconf.h \
+ ../../include/smntrapi.h ../../include/sgen.h \
+ ../../include/sea_provider.h ../../include/sea_iserver.h
+crmalltypes.o: crmalltypes.cpp ../../include/er_std_override.h \
+ crmalltypes.h ../../include/sgen.h \
+ /opt/acc/source/nt2unix/include/winsock2.h \
+ /opt/acc/source/nt2unix/include/winsock.h \
+ /opt/acc/source/nt2unix/include/nt2unix.h \
+ /opt/acc/source/nt2unix/include/winerror.h \
+ /opt/acc/source/nt2unix/include/windows.h ../../include/ogen.h \
+ ../../include/projdefs.h ../../include/er_win_ext_funcs.h \
+ ../../include/oeve.h sbc_timer.h ../../include/bswtimer.h \
+ ../../include/bswgen.h ../../include/projdefs.h ../../include/bswerror.h \
+ ../../include/lrl_le_defs.h ../../include/lrlserviceiface.h \
+ ../../include/bswipc.h ../../include/bswobject.h \
+ ../../include/bswstream.h ../../include/gen_util.h \
+ ../../include/bswthread.h ../../include/bswthrdimpl.h \
+ ../../include/ogen.h ../../include/oeve.h ../../include/bswservaddr.h \
+ ../../include/net.h ../../include/mccn_pbiccn.h \
+ ../../include/mgen_iddgen.h ../../include/mgen_projdefs.h \
+ ../../include/lrl_defs.h ../../include/svc_reply_code.h \
+ ../../include/bli_typ.h ../../include/bswlog.h \
+ ../../include/bswmemstream.h ../../include/bswmem.h \
+ ../../include/bswlogdefs.h ../../include/ldsdefs.h \
+ ../../include/lrl_str_defs.h ../../include/er_csta_defs.h \
+ ../../include/er_gen_defs.h ../../include/util_funcdefs.h \
+ ../../include/util_mapdefs.h ../../include/util_vectdefs.h \
+ ../../include/er_map.h ../../include/er_win_ext.h \
+ ../../include/mgen_iddgen.h ../../include/dbi_resultset.h \
+ ../../include/util_dbifuncdefs.h ../../include/util_dbcellcol.h \
+ ../../include/util_dbidefs.h
+sbc_timer.o: sbc_timer.cpp ../../include/er_std_override.h \
+ ../../include/proj_gen.h ../../include/bswgen.h ../../include/projdefs.h \
+ ../../include/er_win_ext_funcs.h ../../include/bswexception.h \
+ ../../include/bswlog.h ../../include/bswipc.h ../../include/bswobject.h \
+ ../../include/bswerror.h ../../include/bswstream.h \
+ ../../include/gen_util.h ../../include/bswgen.h \
+ ../../include/bswthread.h ../../include/bswthrdimpl.h \
+ ../../include/ogen.h ../../include/projdefs.h ../../include/oeve.h \
+ ../../include/ogen.h /opt/acc/source/nt2unix/include/windows.h \
+ /opt/acc/source/nt2unix/include/nt2unix.h \
+ /opt/acc/source/nt2unix/include/winerror.h ../../include/bswservaddr.h \
+ ../../include/net.h ../../include/bswmemstream.h ../../include/bswmem.h \
+ ../../include/bswlogdefs.h ../../include/bswtimer.h \
+ ../../include/ldsdefs.h ../../include/oeve.h crmalltypes.h sbc_timer.h \
+ ../../include/lrl_le_defs.h ../../include/lrlserviceiface.h \
+ ../../include/mccn_pbiccn.h ../../include/mgen_iddgen.h \
+ ../../include/mgen_projdefs.h ../../include/lrl_defs.h \
+ ../../include/svc_reply_code.h ../../include/bli_typ.h \
+ ../../include/lrl_str_defs.h ../../include/er_csta_defs.h \
+ ../../include/er_gen_defs.h ../../include/util_funcdefs.h \
+ ../../include/util_mapdefs.h ../../include/util_vectdefs.h \
+ ../../include/er_map.h ../../include/er_win_ext.h \
+ /opt/acc/source/nt2unix/include/winsock2.h \
+ /opt/acc/source/nt2unix/include/winsock.h ../../include/mgen_iddgen.h \
+ ../../include/dbi_resultset.h ../../include/util_dbifuncdefs.h \
+ ../../include/util_dbcellcol.h ../../include/util_dbidefs.h \
+ ../../include/sgen.h ../../include/bswdatetime.h ../../include/otim.h
+accapi_smmanager_c.o: accapi_smmanager_c.cpp \
+ ../../include/er_std_override.h crmalltypes.h sbc_work_thread.h \
+ ../../include/bswthread.h ../../include/bswobject.h \
+ ../../include/bswgen.h ../../include/projdefs.h \
+ ../../include/er_win_ext_funcs.h ../../include/bswerror.h \
+ ../../include/bswthrdimpl.h ../../include/ogen.h \
+ ../../include/projdefs.h ../../include/oeve.h ../../include/ogen.h \
+ /opt/acc/source/nt2unix/include/windows.h \
+ /opt/acc/source/nt2unix/include/nt2unix.h \
+ /opt/acc/source/nt2unix/include/winerror.h sbc_sea_reply.h \
+ ../../include/sea_ipreply.h ../../include/bcc_evt.h \
+ ../../include/bswstream.h ../../include/gen_util.h \
+ ../../include/bcc_defs.h ../../include/er_csta_defs.h \
+ ../../include/er_gen_defs.h ../../include/bswlog.h \
+ ../../include/bswipc.h ../../include/bswservaddr.h ../../include/net.h \
+ ../../include/bswmemstream.h ../../include/bswmem.h \
+ ../../include/bswlogdefs.h ../../include/bswtimer.h \
+ ../../include/ldsdefs.h ../../include/oeve.h \
+ ../../include/util_funcdefs.h ../../include/util_mapdefs.h \
+ ../../include/util_vectdefs.h ../../include/pbi_gen_defs.h \
+ ../../include/proj_gen.h ../../include/bswgen.h \
+ ../../include/bswexception.h ../../include/bcc_enum_names.h \
+ ../../include/er_win_ext.h /opt/acc/source/nt2unix/include/winsock2.h \
+ /opt/acc/source/nt2unix/include/winsock.h ../../include/cp.h \
+ ../../include/ertable.h ../../include/delphireader.h \
+ ../../include/delphiwriter.h ../../include/dbi_statement.h \
+ ../../include/util_structs.h ../../include/util_dbidefs.h \
+ ../../include/dbi_resultset.h ../../include/util_dbifuncdefs.h \
+ ../../include/util_dbcellcol.h ../../include/dbi_dbmanager.h \
+ ../../include/dbi_serviceiface.h ../../include/dbi_facilities.h \
+ ../../include/lrl_evt.h ../../include/lrl_defs.h \
+ ../../include/er_ptr_map.h ../../include/c2g_evt.h \
+ ../../include/c2g_defs.h /opt/acc/source/c2g/include/c2g_enum_names.h \
+ ../../include/ha_defs.h ../../include/otim.h \
+ ../../include/ccsa_actions.h ../../include/ccsa.h \
+ ../../include/proj_gen.h ../../include/cp.h ../../include/mgen_iddgen.h \
+ ../../include/mgen_projdefs.h ../../include/svc_reply_code.h \
+ ../../include/ccsa_actions.h sbc_timer.h ../../include/lrl_le_defs.h \
+ ../../include/lrlserviceiface.h ../../include/mccn_pbiccn.h \
+ ../../include/mgen_iddgen.h ../../include/bli_typ.h \
+ ../../include/lrl_str_defs.h ../../include/er_map.h accapi_smmanager_c.h \
+ ../../include/sm_serviceiface.h accapi_CEMax.h base64.h \
+ ../../include/sgen.h
+accapi_entities.o: accapi_entities.cpp ../../include/er_std_override.h \
+ ../../include/proj_gen.h ../../include/bswgen.h ../../include/projdefs.h \
+ ../../include/er_win_ext_funcs.h ../../include/bswexception.h \
+ ../../include/bswlog.h ../../include/bswipc.h ../../include/bswobject.h \
+ ../../include/bswerror.h ../../include/bswstream.h \
+ ../../include/gen_util.h ../../include/bswgen.h \
+ ../../include/bswthread.h ../../include/bswthrdimpl.h \
+ ../../include/ogen.h ../../include/projdefs.h ../../include/oeve.h \
+ ../../include/ogen.h /opt/acc/source/nt2unix/include/windows.h \
+ /opt/acc/source/nt2unix/include/nt2unix.h \
+ /opt/acc/source/nt2unix/include/winerror.h ../../include/bswservaddr.h \
+ ../../include/net.h ../../include/bswmemstream.h ../../include/bswmem.h \
+ ../../include/bswlogdefs.h ../../include/bswtimer.h \
+ ../../include/ldsdefs.h ../../include/oeve.h ../../include/er_win_ext.h \
+ /opt/acc/source/nt2unix/include/winsock2.h \
+ /opt/acc/source/nt2unix/include/winsock.h ../../include/bswobjectdump.h \
+ ../../include/bswattribdescr.h ../../include/adupdate.h \
+ ../../include/util_structs.h ../../include/util_dbidefs.h \
+ sbc_work_thread.h sbc_sea_reply.h ../../include/sea_ipreply.h \
+ ../../include/bcc_evt.h ../../include/bcc_defs.h \
+ ../../include/er_csta_defs.h ../../include/er_gen_defs.h \
+ ../../include/util_funcdefs.h ../../include/util_mapdefs.h \
+ ../../include/util_vectdefs.h ../../include/pbi_gen_defs.h \
+ ../../include/bcc_enum_names.h ../../include/cp.h \
+ ../../include/ertable.h ../../include/delphireader.h \
+ ../../include/delphiwriter.h ../../include/dbi_statement.h \
+ ../../include/dbi_resultset.h ../../include/util_dbifuncdefs.h \
+ ../../include/util_dbcellcol.h ../../include/dbi_dbmanager.h \
+ ../../include/dbi_serviceiface.h ../../include/dbi_facilities.h \
+ ../../include/lrl_evt.h ../../include/lrl_defs.h \
+ ../../include/er_ptr_map.h ../../include/c2g_evt.h \
+ ../../include/c2g_defs.h /opt/acc/source/c2g/include/c2g_enum_names.h \
+ ../../include/ha_defs.h ../../include/otim.h \
+ ../../include/ccsa_actions.h ../../include/ccsa.h \
+ ../../include/proj_gen.h ../../include/cp.h ../../include/mgen_iddgen.h \
+ ../../include/mgen_projdefs.h ../../include/svc_reply_code.h \
+ ../../include/ccsa_actions.h crmalltypes.h sbc_timer.h \
+ ../../include/lrl_le_defs.h ../../include/lrlserviceiface.h \
+ ../../include/mccn_pbiccn.h ../../include/mgen_iddgen.h \
+ ../../include/bli_typ.h ../../include/lrl_str_defs.h \
+ ../../include/er_map.h accapi_smmanager_c.h \
+ ../../include/sm_serviceiface.h accapi_CEMax.h accapi_entities.h
+acc_personal_stataistics_work_thread.o: \
+ acc_personal_stataistics_work_thread.cpp ../../include/er_std_override.h \
+ /opt/acc/source/SolLib/sollib.h \
+ /opt/acc/source/SolLib/SolRecordException.h \
+ /opt/acc/source/SolLib/SolRecordException.h ../../include/sgen.h \
+ /opt/acc/source/nt2unix/include/winsock2.h \
+ /opt/acc/source/nt2unix/include/winsock.h \
+ /opt/acc/source/nt2unix/include/nt2unix.h \
+ /opt/acc/source/nt2unix/include/winerror.h \
+ /opt/acc/source/nt2unix/include/windows.h ../../include/ogen.h \
+ ../../include/projdefs.h ../../include/er_win_ext_funcs.h \
+ ../../include/oeve.h ../../include/oeve.h ../../include/ogen.h \
+ ../../include/othr.h ../../include/bswlog.h ../../include/bswipc.h \
+ ../../include/bswgen.h ../../include/projdefs.h \
+ ../../include/bswobject.h ../../include/bswerror.h \
+ ../../include/bswstream.h ../../include/gen_util.h \
+ ../../include/bswthread.h ../../include/bswthrdimpl.h \
+ ../../include/bswservaddr.h ../../include/net.h \
+ ../../include/bswmemstream.h ../../include/bswmem.h \
+ ../../include/bswlogdefs.h ../../include/bswtimer.h \
+ ../../include/ldsdefs.h ../../include/proj_gen.h ../../include/bswgen.h \
+ ../../include/bswexception.h ../../include/dbi_statement.h \
+ ../../include/util_mapdefs.h ../../include/util_vectdefs.h \
+ ../../include/util_structs.h ../../include/util_dbidefs.h \
+ ../../include/dbi_resultset.h ../../include/util_dbifuncdefs.h \
+ ../../include/util_dbcellcol.h ../../include/dbi_dbmanager.h \
+ ../../include/dbi_serviceiface.h ../../include/dbi_facilities.h \
+ ../../include/bswcritsection.h ../../include/mccn_opcodes.h \
+ ../../include/mcsa_csanla.h ../../include/mgen_projdefs.h \
+ ../../include/mgen_iddgen.h ../../include/mdbi_dbiidd.h \
+ ../../include/mgen_projm.h ../../include/mgen_utl.h \
+ ../../include/mgen_utl_eve.h ../../include/mgen_uretval.h \
+ ../../include/mgen_utl_pblg.h ../../include/mgen_utl_trace.h \
+ ../../include/dlt.h ../../include/mdbi_bretval.h \
+ ../../include/mdbi_setupidd.h ../../include/sgen.h \
+ ../../include/netexpparams.h ../../include/ha_defs.h \
+ ../../include/otim.h crmalltypes.h sbc_timer.h \
+ ../../include/lrl_le_defs.h ../../include/lrlserviceiface.h \
+ ../../include/mccn_pbiccn.h ../../include/lrl_defs.h \
+ ../../include/svc_reply_code.h ../../include/bli_typ.h \
+ ../../include/lrl_str_defs.h ../../include/er_csta_defs.h \
+ ../../include/er_gen_defs.h ../../include/util_funcdefs.h \
+ ../../include/er_map.h ../../include/er_win_ext.h \
+ ../../include/mgen_iddgen.h acc_personal_stataistics_work_thread.h
+accapi_CEMax.o: accapi_CEMax.cpp ../../include/bswgen.h \
+ ../../include/projdefs.h ../../include/er_win_ext_funcs.h \
+ /opt/acc/source/SolLib/sollib.h \
+ /opt/acc/source/SolLib/SolRecordException.h \
+ /opt/acc/source/SolLib/SolRecordException.h accapi_CEMax.h
+GccsWeb.o: GccsWeb.cpp ../../include/er_std_override.h \
+ ../../include/dbbroker.h ../../include/bswgen.h ../../include/projdefs.h \
+ ../../include/er_win_ext_funcs.h GccsWeb.h \
+ /opt/acc/source/gccsserver/gccsservice.h \
+ ../../include/gccs_serviceiface.h ../../include/bswipc.h \
+ ../../include/bswobject.h ../../include/bswerror.h \
+ ../../include/bswstream.h ../../include/gen_util.h \
+ ../../include/bswgen.h ../../include/bswthread.h \
+ ../../include/bswthrdimpl.h ../../include/ogen.h \
+ ../../include/projdefs.h ../../include/oeve.h ../../include/ogen.h \
+ /opt/acc/source/nt2unix/include/windows.h \
+ /opt/acc/source/nt2unix/include/nt2unix.h \
+ /opt/acc/source/nt2unix/include/winerror.h ../../include/bswservaddr.h \
+ ../../include/net.h ../../include/util_vectdefs.h \
+ ../../include/gccs_facilities.h ../../include/gccs_defs.h \
+ ../../include/cp.h ../../include/ertable.h ../../include/bswlog.h \
+ ../../include/bswmemstream.h ../../include/bswmem.h \
+ ../../include/bswlogdefs.h ../../include/bswtimer.h \
+ ../../include/ldsdefs.h ../../include/oeve.h ../../include/proj_gen.h \
+ ../../include/bswexception.h ../../include/delphireader.h \
+ ../../include/delphiwriter.h ../../include/dbi_statement.h \
+ ../../include/util_mapdefs.h ../../include/util_structs.h \
+ ../../include/util_dbidefs.h ../../include/dbi_resultset.h \
+ ../../include/util_dbifuncdefs.h ../../include/util_dbcellcol.h \
+ ../../include/dbi_dbmanager.h ../../include/dbi_serviceiface.h \
+ ../../include/dbi_facilities.h ../../include/dbi_eserviceiface.h \
+ ../../include/er_ptr_map.h

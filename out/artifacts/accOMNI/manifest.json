@@ -1,0 +1,56 @@
+{
+  "name": "accOMNI",
+  "short_name": "accOMNI",
+  "description": "OMNI-CHANNELS",
+  "id": "/?source=pwa",
+  "theme_color": "#3367D6",
+  "background_color": "#3367D6",
+  "display": "minimal-ui",
+  "orientation": "portrait-primary",
+  "scope": "https://localhost:8445/",
+  "start_url": "https://localhost:8445/accOMNI/",
+  "display_override": ["window-controls-overlay"],
+  "icons": [
+    {
+      "src": "./assets/images/tadiranLogo4.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
+    },
+    {
+      "src": "./assets/images/tadiranLogo3.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
+    }
+  ],
+
+  "shortcuts": [
+    {
+      "name": "OMNI-CHANNELS",
+      "short_name": "accOMNI",
+      "description": "Aeonix-App-Center 2G",
+      "url": "https://localhost:8445/accOMNI",
+      "icons": [{ "src": "./assets/images/aeonix_.png", "sizes": "53x56" }]
+    },
+    {
+      "name": "How's the weather tomorrow?",
+      "short_name": "accOMNI",
+      "description": "Aeonix-App-Center 2G",
+      "url": "https://localhost:8445/accOMNI",
+      "icons": [{ "src": "./assets/images/angular.svg", "sizes": "250x250" }]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "./assets/images/aeonix_login_new_logo.png",
+      "type": "image/png",
+      "sizes": "420x267",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "./assets/images/Aeonix_Logo.png",
+      "type": "image/png",
+      "sizes": "165x73",
+      "form_factor": "wide"
+    }
+  ]
+}

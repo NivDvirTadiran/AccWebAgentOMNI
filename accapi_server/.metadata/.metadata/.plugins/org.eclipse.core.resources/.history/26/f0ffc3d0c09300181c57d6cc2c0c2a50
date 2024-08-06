@@ -1,0 +1,71 @@
+package tadiran.accagentapi.controller;
+import tadiran.accagentapi.model.AccLoginDto;
+import tadiran.accagentapi.model.AccNotifications;
+import tadiran.accagentapi.model.AccReturnToClientDto;
+import tadiran.accagentapi.services.*;
+//
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import javax.servlet.http.HttpSession;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+import javax.validation.Valid;
+//import javax.validation.Valid;
+import javax.ws.rs.QueryParam;
+
+@RestController
+//@RequestMapping("/")
+public class AccAgentApi 
+{
+	    private final AccAgentApiService accAgentApiService;
+
+	    //private SessionUtils sessionUtils;
+	   @Autowired
+	    public AccAgentApi(AccAgentApiService accAgentApiService)//, SessionUtils sessionUtils) {
+	    {
+	        super();
+	        this.accAgentApiService = accAgentApiService;
+	        //this.sessionUtils = sessionUtils;
+	    }
+
+    // agentlogin ================================================================//api/accapi/accServerNotifications
+    @RequestMapping(value = "/accapi/agentlogin", method = RequestMethod.POST)
+    @ResponseStatus(value = HttpStatus.OK)
+    public AccReturnToClientDto agentlogin(final HttpSession session, @RequestBody AccLoginDto accLoginDto) 
+    {
+    	accAgentApiService.sendLoginDetailstToNotifactions(accLoginDto);
+    	
+        return new AccReturnToClientDto(accLoginDto.getUsername(),": got login request");
+        //usersService.login(session, accLoginDto);
+    }
+
+    @RequestMapping(value = "/acclogout", method = RequestMethod.POST)
+    @ResponseStatus(value = HttpStatus.OK)
+    public void acclogout(final HttpSession session) {
+//        UserDto loggedInUser = sessionUtils.loggedInUser();
+//        usersService.logout(loggedInUser, session);
+    }
+    // agentNotifications ================================================================
+    @RequestMapping(value = "/accapi/accnotification", method = RequestMethod.GET)
+    public List<AccNotifications> agentNotifications(@QueryParam("agentNo") final String agentNo) {
+    	
+        List<AccNotifications> notificationList = accAgentApiService.getFromServerNotification(agentNo); 
+        return notificationList;//, {""});
+        //usersService.login(session, accLoginDto);
+    }
+    // agentrequest ================================================================
+    @RequestMapping(value = "/accapi/agentrequest", method = RequestMethod.PUT)
+    @ResponseStatus(value = HttpStatus.OK)
+    public String  agentrequest( @Valid @RequestBody AccNotifications agentNotifications)
+    {
+    	accAgentApiService.sendAgentRequeststToNotifactions(agentNotifications);
+        return "OK";
+    }
+    
+ 
+    
+}
