@@ -1,10 +1,7 @@
-@import '../../../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
 @import "@angular/material/prebuilt-themes/indigo-pink.css";
-@import "../../scss/all-vars-and-mixins";
+@import "../scss/all-vars-and-mixins";
 
-* {
-    @include font-roboto();
-}
 
 a, .cp {
     cursor: pointer;

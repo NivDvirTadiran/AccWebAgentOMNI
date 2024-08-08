@@ -64,13 +64,12 @@
               ]
             },
             "development": {
-              "optimization": true,
-              "sourceMap": false,
-              "namedChunks": false,
-              "aot": true,
-              "extractLicenses": true,
-              "vendorChunk": false,
-              "buildOptimizer": true
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
             }
           },
           "defaultConfiguration": "development"
@@ -141,5 +140,8 @@
   },
   "defaultProject": "accwebagent",
   "schematics": {
+  },
+  "cli": {
+    "analytics": false
   }
 }

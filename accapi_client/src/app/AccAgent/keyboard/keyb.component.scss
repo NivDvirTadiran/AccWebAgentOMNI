@@ -1,10 +1,10 @@
 
-@import '../../../scss/_all-vars-and-mixins.scss';
+@import '../../../assets/scss/all-vars-and-mixins';
 //@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
 //@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
 @import "../../../assets/css/font-awesome.min.css";
 //@import '~bootstrap/dist/css/bootstrap.min.css';
-@import "~node_modules/angular-bootstrap-md/assets/scss/bootstrap/bootstrap.scss";
+@import "angular-bootstrap-md/assets/scss/bootstrap/bootstrap.scss";
 // @import '~responsive-css/_responsive.scss';
 .content {
   margin: 40px 32px;

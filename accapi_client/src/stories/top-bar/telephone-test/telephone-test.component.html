@@ -1,0 +1,98 @@
+<div
+  class="root"
+  [ngClass]="{
+    root_property1ActiveCallProperty1ActiveGroupCall: property1 == 'active call' || property1 == 'Active Group Call',
+    root_property1IdleProperty1IncomingCallProperty1Variant5: property1 === 'IDLE' ||  property1 === 'Incoming Call' ||  property1 === 'Variant5',
+    root_property1IdleProperty1IncomingCall: property1 === 'IDLE' || property1 === 'Incoming Call',
+    root_property1ActiveCallProperty1ActiveGroupCallProperty1Variant5:  property1 === 'active call' ||  property1 === 'Active Group Call' ||  property1 === 'Variant5',
+    root_property1Variant5: property1 === 'Variant5',
+    root_property1Idle: property1 === 'IDLE',
+    root_property1IncomingCall: property1 === 'Incoming Call',
+    root_property1ActiveCall: property1 === 'active call',
+    root_property1ActiveGroupCall: property1 === 'Active Group Call'}">
+  <div *ngIf="property1 === 'IDLE'" class="frame493">
+    <div class="frame477">
+      <app-icon-large-17 class="iconLarge17"></app-icon-large-17>
+    </div>
+    <div class="frame250">
+      <app-sed-button [property1]="'Dial'" class="sedButton"></app-sed-button>
+      <app-sed-button [property1]="'PhoneBook'" class="sedButton"></app-sed-button>
+    </div>
+  </div>
+  <div
+    *ngIf="(property1 === 'IDLE' || property1 === 'Incoming Call')" class="frame256" >
+    <span *ngIf="property1 === 'IDLE'" class="a">פנוי</span>
+    <app-icon-small-30 *ngIf="property1 === 'IDLE'" class="iconSmall30" ></app-icon-small-30>
+    <span *ngIf="property1 === 'Incoming Call'" class="a">שיחה נכנסת</span>
+    <app-icon-small-10 *ngIf="property1 === 'Incoming Call'" class="iconSmall10" ></app-icon-small-10>
+  </div>
+  <div *ngIf="property1 === 'Incoming Call'" class="frame477">
+    <app-icon-large-17 class="iconLarge17"></app-icon-large-17>
+    <div class="frame251">
+      <app-sed-button [property1]="'Answer'" class="sedButton"></app-sed-button>
+      <app-sed-button [property1]="'Reject'" class="sedButton"></app-sed-button>
+    </div>
+  </div>
+  <div
+    *ngIf="(property1 === 'active call' || property1 === 'Active Group Call')" class="frame393">
+    <div class="frame391">
+      <app-button
+        [active]="'Yes'"
+        [bold]="'No'"
+        [icon]="'Yes'"
+        [size]="'small'"
+        [purpose]="'Default'"
+        class="button" >
+      </app-button>
+    </div>
+  </div>
+  <div
+    *ngIf="property1 === 'active call' || property1 === 'Active Group Call' || property1 === 'Variant5'"
+    class="frame392"
+    [ngClass]="{
+      frame392_property1ActiveCallProperty1ActiveGroupCall: property1 === 'active call' || property1 === 'Active Group Call',
+      frame392_property1Variant5: property1 === 'Variant5'}" >
+    <app-icon-large-17 class="iconLarge17"></app-icon-large-17>
+    <div class="frame392">
+      <div class="frame250">
+        <app-sed-button *ngIf="property1 === 'active call' || property1 === 'Active Group Call'"
+          [property1]="'Pause'"
+          class="sedButton"
+        ></app-sed-button>
+        <app-sed-button
+          *ngIf="(property1 === 'active call' || property1 === 'Active Group Call')"
+          [property1]="'Hang'" class="sedButton" >
+        </app-sed-button>
+        <app-sed-button
+          *ngIf="property1 === 'Variant5'" [property1]="'Hang'" class="sedButton"></app-sed-button>
+      </div>
+      <div
+        class="frame389"
+        [ngClass]="{
+          frame389_property1ActiveCallProperty1Variant5: property1 === 'active call' || property1 === 'Variant5'
+        }">
+        <div class="frame255">
+          <div class="frame260">
+            <span class="a">הקלטה</span>
+            <app-icon-record [property1]="'Large'" [recording]="'No'" class="iconRecord" ></app-icon-record>
+          </div>
+          <div class="frame261">
+            <span *ngIf="property1 === 'active call' || property1 === 'Active Group Call'" class="a">שיחה פעילה</span>
+            <app-icon-small-12 *ngIf="property1 === 'active call' || property1 === 'Active Group Call'" class="iconSmall12">
+            </app-icon-small-12>
+            <span *ngIf="property1 === 'Variant5'" class="a">מחייג</span>
+            <app-icon-small-11 *ngIf="property1 === 'Variant5'" class="iconSmall11"></app-icon-small-11>
+          </div>
+        </div>
+        <div class="frame478">
+          <span class="a000000">00:00:00</span>
+          <span *ngIf="property1 === 'active call' || property1 === 'Variant5'" class="a">מכירות</span>
+          <div *ngIf="property1 === 'Active Group Call'" class="frame479">
+            <span class="a">מכירות, נציג נוסף בועידה</span>
+            <app-icon-small-33 class="iconSmall33"></app-icon-small-33>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

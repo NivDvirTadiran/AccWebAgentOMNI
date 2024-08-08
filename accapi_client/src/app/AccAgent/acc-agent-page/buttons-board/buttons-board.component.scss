@@ -1,6 +1,6 @@
-@import "~src/scss/_all-vars-and-mixins.scss";
-@import "~node_modules/angular-bootstrap-md/assets/scss/bootstrap/bootstrap.scss";
-@import "~../acc-agent-page.component";
+@import "../../../../assets/scss/_all-vars-and-mixins";
+@import "angular-bootstrap-md/assets/scss/bootstrap/bootstrap.scss";
+@import "../acc-agent-page.component.scss";
 
 .accimg {
     width: 50%;

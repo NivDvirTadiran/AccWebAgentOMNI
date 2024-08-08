@@ -2,7 +2,7 @@
 @import "../assets/css/font-awesome.min.css";
 //@import "~src/scss/fontawesome.scss";
 $custom-file-text: (); // --> Warning: 1 rules skipped due to selector errors: .custom-file-input:lang(en) ~ .custom-file-label -> unmatched pseudo-class :lang
-@import "~node_modules/angular-bootstrap-md/assets/scss/bootstrap/bootstrap.scss";
+@import "angular-bootstrap-md/assets/scss/bootstrap/bootstrap.scss";
 .mat-grid-tile .mat-figure.mat-figure {
   justify-content: center;
   align-items: start;

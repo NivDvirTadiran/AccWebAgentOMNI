@@ -11,8 +11,8 @@ import {TranslateService} from '@ngx-translate/core';
 import {Md5} from 'ts-md5/dist/md5';
 import {ActivatedRoute} from "@angular/router";
 import {PopoverOptions} from "src/stories/directive/popover.interface";
-import {ActionAvatarComponent} from "src/stories/actions/action-avatar/action-avatar.component";
 import {TokenStorageService} from "../../_helpers/token-storage.service";
+import {ActionAvatarComponent} from "../../../stories/actions/action-avatar/action-avatar.component";
 //import {  FileUploader, FileSelectDirective } from 'ng2-file-upload/ng2-file-upload';
 
 @Component({

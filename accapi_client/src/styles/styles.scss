@@ -1,11 +1,7 @@
-@import '../../../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css';
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
-@import "../node_modules/three";
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
 @import "mixins";
 
-* {
-    @include font-roboto();
-}
 
 a, .cp {
     cursor: pointer;

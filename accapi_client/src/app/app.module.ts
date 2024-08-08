@@ -55,7 +55,7 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 import {ServiceWorkerModule} from '@angular/service-worker';
 import {environment} from '../environments/environment';
 
-import {AccAgentPage} from './AccAgent/./acc-agent-page/acc-agent-page.component';
+import {AccAgentPage} from './AccAgent/acc-agent-page/acc-agent-page.component';
 import {AccLogonComponent} from './AccAgent/acc-logon/acc-logon.component';
 import { TelephonyComponent } from './AccAgent/telephony/telephony.component';
 
@@ -89,37 +89,17 @@ import {MdbCarouselModule} from "mdb-angular-ui-kit/carousel";
 import {MdbAccordionModule} from "mdb-angular-ui-kit/accordion";
 import {NgbDatepickerModule} from "@ng-bootstrap/ng-bootstrap";
 
-import {MDBBootstrapModulesPro, MDBSpinningPreloader} from 'ng-uikit-pro-standard';
+import {InputsModule, MDBBootstrapModulesPro, MDBSpinningPreloader} from 'ng-uikit-pro-standard';
 
 
-import Background1Component from "src/stories/pages/background1/background1Component";
-import ChatComponent from "../stories/pages/chat/chat.component";
 import {ExtendedModule} from "@angular/flex-layout";
-import {PopoverDirective} from "../stories/directive/bubble-avatar/popover.directive";
-import {ActionAvatarComponent} from "../stories/actions/action-avatar/action-avatar.component";
-import {HighlightDirective} from "../stories/directive/custom-directive/Highlight.directive";
-import {BubbleAvatarComponent} from "../stories/directive/bubble-avatar/bubble-avatar.component";
-import {DynamicCompDirective} from "../stories/directive/dynamic-comp.directive";
-import { StatusBoardComponent } from './AccAgent/./acc-agent-page/status-board/status-board.component';
-import { ButtonsBoardComponent } from './AccAgent/./acc-agent-page/buttons-board/buttons-board.component';
-import { IntroComponent } from './intro/intro.component';
-import {ActionWindowsMenuComponent} from "../stories/actions/action-windows-menu/action-windows-menu.component";
-import {MenuPopoverDirective} from "../stories/directive/bubble-windows-menu/menu-popover.directive";
-import {BubbleWindowsMenuComponent} from "../stories/directive/bubble-windows-menu/bubble-windows-menu.component";
+import { StatusBoardComponent } from './AccAgent/acc-agent-page/status-board/status-board.component';
+import { ButtonsBoardComponent } from './AccAgent/acc-agent-page/buttons-board/buttons-board.component';
 import {SseComponent} from "./AccAgent/sse/sse.component";
 import {AccOmniPageComponent} from './AccOMNI/acc-omni-page/acc-omni-page.component';
-import {TelephoneTestComponent} from "./AccOMNI/acc-omni-page/export-result/telephone-test/telephone-test.component";
-import {SearchBarComponent} from "./AccOMNI/acc-omni-page/export-result/search-bar/search-bar.component";
-import {IconLarge17Component} from "./AccOMNI/acc-omni-page/export-result/icon-large-17/icon-large-17.component";
-import {SedButtonComponent} from "./AccOMNI/acc-omni-page/export-result/sed-button/sed-button.component";
-import {IconSmall30Component} from "./AccOMNI/acc-omni-page/export-result/icon-small-30/icon-small-30.component";
-import {IconSmall10Component} from "./AccOMNI/acc-omni-page/export-result/icon-small-10/icon-small-10.component";
-import {ButtonComponent} from "./AccOMNI/acc-omni-page/export-result/button/button.component";
-import {IconSmall33Component} from "./AccOMNI/acc-omni-page/export-result/icon-small-33/icon-small-33.component";
-import {IconSmall11Component} from "./AccOMNI/acc-omni-page/export-result/icon-small-11/icon-small-11.component";
-import {IconSmall12Component} from "./AccOMNI/acc-omni-page/export-result/icon-small-12/icon-small-12.component";
-import {IconRecordComponent} from "./AccOMNI/acc-omni-page/export-result/icon-record/icon-record.component";
-import {TopBarComponent} from "./AccOMNI/acc-omni-page/export-result/top-bar/top-bar.component";
+import {StorybookModule} from "../stories/storybook/storybook.module";
+import {MDBRootModule} from "angular-bootstrap-md";
+import {platformBrowserDynamic} from "@angular/platform-browser-dynamic";
 
 
 @NgModule({
@@ -132,21 +112,9 @@ import {TopBarComponent} from "./AccOMNI/acc-omni-page/export-result/top-bar/top
         BrowserAnimationsModule,
         FormsModule,
         ReactiveFormsModule,
-        MatTabsModule,
-        MatIconModule,
-        MatButtonModule,
-        MatExpansionModule,
-        MatInputModule,
-        MatCheckboxModule,
-        MatTableModule,
-        MatToolbarModule,
-        MatSelectModule,
-        MatRadioModule,
-        MatPaginatorModule,
-        MatSlideToggleModule,
-        MatSnackBarModule, MatFormFieldModule,
-        MatSortModule,
-        MatMenuModule,
+        MatTabsModule, MatIconModule, MatButtonModule, MatExpansionModule, MatInputModule, MatCheckboxModule,
+        MatTableModule, MatToolbarModule, MatSelectModule, MatRadioModule, MatPaginatorModule, MatSlideToggleModule,
+        MatSnackBarModule, MatFormFieldModule, MatSortModule, MatMenuModule,
         TableModule,
         HttpClientModule,
         InputTextModule,
@@ -156,21 +124,13 @@ import {TopBarComponent} from "./AccOMNI/acc-omni-page/export-result/top-bar/top
         ContextMenuModule,
         FileUploadModule,
         NgbDatepickerModule,
-        MdbCarouselModule,
-        MdbCheckboxModule,
-        MdbCollapseModule,
-        MdbDropdownModule,
-        MdbFormsModule,
-        MdbModalModule,
-        MdbPopoverModule,
-        MdbRadioModule,
-        MdbRangeModule,
-        MdbRippleModule,
-        MdbScrollspyModule,
-        MdbTabsModule,
-        MdbTooltipModule,
-        MdbValidationModule,
-        MDBBootstrapModulesPro.forRoot(),
+        InputsModule,
+
+
+        MDBRootModule, MdbCarouselModule, MdbCheckboxModule, MdbCollapseModule, MdbDropdownModule,
+        MdbModalModule, MdbPopoverModule, MdbRadioModule, MdbRangeModule, MdbRippleModule, MdbScrollspyModule,
+        MdbTabsModule, MdbTooltipModule, MdbValidationModule, MdbAccordionModule, MdbFormsModule,
+        StorybookModule,
 
 
         TranslateModule.forRoot({
@@ -191,8 +151,8 @@ import {TopBarComponent} from "./AccOMNI/acc-omni-page/export-result/top-bar/top
         Error404Component,
         AppComponent,
         AccAgentPage,
-        IntroComponent,
-        StatusBoardComponent,
+        AccOmniPageComponent,
+        StatusBoardComponent, ButtonsBoardComponent,
         AccLogonComponent,
         //ConfirmationDialog,
         KeybComponent,
@@ -206,8 +166,7 @@ import {TopBarComponent} from "./AccOMNI/acc-omni-page/export-result/top-bar/top
         ScrollContainerComponent,
         PhoneBook,
         SseComponent,
-        Background1Component, ChatComponent, MenuPopoverDirective, PopoverDirective, ActionAvatarComponent, ActionWindowsMenuComponent,
-        HighlightDirective, BubbleAvatarComponent, BubbleWindowsMenuComponent, DynamicCompDirective, StatusBoardComponent, ButtonsBoardComponent, IntroComponent, AccOmniPageComponent, TelephoneTestComponent, SearchBarComponent, IconLarge17Component, SedButtonComponent, IconSmall30Component, IconSmall10Component, ButtonComponent, IconSmall33Component, IconSmall11Component, IconSmall12Component, IconRecordComponent, TopBarComponent,/*PopoverMdbDropdownDirective, DynamicCompDirective, */
+/*PopoverMdbDropdownDirective, DynamicCompDirective, */
     ],
   providers: [
     {provide: APP_CONFIG, useValue: AppConfig},
@@ -218,11 +177,13 @@ import {TopBarComponent} from "./AccOMNI/acc-omni-page/export-result/top-bar/top
     CoreApiService,
     AccCallProfileComponent,
     MDBSpinningPreloader,
-    authInterceptorProviders
+    authInterceptorProviders,
+    AppComponent
   ],
 
   bootstrap: [AppComponent]
 })
 
-export class AppModule {
-}
+export class AppModule {}
+
+platformBrowserDynamic().bootstrapModule(AppModule);
