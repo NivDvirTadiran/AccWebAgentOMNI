@@ -1,0 +1,19 @@
+@import "../tokens.scss";
+
+.root {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 15px;
+  box-sizing: border-box;
+}
+.typeBar {
+  padding: 14px 20px 14px 20px;
+  display: flex;
+  box-sizing: border-box;
+  border-radius: 200px;
+  background: $light-blue-background;
+  width: -webkit-fill-available;
+}

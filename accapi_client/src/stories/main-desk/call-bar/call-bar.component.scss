@@ -1,0 +1,349 @@
+@import "../tokens.scss";
+
+.root {
+  padding: 15px 30px 15px 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 116px;
+  box-sizing: border-box;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-color: $for-strokes-color;
+  border-style: solid;
+  border-width: undefinedpx;
+  background: $white-background;
+}
+
+.root_goalChatOptionAdminBlock {
+  top: 199px;
+  left: 760px;
+  position: absolute;
+  display: flex;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  height: 70px;
+}
+
+.root_goalChatOption2GoalChatOptionClientBlockedGoalBotOption1GoalDashboardOptionDefault {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 60px;
+}
+
+.root_goalChatOption2GoalChatOptionAdminBlockGoalBotOption1GoalDashboardOptionDefault {
+  justify-content: space-between;
+}
+
+.root_goalChatOptionClientBlocked {
+  justify-content: flex-end;
+}
+
+.root_goalDashboardOptionDefault {
+  top: 208px;
+  left: -1px;
+  position: absolute;
+  display: flex;
+}
+.frame379 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 8px;
+  box-sizing: border-box;
+}
+.button {
+  padding: 4px 9px 6px 9px;
+  display: flex;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border-color: $dark-blue-color;
+  border-style: solid;
+  border-width: 1px;
+  height: 27px;
+}
+
+.button {
+  padding: 4px 9px 6px 9px;
+  display: flex;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border-color: $dark-blue-color;
+  border-style: solid;
+  border-width: 1px;
+  height: 27px;
+}
+
+.frame380_option2OptionAdminBlockOptionClientBlocked {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 16px;
+  box-sizing: border-box;
+}
+.frame263 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 6px;
+  box-sizing: border-box;
+}
+.statusLabel {
+  padding: 2px 13px 4px 13px;
+  display: flex;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background: $d-9-d-9-d-9-background;
+  width: 57px;
+}
+
+.statusLabel {
+  padding: 2px 13px 4px 13px;
+  display: flex;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background: $d-9-d-9-d-9-background;
+  width: 57px;
+}
+
+.statusLabel {
+  padding: 2px 13px 4px 13px;
+  display: flex;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background: $d-9-d-9-d-9-background;
+  width: 57px;
+}
+
+.statusLabel {
+  padding: 2px 13px 4px 13px;
+  display: flex;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background: $turkiz-background;
+  width: 57px;
+}
+
+.frame199 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0px;
+  box-sizing: border-box;
+}
+.a_option2OptionAdminBlock {
+  display: flex;
+  box-sizing: content-box;
+  color: $dark-blue-color;
+  @include menu-text-bold-text;
+  font-weight: 700;
+  text-align: right;
+  text-wrap: nowrap;
+}
+
+.a {
+  display: flex;
+  box-sizing: content-box;
+  color: $dark-blue-color;
+  @include menu-text-bold-text;
+  font-weight: 700;
+  text-align: right;
+  text-wrap: nowrap;
+}
+
+.frame379 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 8px;
+  box-sizing: border-box;
+}
+.button {
+  padding: 4px 9px 6px 9px;
+  display: flex;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border-color: $black-color;
+  border-style: solid;
+  border-width: 1px;
+  height: 27px;
+}
+
+.frame263 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: center;
+  box-sizing: border-box;
+}
+.statusLabel {
+  padding: 2px 13px 4px 13px;
+  display: flex;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background: $d-9-d-9-d-9-background;
+  width: 57px;
+}
+
+.statusLabel {
+  padding: 2px 13px 4px 13px;
+  display: flex;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background: $d-9-d-9-d-9-background;
+  width: 57px;
+}
+
+.statusLabel {
+  padding: 2px 13px 4px 13px;
+  display: flex;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background: $d-9-d-9-d-9-background;
+  width: 57px;
+}
+
+.statusLabel {
+  padding: 2px 13px 4px 13px;
+  display: flex;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background: $turkiz-background;
+  width: 57px;
+}
+
+.statusLabel {
+  padding: 2px 13px 4px 13px;
+  display: flex;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background: $d-9-d-9-d-9-background;
+  width: 57px;
+}
+
+.statusLabel {
+  padding: 2px 13px 4px 13px;
+  display: flex;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background: $turkiz-background;
+  width: 57px;
+}
+
+.frame199 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  align-items: center;
+  box-sizing: border-box;
+}
+.a {
+  display: flex;
+  box-sizing: content-box;
+  color: $dark-gray-color;
+  @include menu-text-bold-text;
+  font-weight: 700;
+  text-align: right;
+  text-wrap: nowrap;
+}
+
+.a {
+  display: flex;
+  box-sizing: content-box;
+  color: $black-color;
+  @include menu-text-bold-text;
+  font-weight: 700;
+  text-align: right;
+  text-wrap: nowrap;
+}
+
+.iconPage2 {
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: #ffffff;
+  width: 22px;
+  height: 22px;
+}
+
+.frame331 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 3px;
+  box-sizing: border-box;
+}
+.iconLarge11 {
+  position: relative;
+  box-sizing: border-box;
+  width: 22px;
+  height: 22px;
+}
+
+.frame332 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 3px;
+  box-sizing: border-box;
+}
+.a {
+  display: flex;
+  box-sizing: content-box;
+  color: $dark-blue-color;
+  @include small-text-text;
+  font-weight: 400;
+  text-align: right;
+  text-wrap: nowrap;
+}
+
+.iconSmall8 {
+  position: relative;
+  box-sizing: border-box;
+  width: 13px;
+  height: 13px;
+}
+
+.frame223 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 11px;
+  box-sizing: border-box;
+}
+.button {
+  padding: 4px 9px 6px 9px;
+  display: flex;
+  box-sizing: border-box;
+  border-radius: 20px;
+  background: $grey-background;
+  height: 27px;
+}
+
+.button {
+  padding: 4px 9px 6px 9px;
+  display: flex;
+  box-sizing: border-box;
+  border-radius: 20px;
+  background: $grey-background;
+  height: 27px;
+}

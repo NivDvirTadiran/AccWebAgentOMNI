@@ -17,8 +17,8 @@ import {AccOmniPageComponent} from "./AccOMNI/acc-omni-page/acc-omni-page.compon
 //import {AccOverlay} from './AccAgent/overlay/overlay';
 const routes: Routes = [
   //{path: '', redirectTo: '/', pathMatch: 'prefix'},
-  {path: '', component: AccLogonComponent/*, resolve: { bool: IsAeonixAppCenterOnResolver }*/},
-  {path: 'AgentLogon',component: AccLogonComponent/*, resolve: { bool: IsAeonixAppCenterOnResolver }*/},
+  {path: '', component: AccOmniPageComponent/*, resolve: { bool: IsAeonixAppCenterOnResolver }*/},
+  {path: 'AgentLogon',component: AccOmniPageComponent/*, resolve: { bool: IsAeonixAppCenterOnResolver }*/},
   {path: 'AccAgentPage',component: AccAgentPage},
   {path: 'AccCallProfile',component: AccCallProfileComponent},
   //

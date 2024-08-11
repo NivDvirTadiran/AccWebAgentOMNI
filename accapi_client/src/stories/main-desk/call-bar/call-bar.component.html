@@ -1,0 +1,184 @@
+<div
+  class="root"
+  [ngClass]="{
+    root_goalChatOptionAdminBlock: goal === 'Chat' && option === 'Admin Block',
+    root_goalChatOption2GoalChatOptionClientBlockedGoalBotOption1GoalDashboardOptionDefault:
+      (goal === 'Chat' && option === '2') ||
+      (goal === 'Chat' && option === 'Client Blocked') ||
+      (goal === 'Bot' && option === '1') ||
+      (goal === 'Dashboard' && option === 'Default'),
+    root_goalChatOption2GoalChatOptionAdminBlockGoalBotOption1GoalDashboardOptionDefault:
+      (goal === 'Chat' && option === '2') ||
+      (goal === 'Chat' && option === 'Admin Block') ||
+      (goal === 'Bot' && option === '1') ||
+      (goal === 'Dashboard' && option === 'Default'),
+    root_goalChatOptionClientBlocked:
+      goal === 'Chat' && option === 'Client Blocked',
+    root_goalDashboardOptionDefault:
+      goal === 'Dashboard' && option === 'Default'
+  }"
+>
+  <div *ngIf="goal === 'Chat' && option === '2'" class="frame379">
+    <app-button
+      [active]="'Yes'"
+      [bold]="'No'"
+      [icon]="'Yes'"
+      [size]="'small'"
+      [purpose]="'Default'"
+      class="button"
+    ></app-button>
+    <app-button
+      [active]="'Yes'"
+      [bold]="'No'"
+      [icon]="'Yes'"
+      [size]="'small'"
+      [purpose]="'Default'"
+      class="button"
+    ></app-button>
+  </div>
+  <div
+    *ngIf="
+      goal === 'Chat' &&
+      (option === '2' ||
+        option === 'Admin Block' ||
+        option === 'Client Blocked')
+    "
+    class=""
+    [ngClass]="{
+      frame380_option2OptionAdminBlockOptionClientBlocked:
+        option === '2' ||
+        option === 'Admin Block' ||
+        option === 'Client Blocked'
+    }"
+  >
+    <div *ngIf="goal === 'Chat' && option === '2'" class="frame263">
+      <app-status-label
+        [status]="'Gray Waiting'"
+        class="statusLabel"
+      ></app-status-label>
+      <app-status-label
+        [status]="'Gray Timed'"
+        class="statusLabel"
+      ></app-status-label>
+      <app-status-label
+        [status]="'Gray Closed'"
+        class="statusLabel"
+      ></app-status-label>
+      <app-status-label
+        [status]="'Open'"
+        class="statusLabel"
+      ></app-status-label>
+    </div>
+    <div
+      *ngIf="
+        option === '2' ||
+        option === 'Admin Block' ||
+        option === 'Client Blocked'
+      "
+      class="frame199"
+    >
+      <span
+        *ngIf="goal === 'Chat' && (option === '2' || option === 'Admin Block')"
+        class=""
+        [ngClass]="{
+          a_option2OptionAdminBlock: option === '2' || option === 'Admin Block'
+        }"
+        >שם הלקוח</span
+      >
+      <span *ngIf="goal === 'Chat' && option === 'Client Blocked'" class="a"
+        >שם הנציג</span
+      >
+    </div>
+    <div *ngIf="goal === 'Chat' && option === 'Admin Block'" class="frame379">
+      <app-button
+        [active]="'Yes'"
+        [bold]="'No'"
+        [icon]="'Yes'"
+        [size]="'small'"
+        [purpose]="'Default'"
+        class="button"
+      ></app-button>
+    </div>
+  </div>
+  <div
+    *ngIf="
+      (goal === 'Chat' && option === 'Admin Block') ||
+      (goal === 'Bot' && option === '1')
+    "
+    class="frame263"
+  >
+    <app-status-label
+      *ngIf="goal === 'Chat' && option === 'Admin Block'"
+      [status]="'Gray Waiting'"
+      class="statusLabel"
+    ></app-status-label>
+    <app-status-label
+      *ngIf="goal === 'Chat' && option === 'Admin Block'"
+      [status]="'Gray Timed'"
+      class="statusLabel"
+    ></app-status-label>
+    <app-status-label
+      *ngIf="goal === 'Chat' && option === 'Admin Block'"
+      [status]="'Gray Closed'"
+      class="statusLabel"
+    ></app-status-label>
+    <app-status-label
+      *ngIf="goal === 'Chat' && option === 'Admin Block'"
+      [status]="'Open'"
+      class="statusLabel"
+    ></app-status-label>
+    <app-status-label
+      *ngIf="goal === 'Bot' && option === '1'"
+      [status]="'Gray Closed'"
+      class="statusLabel"
+    ></app-status-label>
+    <app-status-label
+      *ngIf="goal === 'Bot' && option === '1'"
+      [status]="'Open'"
+      class="statusLabel"
+    ></app-status-label>
+  </div>
+  <div
+    *ngIf="
+      (goal === 'Bot' && option === '1') ||
+      (goal === 'Dashboard' && option === 'Default')
+    "
+    class="frame199"
+  >
+    <span *ngIf="goal === 'Bot' && option === '1'" class="a"
+      >שם הלקוח, בוט</span
+    >
+    <span *ngIf="goal === 'Dashboard' && option === 'Default'" class="a"
+      >שם הלוח</span
+    >
+    <app-icon-page-2
+      *ngIf="goal === 'Dashboard' && option === 'Default'"
+      class="iconPage2"
+    ></app-icon-page-2>
+  </div>
+  <div *ngIf="goal === 'Dashboard' && option === 'Default'" class="frame331">
+    <app-icon-large-11 class="iconLarge11"></app-icon-large-11>
+    <div class="frame332">
+      <span class="a">עריכת רכיבים</span>
+      <app-icon-small-8 class="iconSmall8"></app-icon-small-8>
+    </div>
+  </div>
+  <div *ngIf="goal === 'Dashboard' && option === 'Default'" class="frame223">
+    <app-button
+      [active]="'No'"
+      [bold]="'Yes'"
+      [icon]="'Yes'"
+      [size]="'small'"
+      [purpose]="'Default'"
+      class="button"
+    ></app-button>
+    <app-button
+      [active]="'No'"
+      [bold]="'Yes'"
+      [icon]="'Yes'"
+      [size]="'small'"
+      [purpose]="'Default'"
+      class="button"
+    ></app-button>
+  </div>
+</div>

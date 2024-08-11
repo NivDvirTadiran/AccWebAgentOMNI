@@ -1,0 +1,40 @@
+@import "../tokens.scss";
+
+.chatcolum_1110-41539 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  gap: 0px;
+  box-sizing: border-box;
+  width: 794px;
+  height: 960px;
+  box-shadow: $new-shadow-box-shadow;
+}
+.callbar_I1110-41539-844-131937 {
+  height: 60px;
+  width: -webkit-fill-available;
+}
+
+.frame-463_I1110-41539-843-146789 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 750px;
+  width: -webkit-fill-available;
+}
+.chat_I1110-41539-844-131595 {
+  height: 1369px;
+  width: -webkit-fill-available;
+}
+
+.typingbar-reply_I1110-41539-844-131374 {
+  height: 150px;
+  width: -webkit-fill-available;
+}

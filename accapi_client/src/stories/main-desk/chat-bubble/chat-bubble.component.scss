@@ -1,0 +1,365 @@
+@import "../tokens.scss";
+
+.root {
+  padding-right: 15px;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  box-shadow: $messenge-shadow-box-shadow;
+}
+
+.root_property1Note {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  top: 481px;
+  left: 16px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: $light-yellow-background;
+}
+
+.root_property1DefaultProperty1Variant2Property1BotProperty1BlockProperty1BotButtonProperty1BlockRequestOptions {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-items: flex-end;
+}
+
+.root_property1DefaultProperty1BlockProperty1BlockRequestOptions {
+  border-top-right-radius: 0px;
+  background: $light-blue-background;
+}
+
+.root_property1Variant2 {
+  top: 151px;
+  left: 31px;
+  position: absolute;
+  display: flex;
+  background: #d1eafc;
+}
+
+.root_property1BotProperty1BotButton {
+  background: $bot-background;
+}
+
+.root_property1DefaultProperty1Variant2Property1BotProperty1Block {
+  gap: 0px;
+}
+
+.root_property1BotButtonProperty1BlockRequestOptions {
+  gap: 10px;
+}
+
+.root_property1Variant2Property1BotProperty1BotButton {
+  border-top-left-radius: 0px;
+}
+
+.root_property1DefaultProperty1NoteProperty1BlockProperty1BlockRequestOptions {
+  border-top-left-radius: 15px;
+}
+
+.root_property1NoteProperty1Variant2Property1BotProperty1BotButton {
+  border-top-right-radius: 15px;
+}
+
+.root_property1Block {
+  top: 54px;
+  left: 285px;
+  position: absolute;
+  display: flex;
+}
+.a {
+  display: flex;
+  box-sizing: content-box;
+  color: #000000;
+  @include menu-text-text;
+  font-weight: 500;
+  text-align: right;
+  text-wrap: nowrap;
+}
+
+.a5 {
+  display: flex;
+  box-sizing: content-box;
+  color: $dark-blue-color;
+  @include small-text-text;
+  font-weight: 400;
+  text-align: right;
+  width: 87px;
+  height: 22px;
+}
+
+.mailTbsiCoIl {
+  display: flex;
+  box-sizing: content-box;
+  color: #000000;
+  @include menu-text-bold-text;
+  font-weight: 700;
+  text-align: right;
+  text-wrap: nowrap;
+}
+
+.a {
+  display: flex;
+  box-sizing: content-box;
+  color: #000000;
+  @include menu-text-text;
+  font-weight: 500;
+  text-align: right;
+  text-wrap: nowrap;
+}
+
+.a {
+  display: flex;
+  box-sizing: content-box;
+  color: $dark-gray-color;
+  @include small-text-text;
+  font-weight: 400;
+  text-align: right;
+  text-wrap: nowrap;
+}
+
+.frame151 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 4px;
+  box-sizing: border-box;
+}
+.a5 {
+  display: flex;
+  box-sizing: content-box;
+  @include small-text-text;
+  font-weight: 400;
+  text-align: right;
+  width: 51px;
+  height: 22px;
+}
+
+.a5_property1Variant2 {
+  color: $dark-blue-color;
+}
+
+.a5_property1BotProperty1BotButton {
+  color: $dark-gray-color;
+}
+
+.iconLarge13 {
+  position: relative;
+  box-sizing: border-box;
+  width: 22px;
+  height: 22px;
+}
+
+.a12 {
+  display: flex;
+  box-sizing: content-box;
+  color: $dark-gray-color;
+  @include small-text-text;
+  font-weight: 400;
+  text-align: right;
+  width: 51px;
+  height: 22px;
+}
+
+.frame371 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  gap: 5px;
+  box-sizing: border-box;
+}
+.a {
+  display: flex;
+  box-sizing: content-box;
+  color: $black-color;
+  @include menu-text-text;
+  font-weight: 500;
+  text-align: right;
+  text-wrap: nowrap;
+}
+
+.iconPage7 {
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: #ffffff;
+  width: 18px;
+  height: 18px;
+}
+
+.a {
+  display: flex;
+  box-sizing: content-box;
+  color: $black-color;
+  @include menu-text-text;
+  font-weight: 500;
+  text-align: right;
+  text-wrap: nowrap;
+}
+
+.a {
+  display: flex;
+  box-sizing: content-box;
+  color: $black-color;
+  @include menu-text-text;
+  font-weight: 500;
+  text-align: right;
+  text-wrap: nowrap;
+}
+
+.a {
+  display: flex;
+  box-sizing: content-box;
+  color: $black-color;
+  @include menu-text-text;
+  font-weight: 500;
+  text-align: right;
+  text-wrap: nowrap;
+}
+
+.iconSmall32 {
+  position: relative;
+  box-sizing: border-box;
+  width: 13px;
+  height: 13px;
+}
+
+.frame376 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  gap: 4px;
+  box-sizing: border-box;
+}
+
+.frame376_property1BotButton {
+  width: -webkit-fill-available;
+}
+.frame197 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 10px;
+  box-sizing: border-box;
+  border-radius: 50px;
+  background: $white-background;
+  width: -webkit-fill-available;
+}
+
+.frame197_property1BlockRequestOptions {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.frame197_property1BotButton {
+  padding-right: 34px;
+  padding-left: 34px;
+}
+.frame372 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  gap: 5px;
+  box-sizing: border-box;
+}
+.a {
+  display: flex;
+  box-sizing: content-box;
+  color: $black-color;
+  @include menu-text-text;
+  font-weight: 500;
+  text-align: right;
+  text-wrap: nowrap;
+}
+
+.a {
+  display: flex;
+  box-sizing: content-box;
+  color: $black-color;
+  @include menu-text-text;
+  font-weight: 500;
+  text-align: right;
+  text-wrap: nowrap;
+}
+
+.frame374 {
+  padding: 8px 34px 8px 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 10px;
+  box-sizing: border-box;
+  border-radius: 50px;
+  background: $white-background;
+  width: -webkit-fill-available;
+}
+.frame372 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  gap: 5px;
+  box-sizing: border-box;
+}
+.a {
+  display: flex;
+  box-sizing: content-box;
+  color: $black-color;
+  @include menu-text-text;
+  font-weight: 500;
+  text-align: right;
+  text-wrap: nowrap;
+}
+
+.frame375 {
+  padding: 8px 34px 8px 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 10px;
+  box-sizing: border-box;
+  border-radius: 50px;
+  background: $white-background;
+  width: -webkit-fill-available;
+}
+.frame372 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  gap: 5px;
+  box-sizing: border-box;
+}
+.a {
+  display: flex;
+  box-sizing: content-box;
+  color: $black-color;
+  @include menu-text-text;
+  font-weight: 500;
+  text-align: right;
+  text-wrap: nowrap;
+}

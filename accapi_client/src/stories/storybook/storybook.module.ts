@@ -70,6 +70,33 @@ import {MatSnackBarModule} from "@angular/material/snack-bar";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatSortModule} from "@angular/material/sort";
 import {MatMenuModule} from "@angular/material/menu";
+import {MainDeskComponent} from "../main-desk/main-desk.component";
+import {StatusLabelComponent} from "../main-desk/status-label/status-label.component";
+import {ChatColumComponent} from "../main-desk/chat-colum/chat-colum.component";
+import {ChatBubbleComponent} from "../main-desk/chat-bubble/chat-bubble.component";
+import {Frame136Component} from "../main-desk/frame-136/frame-136.component";
+import {TypeBarComponent} from "../main-desk/type-bar/type-bar.component";
+import {IconLarge6Component} from "../main-desk/icon-large-6/icon-large-6.component";
+import {IconLarge7Component} from "../main-desk/icon-large-7/icon-large-7.component";
+import {IconLarge9Component} from "../main-desk/icon-large-9/icon-large-9.component";
+import {IconLarge20Component} from "../main-desk/icon-large-20/icon-large-20.component";
+import {IconSmall32Component} from "../main-desk/icon-small-32/icon-small-32.component";
+import {IconPage7Component} from "../main-desk/icon-page-7/icon-page-7.component";
+import {IconLarge13Component} from "../main-desk/icon-large-13/icon-large-13.component";
+import {IconLargeT5Component} from "../main-desk/icon-large-t-5/icon-large-t-5.component";
+import {IconLarge2Component} from "../main-desk/icon-large-2/icon-large-2.component";
+import {IconLarge1Component} from "../main-desk/icon-large-1/icon-large-1.component";
+import {IconLarge4Component} from "../main-desk/icon-large-4/icon-large-4.component";
+import {IconLarge10Component} from "../main-desk/icon-large-10/icon-large-10.component";
+import {
+    SideMenuIconLarge38Component
+} from "../main-desk/side-menu-icon-large-38/side-menu-icon-large-38.component";
+import {SystemMessengeComponent} from "../main-desk/system-messenge/system-messenge.component";
+import {IconPage2Component} from "../main-desk/icon-page-2/icon-page-2.component";
+import {IconSmall8Component} from "../main-desk/icon-small-8/icon-small-8.component";
+import {IconLarge11Component} from "../main-desk/icon-large-11/icon-large-11.component";
+import {TypingBarReplyComponent} from "../main-desk/typing-bar-reply/typing-bar-reply.component";
+import {CallBarComponent} from "../main-desk/call-bar/call-bar.component";
 
 
 
@@ -93,6 +120,34 @@ import {MatMenuModule} from "@angular/material/menu";
         IconSmall7Component, IconSmall16Component, IconSmall6Component,
         TopBarComponent, TelephoneTestComponent, SearchBarComponent,
         ChatComponent,
+        MainDeskComponent, ChatColumComponent,
+        CallBarComponent,
+        ChatComponent,
+        TypingBarReplyComponent,
+        ButtonComponent,
+        StatusLabelComponent,
+        IconLarge11Component,
+        IconSmall8Component,
+        IconPage2Component,
+        ChatBubbleComponent,
+        SystemMessengeComponent,
+        SideMenuIconLarge38Component,
+        IconLarge10Component,
+        IconLarge4Component,
+        IconLarge1Component,
+        IconLarge2Component,
+        IconLargeT5Component,
+        Frame136Component,
+        IconSmall6Component,
+        IconSmall16Component,
+        IconLarge13Component,
+        IconPage7Component,
+        IconSmall32Component,
+        IconLarge20Component,
+        TypeBarComponent,
+        IconLarge9Component,
+        IconLarge7Component,
+        IconLarge6Component,
     ],
     imports: [
         CommonModule, FormsModule, ReactiveFormsModule,
@@ -120,6 +175,34 @@ import {MatMenuModule} from "@angular/material/menu";
       IconSmall7Component, IconSmall16Component, IconSmall6Component,
       TopBarComponent, TelephoneTestComponent, SearchBarComponent,
       ChatComponent,
+      MainDeskComponent, ChatColumComponent,
+      CallBarComponent,
+      ChatComponent,
+      TypingBarReplyComponent,
+      ButtonComponent,
+      StatusLabelComponent,
+      IconLarge11Component,
+      IconSmall8Component,
+      IconPage2Component,
+      ChatBubbleComponent,
+      SystemMessengeComponent,
+      SideMenuIconLarge38Component,
+      IconLarge10Component,
+      IconLarge4Component,
+      IconLarge1Component,
+      IconLarge2Component,
+      IconLargeT5Component,
+      Frame136Component,
+      IconSmall6Component,
+      IconSmall16Component,
+      IconLarge13Component,
+      IconPage7Component,
+      IconSmall32Component,
+      IconLarge20Component,
+      TypeBarComponent,
+      IconLarge9Component,
+      IconLarge7Component,
+      IconLarge6Component,
 
 
 

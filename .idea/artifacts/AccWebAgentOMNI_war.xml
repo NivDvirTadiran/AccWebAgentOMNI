@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" build-on-make="true" name="AccWebAgentOMNI:war">
+    <output-path>$PROJECT_DIR$/accapi_server/accagentapi/target/accOMNI-0.0.1</output-path>
+    <root id="root" />
+  </artifact>
+</component>

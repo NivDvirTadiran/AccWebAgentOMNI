@@ -1,0 +1,112 @@
+@import "../tokens.scss";
+
+.root {
+  padding: 2px 13px 4px 13px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 14px;
+  box-sizing: border-box;
+  border-radius: 30px;
+}
+
+.root_statusOpen {
+  background: $turkiz-background;
+}
+
+.root_statusBlock {
+  top: 377px;
+  left: 5px;
+  position: absolute;
+  display: flex;
+  background: $black-background;
+}
+
+.root_statusTimedStatusTimeHover {
+  background: $yellow-background;
+}
+
+.root_statusNew {
+  top: 97px;
+  left: 17px;
+  position: absolute;
+  display: flex;
+  background: $pink-background;
+}
+
+.root_statusWaiting {
+  background: $purple-background;
+}
+
+.root_statusClosed {
+  background: $green-background;
+}
+
+.root_statusGrayClosedStatusGrayNewStatusGrayTimedStatusGrayWaiting {
+  background: $d-9-d-9-d-9-background;
+}
+
+.root_statusOpenStatusTimedStatusTimeHoverStatusNewStatusWaitingStatusClosedStatusGrayClosedStatusGrayNewStatusGrayTimedStatusGrayWaiting {
+  width: 57px;
+}
+.a {
+  display: flex;
+  box-sizing: content-box;
+  color: $white-color;
+  @include small-text-bold-text;
+  font-weight: 700;
+  text-align: right;
+  text-wrap: nowrap;
+}
+
+.a {
+  display: flex;
+  box-sizing: content-box;
+  color: $white-color;
+  @include small-text-bold-text;
+  font-weight: 700;
+  text-align: right;
+  text-wrap: nowrap;
+}
+
+.a {
+  display: flex;
+  box-sizing: content-box;
+  color: $white-color;
+  @include small-text-bold-text;
+  font-weight: 700;
+  text-align: right;
+  text-wrap: nowrap;
+}
+
+.a {
+  display: flex;
+  box-sizing: content-box;
+  color: $white-color;
+  @include small-text-bold-text;
+  font-weight: 700;
+  text-align: right;
+  text-wrap: nowrap;
+}
+
+.a {
+  display: flex;
+  box-sizing: content-box;
+  color: $white-color;
+  @include small-text-bold-text;
+  font-weight: 700;
+  text-align: right;
+  text-wrap: nowrap;
+}
+
+.a {
+  display: flex;
+  box-sizing: content-box;
+  color: $white-color;
+  @include small-text-bold-text;
+  font-weight: 700;
+  text-align: right;
+  text-wrap: nowrap;
+}

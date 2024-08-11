@@ -1,0 +1,45 @@
+<div
+  class="root"
+  [ngClass]="{
+    root_statusOpen: status === 'Open',
+    root_statusBlock: status === 'block',
+    root_statusTimedStatusTimeHover:
+      status === 'timed' || status === 'TimeHover',
+    root_statusNew: status === 'New',
+    root_statusWaiting: status === 'Waiting',
+    root_statusClosed: status === 'Closed',
+    root_statusGrayClosedStatusGrayNewStatusGrayTimedStatusGrayWaiting:
+      status === 'Gray Closed' ||
+      status === 'Gray New' ||
+      status === 'Gray Timed' ||
+      status === 'Gray Waiting',
+    root_statusOpenStatusTimedStatusTimeHoverStatusNewStatusWaitingStatusClosedStatusGrayClosedStatusGrayNewStatusGrayTimedStatusGrayWaiting:
+      status === 'Open' ||
+      status === 'timed' ||
+      status === 'TimeHover' ||
+      status === 'New' ||
+      status === 'Waiting' ||
+      status === 'Closed' ||
+      status === 'Gray Closed' ||
+      status === 'Gray New' ||
+      status === 'Gray Timed' ||
+      status === 'Gray Waiting'
+  }"
+>
+  <span *ngIf="status === 'Open'" class="a">פתוח</span>
+  <span *ngIf="status === 'block'" class="a">בקשה לחסימה</span>
+  <span
+    *ngIf="
+      status === 'timed' || status === 'TimeHover' || status === 'Gray Timed'
+    "
+    class="a"
+    >מתוזמן</span
+  >
+  <span *ngIf="status === 'New' || status === 'Gray New'" class="a">חדש</span>
+  <span *ngIf="status === 'Waiting' || status === 'Gray Waiting'" class="a"
+    >ממתין</span
+  >
+  <span *ngIf="status === 'Closed' || status === 'Gray Closed'" class="a"
+    >סגור</span
+  >
+</div>
