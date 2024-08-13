@@ -1,10 +1,8 @@
 import { moduleMetadata, Story, Meta } from '@storybook/angular';
 import { CommonModule } from '@angular/common';
 
-import Button from '../buttons/button-ex/button-ex.component';
-import Header from '../header.component';
 import { MainDeskComponent } from './main-desk.component';
-import {ChatColumComponent} from "./chat-colum/chat-colum.component";
+
 
 export default {
   title: 'Design System/MainDesk',
@@ -15,7 +13,7 @@ export default {
   },
   decorators: [
     moduleMetadata({
-      declarations: [ChatColumComponent, Header],
+      declarations: [],
       imports: [CommonModule],
     }),
   ],
@@ -27,4 +25,7 @@ const Template: Story<MainDeskComponent> = (args: MainDeskComponent) => ({
 
 export const MainDesk_Clean = Template.bind({});
 
+
+export const MainDesk_MAil = Template.bind({});
+MainDesk_MAil.args = {}
 

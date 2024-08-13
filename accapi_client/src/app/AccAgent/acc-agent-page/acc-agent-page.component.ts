@@ -464,7 +464,7 @@ export class AccAgentPage implements OnInit, OnDestroy, AfterViewInit {
     //
    // =========[ showDetailedQChartsACDbyGroupsOnOff ]=============
    ShowChart:boolean = false;
-   chart : CanvasJS.Chart = null;
+   chart : any = null;
    showDetailedQChartsACDbyGroupsOnOff() 
     {
         if (this.AAC.ShowPSTQGROUPS == false) {

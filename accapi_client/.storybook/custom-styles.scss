@@ -1,0 +1,161 @@
+$notosans-fontface-path: "fonts/Noto/";
+@import "notosans-fontface/scss/notosans-fontface";
+
+
+@include notosans-fontface("Regular", 400, normal);
+@include notosans-fontface("Italic", 400, italic);
+@include notosans-fontface("Bold", 700, normal);
+@include notosans-fontface("BoldItalic", 700, italic);
+
+/*
+@font-face {
+  font-family: Inter;
+  src: local(Inter-Regular),
+  url('Inter-Regular.woff2') format("woff2"),
+  url('Inter-Regular.woff') format("woff"),
+  url('Inter-Regular.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: Noto Sans;
+  src: url('src/assets/fonts/NotoSans-Italic.woff2') format("woff2"),
+  url('NotoSans-Italic.woff') format("woff"),
+  local(NotoSans-Italic);
+  font-weight: normal;
+  font-style: italic;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: NotoSans;
+  src: local(NotoSans-Regular),
+  url('NotoSans-Regular.woff2') format("woff2"),
+  url('NotoSans-Regular.woff') format("woff"),
+  url('NotoSans-Regular.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: NotoSans;
+  src: local(NotoSans-ExtraBold),
+  url('NotoSans-ExtraBold.woff2') format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+}*/
+
+.D-Big-Title {
+  font-family: NotoSans;
+  font-size: 40px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.13;
+  letter-spacing: -0.44px;
+}
+.D-Small-Title {
+  font-family: "Noto Sans", ui-serif;
+  font-size: 35px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: -0.39px;
+}
+.D-UnderLine-Regular {
+  font-family: "Noto Sans", ui-serif;
+  font-size: 17px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.83;
+  letter-spacing: -0.19px;
+}
+.D-Regular {
+  font-family: NotoSans;
+  font-size: 17px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.83;
+  letter-spacing: -0.19px;
+}
+.D-Example-Italic {
+  font-family: NotoSans;
+  font-size: 17px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.65;
+  letter-spacing: -0.19px;
+}
+.BigTitle {
+  font-family: NotoSans;
+  font-size: 15px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: -0.6px;
+}
+.Text-Style {
+  font-family: NotoSans;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.23;
+  letter-spacing: -0.15px;
+  text-align: left;
+  color: var(--black);
+}
+.D-Strong-Password {
+  font-family: NotoSans;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: italic;
+  line-height: 2.4;
+  letter-spacing: -0.14px;
+}
+.Error-Regular {
+  font-family: Inter;
+  font-size: 7.3px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: -0.08px;
+}
+.Regular {
+  font-family: NotoSans;
+  font-size: 7.3px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: -0.08px;
+}
+.UnderLineRegular {
+  font-family: NotoSans;
+  font-size: 7px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.57;
+  letter-spacing: -0.08px;
+}
+.Strong-Password-Bar {
+  font-family: NotoSans;
+  font-size: 6px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: italic;
+  line-height: 1.85;
+  letter-spacing: -0.07px;
+}

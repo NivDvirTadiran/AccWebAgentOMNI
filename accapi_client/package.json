@@ -14,7 +14,8 @@
     "e2e": "ng e2e",
     "docs:json": "compodoc -p ./tsconfig.json -e json -d .",
     "storybook": "npm run docs:json && start-storybook -p 6006 -s .storybook/",
-    "build-storybook": "npm run docs:json && build-storybook"
+    "build-storybook": "npm run docs:json && build-storybook",
+    "chromatic": "npx chromatic --project-token=chpt_953bf42666735e3"
   },
   "dependencies": {
     "@angular-devkit/architect": "^0.1703.0",
