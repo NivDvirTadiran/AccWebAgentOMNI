@@ -120,6 +120,14 @@
 			  "src/start.html"
             ]
           }
+        },
+        "storybook": {
+          "builder": "@storybook/angular:start-storybook",
+          "options": {
+            "browserTarget": "accwebagent:build",
+            "styles": [".storybook/custom-styles.scss"]
+          }
+
         }
       }
     },

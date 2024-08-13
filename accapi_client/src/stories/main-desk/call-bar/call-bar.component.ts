@@ -7,6 +7,5 @@ import { ChangeDetectionStrategy, Component, Input } from "@angular/core";
 })
 export class CallBarComponent {
   @Input() goal: "Chat" | "Dashboard" | "Bot" = "Chat";
-  @Input() option: "Default" | "1" | "2" | "Admin Block" | "Client Blocked" =
-    "2";
+  @Input() option: "Default" | "1" | "2" | "Admin Block" | "Client Blocked" = "2";
 }

@@ -21,7 +21,6 @@ import {MenuPopoverDirective} from "../directive/bubble-windows-menu/menu-popove
 import {ActionWindowsMenuComponent} from "../actions/action-windows-menu/action-windows-menu.component";
 import {HighlightDirective} from "../directive/custom-directive/Highlight.directive";
 import {BubbleWindowsMenuComponent} from "../directive/bubble-windows-menu/bubble-windows-menu.component";
-import {ButtonsBoardComponent} from "../../app/AccAgent/acc-agent-page/buttons-board/buttons-board.component";
 import {IntroComponent} from "../intro/intro.component";
 import {TelephoneTestComponent} from "../top-bar/telephone-test/telephone-test.component";
 import {SearchBarComponent} from "../top-bar/search-bar/search-bar.component";
@@ -117,7 +116,7 @@ import {ButtonMdComponent} from "../main-desk/button/button-md.component";
         ActionAvatarComponent, ActionWindowsMenuComponent,
         HighlightDirective,
         BubbleAvatarComponent, BubbleWindowsMenuComponent, DynamicCompDirective,
-        ButtonsBoardComponent, IntroComponent,
+        IntroComponent,
         IconLarge17Component, SedButtonComponent, IconSmall30Component, IconSmall10Component, IconSmall33Component,
         IconSmall11Component, IconSmall12Component, IconRecordComponent, IconLarge30Component, SearchOptionComponent,
         IconSmall7Component, IconSmall16Component, IconSmall6Component,
@@ -154,7 +153,7 @@ import {ButtonMdComponent} from "../main-desk/button/button-md.component";
       ActionAvatarComponent, ActionWindowsMenuComponent,
       HighlightDirective,
       BubbleAvatarComponent, BubbleWindowsMenuComponent, DynamicCompDirective,
-      ButtonsBoardComponent, IntroComponent,
+      IntroComponent,
       IconLarge17Component, SedButtonComponent, IconSmall30Component, IconSmall10Component, IconSmall33Component,
       IconSmall11Component, IconSmall12Component, IconRecordComponent, IconLarge30Component, SearchOptionComponent,
       IconSmall7Component, IconSmall16Component, IconSmall6Component,

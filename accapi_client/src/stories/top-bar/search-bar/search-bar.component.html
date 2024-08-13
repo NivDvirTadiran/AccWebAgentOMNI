@@ -20,14 +20,14 @@
     class="frame545"
   >
     <span *ngIf="property1 === 'Variant4'" class="a">|</span>
-    <app-button-md
+    <app-button
       [active]="'Yes'"
       [bold]="'Yes'"
       [icon]="'Yes'"
       [size]="'small'"
       [purpose]="'Default'"
       class="button"
-    ></app-button-md>
+    ></app-button>
     <div
       *ngIf="property1 === 'Variant5' || property1 === 'Variant6'"
       class="frame547"
@@ -36,7 +36,7 @@
       <span *ngIf="property1 === 'Variant5'" class="a054976">054976</span>
       <span *ngIf="property1 === 'Variant6'" class="a">טקסט חופשי</span>
     </div>
-    <app-button-md
+    <app-button
       *ngIf="property1 === 'Variant6'"
       [active]="'Yes'"
       [bold]="'Yes'"
@@ -44,7 +44,7 @@
       [size]="'small'"
       [purpose]="'Default'"
       class="button"
-    ></app-button-md>
+    ></app-button>
   </div>
   <app-search-option
     *ngIf="property1 === 'Variant5'"

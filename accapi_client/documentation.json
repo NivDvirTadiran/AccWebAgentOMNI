@@ -19723,7 +19723,7 @@
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<div class=\"top-bar-content\">\n    <sb-top-bar>\n\n    </sb-top-bar>\n</div>\n\n\n<div class=\"main-desk-content\">\n    <sb-main-desk>\n\n    </sb-main-desk>\n</div>\n\n\n<div class=\"sessions-list-content\">\n    <sb-main-desk\n\n    ></sb-main-desk>\n</div>\n"
+            "templateData": "<div class=\"top-bar-content\">\n    <sb-top-bar>\n\n    </sb-top-bar>\n</div>\n\n\n<div class=\"main-desk-content\">\n    <sb-main-desk>\n\n    </sb-main-desk>\n</div>\n\n"
         },
         {
             "name": "AccSetupComponent",
@@ -22904,7 +22904,7 @@
         },
         {
             "name": "CallBarComponent",
-            "id": "component-CallBarComponent-dfed3c5c1c367ed3fc2d2dd1027aee971c7143270dcf7e0f644d34181de8759a94bace1a11b0690196db7891c697890a05b89564ef46915a79b5b25cd15f8f67",
+            "id": "component-CallBarComponent-6915a251df342ed9ae3263fa8ca74b42b65ed61d518718d0a1c4bd82c4d0685203ffd9e313d11f651962d6dc57242428284225f8b64486d79e6a0971b8cc5a59",
             "file": "src/stories/main-desk/call-bar/call-bar.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [],
@@ -22951,7 +22951,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { ChangeDetectionStrategy, Component, Input } from \"@angular/core\";\n@Component({\n  selector: \"app-call-bar\",\n  templateUrl: \"./call-bar.component.html\",\n  styleUrls: [\"./call-bar.component.scss\"],\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class CallBarComponent {\n  @Input() goal: \"Chat\" | \"Dashboard\" | \"Bot\" = \"Chat\";\n  @Input() option: \"Default\" | \"1\" | \"2\" | \"Admin Block\" | \"Client Blocked\" =\n    \"2\";\n}\n",
+            "sourceCode": "import { ChangeDetectionStrategy, Component, Input } from \"@angular/core\";\n@Component({\n  selector: \"app-call-bar\",\n  templateUrl: \"./call-bar.component.html\",\n  styleUrls: [\"./call-bar.component.scss\"],\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class CallBarComponent {\n  @Input() goal: \"Chat\" | \"Dashboard\" | \"Bot\" = \"Chat\";\n  @Input() option: \"Default\" | \"1\" | \"2\" | \"Admin Block\" | \"Client Blocked\" = \"2\";\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -25836,7 +25836,7 @@
                 }
             ],
             "stylesData": "",
-            "templateData": "<div class=\"chatcolum_1110-41539\">\n  <app-call-bar\n    [goal]=\"'Chat'\"\n    [option]=\"'2'\"\n    class=\"callbar_I1110-41539-844-131937\"\n  ></app-call-bar>\n  <div class=\"frame-463_I1110-41539-843-146789\">\n    <app-chat\n      [wight]=\"'normal'\"\n      [type]=\"'chat'\"\n      class=\"chat_I1110-41539-844-131595\"\n    ></app-chat>\n  </div>\n  <app-typing-bar-reply\n    class=\"typingbar-reply_I1110-41539-844-131374\"\n  ></app-typing-bar-reply>\n</div>\n"
+            "templateData": "<div class=\"chatcolum_1110-41539\">\n  <app-call-bar\n    [goal]=\"'Chat'\"\n    [option]=\"'2'\"\n    class=\"callbar_I1110-41539-844-131937\">\n  </app-call-bar>\n  <div class=\"frame-463_I1110-41539-843-146789\">\n    <app-chat\n      [wight]=\"'normal'\"\n      [type]=\"'chat'\"\n      class=\"chat_I1110-41539-844-131595\">\n    </app-chat>\n  </div>\n  <app-typing-bar-reply\n    class=\"typingbar-reply_I1110-41539-844-131374\">\n  </app-typing-bar-reply>\n</div>\n"
         },
         {
             "name": "OpenCalls",
@@ -27409,7 +27409,7 @@
                 }
             ],
             "stylesData": "",
-            "templateData": "<div class=\"root\">\n  <app-icon-small-7 class=\"iconSmall7\"></app-icon-small-7>\n  <span *ngIf=\"property1 === 'normal'\" class=\"a\">חיפוש</span>\n  <span *ngIf=\"property1 === 'type'\" class=\"a\">|</span>\n  <div *ngIf=\"property1 === 'with text'\" class=\"frame546\">\n    <span class=\"a\">|</span>\n    <span class=\"a\">דור כ</span>\n  </div>\n  <app-search-option\n    *ngIf=\"property1 === 'with text'\"\n    [property1]=\"'1'\"\n    class=\"searchOption\"\n  ></app-search-option>\n  <div\n    *ngIf=\"\n      property1 === 'Variant4' ||\n      property1 === 'Variant5' ||\n      property1 === 'Variant6'\n    \"\n    class=\"frame545\"\n  >\n    <span *ngIf=\"property1 === 'Variant4'\" class=\"a\">|</span>\n    <app-button-md\n      [active]=\"'Yes'\"\n      [bold]=\"'Yes'\"\n      [icon]=\"'Yes'\"\n      [size]=\"'small'\"\n      [purpose]=\"'Default'\"\n      class=\"button\"\n    ></app-button-md>\n    <div\n      *ngIf=\"property1 === 'Variant5' || property1 === 'Variant6'\"\n      class=\"frame547\"\n    >\n      <span class=\"a\">|</span>\n      <span *ngIf=\"property1 === 'Variant5'\" class=\"a054976\">054976</span>\n      <span *ngIf=\"property1 === 'Variant6'\" class=\"a\">טקסט חופשי</span>\n    </div>\n    <app-button-md\n      *ngIf=\"property1 === 'Variant6'\"\n      [active]=\"'Yes'\"\n      [bold]=\"'Yes'\"\n      [icon]=\"'Yes'\"\n      [size]=\"'small'\"\n      [purpose]=\"'Default'\"\n      class=\"button\"\n    ></app-button-md>\n  </div>\n  <app-search-option\n    *ngIf=\"property1 === 'Variant5'\"\n    [property1]=\"'Variant2'\"\n    class=\"searchOption\"\n  ></app-search-option>\n</div>\n"
+            "templateData": "<div class=\"root\">\n  <app-icon-small-7 class=\"iconSmall7\"></app-icon-small-7>\n  <span *ngIf=\"property1 === 'normal'\" class=\"a\">חיפוש</span>\n  <span *ngIf=\"property1 === 'type'\" class=\"a\">|</span>\n  <div *ngIf=\"property1 === 'with text'\" class=\"frame546\">\n    <span class=\"a\">|</span>\n    <span class=\"a\">דור כ</span>\n  </div>\n  <app-search-option\n    *ngIf=\"property1 === 'with text'\"\n    [property1]=\"'1'\"\n    class=\"searchOption\"\n  ></app-search-option>\n  <div\n    *ngIf=\"\n      property1 === 'Variant4' ||\n      property1 === 'Variant5' ||\n      property1 === 'Variant6'\n    \"\n    class=\"frame545\"\n  >\n    <span *ngIf=\"property1 === 'Variant4'\" class=\"a\">|</span>\n    <app-button\n      [active]=\"'Yes'\"\n      [bold]=\"'Yes'\"\n      [icon]=\"'Yes'\"\n      [size]=\"'small'\"\n      [purpose]=\"'Default'\"\n      class=\"button\"\n    ></app-button>\n    <div\n      *ngIf=\"property1 === 'Variant5' || property1 === 'Variant6'\"\n      class=\"frame547\"\n    >\n      <span class=\"a\">|</span>\n      <span *ngIf=\"property1 === 'Variant5'\" class=\"a054976\">054976</span>\n      <span *ngIf=\"property1 === 'Variant6'\" class=\"a\">טקסט חופשי</span>\n    </div>\n    <app-button\n      *ngIf=\"property1 === 'Variant6'\"\n      [active]=\"'Yes'\"\n      [bold]=\"'Yes'\"\n      [icon]=\"'Yes'\"\n      [size]=\"'small'\"\n      [purpose]=\"'Default'\"\n      class=\"button\"\n    ></app-button>\n  </div>\n  <app-search-option\n    *ngIf=\"property1 === 'Variant5'\"\n    [property1]=\"'Variant2'\"\n    class=\"searchOption\"\n  ></app-search-option>\n</div>\n"
         },
         {
             "name": "SearchOptionComponent",
@@ -29670,13 +29670,13 @@
         },
         {
             "name": "AppRoutingModule",
-            "id": "module-AppRoutingModule-300117bd7a5417b52bab493a0baafa892177d5987eb4c618f4b7d5a865e092b89248e016aa45b819515977b9db046fa54cf7023ed2f329b65b1963080961bd7c",
+            "id": "module-AppRoutingModule-7f8786d02149a18bc070d84f9989bfeed4db972ae48f09970690a06ae5e5e6d2642f8a7920d4547e15d62f57dbb48272b3a1937310509751b5d1935baf1e784b",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/app/app-routing.module.ts",
             "methods": [],
-            "sourceCode": "import {NgModule} from '@angular/core';\nimport {RouterModule, Routes} from '@angular/router';\n\nimport {AccAgentPage} from './AccAgent/./acc-agent-page/acc-agent-page.component';\nimport { AccCallProfileComponent } from './AccAgent/acc-call-profile/acc-call-profile.component';\nimport {OpenCalls} from './AccAgent/Grids/OpenCalls';\nimport {CallsLog} from './AccAgent/Grids/CallsLog';\nimport {AcdQCalls} from './AccAgent/Grids/AcdQCalls';\nimport {TelephonyComponent} from './AccAgent/telephony/telephony.component';\nimport {AppConfig} from './config/app.config';\nimport {AccSetupComponent} from './AccAgent/acc-setup/acc-setup.component';\n\nimport {Error404Component} from './core/error404/error-404.component';\nimport {AccLogonComponent} from './AccAgent/acc-logon/acc-logon.component';\nimport {IsAeonixAppCenterOnResolver} from \"./is-aeonix-app-center-on.resolver\";\nimport {AccOmniPageComponent} from \"./AccOMNI/acc-omni-page/acc-omni-page.component\";\n//import {AccOverlay} from './AccAgent/overlay/overlay';\nconst routes: Routes = [\n  //{path: '', redirectTo: '/', pathMatch: 'prefix'},\n  {path: '', component: AccOmniPageComponent/*, resolve: { bool: IsAeonixAppCenterOnResolver }*/},\n  {path: 'AgentLogon',component: AccOmniPageComponent/*, resolve: { bool: IsAeonixAppCenterOnResolver }*/},\n  {path: 'AccAgentPage',component: AccAgentPage},\n  {path: 'AccCallProfile',component: AccCallProfileComponent},\n  //\n  {path: 'AgentPanel',component: AccOmniPageComponent},\n  {path: 'OpenCalls',component: OpenCalls},\n  {path: 'CallsLog',component: OpenCalls},\n  {path: 'AcdQCalls',component: AcdQCalls},\n  {path: 'Telephony',component: TelephonyComponent},\n  {path: 'AccSetup',component: AccSetupComponent},\n  //{path:  'AccOverlay', component: AccOverlay},\n \n  //\n  {path: AppConfig.routes.agentlogon,component: AccLogonComponent},\n  {path: 'NotSSOUser', component: Error404Component},\n\n  // otherwise redirect to 404\n  {path: '**', redirectTo: '/' + AppConfig.routes.error404}\n];\n\n@NgModule({\n  imports: [\n    RouterModule.forRoot(routes)\n  ],\n  exports: [\n    RouterModule\n  ]\n})\n\nexport class AppRoutingModule {\n}\n",
+            "sourceCode": "import {NgModule} from '@angular/core';\nimport {RouterModule, Routes} from '@angular/router';\n\nimport {AccAgentPage} from './AccAgent/./acc-agent-page/acc-agent-page.component';\nimport { AccCallProfileComponent } from './AccAgent/acc-call-profile/acc-call-profile.component';\nimport {OpenCalls} from './AccAgent/Grids/OpenCalls';\nimport {AcdQCalls} from './AccAgent/Grids/AcdQCalls';\nimport {TelephonyComponent} from './AccAgent/telephony/telephony.component';\nimport {AppConfig} from './config/app.config';\nimport {AccSetupComponent} from './AccAgent/acc-setup/acc-setup.component';\n\nimport {Error404Component} from './core/error404/error-404.component';\nimport {AccLogonComponent} from './AccAgent/acc-logon/acc-logon.component';\nimport {AccOmniPageComponent} from \"./AccOMNI/acc-omni-page/acc-omni-page.component\";\n\nconst routes: Routes = [\n  {path: '', component: AccOmniPageComponent},\n  {path: 'AgentLogon',component: AccOmniPageComponent},\n  {path: 'AccAgentPage',component: AccAgentPage},\n  {path: 'AccCallProfile',component: AccCallProfileComponent},\n\n  {path: 'OpenCalls',component: OpenCalls},\n  {path: 'CallsLog',component: OpenCalls},\n  {path: 'AcdQCalls',component: AcdQCalls},\n  {path: 'Telephony',component: TelephonyComponent},\n  {path: 'AccSetup',component: AccSetupComponent},\n\n  {path: AppConfig.routes.agentlogon,component: AccLogonComponent},\n  {path: 'NotSSOUser', component: Error404Component},\n\n  // otherwise redirect to 404\n  {path: '**', redirectTo: '/' + AppConfig.routes.error404}\n];\n\n@NgModule({\n  imports: [\n    RouterModule.forRoot(routes)\n  ],\n  exports: [\n    RouterModule\n  ]\n})\n\nexport class AppRoutingModule {}\n",
             "children": [
                 {
                     "type": "providers",
@@ -29893,13 +29893,13 @@
         },
         {
             "name": "StorybookModule",
-            "id": "module-StorybookModule-deae6fc800a844c85a6b58680819ded8fcddf4fe0c49bd2e034ef98d17d03f8f98a26e63aa9c49e7614d9e755fb6a41bb734df1f0d6b5f0e0b29b37d5d2836b1",
+            "id": "module-StorybookModule-175ed0a0e0b506bd180355468829c6a72eee6c588e1a9c16514a0f107a9a890764e15af402caee3b79124bd5af2a50ab913ffe88fe37e1fbe8b7559cfee27096",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/stories/storybook/storybook.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport {CommonModule, HashLocationStrategy, LocationStrategy} from '@angular/common';\n//import { BrowserModule } from '@angular/platform-browser';\nimport {FormsModule, ReactiveFormsModule} from '@angular/forms';\n\n\nimport Background1Component from \"../../stories/pages/background1/background1Component\";\n\nimport ButtonExComponent from \"../../stories/buttons/button-ex/button-ex.component\";\n\nimport { DynamicCompDirective } from '../directive/dynamic-comp.directive';\nimport {PopoverDirective} from \"../directive/bubble-avatar/popover.directive\";\nimport { BubbleAvatarComponent } from '../directive/bubble-avatar/bubble-avatar.component';\nimport { ActionAvatarComponent } from '../actions/action-avatar/action-avatar.component';\n\nimport {MdbPopoverModule} from \"mdb-angular-ui-kit/popover\";\n\nimport {MatButtonModule} from \"@angular/material/button\";\nimport ChatComponent from \"../pages/chat/chat.component\";\nimport {MenuPopoverDirective} from \"../directive/bubble-windows-menu/menu-popover.directive\";\nimport {ActionWindowsMenuComponent} from \"../actions/action-windows-menu/action-windows-menu.component\";\nimport {HighlightDirective} from \"../directive/custom-directive/Highlight.directive\";\nimport {BubbleWindowsMenuComponent} from \"../directive/bubble-windows-menu/bubble-windows-menu.component\";\nimport {ButtonsBoardComponent} from \"../../app/AccAgent/acc-agent-page/buttons-board/buttons-board.component\";\nimport {IntroComponent} from \"../intro/intro.component\";\nimport {TelephoneTestComponent} from \"../top-bar/telephone-test/telephone-test.component\";\nimport {SearchBarComponent} from \"../top-bar/search-bar/search-bar.component\";\nimport {IconLarge17Component} from \"../top-bar/icon-large-17/icon-large-17.component\";\nimport {SedButtonComponent} from \"../top-bar/sed-button/sed-button.component\";\nimport {IconSmall30Component} from \"../top-bar/icon-small-30/icon-small-30.component\";\nimport {IconSmall10Component} from \"../top-bar/icon-small-10/icon-small-10.component\";\nimport {ButtonComponent} from \"../top-bar/button/button.component\";\nimport {IconSmall33Component} from \"../top-bar/icon-small-33/icon-small-33.component\";\nimport {IconSmall11Component} from \"../top-bar/icon-small-11/icon-small-11.component\";\nimport {IconSmall12Component} from \"../top-bar/icon-small-12/icon-small-12.component\";\nimport {IconRecordComponent} from \"../top-bar/icon-record/icon-record.component\";\nimport {TopBarComponent} from \"../top-bar/top-bar.component\";\nimport {IconLarge30Component} from \"../top-bar/icon-large-30/icon-large-30.component\";\nimport {SearchOptionComponent} from \"../top-bar/search-option/search-option.component\";\nimport {IconSmall7Component} from \"../top-bar/icon-small-7/icon-small-7.component\";\nimport {IconSmall16Component} from \"../top-bar/icon-small-16/icon-small-16.component\";\nimport {IconSmall6Component} from \"../top-bar/icon-small-6/icon-small-6.component\";\nimport {InputsModule, MDBBootstrapModulesPro} from \"ng-uikit-pro-standard\";\nimport {MdbScrollspyModule} from \"mdb-angular-ui-kit/scrollspy\";\nimport {MDBRootModule} from \"angular-bootstrap-md\";\nimport {MdbCarouselModule} from \"mdb-angular-ui-kit/carousel\";\nimport {MdbCheckboxModule} from \"mdb-angular-ui-kit/checkbox\";\nimport {MdbCollapseModule} from \"mdb-angular-ui-kit/collapse\";\nimport {MdbDropdownModule} from \"mdb-angular-ui-kit/dropdown\";\nimport {MdbFormsModule} from \"mdb-angular-ui-kit/forms\";\nimport {MdbModalModule} from \"mdb-angular-ui-kit/modal\";\nimport {MdbRadioModule} from \"mdb-angular-ui-kit/radio\";\nimport {MdbRangeModule} from \"mdb-angular-ui-kit/range\";\nimport {MdbRippleModule} from \"mdb-angular-ui-kit/ripple\";\nimport {MdbTabsModule} from \"mdb-angular-ui-kit/tabs\";\nimport {MdbTooltipModule} from \"mdb-angular-ui-kit/tooltip\";\nimport {MdbValidationModule} from \"mdb-angular-ui-kit/validation\";\nimport {MatTabsModule} from \"@angular/material/tabs\";\nimport {MatIconModule} from \"@angular/material/icon\";\nimport {MatExpansionModule} from \"@angular/material/expansion\";\nimport {MatInputModule} from \"@angular/material/input\";\nimport {MatCheckboxModule} from \"@angular/material/checkbox\";\nimport {MatTableModule} from \"@angular/material/table\";\nimport {MatToolbarModule} from \"@angular/material/toolbar\";\nimport {MatSelectModule} from \"@angular/material/select\";\nimport {MatRadioModule} from \"@angular/material/radio\";\nimport {MatPaginatorModule} from \"@angular/material/paginator\";\nimport {MatSlideToggleModule} from \"@angular/material/slide-toggle\";\nimport {MatSnackBarModule} from \"@angular/material/snack-bar\";\nimport {MatFormFieldModule} from \"@angular/material/form-field\";\nimport {MatSortModule} from \"@angular/material/sort\";\nimport {MatMenuModule} from \"@angular/material/menu\";\nimport {MainDeskComponent} from \"../main-desk/main-desk.component\";\nimport {StatusLabelComponent} from \"../main-desk/status-label/status-label.component\";\nimport {ChatBubbleComponent} from \"../main-desk/chat-bubble/chat-bubble.component\";\nimport {Frame136Component} from \"../main-desk/frame-136/frame-136.component\";\nimport {TypeBarComponent} from \"../main-desk/type-bar/type-bar.component\";\nimport {IconLarge6MdComponent} from \"../main-desk/./icon-large6-md/icon-large6-md.component\";\nimport {IconLarge7MdComponent} from \"../main-desk/icon-large-7/icon-large7-md.component\";\nimport {IconLarge9MdComponent} from \"../main-desk/icon-large-9/icon-large9-md.component\";\nimport {IconLarge20MdComponent} from \"../main-desk/icon-large-20/icon-large20-md.component\";\nimport {IconSmall32Component} from \"../main-desk/icon-small-32/icon-small-32.component\";\nimport {IconPage7MdComponent} from \"../main-desk/icon-page-7/icon-page7-md.component\";\nimport {IconLarge13MdComponent} from \"../main-desk/icon-large-13/icon-large13-md.component\";\nimport {IconLargeT5MdComponent} from \"../main-desk/icon-large-t-5/icon-large-t5-md.component\";\nimport {IconLarge2MdComponent} from \"../main-desk/icon-large-2/icon-large2-md.component\";\nimport {IconLarge1MdComponent} from \"../main-desk/icon-large-1/icon-large1-md.component\";\nimport {IconLarge4MdComponent} from \"../main-desk/icon-large-4/icon-large4-md.component\";\nimport {IconLarge10MdComponent} from \"../main-desk/icon-large-10/icon-large10-md.component\";\nimport {\n    SideMenuIconLarge38Component\n} from \"../main-desk/side-menu-icon-large-38/side-menu-icon-large-38.component\";\nimport {SystemMessengeComponent} from \"../main-desk/system-messenge/system-messenge.component\";\nimport {IconPage2MdComponent} from \"../main-desk/icon-page-2/icon-page2-md.component\";\nimport {IconSmall8MdComponent} from \"../main-desk/icon-small-8/icon-small8-md.component\";\nimport {IconLarge11MdComponent} from \"../main-desk/icon-large-11/icon-large11-md.component\";\nimport {TypingBarReplyComponent} from \"../main-desk/typing-bar-reply/typing-bar-reply.component\";\nimport {CallBarComponent} from \"../main-desk/call-bar/call-bar.component\";\nimport {IconSmall6MdComponent} from \"../main-desk/icon-small-6/icon-small6-md.component\";\nimport {IconSmall16MdComponent} from \"../main-desk/icon-small-16/icon-small16-md.component\";\nimport {ChatMdComponent} from \"../main-desk/chat/chat-md.component\";\nimport {ButtonMdComponent} from \"../main-desk/button/button-md.component\";\n\n\n\n\n\n\n\n\n\n\n@NgModule({\n    declarations: [\n        Background1Component, ButtonExComponent, ButtonComponent,\n        MenuPopoverDirective, PopoverDirective,\n        ActionAvatarComponent, ActionWindowsMenuComponent,\n        HighlightDirective,\n        BubbleAvatarComponent, BubbleWindowsMenuComponent, DynamicCompDirective,\n        ButtonsBoardComponent, IntroComponent,\n        IconLarge17Component, SedButtonComponent, IconSmall30Component, IconSmall10Component, IconSmall33Component,\n        IconSmall11Component, IconSmall12Component, IconRecordComponent, IconLarge30Component, SearchOptionComponent,\n        IconSmall7Component, IconSmall16Component, IconSmall6Component,\n        TopBarComponent, TelephoneTestComponent, SearchBarComponent,\n        ChatComponent,\n\n\n\n        MainDeskComponent,  ButtonMdComponent, CallBarComponent, ChatMdComponent, TypingBarReplyComponent,\n        ButtonComponent, StatusLabelComponent, IconLarge11MdComponent, IconSmall8MdComponent, IconPage2MdComponent,\n        ChatBubbleComponent, SystemMessengeComponent, SideMenuIconLarge38Component, IconLarge10MdComponent, IconLarge4MdComponent,\n        IconLarge1MdComponent, IconLarge2MdComponent, IconLargeT5MdComponent, Frame136Component,\n        IconLarge13MdComponent, IconPage7MdComponent, IconSmall32Component, IconLarge20MdComponent,\n        TypeBarComponent, IconLarge9MdComponent, IconLarge7MdComponent, IconLarge6MdComponent, IconSmall6MdComponent,\n        IconSmall16MdComponent,\n    ],\n    imports: [\n        CommonModule, FormsModule, ReactiveFormsModule,\n\n        MatTabsModule, MatIconModule, MatButtonModule, MatExpansionModule, MatInputModule, MatCheckboxModule,\n        MatTableModule, MatToolbarModule, MatSelectModule, MatRadioModule, MatPaginatorModule, MatSlideToggleModule,\n        MatSnackBarModule, MatFormFieldModule, MatSortModule, MatMenuModule,\n\n        InputsModule, MDBRootModule,\n        MdbCarouselModule, MdbCheckboxModule, MdbCollapseModule, MdbDropdownModule, MdbFormsModule,\n        MdbModalModule, MdbPopoverModule, MdbRadioModule, MdbRangeModule, MdbRippleModule, MdbScrollspyModule,\n        MdbTabsModule, MdbTooltipModule, MdbValidationModule,\n    ],\n  providers: [\n  ],\n  exports: [\n      Background1Component, ButtonExComponent, ButtonComponent,\n      MenuPopoverDirective, PopoverDirective,\n      ActionAvatarComponent, ActionWindowsMenuComponent,\n      HighlightDirective,\n      BubbleAvatarComponent, BubbleWindowsMenuComponent, DynamicCompDirective,\n      ButtonsBoardComponent, IntroComponent,\n      IconLarge17Component, SedButtonComponent, IconSmall30Component, IconSmall10Component, IconSmall33Component,\n      IconSmall11Component, IconSmall12Component, IconRecordComponent, IconLarge30Component, SearchOptionComponent,\n      IconSmall7Component, IconSmall16Component, IconSmall6Component,\n      TopBarComponent, TelephoneTestComponent, SearchBarComponent,\n      ChatComponent,\n\n\n\n      MainDeskComponent, ButtonMdComponent,\n      CallBarComponent,\n      ChatMdComponent,\n      TypingBarReplyComponent,\n      ButtonComponent,\n      StatusLabelComponent,\n      IconLarge11MdComponent,\n      IconSmall8MdComponent,\n      IconPage2MdComponent,\n      ChatBubbleComponent,\n      SystemMessengeComponent,\n      SideMenuIconLarge38Component,\n      IconLarge10MdComponent,\n      IconLarge4MdComponent,\n      IconLarge1MdComponent,\n      IconLargeT5MdComponent,\n      Frame136Component,\n      IconLarge13MdComponent,\n      IconPage7MdComponent,\n      IconSmall32Component,\n      IconLarge20MdComponent,\n      TypeBarComponent,\n      IconLarge9MdComponent,\n      IconLarge7MdComponent,\n      IconLarge6MdComponent,\n      IconSmall6MdComponent,\n      IconSmall16MdComponent\n\n\n\n\n\n  ],\n  bootstrap: [ ]\n})\nexport class StorybookModule { }\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport {CommonModule, HashLocationStrategy, LocationStrategy} from '@angular/common';\n//import { BrowserModule } from '@angular/platform-browser';\nimport {FormsModule, ReactiveFormsModule} from '@angular/forms';\n\n\nimport Background1Component from \"../../stories/pages/background1/background1Component\";\n\nimport ButtonExComponent from \"../../stories/buttons/button-ex/button-ex.component\";\n\nimport { DynamicCompDirective } from '../directive/dynamic-comp.directive';\nimport {PopoverDirective} from \"../directive/bubble-avatar/popover.directive\";\nimport { BubbleAvatarComponent } from '../directive/bubble-avatar/bubble-avatar.component';\nimport { ActionAvatarComponent } from '../actions/action-avatar/action-avatar.component';\n\nimport {MdbPopoverModule} from \"mdb-angular-ui-kit/popover\";\n\nimport {MatButtonModule} from \"@angular/material/button\";\nimport ChatComponent from \"../pages/chat/chat.component\";\nimport {MenuPopoverDirective} from \"../directive/bubble-windows-menu/menu-popover.directive\";\nimport {ActionWindowsMenuComponent} from \"../actions/action-windows-menu/action-windows-menu.component\";\nimport {HighlightDirective} from \"../directive/custom-directive/Highlight.directive\";\nimport {BubbleWindowsMenuComponent} from \"../directive/bubble-windows-menu/bubble-windows-menu.component\";\nimport {IntroComponent} from \"../intro/intro.component\";\nimport {TelephoneTestComponent} from \"../top-bar/telephone-test/telephone-test.component\";\nimport {SearchBarComponent} from \"../top-bar/search-bar/search-bar.component\";\nimport {IconLarge17Component} from \"../top-bar/icon-large-17/icon-large-17.component\";\nimport {SedButtonComponent} from \"../top-bar/sed-button/sed-button.component\";\nimport {IconSmall30Component} from \"../top-bar/icon-small-30/icon-small-30.component\";\nimport {IconSmall10Component} from \"../top-bar/icon-small-10/icon-small-10.component\";\nimport {ButtonComponent} from \"../top-bar/button/button.component\";\nimport {IconSmall33Component} from \"../top-bar/icon-small-33/icon-small-33.component\";\nimport {IconSmall11Component} from \"../top-bar/icon-small-11/icon-small-11.component\";\nimport {IconSmall12Component} from \"../top-bar/icon-small-12/icon-small-12.component\";\nimport {IconRecordComponent} from \"../top-bar/icon-record/icon-record.component\";\nimport {TopBarComponent} from \"../top-bar/top-bar.component\";\nimport {IconLarge30Component} from \"../top-bar/icon-large-30/icon-large-30.component\";\nimport {SearchOptionComponent} from \"../top-bar/search-option/search-option.component\";\nimport {IconSmall7Component} from \"../top-bar/icon-small-7/icon-small-7.component\";\nimport {IconSmall16Component} from \"../top-bar/icon-small-16/icon-small-16.component\";\nimport {IconSmall6Component} from \"../top-bar/icon-small-6/icon-small-6.component\";\nimport {InputsModule, MDBBootstrapModulesPro} from \"ng-uikit-pro-standard\";\nimport {MdbScrollspyModule} from \"mdb-angular-ui-kit/scrollspy\";\nimport {MDBRootModule} from \"angular-bootstrap-md\";\nimport {MdbCarouselModule} from \"mdb-angular-ui-kit/carousel\";\nimport {MdbCheckboxModule} from \"mdb-angular-ui-kit/checkbox\";\nimport {MdbCollapseModule} from \"mdb-angular-ui-kit/collapse\";\nimport {MdbDropdownModule} from \"mdb-angular-ui-kit/dropdown\";\nimport {MdbFormsModule} from \"mdb-angular-ui-kit/forms\";\nimport {MdbModalModule} from \"mdb-angular-ui-kit/modal\";\nimport {MdbRadioModule} from \"mdb-angular-ui-kit/radio\";\nimport {MdbRangeModule} from \"mdb-angular-ui-kit/range\";\nimport {MdbRippleModule} from \"mdb-angular-ui-kit/ripple\";\nimport {MdbTabsModule} from \"mdb-angular-ui-kit/tabs\";\nimport {MdbTooltipModule} from \"mdb-angular-ui-kit/tooltip\";\nimport {MdbValidationModule} from \"mdb-angular-ui-kit/validation\";\nimport {MatTabsModule} from \"@angular/material/tabs\";\nimport {MatIconModule} from \"@angular/material/icon\";\nimport {MatExpansionModule} from \"@angular/material/expansion\";\nimport {MatInputModule} from \"@angular/material/input\";\nimport {MatCheckboxModule} from \"@angular/material/checkbox\";\nimport {MatTableModule} from \"@angular/material/table\";\nimport {MatToolbarModule} from \"@angular/material/toolbar\";\nimport {MatSelectModule} from \"@angular/material/select\";\nimport {MatRadioModule} from \"@angular/material/radio\";\nimport {MatPaginatorModule} from \"@angular/material/paginator\";\nimport {MatSlideToggleModule} from \"@angular/material/slide-toggle\";\nimport {MatSnackBarModule} from \"@angular/material/snack-bar\";\nimport {MatFormFieldModule} from \"@angular/material/form-field\";\nimport {MatSortModule} from \"@angular/material/sort\";\nimport {MatMenuModule} from \"@angular/material/menu\";\nimport {MainDeskComponent} from \"../main-desk/main-desk.component\";\nimport {StatusLabelComponent} from \"../main-desk/status-label/status-label.component\";\nimport {ChatBubbleComponent} from \"../main-desk/chat-bubble/chat-bubble.component\";\nimport {Frame136Component} from \"../main-desk/frame-136/frame-136.component\";\nimport {TypeBarComponent} from \"../main-desk/type-bar/type-bar.component\";\nimport {IconLarge6MdComponent} from \"../main-desk/./icon-large6-md/icon-large6-md.component\";\nimport {IconLarge7MdComponent} from \"../main-desk/icon-large-7/icon-large7-md.component\";\nimport {IconLarge9MdComponent} from \"../main-desk/icon-large-9/icon-large9-md.component\";\nimport {IconLarge20MdComponent} from \"../main-desk/icon-large-20/icon-large20-md.component\";\nimport {IconSmall32Component} from \"../main-desk/icon-small-32/icon-small-32.component\";\nimport {IconPage7MdComponent} from \"../main-desk/icon-page-7/icon-page7-md.component\";\nimport {IconLarge13MdComponent} from \"../main-desk/icon-large-13/icon-large13-md.component\";\nimport {IconLargeT5MdComponent} from \"../main-desk/icon-large-t-5/icon-large-t5-md.component\";\nimport {IconLarge2MdComponent} from \"../main-desk/icon-large-2/icon-large2-md.component\";\nimport {IconLarge1MdComponent} from \"../main-desk/icon-large-1/icon-large1-md.component\";\nimport {IconLarge4MdComponent} from \"../main-desk/icon-large-4/icon-large4-md.component\";\nimport {IconLarge10MdComponent} from \"../main-desk/icon-large-10/icon-large10-md.component\";\nimport {\n    SideMenuIconLarge38Component\n} from \"../main-desk/side-menu-icon-large-38/side-menu-icon-large-38.component\";\nimport {SystemMessengeComponent} from \"../main-desk/system-messenge/system-messenge.component\";\nimport {IconPage2MdComponent} from \"../main-desk/icon-page-2/icon-page2-md.component\";\nimport {IconSmall8MdComponent} from \"../main-desk/icon-small-8/icon-small8-md.component\";\nimport {IconLarge11MdComponent} from \"../main-desk/icon-large-11/icon-large11-md.component\";\nimport {TypingBarReplyComponent} from \"../main-desk/typing-bar-reply/typing-bar-reply.component\";\nimport {CallBarComponent} from \"../main-desk/call-bar/call-bar.component\";\nimport {IconSmall6MdComponent} from \"../main-desk/icon-small-6/icon-small6-md.component\";\nimport {IconSmall16MdComponent} from \"../main-desk/icon-small-16/icon-small16-md.component\";\nimport {ChatMdComponent} from \"../main-desk/chat/chat-md.component\";\nimport {ButtonMdComponent} from \"../main-desk/button/button-md.component\";\n\n\n\n\n\n\n\n\n\n\n@NgModule({\n    declarations: [\n        Background1Component, ButtonExComponent, ButtonComponent,\n        MenuPopoverDirective, PopoverDirective,\n        ActionAvatarComponent, ActionWindowsMenuComponent,\n        HighlightDirective,\n        BubbleAvatarComponent, BubbleWindowsMenuComponent, DynamicCompDirective,\n        IntroComponent,\n        IconLarge17Component, SedButtonComponent, IconSmall30Component, IconSmall10Component, IconSmall33Component,\n        IconSmall11Component, IconSmall12Component, IconRecordComponent, IconLarge30Component, SearchOptionComponent,\n        IconSmall7Component, IconSmall16Component, IconSmall6Component,\n        TopBarComponent, TelephoneTestComponent, SearchBarComponent,\n        ChatComponent,\n\n\n\n        MainDeskComponent,  ButtonMdComponent, CallBarComponent, ChatMdComponent, TypingBarReplyComponent,\n        ButtonComponent, StatusLabelComponent, IconLarge11MdComponent, IconSmall8MdComponent, IconPage2MdComponent,\n        ChatBubbleComponent, SystemMessengeComponent, SideMenuIconLarge38Component, IconLarge10MdComponent, IconLarge4MdComponent,\n        IconLarge1MdComponent, IconLarge2MdComponent, IconLargeT5MdComponent, Frame136Component,\n        IconLarge13MdComponent, IconPage7MdComponent, IconSmall32Component, IconLarge20MdComponent,\n        TypeBarComponent, IconLarge9MdComponent, IconLarge7MdComponent, IconLarge6MdComponent, IconSmall6MdComponent,\n        IconSmall16MdComponent,\n    ],\n    imports: [\n        CommonModule, FormsModule, ReactiveFormsModule,\n\n        MatTabsModule, MatIconModule, MatButtonModule, MatExpansionModule, MatInputModule, MatCheckboxModule,\n        MatTableModule, MatToolbarModule, MatSelectModule, MatRadioModule, MatPaginatorModule, MatSlideToggleModule,\n        MatSnackBarModule, MatFormFieldModule, MatSortModule, MatMenuModule,\n\n        InputsModule, MDBRootModule,\n        MdbCarouselModule, MdbCheckboxModule, MdbCollapseModule, MdbDropdownModule, MdbFormsModule,\n        MdbModalModule, MdbPopoverModule, MdbRadioModule, MdbRangeModule, MdbRippleModule, MdbScrollspyModule,\n        MdbTabsModule, MdbTooltipModule, MdbValidationModule,\n    ],\n  providers: [\n  ],\n  exports: [\n      Background1Component, ButtonExComponent, ButtonComponent,\n      MenuPopoverDirective, PopoverDirective,\n      ActionAvatarComponent, ActionWindowsMenuComponent,\n      HighlightDirective,\n      BubbleAvatarComponent, BubbleWindowsMenuComponent, DynamicCompDirective,\n      IntroComponent,\n      IconLarge17Component, SedButtonComponent, IconSmall30Component, IconSmall10Component, IconSmall33Component,\n      IconSmall11Component, IconSmall12Component, IconRecordComponent, IconLarge30Component, SearchOptionComponent,\n      IconSmall7Component, IconSmall16Component, IconSmall6Component,\n      TopBarComponent, TelephoneTestComponent, SearchBarComponent,\n      ChatComponent,\n\n\n\n      MainDeskComponent, ButtonMdComponent,\n      CallBarComponent,\n      ChatMdComponent,\n      TypingBarReplyComponent,\n      ButtonComponent,\n      StatusLabelComponent,\n      IconLarge11MdComponent,\n      IconSmall8MdComponent,\n      IconPage2MdComponent,\n      ChatBubbleComponent,\n      SystemMessengeComponent,\n      SideMenuIconLarge38Component,\n      IconLarge10MdComponent,\n      IconLarge4MdComponent,\n      IconLarge1MdComponent,\n      IconLargeT5MdComponent,\n      Frame136Component,\n      IconLarge13MdComponent,\n      IconPage7MdComponent,\n      IconSmall32Component,\n      IconLarge20MdComponent,\n      TypeBarComponent,\n      IconLarge9MdComponent,\n      IconLarge7MdComponent,\n      IconLarge6MdComponent,\n      IconSmall6MdComponent,\n      IconSmall16MdComponent\n\n\n\n\n\n  ],\n  bootstrap: [ ]\n})\nexport class StorybookModule { }\n",
             "children": [
                 {
                     "type": "providers",
@@ -29934,9 +29934,6 @@
                         },
                         {
                             "name": "ButtonMdComponent"
-                        },
-                        {
-                            "name": "ButtonsBoardComponent"
                         },
                         {
                             "name": "CallBarComponent"
@@ -30120,9 +30117,6 @@
                         },
                         {
                             "name": "ButtonMdComponent"
-                        },
-                        {
-                            "name": "ButtonsBoardComponent"
                         },
                         {
                             "name": "CallBarComponent"
@@ -30407,6 +30401,26 @@
                 "defaultValue": "[\r\n  { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }\r\n]"
             },
             {
+                "name": "ButtonMdComponent_Clean",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/main-desk/button/button-md.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "CallBar_Clean",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/main-desk/call-bar/call-bar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
                 "name": "CallTypesText",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -30510,7 +30524,7 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/directive/custom-directive/Highlight.stories.ts",
+                "file": "src/stories/directive/bubble-windows-menu/menu-popover.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -30530,7 +30544,7 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/directive/bubble-windows-menu/menu-popover.stories.ts",
+                "file": "src/stories/directive/custom-directive/Highlight.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -30587,14 +30601,14 @@
                 "defaultValue": "{\n  production: false\n}"
             },
             {
-                "name": "httpOptions",
+                "name": "Frame136_Clean",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/AccAgent/acc-agent.service.ts",
+                "file": "src/stories/main-desk/frame-136/frame-136.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "object",
-                "defaultValue": "{\n    headers: new HttpHeaders({ \"Content-Type\": \"application/json\" })\n}"
+                "type": "",
+                "defaultValue": "Template.bind({})"
             },
             {
                 "name": "httpOptions",
@@ -30610,21 +30624,21 @@
                 "name": "httpOptions",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/app/AccAgent/acc-agent.service.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n    headers: new HttpHeaders({ \"Content-Type\": \"application/json\" })\n}"
+            },
+            {
+                "name": "httpOptions",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/app/_helpers/auth.service.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "object",
                 "defaultValue": "{\r\n  headers: new HttpHeaders({ 'Content-Type': 'application/json' })\r\n}"
-            },
-            {
-                "name": "Large",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/AccAgent/tel-win-btn/tel-win-btn.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
             },
             {
                 "name": "Large",
@@ -30747,16 +30761,6 @@
                 "defaultValue": "Template.bind({})"
             },
             {
-                "name": "MainDesk_MAil",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/main-desk/main-desk.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
                 "name": "Managed",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -30789,21 +30793,21 @@
                 "name": "mPopover",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/directive/mdb-dropdown-copy/popover-mdb-dropdown.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "PopoverOptions",
-                "defaultValue": "{\r\n  content: MdbDropdownDirective\r\n}"
-            },
-            {
-                "name": "mPopover",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/stories/directive/bubble-windows-menu/menu-popover.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "PopoverOptions",
                 "defaultValue": "{\r\n  content: ActionWindowsMenuComponent\r\n}"
+            },
+            {
+                "name": "mPopover",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/directive/mdb-dropdown-copy/popover-mdb-dropdown.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "PopoverOptions",
+                "defaultValue": "{\r\n  content: MdbDropdownDirective\r\n}"
             },
             {
                 "name": "parsedUrl",
@@ -30824,16 +30828,6 @@
                 "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "parsedUrl.port"
-            },
-            {
-                "name": "Primary",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/AccAgent/tel-win-btn/tel-win-btn.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
             },
             {
                 "name": "Primary",
@@ -30895,10 +30889,10 @@
                 "type": "any"
             },
             {
-                "name": "Secondary",
+                "name": "SearchBar_Clean",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/AccAgent/tel-win-btn/tel-win-btn.stories.ts",
+                "file": "src/stories/top-bar/search-bar/search-bar.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -30977,17 +30971,17 @@
                 "name": "Small",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/AccAgent/tel-win-btn/tel-win-btn.stories.ts",
+                "file": "src/stories/buttons/button-ex/Button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "Template.bind({})"
             },
             {
-                "name": "Small",
+                "name": "SystemMessenge_Clean",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/buttons/button-ex/Button.stories.ts",
+                "file": "src/stories/main-desk/system-messenge/system-messenge.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -31047,16 +31041,6 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/AccAgent/tel-win-btn/tel-win-btn.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<TelWinBtnComponent>",
-                "defaultValue": "(args: TelWinBtnComponent) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/stories/actions/action-avatar/action-avatar.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -31087,11 +31071,11 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/directive/custom-directive/Highlight.stories.ts",
+                "file": "src/stories/directive/bubble-windows-menu/menu-popover.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<HighlightDirective>",
-                "defaultValue": "(args) => ({\r\n  props: args,\r\n  moduleMetadata: { // (3) don't forget it\r\n    declarations: [HighlightDirective],\r\n    imports: [CommonModule]\r\n  },\r\n  template: `<button highlight=\"blue\" colorName=\"blue\" > Highlight Button Example </button>`\r\n})"
+                "type": "Story<MenuPopoverDirective>",
+                "defaultValue": "(args) => ({\r\n  props: args,\r\n  moduleMetadata: { // (3) don't forget it\r\n    declarations: [MenuPopoverDirective, ActionAvatarComponent, BubbleWindowsMenuComponent],\r\n    imports: [CommonModule, FormsModule, ReactiveFormsModule]\r\n  },\r\n  template: `<button [menuPopover] = \"mPopover\" > BubbleWindowsMenuComponent Example </button>`\r\n})"
             },
             {
                 "name": "Template",
@@ -31107,6 +31091,16 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/stories/directive/custom-directive/Highlight.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<HighlightDirective>",
+                "defaultValue": "(args) => ({\r\n  props: args,\r\n  moduleMetadata: { // (3) don't forget it\r\n    declarations: [HighlightDirective],\r\n    imports: [CommonModule]\r\n  },\r\n  template: `<button highlight=\"blue\" colorName=\"blue\" > Highlight Button Example </button>`\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/stories/buttons/button-ex/Button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -31117,21 +31111,31 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/directive/bubble-windows-menu/menu-popover.stories.ts",
+                "file": "src/stories/main-desk/chat/chat-md.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<MenuPopoverDirective>",
-                "defaultValue": "(args) => ({\r\n  props: args,\r\n  moduleMetadata: { // (3) don't forget it\r\n    declarations: [MenuPopoverDirective, ActionAvatarComponent, BubbleWindowsMenuComponent],\r\n    imports: [CommonModule, FormsModule, ReactiveFormsModule]\r\n  },\r\n  template: `<button [menuPopover] = \"mPopover\" > BubbleWindowsMenuComponent Example </button>`\r\n})"
+                "type": "Story<ChatMdComponent>",
+                "defaultValue": "(args: ChatMdComponent) => ({\n  props: {\n    ...args,\n  },\n})"
             },
             {
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/main-desk/chat/chat-md.stories.ts",
+                "file": "src/stories/main-desk/call-bar/call-bar.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<ChatMdComponent>",
-                "defaultValue": "(args: ChatMdComponent) => ({\n  props: args,\n})"
+                "type": "Story<CallBarComponent>",
+                "defaultValue": "(args: CallBarComponent) => ({\n  props: {\n    ...args,\n  },\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/main-desk/button/button-md.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ButtonMdComponent>",
+                "defaultValue": "(args: ButtonMdComponent) => ({\n  props: {\n    ...args,\n  },\n})"
             },
             {
                 "name": "Template",
@@ -31147,11 +31151,41 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/stories/main-desk/frame-136/frame-136.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<Frame136Component>",
+                "defaultValue": "(args: Frame136Component) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/stories/main-desk/icon-large-13/icon-large13-md.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<IconLarge13MdComponent>",
                 "defaultValue": "(args: IconLarge13MdComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/main-desk/system-messenge/system-messenge.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<SystemMessengeComponent>",
+                "defaultValue": "(args: SystemMessengeComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/main-desk/type-bar/type-bar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<TypeBarComponent>",
+                "defaultValue": "(args: TypeBarComponent) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -31167,11 +31201,31 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/stories/main-desk/typing-bar-reply/typing-bar-reply.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<TypingBarReplyComponent>",
+                "defaultValue": "(args: TypingBarReplyComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/stories/pages/chat/chat.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<ChatComponent>",
                 "defaultValue": "(args: ChatComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/top-bar/search-bar/search-bar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<SearchBarComponent>",
+                "defaultValue": "(args: SearchBarComponent) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template2",
@@ -31231,6 +31285,26 @@
                 "deprecationMessage": "",
                 "type": "string",
                 "defaultValue": "'token'"
+            },
+            {
+                "name": "TypeBar_Clean",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/main-desk/type-bar/type-bar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "TypingBarReply_Clean",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/main-desk/typing-bar-reply/typing-bar-reply.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
             },
             {
                 "name": "url",
@@ -33423,6 +33497,50 @@
                     "defaultValue": "'Authorization'"
                 }
             ],
+            "src/stories/main-desk/button/button-md.stories.ts": [
+                {
+                    "name": "ButtonMdComponent_Clean",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/main-desk/button/button-md.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/main-desk/button/button-md.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ButtonMdComponent>",
+                    "defaultValue": "(args: ButtonMdComponent) => ({\n  props: {\n    ...args,\n  },\n})"
+                }
+            ],
+            "src/stories/main-desk/call-bar/call-bar.stories.ts": [
+                {
+                    "name": "CallBar_Clean",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/main-desk/call-bar/call-bar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/main-desk/call-bar/call-bar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<CallBarComponent>",
+                    "defaultValue": "(args: CallBarComponent) => ({\n  props: {\n    ...args,\n  },\n})"
+                }
+            ],
             "src/stories/main-desk/chat-bubble/chat-bubble.stories.ts": [
                 {
                     "name": "ChatBubble_Clean",
@@ -33486,7 +33604,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<ChatMdComponent>",
-                    "defaultValue": "(args: ChatMdComponent) => ({\n  props: args,\n})"
+                    "defaultValue": "(args: ChatMdComponent) => ({\n  props: {\n    ...args,\n  },\n})"
                 }
             ],
             "src/stories/actions/action-avatar/action-avatar.stories.ts": [
@@ -33585,26 +33703,36 @@
                     "defaultValue": "(args) => ({\r\n  props: args,\r\n  moduleMetadata: { // (3) don't forget it\r\n    declarations: [PopoverDirective, ActionAvatarComponent, BubbleAvatarComponent],\r\n    imports: [CommonModule, FormsModule, ReactiveFormsModule]\r\n  },\r\n  template: `<button [twPopover] = \"mPopover\" > BubbleAvatarDirective Example </button>`\r\n})"
                 }
             ],
-            "src/stories/directive/custom-directive/Highlight.stories.ts": [
+            "src/stories/directive/bubble-windows-menu/menu-popover.stories.ts": [
                 {
                     "name": "Default",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/directive/custom-directive/Highlight.stories.ts",
+                    "file": "src/stories/directive/bubble-windows-menu/menu-popover.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
                     "defaultValue": "Template.bind({})"
                 },
                 {
+                    "name": "mPopover",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/directive/bubble-windows-menu/menu-popover.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "PopoverOptions",
+                    "defaultValue": "{\r\n  content: ActionWindowsMenuComponent\r\n}"
+                },
+                {
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/directive/custom-directive/Highlight.stories.ts",
+                    "file": "src/stories/directive/bubble-windows-menu/menu-popover.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "Story<HighlightDirective>",
-                    "defaultValue": "(args) => ({\r\n  props: args,\r\n  moduleMetadata: { // (3) don't forget it\r\n    declarations: [HighlightDirective],\r\n    imports: [CommonModule]\r\n  },\r\n  template: `<button highlight=\"blue\" colorName=\"blue\" > Highlight Button Example </button>`\r\n})"
+                    "type": "Story<MenuPopoverDirective>",
+                    "defaultValue": "(args) => ({\r\n  props: args,\r\n  moduleMetadata: { // (3) don't forget it\r\n    declarations: [MenuPopoverDirective, ActionAvatarComponent, BubbleWindowsMenuComponent],\r\n    imports: [CommonModule, FormsModule, ReactiveFormsModule]\r\n  },\r\n  template: `<button [menuPopover] = \"mPopover\" > BubbleWindowsMenuComponent Example </button>`\r\n})"
                 }
             ],
             "src/stories/directive/mdb-dropdown-copy/popover-mdb-dropdown.stories.ts": [
@@ -33639,36 +33767,26 @@
                     "defaultValue": "(args) => ({\r\n  props: args,\r\n  moduleMetadata: { // (3) don't forget it\r\n    declarations: [PopoverMdbDropdownDirective],\r\n    imports: [CommonModule, FormsModule, ReactiveFormsModule]\r\n  },\r\n  template: `<button [twPopover] = \"mPopover\" > BubbleAvatarDirective Example </button>`\r\n})"
                 }
             ],
-            "src/stories/directive/bubble-windows-menu/menu-popover.stories.ts": [
+            "src/stories/directive/custom-directive/Highlight.stories.ts": [
                 {
                     "name": "Default",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/directive/bubble-windows-menu/menu-popover.stories.ts",
+                    "file": "src/stories/directive/custom-directive/Highlight.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
                     "defaultValue": "Template.bind({})"
                 },
                 {
-                    "name": "mPopover",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/directive/bubble-windows-menu/menu-popover.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "PopoverOptions",
-                    "defaultValue": "{\r\n  content: ActionWindowsMenuComponent\r\n}"
-                },
-                {
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/directive/bubble-windows-menu/menu-popover.stories.ts",
+                    "file": "src/stories/directive/custom-directive/Highlight.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "Story<MenuPopoverDirective>",
-                    "defaultValue": "(args) => ({\r\n  props: args,\r\n  moduleMetadata: { // (3) don't forget it\r\n    declarations: [MenuPopoverDirective, ActionAvatarComponent, BubbleWindowsMenuComponent],\r\n    imports: [CommonModule, FormsModule, ReactiveFormsModule]\r\n  },\r\n  template: `<button [menuPopover] = \"mPopover\" > BubbleWindowsMenuComponent Example </button>`\r\n})"
+                    "type": "Story<HighlightDirective>",
+                    "defaultValue": "(args) => ({\r\n  props: args,\r\n  moduleMetadata: { // (3) don't forget it\r\n    declarations: [HighlightDirective],\r\n    imports: [CommonModule]\r\n  },\r\n  template: `<button highlight=\"blue\" colorName=\"blue\" > Highlight Button Example </button>`\r\n})"
                 }
             ],
             "src/app/AccAgent/acc-agent.service.ts": [
@@ -33729,6 +33847,28 @@
                     "defaultValue": "{\n  production: false\n}"
                 }
             ],
+            "src/stories/main-desk/frame-136/frame-136.stories.ts": [
+                {
+                    "name": "Frame136_Clean",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/main-desk/frame-136/frame-136.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/main-desk/frame-136/frame-136.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<Frame136Component>",
+                    "defaultValue": "(args: Frame136Component) => ({\n  props: args,\n})"
+                }
+            ],
             "src/app/AccAgent/genericRequest.ts": [
                 {
                     "name": "httpOptions",
@@ -33739,58 +33879,6 @@
                     "deprecationMessage": "",
                     "type": "object",
                     "defaultValue": "{\r\n  headers: new HttpHeaders({\r\n    'Content-Type': 'application/json'\r\n  })\r\n}"
-                }
-            ],
-            "src/app/AccAgent/tel-win-btn/tel-win-btn.stories.ts": [
-                {
-                    "name": "Large",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/AccAgent/tel-win-btn/tel-win-btn.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Primary",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/AccAgent/tel-win-btn/tel-win-btn.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Secondary",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/AccAgent/tel-win-btn/tel-win-btn.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Small",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/AccAgent/tel-win-btn/tel-win-btn.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/AccAgent/tel-win-btn/tel-win-btn.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<TelWinBtnComponent>",
-                    "defaultValue": "(args: TelWinBtnComponent) => ({\n  props: args,\n})"
                 }
             ],
             "src/stories/buttons/button-ex/Button.stories.ts": [
@@ -34067,16 +34155,6 @@
                     "defaultValue": "Template.bind({})"
                 },
                 {
-                    "name": "MainDesk_MAil",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/main-desk/main-desk.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
@@ -34150,6 +34228,28 @@
                     "defaultValue": "'user'"
                 }
             ],
+            "src/stories/top-bar/search-bar/search-bar.stories.ts": [
+                {
+                    "name": "SearchBar_Clean",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/top-bar/search-bar/search-bar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/top-bar/search-bar/search-bar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<SearchBarComponent>",
+                    "defaultValue": "(args: SearchBarComponent) => ({\n  props: args,\n})"
+                }
+            ],
             "src/app/salesforce/salesforce.ts": [
                 {
                     "name": "SF",
@@ -34171,6 +34271,28 @@
                     "type": "any"
                 }
             ],
+            "src/stories/main-desk/system-messenge/system-messenge.stories.ts": [
+                {
+                    "name": "SystemMessenge_Clean",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/main-desk/system-messenge/system-messenge.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/main-desk/system-messenge/system-messenge.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<SystemMessengeComponent>",
+                    "defaultValue": "(args: SystemMessengeComponent) => ({\n  props: args,\n})"
+                }
+            ],
             "src/stories/top-bar/top-bar.stories.ts": [
                 {
                     "name": "Template",
@@ -34187,6 +34309,50 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/stories/top-bar/top-bar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                }
+            ],
+            "src/stories/main-desk/type-bar/type-bar.stories.ts": [
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/main-desk/type-bar/type-bar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<TypeBarComponent>",
+                    "defaultValue": "(args: TypeBarComponent) => ({\n  props: args,\n})"
+                },
+                {
+                    "name": "TypeBar_Clean",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/main-desk/type-bar/type-bar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                }
+            ],
+            "src/stories/main-desk/typing-bar-reply/typing-bar-reply.stories.ts": [
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/main-desk/typing-bar-reply/typing-bar-reply.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<TypingBarReplyComponent>",
+                    "defaultValue": "(args: TypingBarReplyComponent) => ({\n  props: args,\n})"
+                },
+                {
+                    "name": "TypingBarReply_Clean",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/main-desk/typing-bar-reply/typing-bar-reply.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -36791,56 +36957,6 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/AccAgent/tel-win-btn/tel-win-btn.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Large",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/AccAgent/tel-win-btn/tel-win-btn.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Primary",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/AccAgent/tel-win-btn/tel-win-btn.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Secondary",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/AccAgent/tel-win-btn/tel-win-btn.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Small",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/AccAgent/tel-win-btn/tel-win-btn.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Template",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
                 "filePath": "src/app/AccAgent/telephony/telephony.component.ts",
                 "type": "component",
                 "linktype": "component",
@@ -37611,12 +37727,52 @@
                 "status": "low"
             },
             {
+                "filePath": "src/stories/main-desk/button/button-md.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "ButtonMdComponent_Clean",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/main-desk/button/button-md.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "src/stories/main-desk/call-bar/call-bar.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "CallBarComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/main-desk/call-bar/call-bar.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "CallBar_Clean",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/main-desk/call-bar/call-bar.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
                 "status": "low"
             },
             {
@@ -37684,6 +37840,26 @@
                 "name": "Frame136Component",
                 "coveragePercent": 0,
                 "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/main-desk/frame-136/frame-136.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Frame136_Clean",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/main-desk/frame-136/frame-136.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
                 "status": "low"
             },
             {
@@ -37883,16 +38059,6 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "MainDesk_MAil",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/main-desk/main-desk.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
                 "name": "Template",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
@@ -37926,6 +38092,26 @@
                 "status": "low"
             },
             {
+                "filePath": "src/stories/main-desk/system-messenge/system-messenge.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "SystemMessenge_Clean",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/main-desk/system-messenge/system-messenge.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "src/stories/main-desk/type-bar/type-bar.component.ts",
                 "type": "component",
                 "linktype": "component",
@@ -37935,10 +38121,50 @@
                 "status": "low"
             },
             {
+                "filePath": "src/stories/main-desk/type-bar/type-bar.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/main-desk/type-bar/type-bar.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "TypeBar_Clean",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "src/stories/main-desk/typing-bar-reply/typing-bar-reply.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "TypingBarReplyComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/main-desk/typing-bar-reply/typing-bar-reply.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/main-desk/typing-bar-reply/typing-bar-reply.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "TypingBarReply_Clean",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -38243,6 +38469,26 @@
                 "name": "SearchBarComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/top-bar/search-bar/search-bar.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "SearchBar_Clean",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/top-bar/search-bar/search-bar.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
                 "status": "low"
             },
             {

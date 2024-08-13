@@ -1,14 +1,14 @@
 import { moduleMetadata, Story, Meta } from '@storybook/angular';
 import { CommonModule } from '@angular/common';
 
-import { TopBarComponent } from './top-bar.component';
+
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import {ButtonComponent} from "./button/button.component";
-import {MainDesk_Clean} from "../main-desk/main-desk.stories";
+import {ButtonComponent} from "../button/button.component";
+import {SearchBarComponent} from "./search-bar.component";
 
 export default {
-  title: 'Design System/TopBar/TopBar',
-  component: TopBarComponent,
+  title: 'Design System/TopBar/SearchBar',
+  component: SearchBarComponent,
   parameters: {
     // More on Story layout: https://storybook.js.org/docs/angular/configure/story-layout
     layout: 'fullscreen',
@@ -21,10 +21,10 @@ export default {
   ],
 } as Meta;
 
-const Template: Story<TopBarComponent> = (args: TopBarComponent) => ({
+const Template: Story<SearchBarComponent> = (args: SearchBarComponent) => ({
   props: args,
 });
 
-export const TobBar_Clean = Template.bind({});
-TobBar_Clean.args = {}
+export const SearchBar_Clean = Template.bind({});
+SearchBar_Clean.args = {}
 

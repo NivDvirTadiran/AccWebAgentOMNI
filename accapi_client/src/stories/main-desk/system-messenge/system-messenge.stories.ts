@@ -1,30 +1,31 @@
 import { moduleMetadata, Story, Meta } from '@storybook/angular';
 import { CommonModule } from '@angular/common';
 
-import { TopBarComponent } from './top-bar.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import {ButtonComponent} from "./button/button.component";
-import {MainDesk_Clean} from "../main-desk/main-desk.stories";
+import {SystemMessengeComponent} from "./system-messenge.component";
+
 
 export default {
-  title: 'Design System/TopBar/TopBar',
-  component: TopBarComponent,
+  title: 'Design System/MainDesk/SystemMessenge',
+  component: SystemMessengeComponent,
   parameters: {
     // More on Story layout: https://storybook.js.org/docs/angular/configure/story-layout
-    layout: 'fullscreen',
+    layout: 'centered',
   },
   decorators: [
     moduleMetadata({
-      declarations: [ButtonComponent],
+      declarations: [],
       imports: [CommonModule, FormsModule, ReactiveFormsModule],
     }),
   ],
 } as Meta;
 
-const Template: Story<TopBarComponent> = (args: TopBarComponent) => ({
+const Template: Story<SystemMessengeComponent> = (args: SystemMessengeComponent) => ({
   props: args,
 });
 
-export const TobBar_Clean = Template.bind({});
-TobBar_Clean.args = {}
+export const SystemMessenge_Clean = Template.bind({});
+SystemMessenge_Clean.args = {
+  property1: "Default"
+}
 

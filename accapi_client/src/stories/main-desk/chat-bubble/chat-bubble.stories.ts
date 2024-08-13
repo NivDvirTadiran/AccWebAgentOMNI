@@ -4,15 +4,16 @@ import { CommonModule } from '@angular/common';
 
 import { ChatBubbleComponent } from './chat-bubble.component';
 import {IconLarge13MdComponent} from "../icon-large-13/icon-large13-md.component";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 export default {
-  title: 'Design System/ChatBubble',
+  title: 'Design System/MainDesk/ChatBubble',
   component: ChatBubbleComponent,
   parameters: {},
   decorators: [
     moduleMetadata({
-      declarations: [  ],
-      imports: [CommonModule, IconLarge13MdComponent],
+      declarations: [ IconLarge13MdComponent ],
+      imports: [CommonModule,  FormsModule, ReactiveFormsModule ],
     }),
   ],
 } as Meta;

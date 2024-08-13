@@ -2,12 +2,12 @@ import { moduleMetadata, Story, Meta } from '@storybook/angular';
 import { CommonModule } from '@angular/common';
 
 
-import { IconLarge13MdComponent } from './icon-large13-md.component';
+import { TypeBarComponent } from './type-bar.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 export default {
-  title: 'Design System/MainDesk/Frame136',
-  component: IconLarge13MdComponent,
+  title: 'Design System/MainDesk/TypeBar',
+  component: TypeBarComponent,
   parameters: {},
   decorators: [
     moduleMetadata({
@@ -17,10 +17,10 @@ export default {
   ],
 } as Meta;
 
-const Template: Story<IconLarge13MdComponent> = (args: IconLarge13MdComponent) => ({
+const Template: Story<TypeBarComponent> = (args: TypeBarComponent) => ({
   props: args,
 });
 
-export const ChatBubble_Clean = Template.bind({});
+export const TypeBar_Clean = Template.bind({});
 
 
