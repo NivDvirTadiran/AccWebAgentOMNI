@@ -30504,16 +30504,6 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/actions/action-windows-menu/action-windows-menu.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template2.bind({})"
-            },
-            {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/stories/directive/bubble-avatar/popover.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -30555,6 +30545,16 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/stories/actions/action-avatar/action-avatar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template2.bind({})"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/actions/action-windows-menu/action-windows-menu.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -31151,16 +31151,6 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/main-desk/main-desk.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<MainDeskComponent>",
-                "defaultValue": "(args: MainDeskComponent) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/stories/pages/Page.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -31181,11 +31171,21 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/actions/action-windows-menu/action-windows-menu.stories.ts",
+                "file": "src/stories/main-desk/main-desk.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<ActionWindowsMenuComponent>",
-                "defaultValue": "(args: ActionWindowsMenuComponent) => ({\n  props: args,\n})"
+                "type": "Story<MainDeskComponent>",
+                "defaultValue": "(args: MainDeskComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/buttons/button-ex/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ButtonExComponent>",
+                "defaultValue": "(args: ButtonExComponent) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -31231,111 +31231,11 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/buttons/button-ex/Button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<ButtonExComponent>",
-                "defaultValue": "(args: ButtonExComponent) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/main-desk/button/button-md.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<ButtonMdComponent>",
-                "defaultValue": "(args: ButtonMdComponent) => ({\n  props: {\n    ...args,\n  },\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/main-desk/call-bar/call-bar.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<CallBarComponent>",
-                "defaultValue": "(args: CallBarComponent) => ({\n  props: {\n    ...args,\n  },\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/main-desk/chat/chat-md.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<ChatMdComponent>",
-                "defaultValue": "(args: ChatMdComponent) => ({\n  props: {\n    ...args,\n  },\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/main-desk/frame-136/frame-136.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<Frame136Component>",
-                "defaultValue": "(args: Frame136Component) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/main-desk/chat-bubble/chat-bubble.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<ChatBubbleComponent>",
-                "defaultValue": "(args: ChatBubbleComponent) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/main-desk/icon-large-13/icon-large13-md.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<IconLarge13MdComponent>",
-                "defaultValue": "(args: IconLarge13MdComponent) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/main-desk/system-messenge/system-messenge.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<SystemMessengeComponent>",
-                "defaultValue": "(args: SystemMessengeComponent) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/main-desk/type-bar/type-bar.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<TypeBarComponent>",
-                "defaultValue": "(args: TypeBarComponent) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/stories/pages/background1/background1.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<Background1Component>",
                 "defaultValue": "(args: Background1Component) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/main-desk/typing-bar-reply/typing-bar-reply.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<TypingBarReplyComponent>",
-                "defaultValue": "(args: TypingBarReplyComponent) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -31371,6 +31271,16 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/stories/top-bar/icon-large-17/icon-large-17.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<IconLarge17Component>",
+                "defaultValue": "(args: IconLarge17Component) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/stories/top-bar/icon-record/icon-record.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -31401,16 +31311,6 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/top-bar/icon-large-17/icon-large-17.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<IconLarge17Component>",
-                "defaultValue": "(args: IconLarge17Component) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/stories/top-bar/icon-small-12/icon-small-12.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -31421,21 +31321,21 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/top-bar/icon-small-30/icon-small-30.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<IconSmall30Component>",
-                "defaultValue": "(args: IconSmall30Component) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/stories/top-bar/icon-small-16/icon-small-16.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<IconSmall16Component>",
                 "defaultValue": "(args: IconSmall16Component) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/top-bar/icon-small-30/icon-small-30.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<IconSmall30Component>",
+                "defaultValue": "(args: IconSmall30Component) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -31508,14 +31408,104 @@
                 "defaultValue": "(args: ActionAvatarComponent) => ({\n  props: args,\n})"
             },
             {
-                "name": "Template2",
+                "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/stories/actions/action-windows-menu/action-windows-menu.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<ActionWindowsMenuComponent>",
-                "defaultValue": "(args: ActionWindowsMenuComponent) => ({\n  props: args,\n  /*template: '<storybook-button-tadiran ></storybook-button-tadiran>',*/\n\n})"
+                "defaultValue": "(args: ActionWindowsMenuComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/main-desk/call-bar/call-bar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<CallBarComponent>",
+                "defaultValue": "(args: CallBarComponent) => ({\n  props: {\n    ...args,\n  },\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/main-desk/button/button-md.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ButtonMdComponent>",
+                "defaultValue": "(args: ButtonMdComponent) => ({\n  props: {\n    ...args,\n  },\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/main-desk/chat/chat-md.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ChatMdComponent>",
+                "defaultValue": "(args: ChatMdComponent) => ({\n  props: {\n    ...args,\n  },\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/main-desk/chat-bubble/chat-bubble.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ChatBubbleComponent>",
+                "defaultValue": "(args: ChatBubbleComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/main-desk/frame-136/frame-136.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<Frame136Component>",
+                "defaultValue": "(args: Frame136Component) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/main-desk/icon-large-13/icon-large13-md.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<IconLarge13MdComponent>",
+                "defaultValue": "(args: IconLarge13MdComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/main-desk/type-bar/type-bar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<TypeBarComponent>",
+                "defaultValue": "(args: TypeBarComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/main-desk/typing-bar-reply/typing-bar-reply.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<TypingBarReplyComponent>",
+                "defaultValue": "(args: TypingBarReplyComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/main-desk/system-messenge/system-messenge.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<SystemMessengeComponent>",
+                "defaultValue": "(args: SystemMessengeComponent) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template2",
@@ -31526,6 +31516,16 @@
                 "deprecationMessage": "",
                 "type": "Story<ActionAvatarComponent>",
                 "defaultValue": "(args: ActionAvatarComponent) => ({\n  props: args,\n  /*template: '<storybook-button-tadiran ></storybook-button-tadiran>',*/\n\n})"
+            },
+            {
+                "name": "Template2",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/actions/action-windows-menu/action-windows-menu.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ActionWindowsMenuComponent>",
+                "defaultValue": "(args: ActionWindowsMenuComponent) => ({\n  props: args,\n  /*template: '<storybook-button-tadiran ></storybook-button-tadiran>',*/\n\n})"
             },
             {
                 "name": "THIS",
@@ -33909,38 +33909,6 @@
                     "defaultValue": "(args: ChatMdComponent) => ({\n  props: {\n    ...args,\n  },\n})"
                 }
             ],
-            "src/stories/actions/action-windows-menu/action-windows-menu.stories.ts": [
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/actions/action-windows-menu/action-windows-menu.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template2.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/actions/action-windows-menu/action-windows-menu.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<ActionWindowsMenuComponent>",
-                    "defaultValue": "(args: ActionWindowsMenuComponent) => ({\n  props: args,\n})"
-                },
-                {
-                    "name": "Template2",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/actions/action-windows-menu/action-windows-menu.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<ActionWindowsMenuComponent>",
-                    "defaultValue": "(args: ActionWindowsMenuComponent) => ({\n  props: args,\n  /*template: '<storybook-button-tadiran ></storybook-button-tadiran>',*/\n\n})"
-                }
-            ],
             "src/stories/directive/bubble-avatar/popover.stories.ts": [
                 {
                     "name": "Default",
@@ -34089,6 +34057,38 @@
                     "deprecationMessage": "",
                     "type": "Story<ActionAvatarComponent>",
                     "defaultValue": "(args: ActionAvatarComponent) => ({\n  props: args,\n  /*template: '<storybook-button-tadiran ></storybook-button-tadiran>',*/\n\n})"
+                }
+            ],
+            "src/stories/actions/action-windows-menu/action-windows-menu.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/actions/action-windows-menu/action-windows-menu.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template2.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/actions/action-windows-menu/action-windows-menu.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ActionWindowsMenuComponent>",
+                    "defaultValue": "(args: ActionWindowsMenuComponent) => ({\n  props: args,\n})"
+                },
+                {
+                    "name": "Template2",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/actions/action-windows-menu/action-windows-menu.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ActionWindowsMenuComponent>",
+                    "defaultValue": "(args: ActionWindowsMenuComponent) => ({\n  props: args,\n  /*template: '<storybook-button-tadiran ></storybook-button-tadiran>',*/\n\n})"
                 }
             ],
             "src/app/AccAgent/acc-agent.service.ts": [
