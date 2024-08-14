@@ -94,7 +94,7 @@
     "@types/node": "15.0.0",
     "angular-bootstrap-md": "15.0.0",
     "babel-loader": "^8.2.5",
-    "chromatic": "6.10.2",
+    "chromatic": "11.7.0",
     "jasmine-core": "~3.7.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",

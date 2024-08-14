@@ -1,0 +1,30 @@
+@import 'all-vars-and-mixins';
+
+// scaffolding
+$body-bg: map-get($colors, color5);                         // background color for <body>
+
+// typography
+$gray-dark: map-get($colors, color10);                       // default font color
+$font-family-sans-serif: $primary-font, $secondary-font;    // default font-family
+$font-size-base: 14px;                                      // default font-size
+
+// iconography
+$icon-font-path: '../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+
+// buttons
+$btn-border-radius-base: 9px;
+
+// forms
+$input-height-base: 31px;
+$input-border-radius: 4px; 
+
+// grid system
+$grid-columns: 100;
+$grid-gutter-width: 0px;
+
+// tooltips
+$tooltip-max-width: none;
+$tooltip-color: map-get($colors, color10);
+$tooltip-bg: map-get($colors, color1);
+$tooltip-opacity: 1;
+$tooltip-arrow-width: 15px;
