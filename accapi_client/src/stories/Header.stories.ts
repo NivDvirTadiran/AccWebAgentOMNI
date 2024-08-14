@@ -4,6 +4,8 @@ import type { Story, Meta } from '@storybook/angular';
 
 import Button from './buttons/button-ex/button-ex.component';
 import Header from './header.component';
+import {User} from "./User";
+
 
 export default {
   title: 'Example/Header',
@@ -26,9 +28,7 @@ const Template: Story<Header> = (args: Header) => ({
 
 export const LoggedIn = Template.bind({});
 LoggedIn.args = {
-  user: {
-    name: 'Jane Doe',
-  },
+  user: {name: 'Jane Doe',},
 };
 
 export const LoggedOut = Template.bind({});

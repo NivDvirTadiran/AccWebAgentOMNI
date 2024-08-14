@@ -30401,6 +30401,16 @@
                 "defaultValue": "[\r\n  { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }\r\n]"
             },
             {
+                "name": "Button_Clean",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/top-bar/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
                 "name": "ButtonMdComponent_Clean",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -30524,16 +30534,6 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/directive/mdb-dropdown-copy/popover-mdb-dropdown.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/stories/directive/custom-directive/Highlight.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -30545,6 +30545,16 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/stories/directive/bubble-windows-menu/menu-popover.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/directive/mdb-dropdown-copy/popover-mdb-dropdown.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -30639,6 +30649,116 @@
                 "deprecationMessage": "",
                 "type": "object",
                 "defaultValue": "{\r\n  headers: new HttpHeaders({ 'Content-Type': 'application/json' })\r\n}"
+            },
+            {
+                "name": "IconLarge17_Clean",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/top-bar/icon-large-17/icon-large-17.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "IconLarge30_Clean",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/top-bar/icon-large-30/icon-large-30.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "IconRecord_Clean",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/top-bar/icon-record/icon-record.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "IconSmall10_Clean",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/top-bar/icon-small-10/icon-small-10.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "IconSmall11_Clean",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/top-bar/icon-small-11/icon-small-11.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "IconSmall12_Clean",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/top-bar/icon-small-12/icon-small-12.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "IconSmall16_Clean",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/top-bar/icon-small-16/icon-small-16.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "IconSmall30_Clean",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/top-bar/icon-small-30/icon-small-30.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "IconSmall33_Clean",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/top-bar/icon-small-33/icon-small-33.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "IconSmall6_Clean",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/top-bar/icon-small-6/icon-small-6.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "IconSmall7_Clean",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/top-bar/icon-small-7/icon-small-7.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
             },
             {
                 "name": "Large",
@@ -30793,21 +30913,21 @@
                 "name": "mPopover",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/directive/mdb-dropdown-copy/popover-mdb-dropdown.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "PopoverOptions",
-                "defaultValue": "{\r\n  content: MdbDropdownDirective\r\n}"
-            },
-            {
-                "name": "mPopover",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/stories/directive/bubble-windows-menu/menu-popover.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "PopoverOptions",
                 "defaultValue": "{\r\n  content: ActionWindowsMenuComponent\r\n}"
+            },
+            {
+                "name": "mPopover",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/directive/mdb-dropdown-copy/popover-mdb-dropdown.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "PopoverOptions",
+                "defaultValue": "{\r\n  content: MdbDropdownDirective\r\n}"
             },
             {
                 "name": "parsedUrl",
@@ -30899,6 +31019,16 @@
                 "defaultValue": "Template.bind({})"
             },
             {
+                "name": "SearchOption_Clean",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/top-bar/search-option/search-option.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
                 "name": "Secondary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -30923,6 +31053,16 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/stories/pages/chat/chat.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "SedButton_Clean",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/top-bar/sed-button/sed-button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -31011,16 +31151,6 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/top-bar/top-bar.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<TopBarComponent>",
-                "defaultValue": "(args: TopBarComponent) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/stories/main-desk/main-desk.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -31041,11 +31171,11 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/buttons/button-ex/Button.stories.ts",
+                "file": "src/stories/top-bar/top-bar.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<ButtonExComponent>",
-                "defaultValue": "(args: ButtonExComponent) => ({\n  props: args,\n})"
+                "type": "Story<TopBarComponent>",
+                "defaultValue": "(args: TopBarComponent) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -31081,16 +31211,6 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/directive/mdb-dropdown-copy/popover-mdb-dropdown.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<PopoverMdbDropdownDirective>",
-                "defaultValue": "(args) => ({\r\n  props: args,\r\n  moduleMetadata: { // (3) don't forget it\r\n    declarations: [PopoverMdbDropdownDirective],\r\n    imports: [CommonModule, FormsModule, ReactiveFormsModule]\r\n  },\r\n  template: `<button [twPopover] = \"mPopover\" > BubbleAvatarDirective Example </button>`\r\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/stories/directive/custom-directive/Highlight.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -31111,21 +31231,21 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/top-bar/search-bar/search-bar.stories.ts",
+                "file": "src/stories/directive/mdb-dropdown-copy/popover-mdb-dropdown.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<SearchBarComponent>",
-                "defaultValue": "(args: SearchBarComponent) => ({\n  props: args,\n})"
+                "type": "Story<PopoverMdbDropdownDirective>",
+                "defaultValue": "(args) => ({\r\n  props: args,\r\n  moduleMetadata: { // (3) don't forget it\r\n    declarations: [PopoverMdbDropdownDirective],\r\n    imports: [CommonModule, FormsModule, ReactiveFormsModule]\r\n  },\r\n  template: `<button [twPopover] = \"mPopover\" > BubbleAvatarDirective Example </button>`\r\n})"
             },
             {
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/main-desk/chat/chat-md.stories.ts",
+                "file": "src/stories/buttons/button-ex/Button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<ChatMdComponent>",
-                "defaultValue": "(args: ChatMdComponent) => ({\n  props: {\n    ...args,\n  },\n})"
+                "type": "Story<ButtonExComponent>",
+                "defaultValue": "(args: ButtonExComponent) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -31141,11 +31261,21 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/main-desk/frame-136/frame-136.stories.ts",
+                "file": "src/stories/main-desk/call-bar/call-bar.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<Frame136Component>",
-                "defaultValue": "(args: Frame136Component) => ({\n  props: args,\n})"
+                "type": "Story<CallBarComponent>",
+                "defaultValue": "(args: CallBarComponent) => ({\n  props: {\n    ...args,\n  },\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/main-desk/chat/chat-md.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ChatMdComponent>",
+                "defaultValue": "(args: ChatMdComponent) => ({\n  props: {\n    ...args,\n  },\n})"
             },
             {
                 "name": "Template",
@@ -31161,11 +31291,11 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/main-desk/call-bar/call-bar.stories.ts",
+                "file": "src/stories/main-desk/frame-136/frame-136.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<CallBarComponent>",
-                "defaultValue": "(args: CallBarComponent) => ({\n  props: {\n    ...args,\n  },\n})"
+                "type": "Story<Frame136Component>",
+                "defaultValue": "(args: Frame136Component) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -31191,21 +31321,21 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/main-desk/type-bar/type-bar.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<TypeBarComponent>",
-                "defaultValue": "(args: TypeBarComponent) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/stories/pages/background1/background1.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<Background1Component>",
                 "defaultValue": "(args: Background1Component) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/main-desk/type-bar/type-bar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<TypeBarComponent>",
+                "defaultValue": "(args: TypeBarComponent) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -31226,6 +31356,156 @@
                 "deprecationMessage": "",
                 "type": "Story<ChatComponent>",
                 "defaultValue": "(args: ChatComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/top-bar/icon-large-17/icon-large-17.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<IconLarge17Component>",
+                "defaultValue": "(args: IconLarge17Component) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/top-bar/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ButtonComponent>",
+                "defaultValue": "(args: ButtonComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/top-bar/icon-large-30/icon-large-30.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<IconLarge30Component>",
+                "defaultValue": "(args: IconLarge30Component) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/top-bar/icon-record/icon-record.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<IconRecordComponent>",
+                "defaultValue": "(args: IconRecordComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/top-bar/icon-small-10/icon-small-10.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<IconSmall10Component>",
+                "defaultValue": "(args: IconSmall10Component) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/top-bar/icon-small-11/icon-small-11.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<IconSmall11Component>",
+                "defaultValue": "(args: IconSmall11Component) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/top-bar/icon-small-12/icon-small-12.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<IconSmall12Component>",
+                "defaultValue": "(args: IconSmall12Component) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/top-bar/icon-small-16/icon-small-16.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<IconSmall16Component>",
+                "defaultValue": "(args: IconSmall16Component) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/top-bar/icon-small-6/icon-small-6.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<IconSmall6Component>",
+                "defaultValue": "(args: IconSmall6Component) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/top-bar/icon-small-7/icon-small-7.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<IconSmall7Component>",
+                "defaultValue": "(args: IconSmall7Component) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/top-bar/icon-small-30/icon-small-30.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<IconSmall30Component>",
+                "defaultValue": "(args: IconSmall30Component) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/top-bar/icon-small-33/icon-small-33.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<IconSmall33Component>",
+                "defaultValue": "(args: IconSmall33Component) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/top-bar/search-bar/search-bar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<SearchBarComponent>",
+                "defaultValue": "(args: SearchBarComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/top-bar/search-option/search-option.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<SearchOptionComponent>",
+                "defaultValue": "(args: SearchOptionComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/top-bar/sed-button/sed-button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<SedButtonComponent>",
+                "defaultValue": "(args: SedButtonComponent) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template2",
@@ -33497,6 +33777,28 @@
                     "defaultValue": "'Authorization'"
                 }
             ],
+            "src/stories/top-bar/button/button.stories.ts": [
+                {
+                    "name": "Button_Clean",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/top-bar/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/top-bar/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ButtonComponent>",
+                    "defaultValue": "(args: ButtonComponent) => ({\n  props: args,\n})"
+                }
+            ],
             "src/stories/main-desk/button/button-md.stories.ts": [
                 {
                     "name": "ButtonMdComponent_Clean",
@@ -33703,38 +34005,6 @@
                     "defaultValue": "(args) => ({\r\n  props: args,\r\n  moduleMetadata: { // (3) don't forget it\r\n    declarations: [PopoverDirective, ActionAvatarComponent, BubbleAvatarComponent],\r\n    imports: [CommonModule, FormsModule, ReactiveFormsModule]\r\n  },\r\n  template: `<button [twPopover] = \"mPopover\" > BubbleAvatarDirective Example </button>`\r\n})"
                 }
             ],
-            "src/stories/directive/mdb-dropdown-copy/popover-mdb-dropdown.stories.ts": [
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/directive/mdb-dropdown-copy/popover-mdb-dropdown.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "mPopover",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/directive/mdb-dropdown-copy/popover-mdb-dropdown.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "PopoverOptions",
-                    "defaultValue": "{\r\n  content: MdbDropdownDirective\r\n}"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/directive/mdb-dropdown-copy/popover-mdb-dropdown.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<PopoverMdbDropdownDirective>",
-                    "defaultValue": "(args) => ({\r\n  props: args,\r\n  moduleMetadata: { // (3) don't forget it\r\n    declarations: [PopoverMdbDropdownDirective],\r\n    imports: [CommonModule, FormsModule, ReactiveFormsModule]\r\n  },\r\n  template: `<button [twPopover] = \"mPopover\" > BubbleAvatarDirective Example </button>`\r\n})"
-                }
-            ],
             "src/stories/directive/custom-directive/Highlight.stories.ts": [
                 {
                     "name": "Default",
@@ -33787,6 +34057,38 @@
                     "deprecationMessage": "",
                     "type": "Story<MenuPopoverDirective>",
                     "defaultValue": "(args) => ({\r\n  props: args,\r\n  moduleMetadata: { // (3) don't forget it\r\n    declarations: [MenuPopoverDirective, ActionAvatarComponent, BubbleWindowsMenuComponent],\r\n    imports: [CommonModule, FormsModule, ReactiveFormsModule]\r\n  },\r\n  template: `<button [menuPopover] = \"mPopover\" > BubbleWindowsMenuComponent Example </button>`\r\n})"
+                }
+            ],
+            "src/stories/directive/mdb-dropdown-copy/popover-mdb-dropdown.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/directive/mdb-dropdown-copy/popover-mdb-dropdown.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "mPopover",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/directive/mdb-dropdown-copy/popover-mdb-dropdown.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "PopoverOptions",
+                    "defaultValue": "{\r\n  content: MdbDropdownDirective\r\n}"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/directive/mdb-dropdown-copy/popover-mdb-dropdown.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<PopoverMdbDropdownDirective>",
+                    "defaultValue": "(args) => ({\r\n  props: args,\r\n  moduleMetadata: { // (3) don't forget it\r\n    declarations: [PopoverMdbDropdownDirective],\r\n    imports: [CommonModule, FormsModule, ReactiveFormsModule]\r\n  },\r\n  template: `<button [twPopover] = \"mPopover\" > BubbleAvatarDirective Example </button>`\r\n})"
                 }
             ],
             "src/app/AccAgent/acc-agent.service.ts": [
@@ -33879,6 +34181,248 @@
                     "deprecationMessage": "",
                     "type": "object",
                     "defaultValue": "{\r\n  headers: new HttpHeaders({\r\n    'Content-Type': 'application/json'\r\n  })\r\n}"
+                }
+            ],
+            "src/stories/top-bar/icon-large-17/icon-large-17.stories.ts": [
+                {
+                    "name": "IconLarge17_Clean",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/top-bar/icon-large-17/icon-large-17.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/top-bar/icon-large-17/icon-large-17.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<IconLarge17Component>",
+                    "defaultValue": "(args: IconLarge17Component) => ({\n  props: args,\n})"
+                }
+            ],
+            "src/stories/top-bar/icon-large-30/icon-large-30.stories.ts": [
+                {
+                    "name": "IconLarge30_Clean",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/top-bar/icon-large-30/icon-large-30.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/top-bar/icon-large-30/icon-large-30.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<IconLarge30Component>",
+                    "defaultValue": "(args: IconLarge30Component) => ({\n  props: args,\n})"
+                }
+            ],
+            "src/stories/top-bar/icon-record/icon-record.stories.ts": [
+                {
+                    "name": "IconRecord_Clean",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/top-bar/icon-record/icon-record.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/top-bar/icon-record/icon-record.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<IconRecordComponent>",
+                    "defaultValue": "(args: IconRecordComponent) => ({\n  props: args,\n})"
+                }
+            ],
+            "src/stories/top-bar/icon-small-10/icon-small-10.stories.ts": [
+                {
+                    "name": "IconSmall10_Clean",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/top-bar/icon-small-10/icon-small-10.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/top-bar/icon-small-10/icon-small-10.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<IconSmall10Component>",
+                    "defaultValue": "(args: IconSmall10Component) => ({\n  props: args,\n})"
+                }
+            ],
+            "src/stories/top-bar/icon-small-11/icon-small-11.stories.ts": [
+                {
+                    "name": "IconSmall11_Clean",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/top-bar/icon-small-11/icon-small-11.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/top-bar/icon-small-11/icon-small-11.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<IconSmall11Component>",
+                    "defaultValue": "(args: IconSmall11Component) => ({\n  props: args,\n})"
+                }
+            ],
+            "src/stories/top-bar/icon-small-12/icon-small-12.stories.ts": [
+                {
+                    "name": "IconSmall12_Clean",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/top-bar/icon-small-12/icon-small-12.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/top-bar/icon-small-12/icon-small-12.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<IconSmall12Component>",
+                    "defaultValue": "(args: IconSmall12Component) => ({\n  props: args,\n})"
+                }
+            ],
+            "src/stories/top-bar/icon-small-16/icon-small-16.stories.ts": [
+                {
+                    "name": "IconSmall16_Clean",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/top-bar/icon-small-16/icon-small-16.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/top-bar/icon-small-16/icon-small-16.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<IconSmall16Component>",
+                    "defaultValue": "(args: IconSmall16Component) => ({\n  props: args,\n})"
+                }
+            ],
+            "src/stories/top-bar/icon-small-30/icon-small-30.stories.ts": [
+                {
+                    "name": "IconSmall30_Clean",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/top-bar/icon-small-30/icon-small-30.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/top-bar/icon-small-30/icon-small-30.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<IconSmall30Component>",
+                    "defaultValue": "(args: IconSmall30Component) => ({\n  props: args,\n})"
+                }
+            ],
+            "src/stories/top-bar/icon-small-33/icon-small-33.stories.ts": [
+                {
+                    "name": "IconSmall33_Clean",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/top-bar/icon-small-33/icon-small-33.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/top-bar/icon-small-33/icon-small-33.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<IconSmall33Component>",
+                    "defaultValue": "(args: IconSmall33Component) => ({\n  props: args,\n})"
+                }
+            ],
+            "src/stories/top-bar/icon-small-6/icon-small-6.stories.ts": [
+                {
+                    "name": "IconSmall6_Clean",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/top-bar/icon-small-6/icon-small-6.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/top-bar/icon-small-6/icon-small-6.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<IconSmall6Component>",
+                    "defaultValue": "(args: IconSmall6Component) => ({\n  props: args,\n})"
+                }
+            ],
+            "src/stories/top-bar/icon-small-7/icon-small-7.stories.ts": [
+                {
+                    "name": "IconSmall7_Clean",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/top-bar/icon-small-7/icon-small-7.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/top-bar/icon-small-7/icon-small-7.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<IconSmall7Component>",
+                    "defaultValue": "(args: IconSmall7Component) => ({\n  props: args,\n})"
                 }
             ],
             "src/stories/buttons/button-ex/Button.stories.ts": [
@@ -34248,6 +34792,50 @@
                     "deprecationMessage": "",
                     "type": "Story<SearchBarComponent>",
                     "defaultValue": "(args: SearchBarComponent) => ({\n  props: args,\n})"
+                }
+            ],
+            "src/stories/top-bar/search-option/search-option.stories.ts": [
+                {
+                    "name": "SearchOption_Clean",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/top-bar/search-option/search-option.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/top-bar/search-option/search-option.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<SearchOptionComponent>",
+                    "defaultValue": "(args: SearchOptionComponent) => ({\n  props: args,\n})"
+                }
+            ],
+            "src/stories/top-bar/sed-button/sed-button.stories.ts": [
+                {
+                    "name": "SedButton_Clean",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/top-bar/sed-button/sed-button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/top-bar/sed-button/sed-button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<SedButtonComponent>",
+                    "defaultValue": "(args: SedButtonComponent) => ({\n  props: args,\n})"
                 }
             ],
             "src/app/salesforce/salesforce.ts": [
@@ -36355,7 +36943,7 @@
         ]
     },
     "coverage": {
-        "count": 1,
+        "count": 0,
         "status": "low",
         "files": [
             {
@@ -38364,10 +38952,50 @@
                 "status": "low"
             },
             {
+                "filePath": "src/stories/top-bar/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Button_Clean",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/top-bar/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "src/stories/top-bar/icon-large-17/icon-large-17.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "IconLarge17Component",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/top-bar/icon-large-17/icon-large-17.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "IconLarge17_Clean",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/top-bar/icon-large-17/icon-large-17.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -38382,6 +39010,26 @@
                 "status": "low"
             },
             {
+                "filePath": "src/stories/top-bar/icon-large-30/icon-large-30.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "IconLarge30_Clean",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/top-bar/icon-large-30/icon-large-30.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "src/stories/top-bar/icon-record/icon-record.component.ts",
                 "type": "component",
                 "linktype": "component",
@@ -38391,10 +39039,50 @@
                 "status": "low"
             },
             {
+                "filePath": "src/stories/top-bar/icon-record/icon-record.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "IconRecord_Clean",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/top-bar/icon-record/icon-record.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "src/stories/top-bar/icon-small-10/icon-small-10.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "IconSmall10Component",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/top-bar/icon-small-10/icon-small-10.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "IconSmall10_Clean",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/top-bar/icon-small-10/icon-small-10.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -38409,10 +39097,50 @@
                 "status": "low"
             },
             {
+                "filePath": "src/stories/top-bar/icon-small-11/icon-small-11.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "IconSmall11_Clean",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/top-bar/icon-small-11/icon-small-11.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "src/stories/top-bar/icon-small-12/icon-small-12.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "IconSmall12Component",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/top-bar/icon-small-12/icon-small-12.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "IconSmall12_Clean",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/top-bar/icon-small-12/icon-small-12.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -38427,10 +39155,50 @@
                 "status": "low"
             },
             {
+                "filePath": "src/stories/top-bar/icon-small-16/icon-small-16.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "IconSmall16_Clean",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/top-bar/icon-small-16/icon-small-16.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "src/stories/top-bar/icon-small-30/icon-small-30.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "IconSmall30Component",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/top-bar/icon-small-30/icon-small-30.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "IconSmall30_Clean",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/top-bar/icon-small-30/icon-small-30.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -38445,6 +39213,26 @@
                 "status": "low"
             },
             {
+                "filePath": "src/stories/top-bar/icon-small-33/icon-small-33.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "IconSmall33_Clean",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/top-bar/icon-small-33/icon-small-33.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "src/stories/top-bar/icon-small-6/icon-small-6.component.ts",
                 "type": "component",
                 "linktype": "component",
@@ -38454,10 +39242,50 @@
                 "status": "low"
             },
             {
+                "filePath": "src/stories/top-bar/icon-small-6/icon-small-6.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "IconSmall6_Clean",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/top-bar/icon-small-6/icon-small-6.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "src/stories/top-bar/icon-small-7/icon-small-7.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "IconSmall7Component",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/top-bar/icon-small-7/icon-small-7.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "IconSmall7_Clean",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/top-bar/icon-small-7/icon-small-7.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -38501,12 +39329,52 @@
                 "status": "low"
             },
             {
+                "filePath": "src/stories/top-bar/search-option/search-option.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "SearchOption_Clean",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/top-bar/search-option/search-option.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "src/stories/top-bar/sed-button/sed-button.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "SedButtonComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/top-bar/sed-button/sed-button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "SedButton_Clean",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/top-bar/sed-button/sed-button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
                 "status": "low"
             },
             {

@@ -26,5 +26,7 @@ const Template: Story<SearchBarComponent> = (args: SearchBarComponent) => ({
 });
 
 export const SearchBar_Clean = Template.bind({});
-SearchBar_Clean.args = {}
+SearchBar_Clean.args = {
+  property1: "Variant5"
+}
 
