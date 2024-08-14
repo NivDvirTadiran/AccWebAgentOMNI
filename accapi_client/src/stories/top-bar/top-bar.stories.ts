@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 import { TopBarComponent } from './top-bar.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {ButtonComponent} from "./button/button.component";
-import {MainDesk_Clean} from "../main-desk/main-desk.stories";
 
 export default {
   title: 'Design System/TopBar/TopBar',
