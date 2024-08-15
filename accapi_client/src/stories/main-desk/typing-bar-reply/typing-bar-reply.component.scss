@@ -1,7 +1,8 @@
 @import "../tokens.scss";
 
 .typingbar-reply_844-127999 {
-  padding: 22px;
+  height: 100%;
+  padding: 1.375rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -16,6 +17,7 @@
   background: $white-background;
 }
 .frame-550_1063-28862 {
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -79,7 +81,7 @@
 }
 
 .frame-137_844-127181 {
-  padding: 100px 0px 100px 0px;
+  padding: 6.25rem 0 6.25rem 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

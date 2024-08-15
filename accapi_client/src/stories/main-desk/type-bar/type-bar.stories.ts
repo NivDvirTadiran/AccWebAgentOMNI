@@ -4,6 +4,9 @@ import { CommonModule } from '@angular/common';
 
 import { TypeBarComponent } from './type-bar.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {IconLarge9MdComponent} from "../../icons/icon-large-9/icon-large9-md.component";
+import {IconLarge7MdComponent} from "../../icons/icon-large-7/icon-large7-md.component";
+import {IconLarge6MdComponent} from "../../icons/icon-large6-md/icon-large6-md.component";
 
 export default {
   title: 'Design System/MainDesk/TypeBar',
@@ -11,7 +14,7 @@ export default {
   parameters: {},
   decorators: [
     moduleMetadata({
-      declarations: [],
+      declarations: [IconLarge9MdComponent, IconLarge7MdComponent, IconLarge6MdComponent],
       imports: [CommonModule, FormsModule, ReactiveFormsModule],
     }),
   ],

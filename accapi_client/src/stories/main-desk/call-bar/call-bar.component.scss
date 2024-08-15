@@ -1,12 +1,12 @@
 @import "../tokens.scss";
 
 .root {
-  padding: 15px 30px 15px 30px;
+  padding: 0.938rem 1.875rem 0.938px 1.875rem;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  gap: 116px;
+  gap: 7.25rem;
   box-sizing: border-box;
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -29,7 +29,8 @@
 .root_goalChatOption2GoalChatOptionClientBlockedGoalBotOption1GoalDashboardOptionDefault {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  height: 60px;
+  height: 100%;
+  border-bottom-width: 1px;
 }
 
 .root_goalChatOption2GoalChatOptionAdminBlockGoalBotOption1GoalDashboardOptionDefault {

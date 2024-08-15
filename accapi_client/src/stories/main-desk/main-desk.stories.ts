@@ -6,7 +6,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {ChatMdComponent} from "./chat/chat-md.component";
 import {CallBarComponent} from "./call-bar/call-bar.component";
 import {TypingBarReplyComponent} from "./typing-bar-reply/typing-bar-reply.component";
-import {Frame136_Clean} from "./frame-136/frame-136.stories";
+import {Frame136_Clean} from "../frames/frame-136/frame-136.stories";
 
 
 export default {
