@@ -8,13 +8,13 @@
   align-items: flex-end;
   gap: 0px;
   box-sizing: border-box;
-  width: 794px;
-  height: 960px;
+  width: 100%;
+  height: 100%;
   box-shadow: $new-shadow-box-shadow;
 }
 .callbar_I1110-41539-844-131937 {
-  height: 60px;
-  width: -webkit-fill-available;
+  height: calc(100%*(60/960));
+  width: inherit;
 }
 
 .frame-463_I1110-41539-843-146789 {
@@ -26,15 +26,15 @@
   gap: 10px;
   box-sizing: border-box;
   overflow: hidden;
-  height: 750px;
+  height: calc(100%*(750/960));
   width: -webkit-fill-available;
 }
 .chat_I1110-41539-844-131595 {
-  height: 1369px;
+  height: calc(100%*(106/960));
   width: -webkit-fill-available;
 }
 
 .typingbar-reply_I1110-41539-844-131374 {
-  height: 150px;
-  width: -webkit-fill-available;
+  height: calc(100%*(150/960));
+  width: inherit;
 }

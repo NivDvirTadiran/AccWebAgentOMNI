@@ -43,6 +43,8 @@ $sedButton-height: 20px;
 .root_property1Idle {
   position: absolute;
   display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .root_property1IncomingCall {

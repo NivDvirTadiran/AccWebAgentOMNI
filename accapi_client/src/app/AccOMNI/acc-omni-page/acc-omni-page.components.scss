@@ -1,11 +1,54 @@
-.top-bar-content {
+.chat---typing_1135-63748 {
+    position: absolute;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: #f2f9ff;
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    height: inherit;
+}
+
+.frame-460_1135-63749 {
     display: flex;
-    flex-direction: column;
-    gap: 16px;
+    top: 1.875rem;
+    left: 1.5rem;
+    height: calc(100% - 5.625rem - (1.875rem)*2);
+    width: calc(100% - (1.5rem)*2);
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.5rem;
+    position: relative;
+}
+.frame-466_1135-63750 {
+    display: flex;
+    width: calc(100%*(1135/1680));
+    height: 100%;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 1.5rem;
+    flex-shrink: 0;
+    border: 10px;
+}
+.frame-469_1135-63751 {
+    width: calc(100%*(317/1135));
+    height: 100%;
+}
+
+
+.top-bar-content {
+    width: 100%;
+    height: 90px;
+    flex-shrink: 0;
 }
 
 .main-desk-content {
+    width: 100%;
     display: flex;
+    height: 60rem;
     flex-direction: column;
-    gap: 16px;
+    align-items: center;
+    flex: 1 0 0;
 }
