@@ -1,0 +1,111 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+
+<!--!DOCTYPE html><html class=''-->
+<head>
+
+    <meta charset='UTF-8'><meta name="robots" content="noindex"><link rel="shortcut icon" type="image/x-icon" href="//production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" />
+    <link rel="mask-icon" type="" href="//production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" />
+    <link rel="canonical" href="https://codepen.io/michellelpepe/pen/GoQyoJ?depth=everything&order=popularity&page=84&q=pack&show_forks=false" />
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+    <title>Chat</title>
+
+</head>
+<body [ngClass]="classes"  >
+
+<storybook-background1 *ngIf="theme != 'none'"></storybook-background1>
+
+    <div class="container" ng-cloak ng-app="chatApp" style="padding-right: 0; margin-right: 10px" >
+        <h5>{{label}}</h5>
+
+
+            <div class="row chatbox" ng-controller="message in messages" style="bottom: 10px; left: 60px">
+
+                <div class="col-md-9">
+
+                        <div  class="scrollspy-example scrollspy-container" >
+                            <section mdbScrollspyElement="scrollspy" class="chatbox__messages" *ngFor="let message of messages">
+                                <div  class="">
+                                    <div class="chatbox__messages__user-message--ind-message">
+                                        <p class="name" >{{message.Name}}</p>
+                                        <br/>
+                                        <p class="message">{{message.Message}}</p>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+
+                    <div class="row">
+                        <button (click)="this.onSubmit()">Send</button>
+                        <form name="chatForm" [formGroup]="chatForm">
+                            <input #input
+                                   name="'message'"
+                                   formControlName="message"
+                                   id = "'write-message-box'"
+                                   type="text"
+                                   placeholder="Type Message"
+                                   (click)="this.onSubmit()" />
+                        </form>
+                    </div>
+
+                </div>
+
+                <div class='col-md-3 chatbox__user-list'>
+                    <h1>Friends Online</h1>
+                    <div class='chatbox__user--active'>
+                        <p>Maelyn Pepe</p>
+                    </div>
+                    <div class='chatbox__user--busy'>
+                        <p>Michelle Pepe</p>
+                    </div>
+                    <div class='chatbox__user--active'>
+                        <p>Amy Angular</p>
+                    </div>
+                    <div class='chatbox__user--active'>
+                        <p>Jack Uniden</p>
+                    </div>
+                    <div class='chatbox__user--away'>
+                        <p>Ben Marcus</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+            <!--div class="row"-->
+                <!--button (click)="this.onSubmit()">Send</button-->
+
+            <!--/div-->
+
+
+
+        <script src='//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js'></script>
+        <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+        <!--script >(function() {
+            var app = angular.module('chatApp', []);
+
+            app.controller('MessageCtrl', function($scope) {
+                $scope.messages = [{
+                    Name: 'Ben Marcus',
+                    Message: "Hi  : )"
+                }, {
+                    Name: 'Michelle Pepe',
+                    Message: "What's up?"
+                }, {
+                    Name: 'Ben Marcus',
+                    Message: "Nothing much, You?"
+                }];
+            });
+
+        })();
+        //# sourceURL=pen.js
+        </script-->
+    </div>
+</body>
+<!--/html-->

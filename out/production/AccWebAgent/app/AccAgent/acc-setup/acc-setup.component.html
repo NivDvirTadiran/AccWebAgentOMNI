@@ -1,0 +1,188 @@
+<mat-grid-list cols="2" rowHeight="8:6">
+    <mat-grid-tile>
+        <br>
+        <div class="container">
+            <!-- --------------------------on  select ShowButtonList  -------------- -->
+            <mat-grid-list [cols]="4" rowHeight="40px">
+                 <mat-grid-tile  [colspan]="4" style='background-color: white;'>
+                    <div style='background-color: white;font-size: 150%;justify-content: left'>{{'Add ACD Button' | translate}}</div>
+                </mat-grid-tile>
+                <mat-grid-tile *ngFor="let tile of ACDList ;index as j" [colspan]=1 [rowspan]="1"
+                    [style.background]="tile.color">
+                    <span id={{tile.id}} (dblclick)='chooseACDImgClick(j)' style="align-items:center;">
+                        <button mat-button>
+                            <img class={{tile.class}} title="{{tile.description | translate}}" src={{tile.img}}>
+                        </button>
+                    </span>
+                </mat-grid-tile>
+            </mat-grid-list>
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <div class="container" style="background-color:white;text-overflow:clip;">
+            <mat-grid-list [cols]="4" rowHeight="40px">
+                <mat-grid-tile [colspan]="2" style='background-color: white;'>
+                    <div style='background-color: white;font-size: 150%'>{{'Add Telephony Button' | translate}}</div>
+                </mat-grid-tile>
+                 <mat-grid-tile [colspan]="2" style='background-color: white;justify-content: right'>
+                    <button type="button" class="btn btn-primary btn-sm" (click)="SaveSetup()">{{'Save Setup' | translate}}</button>
+                </mat-grid-tile>
+
+                <mat-grid-tile *ngFor="let tile of TELList ;index as j" [colspan]=1 [rowspan]="1"
+                    [style.background]="tile.color">
+                    <span id={{tile.id}} (dblclick)='chooseTELImgClick(j)' style="align-items:center;">
+                        <button mat-button>
+                            <img class={{tile.class}} title="{{tile.description | translate}}" src={{tile.img}}>
+                        </button>
+                    </span>
+                </mat-grid-tile>
+            </mat-grid-list>
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <div class="container">
+            <div class="scrollable-content content">
+                <div class="header-font">{{setupGroups[2].name | translate}}
+                    <div>&nbsp;&nbsp;Ring options for Voice/Chat/Email</div>
+                    <br />
+                    <div>&nbsp;&nbsp;Apply to:</div>
+                    <!-- <br /> -->
+
+                    <div class="form-check" *ngFor="let n of setupGroups[2].setup">
+                        <input type="checkbox" value="{{n.value}}" [(ngModel)]="n.selected"
+                            (change)="checkIfAllSelected()">
+                        <label class="label-font">
+                            {{n.viewValue | translate}}
+                        </label>
+                    </div>
+                </div>
+                <div class="header-font">{{setupGroups[3].name | translate}}
+                    <div class="form-check" *ngFor="let n of setupGroups[3].setup; let i = index">
+                        <input [disabled]="setupGroups[2].setup[0].selected == false" type="checkbox"
+                            value="{{n.value}}" [(ngModel)]="n.selected" (change)="checkRingSelected($event,i)">
+                        <label class="label-font">
+                            {{n.viewValue | translate}}
+                        </label>
+                    </div>
+                </div>
+
+
+                <div class="header-font">{{setupGroups[4].name | translate}}
+                    <div class="form-check" *ngFor="let n of setupGroups[4].setup; let i = index">
+                        <input [disabled]="setupGroups[2].setup[0].selected == false" type="checkbox"
+                            value="{{n.value}}" [(ngModel)]="n.selected" (change)="checkToneSelected($event,i)">
+                        <label class="label-font">
+                            {{n.viewValue}}
+                        </label>
+                    </div>
+                    <div [hidden] = "setupGroups[4].setup[1].selected == false">
+                        <mat-form-field>
+                             <mat-select placeholder="Select ring wav file" [(ngModel)]="setupGroups[4].setup[1].data" (selectionChange)="SelctedWavChange($event)">
+                                <mat-option *ngFor="let wavfile of RingWavFiles;index as j" [value]="wavfile" style="font-size:100%;height:18px;">
+                                {{wavfile}}</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <!-- <input type="file" name="audio"
+                            accept="audio/wav" value="{{setupGroups[4].setup[1].data}}"
+                            [(ngModel)]="setupGroups[4].setup[1].data" ng2FileSelect [uploader]="uploader" /> -->
+                    </div>
+                </div>
+                <div>&nbsp;</div>
+                <div>&nbsp;</div>
+                <div>&nbsp;</div>
+
+                <!-- </div> -->
+            </div>
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <div class="container">
+            <div class="scrollable-content content">
+                <div class="header-font">{{setupGroups[5].name | translate}}
+                    <div>&nbsp;</div>
+                    <div class="form-check" *ngFor="let n of setupGroups[5].setup; let i = index">
+                        <input type="checkbox" value="{{n.value}}" [(ngModel)]="n.selected"
+                            (change)="checkQueueSelected($event,i)">
+                        <label class="label-font">{{n.viewValue}}</label>
+                        <div>&nbsp;</div>
+                    </div>
+                </div>
+                <div  [hidden]="setupGroups[5].setup[1].selected == false">
+                        <mat-form-field>
+                          <mat-select placeholder="Select ring wav file" [(ngModel)]="setupGroups[5].setup[1].data" (selectionChange)="SelctedWavChange($event)">
+                            <mat-option *ngFor="let wavfile of RingWavFiles;index as j" [value]="wavfile" style="font-size:100%;height:18px;">
+                            {{wavfile}}</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    <!-- <input type="file" 
+                        value="{{setupGroups[5].setup[1].data}}" [(ngModel)]="setupGroups[5].setup[1].data"
+                        name="audio1" accept="audio/wav" ng2FileSelect [uploader]="uploader" /> -->
+                </div>
+                <br>
+                <!-- 2019-10-07 AlisherM BZ#50840: not used anymore, replaced by CRM.json
+                <div class="header-font">
+                    <span>
+                            {{setupGroups[6].name | translate}} {{'  Enable' | translate}}
+                            <input type="checkbox" title="{{'Enable Popup window' | translate}}"
+                               value="{{AAC.etasIni.activate_http}}" [(ngModel)]="AAC.etasIni.activate_http">
+                    </span>
+                    <br>
+                    <span>
+                    <mat-form-field style="width: 40%">
+                        <mat-select placeholder="Select Popup event" (selectionChange)="SelctedPopChangeChange($event)">
+                            <mat-option *ngFor="let popupevt of AAC.etasIni.CRM;index as j" [value]="popupevt"
+                                style="font-size:100%;height:18px;">{{popupevt.Event}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-form-field style="width: 50%" *ngIf="isPopupchoosed" style="margin-left: 5px">
+                        <mat-select placeholder="Select Call profile field" (selectionChange)="SelctedCPFChangeChange($event,selected)"
+                            #selected>
+                            <mat-option *ngFor="let CPF of AAC.OCP;index as i" [value]="CPF.Desc" style="font-size:100%;height:18px;">
+                                {{CPF.Desc}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    </span>
+                    <mat-form-field *ngIf="isPopupchoosed" style="width: 95%">
+                        <textarea cdkTextareaAutosize (click)="savePosition($event)" #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="2"
+                            cdkAutosizeMaxRows="5" name="url" matInput
+                            placeholder="{{'Enter full URL (use CTRL-V to insert selected call profile field)' | translate}}"
+                            [(ngModel)]="slectetPopup.URL">{{slectetPopup.URL}}</textarea>
+                    </mat-form-field>
+                    <div  *ngIf="isPopupchoosed">
+                        <button type="button" class="btn btn-light btn-sm" (click)="TestPopup()">{{'Test Popup' | translate}}</button>
+                        <!-- <button type="button" class="btn btn-light btn-sm" (click)="SetPopup()">{{'Set Popup' | translate}}</button>
+                    </div>
+
+                </div>
+                <br>
+                -->
+                <div class="header-font">
+                    <!-- <span>
+                        {{'Send logs to server' | translate}}
+                        <input type="checkbox" title="{{'Send logs to server' | translate}}"
+                            value="{{AAC.etasIni.IsLogWebAgent}}" [(ngModel)]="AAC.etasIni.IsLogWebAgent">
+                    </span> -->
+                         <input type="checkbox" title="{{'Send logs to server' | translate}}"
+                            value="{{AAC.etasIni.IsLogWebAgent}}" [(ngModel)]="AAC.etasIni.IsLogWebAgent">
+                         <label>&nbsp;{{'Send logs to server' | translate}} </label>
+                </div>
+                <br>
+                <!-- 2019-10-07 AlisherM BZ#50840: not used anymore, replaced by parameter OutboundPrefix in MakeCall action in CRM.json
+                <div>
+                    <span> 
+                        {{'Outbound caller id' | translate}}>&nbsp;&nbsp;
+                        <input type="text" style="width:60px;height: 15px"title="{{'Outbound caller id' | translate}}"
+                            value="{{AAC.etasIni.Outbound_caller_id}}" [(ngModel)]="AAC.etasIni.Outbound_caller_id">
+                    </span>
+                </div>
+                -->
+            </div>
+        </div>
+        <div id="playWav">
+        </div>
+ 
+
+    </mat-grid-tile>
+</mat-grid-list>

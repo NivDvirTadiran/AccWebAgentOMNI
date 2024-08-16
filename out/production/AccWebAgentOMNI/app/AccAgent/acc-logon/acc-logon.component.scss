@@ -1,0 +1,444 @@
+@import "~src/scss/_all-vars-and-mixins.scss";
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
+//@import "~src/assets/css/font-awesome.min.css";
+body {
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    text-align: left;
+    font-size: 14px;
+    line-height: 17px;
+    word-wrap: break-word;
+    color: #666;
+    background: #fff;
+    overflow-x: hidden;
+}
+
+.sidenav {
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    // left: 20px;
+    padding: 0;
+    text-align: left;        
+    /* direction: rtl; */
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    // color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    height: 90%;
+    align-content: space-between;
+  }
+
+
+label {
+    display: inline-block;
+    width: 50px;
+    text-align: left;
+  }​
+p {
+    font-family: Lato;
+}
+.company_image_area {
+  /*  not needed styles to reflect it */
+  padding: 0px;
+  color: rgb(22, 21, 21);
+  /* needed styles below */
+  display: flex;
+  text-align: center !important;
+  min-height: 110px;
+   font-size: 110%;
+  color: #56A5D0;
+  background: #fff;
+  width: 90%;
+  border: 3px solid #56A5D0;
+  border-radius: 15px 15px 15px 15px;
+  padding-bottom: 10px;
+}
+    .company_image {
+            width:25%;
+            height: fit-content;
+            margin-left: 0%;
+            border: 3px solid #56A5D0;
+            border-radius: 15px 15px 15px 15px; 
+            justify-items: center;
+        }
+    .company_image_content {
+        // justify-content: center !important;           
+        // justify-items: center;
+   }
+   .compnay_text {
+        //background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+        //background-size: fit;
+    
+           width:auto;
+           height: auto;
+        //    border: 3px solid #56A5D0;
+        //    border-radius: 15px 15px 15px 15px;            
+          //-webkit-transition: all 3s;
+      }
+
+    .card-container_list {
+        /*  not needed styles to reflect it */ 
+            border: 2px solid #ddd;
+        // margin-inline-end: 10px;
+        }
+
+
+
+    .card-container-preformence
+    {
+        /*  not needed styles to reflect it */ 
+        padding: 0px;
+        color: rgb(22, 21, 21);
+        display: flex;
+        float: left ;
+        width: 100%;
+
+    }        
+   .card-container_timer {
+    /*  not needed styles to reflect it */ 
+    padding: 0px;
+    color: rgb(22, 21, 21);
+    /* needed styles below */
+    display: flex;
+    // height: 30px;
+    float: left ;
+    //background: rgba(88, 184, 90, 0.103);
+    background-size: cover;
+    width: 95%;
+    border: 2px solid #ddd;
+    border-radius: 10px 10px 15px 15px;
+   }
+   .card-container_space {
+    /*  not needed styles to reflect it */ 
+    padding: 0px;
+    color: rgb(22, 21, 21);
+    /* needed styles below */
+    display: block;
+    height: 40px;
+    float: left;
+    background-size: cover;
+    width: 100%;
+    // border: 2px solid #ddd;
+    // border-radius: 10px 10px 15px 15px;
+   }
+
+/*============================
+		(1)Ready
+==============================*/
+
+.ready .container {
+    margin-top: 6px;
+    float: left;
+}
+.ready-btn .fa {
+    font-size: 40px;
+    background-color: #fff;
+
+}
+.dw-menu {
+    width: 100%;
+    float: right;
+    background: #58B859;
+    align-content: center;
+}
+.dw-menu .fa {
+    color: #fff;
+    background: #58B859;
+
+     padding: 10px 12px;
+    // // border-radius: 4px 0px 0px 4px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.ready .btn-primary {
+    color: #494949;
+    background-color: #E5E5E5;
+    border-color: #E5E5E5;
+}
+.ready .btn {
+    width: 76%;
+    border-radius: 0px 4px 4px 0px;
+}
+/*============================
+		(2)Timer
+==============================*/
+
+.timer-value {
+    border: 2px solid #ddd;
+
+}
+.timer span {
+    font-size: 39px;
+    font-weight: 700;
+    float: right;
+    margin-top: -50px;
+    margin-right: 15px;
+}
+
+.pause-icon .fa {
+    margin-left: 10px;
+    color: #F8B915;
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.progress {
+    border-radius: 0;
+    margin-bottom: 0;
+}
+.progress-bar {
+    background: #58B859
+}
+
+/*============================
+		(4)Box
+==============================*/
+
+.box .box-value {
+    margin-top: 20px;
+    border: 2px solid #ddd;
+}
+
+/*============================
+		(5)Icon
+==============================*/
+
+.social-icon .fa {
+    font-size: 30px;
+    color: #56A5D0;
+}
+
+.social-icon {
+    margin-top: 15px;
+}
+
+/*Filter styles*/
+.saturate {-webkit-filter: saturate(3);}
+.grayscale {-webkit-filter: grayscale(100%);}
+.contrast {-webkit-filter: contrast(160%);}
+.brightness {-webkit-filter: brightness(0.25);}
+.blur {-webkit-filter: blur(3px);}
+.invert {-webkit-filter: invert(100%);}
+.sepia {-webkit-filter: sepia(100%);}
+.huerotate {-webkit-filter: hue-rotate(180deg);}
+.rss.opacity {-webkit-filter: opacity(50%);}
+
+/* preview the difference */
+img:hover{-webkit-filter:none;
+ 
+}
+
+
+
+
+::ng-deep .mat-progress-bar-fill::after {
+    background-color: green;
+}
+
+::ng-deep .mat-progress-bar-buffer {
+    background:silver;
+}
+
+::ng-deep .mat-progress-bar {
+    border-radius: 2px;
+}
+example-section {
+  display: flex;
+  align-content: flex-start;
+  align-items: flex-start;
+  height: 30px;
+}
+
+.example-margin {
+    height: 23px;
+    width: 90%;
+  margin: 0 10px;
+  }
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    49% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    49% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@-o-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    49% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.accpng {
+    width: 100%;
+    height: auto;
+    image-rendering: pixelated;
+    /* margin-left: -15px; */
+    border: 1px solid #021a40;
+    -webkit-transition: all 1s;
+    // cursor: pointer;
+}
+
+// img:hover {
+//     cursor: pointer;
+// }
+.accimg {
+    width: 70%;
+    height: auto;
+    border: 1px solid #021a40;
+    -webkit-transition: all 1s;
+    // cursor: pointer;
+}
+
+.accimgon {
+    width: 50%;
+    height: auto;
+    border: 1px solid #021a40;
+    color: teal;
+}
+
+.activatBlink {
+    animation: blinker 1s step-start infinite;
+}
+
+ @keyframes blinker {
+    50% {
+           opacity: 0;
+    }
+}
+
+/* @media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+} */
+.content {
+position: relative;
+}   
+
+#sidebar {
+  width: 200px;
+  margin-right: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  text-align: left;
+  border: 1px solid red;
+}
+
+
+  
+.example-header-image {
+  //background-image: url('src/assets/images/aeonix_.png');
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+
+}
+.footer {
+  flex-shrink: 0;
+}
+.mat-menu-item {
+  color: blue !important;
+}
+.flag {
+  display: inline-block;
+  width: 16px;
+  height: 11px;
+  //background: url('./flags.png') no-repeat;
+}
+
+
+.flag.flag-cn {
+    background-position: -16px 0;
+}
+
+.flag.flag-es {
+    background-position: -32px 0;
+}
+
+.flag.flag-il {
+    background-position: 0 -11px;
+}
+
+.flag.flag-it {
+    background-position: -16px -11px;
+}
+
+.flag.flag-jp {
+    background-position: -32px -11px;
+}
+
+.flag.flag-ru {
+    background-position: 0 -22px;
+}
+
+.flag.flag-us {
+    background-position: -16px -22px;
+}
+
+.centre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* it center the item vertically */
+    // justify-content: center;
+    /* it center the item horizontally */
+}
+
+/************End**************/

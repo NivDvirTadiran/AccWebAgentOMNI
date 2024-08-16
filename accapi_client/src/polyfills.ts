@@ -45,9 +45,9 @@
  */
 
 /** Evergreen browsers require these. **/
-import 'core-js/es/reflect';
+//import 'core-js/es6';
 //import 'core-js/es7/reflect';
-
+import 'zone.js/dist/zone'  // Included with Angular CLI.
 
 /***************************************************************************************************
  * Zone JS is required by default for Angular itself.

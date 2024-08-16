@@ -6,7 +6,7 @@
   $(document).ready(function () {
     $("button").click(function () {
 	  // click to call format:
-	  // sessionid: some unique nimber
+	  // sessionid: some unique number
 	  // direction: can be 'click2call' and it written the log in acc server
 	  // agentNo: ageget number, must be logon
 	  // action: 'makecall'
@@ -17,7 +17,13 @@
 	  //  4. agent exension number,
 	  //  5. click to call number
 	  
-      var obj = { sessionid: "1358200701113", direction: "click2call", agentNo: "1001", action: "makecall", params: "makecall,000,1001,2001,2002," };
+      var obj = {
+          sessionid: "1358200701113",
+          direction: "click2call",
+          agentNo: "1001",
+          action: "makecall",
+          params: "makecall,000,1001,2001,2002,"
+      };
       obj.params = 'makecall,000,' + agentNo.value + ',' + Extension.value + ',' + TelNo.value + ',';
       obj.agentNo = agentNo.value;
       var objStr = JSON.stringify(obj);

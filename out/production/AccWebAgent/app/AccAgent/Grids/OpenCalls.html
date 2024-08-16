@@ -1,0 +1,50 @@
+<!--  -->
+<!-- <div class="mat-elevation-z8" [ngStyle]="{'width': AAC.openCallTableLength}"> -->
+<div style='height:30px; background:lightblue;text-align: center'>
+    <span style='float: left;width:20px;color:lightslategrey' title="{{'Help On Calls status' | translate}}"
+        (click)="AAC.Help('calls_status_window.htm')" class='fa  fa-book'>
+    </span>
+
+    <span>{{'Calls Status' | translate}}</span>
+
+    <span style='float: right;' (click)=AAC.closeWindow(0) class='fa  fa-times'></span>
+</div>
+
+<p-table #dt1 [columns]="AAC.CallsStatMeta" [value]="AAC.callStatDataSource" [dataKey]="AAC.CallsStatMeta[0].feild"
+    [resizableColumns]="true" [reorderableColumns]="true" (onColReorder)="onColReorder($event)" 
+    [responsive]="true" [contextMenu]="cm" [responsive]="true"
+    [(contextMenuSelection)]="selected" contextMenuSelectionMode="joint" autoLayout="true" selectionMode="single" [(selection)]="selected">
+    <!-- stateStorage="local" stateKey="state-opencalls"> -->
+    <ng-template pTemplate="header" let-columns>
+        <tr>
+            <th *ngFor="let col of columns ;index as i" [pSortableColumn]="col.field" pResizableColumn
+                pReorderableColumn (mousedown)="MouseDown(i,'header',$event)" [pContextMenuRow]="selected">
+                <!-- [ngStyle]="{'width': col.width}" > -->
+                 {{col.header | translate}}
+                <p-sortIcon [field]="col.field"></p-sortIcon>
+            </th>
+        </tr>
+        <!-- <tr>
+            <th *ngFor="let col of columns" [ngSwitch]="col.field" class="ui-fluid">
+                <input pInputText type="text" (input)="dt1.filter($event.target.value, col.field, col.filterMatchMode)"
+                    [value]="dt1.filters[col.field]?.value">
+            </th>
+        </tr> -->
+    </ng-template>
+    <ng-template pTemplate="body" let-rowData let-columns="columns">
+        <tr [pSelectableRow]="rowData" [pContextMenuRow]="rowData" id="rowId1" (mousedown)="MouseDown(rowData,'row',$event)">
+
+            <td *ngFor="let col of columns" class="ui-resizable-column">
+                {{rowData[col.field]}}
+            </td>
+        </tr>
+    </ng-template>
+    <!-- <ng-template pTemplate="summary" let-rowData> -->
+     <!-- </ng-template> -->
+</p-table>
+<br/>
+<br/>
+<p-contextMenu #cm [model]="items"></p-contextMenu>
+<div id="cpDialog" *ngIf="AAC.cpDialog">
+    <app-acc-call-profile></app-acc-call-profile>
+</div>

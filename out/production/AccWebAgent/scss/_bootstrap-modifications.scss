@@ -1,0 +1,159 @@
+@import './all-vars-and-mixins';
+
+/////////////////////////////
+// buttons                 //
+/////////////////////////////
+.btn {
+    padding: 6px 22px;
+}
+.btn:focus, .btn:active:focus {
+    outline: none;
+}
+.btn.disabled {
+    cursor: default;
+    pointer-events: none;
+}
+
+/////////////////////////////
+// popovers                //
+/////////////////////////////
+.popover {
+    border: none;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    &.popover-top {
+        .arrow {
+            left: calc(50% - 10px) !important;
+            bottom: -10px;
+            margin-left: 0;
+            &::after{
+                left: 0;
+            }
+        }
+        .popover-content {
+            padding: 10px 20px !important;
+            @include font4(map-get($colors, color10));
+            box-shadow: 2px 2px 27px map-get($colors, color10-39);
+        }
+    }
+    &.popover-bottom {
+        .arrow {
+            left: 50% !important;
+            &::after{
+                left: -10px;
+                margin-left: auto;
+            }
+        }
+        .popover-content {
+            cursor: default;
+        }
+    }
+    &.popover-right {
+        .arrow {
+            bottom: -10px;
+            margin-left: 0;
+            &::after {
+                left:2px;
+            }
+        }
+        .popover-content {
+            padding: 10px 20px !important;
+            @include font4(map-get($colors, color10));
+            box-shadow: 2px 2px 27px map-get($colors, color10-39);
+            .popover-content-title{
+                @include font5(map-get($colors, color10));
+            }
+
+            .popover-separator {
+                text-align: center;
+                padding: 6px 0;
+                .icon{
+                    display: inline-block;
+                }
+            }
+        }
+    }
+    &.wide-popover {
+        max-width: none !important;
+    }
+}
+
+///////////////////////////
+// modals                //
+///////////////////////////
+.modal .modal-dialog {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    max-width: 100vw;
+    &.wide-modal {
+        width: 960px;
+    }
+    &.narrow-modal {
+        width: 460px;
+    }
+    .modal-content {
+        .modal-header {
+            padding: 14px 20px;
+        }
+        .modal-body {
+            padding: 10px 20px;
+        }
+        .modal-footer {
+            padding: 10px 20px;
+        }
+    }
+}
+
+///////////////////////////
+// accordion             //
+///////////////////////////
+.panel {
+    border: none;
+    width: 206px;
+    padding-right: 0;
+    
+    &.panel-open {
+        .panel-heading {
+            color : map-get($colors, color1) !important;
+            background-color: map-get($colors, color2) !important;
+        }
+    }
+    &.card {
+        border-radius: 2px;
+        border: none;
+        .panel-title {
+            font-size: 14px;
+        }
+        .panel-heading {
+            @include font6(map-get($colors, color4));
+            font-size: 14px !important;
+            background-color: map-get($colors, color6);
+            &:hover {
+                background-color: rgba(map-get($colors, color6), 0.7);
+            }
+        }
+        .panel-collapse {
+            @include font5(map-get($colors, color4));
+            background-color: map-get($colors, color1);
+            .panel-body {
+                padding: 0;
+            }
+            .content-item {
+
+                &:hover {
+                    opacity: 0.7;
+                    .selected-indicator-elem {
+                        position: absolute;
+                        z-index: 999;
+                        width: 4px;
+                        left: 23px;
+                        top: inherit;
+                        margin-top: -21px;
+                        height: 23px;
+                        background-color: map-get($colors, color2);
+                    }
+                }
+            }
+        }
+    }
+}

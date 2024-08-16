@@ -19715,7 +19715,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".chat---typing_1135-63748 {\r\n    position: absolute;\r\n    box-sizing: border-box;\r\n    overflow: hidden;\r\n    background: #f2f9ff;\r\n    width: 100%;\r\n    height: 100%;\r\n}\r\n\r\nsection {\r\n    height: inherit;\r\n}\r\n\r\n.frame-460_1135-63749 {\r\n    display: flex;\r\n    top: 1.875rem;\r\n    left: 1.5rem;\r\n    height: calc(100% - 5.625rem - (1.875rem)*2);\r\n    width: calc(100% - (1.5rem)*2);\r\n    justify-content: flex-start;\r\n    align-items: flex-start;\r\n    gap: 1.5rem;\r\n    position: relative;\r\n}\r\n.frame-466_1135-63750 {\r\n    display: flex;\r\n    width: calc(100%*(1135/1680));\r\n    height: 100%;\r\n    justify-content: flex-end;\r\n    align-items: flex-start;\r\n    gap: 1.5rem;\r\n    flex-shrink: 0;\r\n    border: 10px;\r\n}\r\n.frame-469_1135-63751 {\r\n    width: calc(100%*(317/1135));\r\n    height: 100%;\r\n}\r\n\r\n\r\n.top-bar-content {\r\n    width: 100%;\r\n    height: 90px;\r\n    flex-shrink: 0;\r\n}\r\n\r\n.main-desk-content {\r\n    width: 100%;\r\n    display: flex;\r\n    height: 60rem;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    flex: 1 0 0;\r\n}\r\n",
+                    "data": ".chat---typing_1135-63748 {\r\n    position: absolute;\r\n    box-sizing: border-box;\r\n    overflow: hidden;\r\n    background: #f2f9ff;\r\n    width: 100%;\r\n    height: 100%;\r\n}\r\n\r\nsection {\r\n    height: inherit;\r\n}\r\n\r\n.frame-460_1135-63749 {\r\n    display: flex;\r\n    top: 1.875rem;\r\n    left: 1.5rem;\r\n    height: calc(100% - 5.625rem - (1.875rem)*2);\r\n    width: calc(100% - (1.5rem)*2);\r\n    justify-content: flex-start;\r\n    align-items: flex-start;\r\n    gap: 1.5rem;\r\n    position: relative;\r\n}\r\n.frame-466_1135-63750 {\r\n    display: flex;\r\n    width: calc(100%*(1135/1680));\r\n    height: 100%;\r\n    justify-content: flex-end;\r\n    align-items: flex-start;\r\n    gap: 1.5rem;\r\n    flex-shrink: 0;\r\n    border: 10px;\r\n}\r\n.frame-469_1135-63751 {\r\n    width: calc(100%*(317/1135));\r\n    height: 100%;\r\n}\r\n\r\n\r\n.top-bar-content {\r\n    width: 100%;\r\n    height: 90px;\r\n    flex-shrink: 0;\r\n}\r\n\r\n.main-desk-content {\r\n    width: 100%;\r\n    display: flex;\r\n    height: 100%;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    flex: 1 0 0;\r\n}\r\n",
                     "styleUrl": "./acc-omni-page.components.scss"
                 }
             ],
@@ -23045,7 +23045,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "@import \"../tokens.scss\";\n\n.root {\n  padding: 15px 30px 15px 30px;\n  display: flex;\n  flex-direction: row;\n  flex-wrap: nowrap;\n  align-items: center;\n  gap: 116px;\n  box-sizing: border-box;\n  border-bottom-right-radius: 0px;\n  border-bottom-left-radius: 0px;\n  border-color: $for-strokes-color;\n  border-style: solid;\n  border-width: undefinedpx;\n  background: $white-background;\n}\n\n.root_goalChatOptionAdminBlock {\n  top: 199px;\n  left: 760px;\n  position: absolute;\n  display: flex;\n  border-top-left-radius: 0px;\n  border-top-right-radius: 0px;\n  height: 70px;\n}\n\n.root_goalChatOption2GoalChatOptionClientBlockedGoalBotOption1GoalDashboardOptionDefault {\n  border-top-left-radius: 20px;\n  border-top-right-radius: 20px;\n  height: 60px;\n}\n\n.root_goalChatOption2GoalChatOptionAdminBlockGoalBotOption1GoalDashboardOptionDefault {\n  justify-content: space-between;\n}\n\n.root_goalChatOptionClientBlocked {\n  justify-content: flex-end;\n}\n\n.root_goalDashboardOptionDefault {\n  top: 208px;\n  left: -1px;\n  position: absolute;\n  display: flex;\n}\n.frame379 {\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-start;\n  flex-wrap: nowrap;\n  align-items: flex-start;\n  gap: 8px;\n  box-sizing: border-box;\n}\n.button {\n  padding: 4px 9px 6px 9px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 20px;\n  border-color: $dark-blue-color;\n  border-style: solid;\n  border-width: 1px;\n  height: 27px;\n}\n\n.button {\n  padding: 4px 9px 6px 9px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 20px;\n  border-color: $dark-blue-color;\n  border-style: solid;\n  border-width: 1px;\n  height: 27px;\n}\n\n.frame380_option2OptionAdminBlockOptionClientBlocked {\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-end;\n  flex-wrap: nowrap;\n  align-items: center;\n  gap: 16px;\n  box-sizing: border-box;\n}\n.frame263 {\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-start;\n  flex-wrap: nowrap;\n  align-items: center;\n  gap: 6px;\n  box-sizing: border-box;\n}\n.statusLabel {\n  padding: 2px 13px 4px 13px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 30px;\n  background: $d-9-d-9-d-9-background;\n  width: 57px;\n}\n\n.statusLabel {\n  padding: 2px 13px 4px 13px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 30px;\n  background: $d-9-d-9-d-9-background;\n  width: 57px;\n}\n\n.statusLabel {\n  padding: 2px 13px 4px 13px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 30px;\n  background: $d-9-d-9-d-9-background;\n  width: 57px;\n}\n\n.statusLabel {\n  padding: 2px 13px 4px 13px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 30px;\n  background: $turkiz-background;\n  width: 57px;\n}\n\n.frame199 {\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-end;\n  flex-wrap: nowrap;\n  align-items: center;\n  gap: 0px;\n  box-sizing: border-box;\n}\n.a_option2OptionAdminBlock {\n  display: flex;\n  box-sizing: content-box;\n  color: $dark-blue-color;\n  @include menu-text-bold-text;\n  font-weight: 700;\n  text-align: right;\n  text-wrap: nowrap;\n}\n\n.a {\n  display: flex;\n  box-sizing: content-box;\n  color: $dark-blue-color;\n  @include menu-text-bold-text;\n  font-weight: 700;\n  text-align: right;\n  text-wrap: nowrap;\n}\n\n.frame379 {\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-start;\n  flex-wrap: nowrap;\n  align-items: flex-start;\n  gap: 8px;\n  box-sizing: border-box;\n}\n.button {\n  padding: 4px 9px 6px 9px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 20px;\n  border-color: $black-color;\n  border-style: solid;\n  border-width: 1px;\n  height: 27px;\n}\n\n.frame263 {\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-start;\n  flex-wrap: nowrap;\n  align-items: center;\n  box-sizing: border-box;\n}\n.statusLabel {\n  padding: 2px 13px 4px 13px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 30px;\n  background: $d-9-d-9-d-9-background;\n  width: 57px;\n}\n\n.statusLabel {\n  padding: 2px 13px 4px 13px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 30px;\n  background: $d-9-d-9-d-9-background;\n  width: 57px;\n}\n\n.statusLabel {\n  padding: 2px 13px 4px 13px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 30px;\n  background: $d-9-d-9-d-9-background;\n  width: 57px;\n}\n\n.statusLabel {\n  padding: 2px 13px 4px 13px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 30px;\n  background: $turkiz-background;\n  width: 57px;\n}\n\n.statusLabel {\n  padding: 2px 13px 4px 13px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 30px;\n  background: $d-9-d-9-d-9-background;\n  width: 57px;\n}\n\n.statusLabel {\n  padding: 2px 13px 4px 13px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 30px;\n  background: $turkiz-background;\n  width: 57px;\n}\n\n.frame199 {\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-end;\n  flex-wrap: nowrap;\n  align-items: center;\n  box-sizing: border-box;\n}\n.a {\n  display: flex;\n  box-sizing: content-box;\n  color: $dark-gray-color;\n  @include menu-text-bold-text;\n  font-weight: 700;\n  text-align: right;\n  text-wrap: nowrap;\n}\n\n.a {\n  display: flex;\n  box-sizing: content-box;\n  color: $black-color;\n  @include menu-text-bold-text;\n  font-weight: 700;\n  text-align: right;\n  text-wrap: nowrap;\n}\n\n.iconPage2 {\n  position: relative;\n  box-sizing: border-box;\n  overflow: hidden;\n  background: #ffffff;\n  width: 22px;\n  height: 22px;\n}\n\n.frame331 {\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-start;\n  flex-wrap: nowrap;\n  align-items: center;\n  gap: 3px;\n  box-sizing: border-box;\n}\n.iconLarge11 {\n  position: relative;\n  box-sizing: border-box;\n  width: 22px;\n  height: 22px;\n}\n\n.frame332 {\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-start;\n  flex-wrap: nowrap;\n  align-items: center;\n  gap: 3px;\n  box-sizing: border-box;\n}\n.a {\n  display: flex;\n  box-sizing: content-box;\n  color: $dark-blue-color;\n  @include small-text-text;\n  font-weight: 400;\n  text-align: right;\n  text-wrap: nowrap;\n}\n\n.iconSmall8 {\n  position: relative;\n  box-sizing: border-box;\n  width: 13px;\n  height: 13px;\n}\n\n.frame223 {\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-start;\n  flex-wrap: nowrap;\n  align-items: flex-start;\n  gap: 11px;\n  box-sizing: border-box;\n}\n.button {\n  padding: 4px 9px 6px 9px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 20px;\n  background: $grey-background;\n  height: 27px;\n}\n\n.button {\n  padding: 4px 9px 6px 9px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 20px;\n  background: $grey-background;\n  height: 27px;\n}\n",
+                    "data": "@import \"../tokens.scss\";\n\n.root {\n  padding: 0.938rem 1.875rem 0.938px 1.875rem;\n  display: flex;\n  flex-direction: row;\n  flex-wrap: nowrap;\n  align-items: center;\n  gap: 7.25rem;\n  box-sizing: border-box;\n  border-bottom-right-radius: 0px;\n  border-bottom-left-radius: 0px;\n  border-color: $for-strokes-color;\n  border-style: solid;\n  border-width: undefinedpx;\n  background: $white-background;\n}\n\n.root_goalChatOptionAdminBlock {\n  top: 199px;\n  left: 760px;\n  position: absolute;\n  display: flex;\n  border-top-left-radius: 0px;\n  border-top-right-radius: 0px;\n  height: 70px;\n}\n\n.root_goalChatOption2GoalChatOptionClientBlockedGoalBotOption1GoalDashboardOptionDefault {\n  border-top-left-radius: 20px;\n  border-top-right-radius: 20px;\n  height: 100%;\n  border-bottom-width: 1px;\n}\n\n.root_goalChatOption2GoalChatOptionAdminBlockGoalBotOption1GoalDashboardOptionDefault {\n  justify-content: space-between;\n}\n\n.root_goalChatOptionClientBlocked {\n  justify-content: flex-end;\n}\n\n.root_goalDashboardOptionDefault {\n  top: 208px;\n  left: -1px;\n  position: absolute;\n  display: flex;\n}\n.frame379 {\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-start;\n  flex-wrap: nowrap;\n  align-items: flex-start;\n  gap: 8px;\n  box-sizing: border-box;\n}\n.button {\n  padding: 4px 9px 6px 9px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 20px;\n  border-color: $dark-blue-color;\n  border-style: solid;\n  border-width: 1px;\n  height: 27px;\n}\n\n.button {\n  padding: 4px 9px 6px 9px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 20px;\n  border-color: $dark-blue-color;\n  border-style: solid;\n  border-width: 1px;\n  height: 27px;\n}\n\n.frame380_option2OptionAdminBlockOptionClientBlocked {\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-end;\n  flex-wrap: nowrap;\n  align-items: center;\n  gap: 16px;\n  box-sizing: border-box;\n}\n.frame263 {\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-start;\n  flex-wrap: nowrap;\n  align-items: center;\n  gap: 6px;\n  box-sizing: border-box;\n}\n.statusLabel {\n  padding: 2px 13px 4px 13px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 30px;\n  background: $d-9-d-9-d-9-background;\n  width: 57px;\n}\n\n.statusLabel {\n  padding: 2px 13px 4px 13px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 30px;\n  background: $d-9-d-9-d-9-background;\n  width: 57px;\n}\n\n.statusLabel {\n  padding: 2px 13px 4px 13px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 30px;\n  background: $d-9-d-9-d-9-background;\n  width: 57px;\n}\n\n.statusLabel {\n  padding: 2px 13px 4px 13px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 30px;\n  background: $turkiz-background;\n  width: 57px;\n}\n\n.frame199 {\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-end;\n  flex-wrap: nowrap;\n  align-items: center;\n  gap: 0px;\n  box-sizing: border-box;\n}\n.a_option2OptionAdminBlock {\n  display: flex;\n  box-sizing: content-box;\n  color: $dark-blue-color;\n  @include menu-text-bold-text;\n  font-weight: 700;\n  text-align: right;\n  text-wrap: nowrap;\n}\n\n.a {\n  display: flex;\n  box-sizing: content-box;\n  color: $dark-blue-color;\n  @include menu-text-bold-text;\n  font-weight: 700;\n  text-align: right;\n  text-wrap: nowrap;\n}\n\n.frame379 {\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-start;\n  flex-wrap: nowrap;\n  align-items: flex-start;\n  gap: 8px;\n  box-sizing: border-box;\n}\n.button {\n  padding: 4px 9px 6px 9px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 20px;\n  border-color: $black-color;\n  border-style: solid;\n  border-width: 1px;\n  height: 27px;\n}\n\n.frame263 {\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-start;\n  flex-wrap: nowrap;\n  align-items: center;\n  box-sizing: border-box;\n}\n.statusLabel {\n  padding: 2px 13px 4px 13px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 30px;\n  background: $d-9-d-9-d-9-background;\n  width: 57px;\n}\n\n.statusLabel {\n  padding: 2px 13px 4px 13px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 30px;\n  background: $d-9-d-9-d-9-background;\n  width: 57px;\n}\n\n.statusLabel {\n  padding: 2px 13px 4px 13px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 30px;\n  background: $d-9-d-9-d-9-background;\n  width: 57px;\n}\n\n.statusLabel {\n  padding: 2px 13px 4px 13px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 30px;\n  background: $turkiz-background;\n  width: 57px;\n}\n\n.statusLabel {\n  padding: 2px 13px 4px 13px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 30px;\n  background: $d-9-d-9-d-9-background;\n  width: 57px;\n}\n\n.statusLabel {\n  padding: 2px 13px 4px 13px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 30px;\n  background: $turkiz-background;\n  width: 57px;\n}\n\n.frame199 {\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-end;\n  flex-wrap: nowrap;\n  align-items: center;\n  box-sizing: border-box;\n}\n.a {\n  display: flex;\n  box-sizing: content-box;\n  color: $dark-gray-color;\n  @include menu-text-bold-text;\n  font-weight: 700;\n  text-align: right;\n  text-wrap: nowrap;\n}\n\n.a {\n  display: flex;\n  box-sizing: content-box;\n  color: $black-color;\n  @include menu-text-bold-text;\n  font-weight: 700;\n  text-align: right;\n  text-wrap: nowrap;\n}\n\n.iconPage2 {\n  position: relative;\n  box-sizing: border-box;\n  overflow: hidden;\n  background: #ffffff;\n  width: 22px;\n  height: 22px;\n}\n\n.frame331 {\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-start;\n  flex-wrap: nowrap;\n  align-items: center;\n  gap: 3px;\n  box-sizing: border-box;\n}\n.iconLarge11 {\n  position: relative;\n  box-sizing: border-box;\n  width: 22px;\n  height: 22px;\n}\n\n.frame332 {\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-start;\n  flex-wrap: nowrap;\n  align-items: center;\n  gap: 3px;\n  box-sizing: border-box;\n}\n.a {\n  display: flex;\n  box-sizing: content-box;\n  color: $dark-blue-color;\n  @include small-text-text;\n  font-weight: 400;\n  text-align: right;\n  text-wrap: nowrap;\n}\n\n.iconSmall8 {\n  position: relative;\n  box-sizing: border-box;\n  width: 13px;\n  height: 13px;\n}\n\n.frame223 {\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-start;\n  flex-wrap: nowrap;\n  align-items: flex-start;\n  gap: 11px;\n  box-sizing: border-box;\n}\n.button {\n  padding: 4px 9px 6px 9px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 20px;\n  background: $grey-background;\n  height: 27px;\n}\n\n.button {\n  padding: 4px 9px 6px 9px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 20px;\n  background: $grey-background;\n  height: 27px;\n}\n",
                     "styleUrl": "./call-bar.component.scss"
                 }
             ],
@@ -23979,7 +23979,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "@import \"../tokens.scss\";\n\n.root {\n  padding-right: 30px;\n  padding-bottom: 0px;\n  padding-left: 30px;\n  display: flex;\n  flex-direction: column;\n  justify-content: flex-start;\n  flex-wrap: nowrap;\n  align-items: center;\n  box-sizing: border-box;\n  background: $white-background;\n}\n\n.root_wightNormalTypeBotTypePhoneCall {\n  padding-top: 30px;\n  gap: 20px;\n  height: 984px;\n}\n\n.root_typeChatWightNormalTypeChatAdminBlock {\n  padding-top: 0px;\n  gap: 54px;\n  height: 1369px;\n}\n\n.root_wightNormal {\n  width: inherit;\n}\n\n.root_wightWideTypeChat {\n  width: 902px;\n}\n.frame176 {\n  display: flex;\n  flex-direction: column;\n  justify-content: flex-start;\n  flex-wrap: nowrap;\n  align-items: flex-end;\n  gap: 10px;\n  box-sizing: border-box;\n  width: -webkit-fill-available;\n}\n.chatBubble {\n  padding: 10px 15px 10px 15px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 15px 0px 15px 15px;\n  box-shadow: $messenge-shadow-box-shadow;\n}\n\n.chatBubble_typeChat {\n  background: $light-blue-background;\n}\n\n.chatBubble_wightNormalTypeChatAdminBlock {\n  background: #f2f9ff;\n}\n\n.frame175 {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  flex-wrap: nowrap;\n  align-items: center;\n  gap: 10px;\n  box-sizing: border-box;\n  width: -webkit-fill-available;\n}\n.a21042024 {\n  display: flex;\n  box-sizing: content-box;\n  color: $dark-blue-color;\n  @include small-text-text;\n  font-weight: 400;\n  text-align: center;\n  width: 130px;\n  height: 10px;\n}\n\n.systemMessenge {\n  padding: 20px 30px 20px 30px;\n  display: flex;\n  box-sizing: border-box;\n  overflow: hidden;\n  border-radius: 15px;\n  border-color: $for-strokes-color;\n  border-style: solid;\n  border-width: 1px;\n  background: $white-background;\n}\n\n.systemMessenge {\n  padding: 20px 30px 20px 30px;\n  display: flex;\n  box-sizing: border-box;\n  overflow: hidden;\n  border-radius: 15px;\n  border-color: $dark-blue-color;\n  border-style: solid;\n  border-width: 1px;\n  background: $white-background;\n}\n\n.frame173 {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  flex-wrap: nowrap;\n  align-items: flex-start;\n  gap: 10px;\n  box-sizing: border-box;\n  width: -webkit-fill-available;\n}\n\n.frame173_typeChat {\n  height: 161px;\n}\n.chatBubble {\n  padding: 10px 15px 10px 15px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 0px 15px 15px 15px;\n  background: $for-strokes-background;\n  box-shadow: $messenge-shadow-box-shadow;\n}\n\n.chatBubble_typeChat {\n  width: 338px;\n}\n\n.chatBubble_typeBotTypePhoneCall {\n  padding: 10px 15px 10px 15px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 0px 15px 15px 15px;\n  box-shadow: $messenge-shadow-box-shadow;\n}\n\n.chatBubble_wightNormalTypeBot {\n  background: $bot-background;\n}\n\n.chatBubble_wightNormalTypePhoneCall {\n  background: $for-strokes-background;\n}\n\n.frame177 {\n  display: flex;\n  flex-direction: column;\n  justify-content: flex-start;\n  flex-wrap: nowrap;\n  align-items: flex-end;\n  gap: 10px;\n  box-sizing: border-box;\n  width: -webkit-fill-available;\n}\n.chatBubble {\n  padding: 10px 15px 10px 15px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 15px 0px 15px 15px;\n  background: #f2f9ff;\n  box-shadow: $messenge-shadow-box-shadow;\n}\n\n.chatBubble_typeChat {\n  width: 336px;\n}\n\n.a2 {\n  display: flex;\n  box-sizing: content-box;\n  color: $dark-blue-color;\n  @include small-text-text;\n  font-weight: 400;\n  text-align: center;\n  text-wrap: wrap;\n  width: 679px;\n}\n\n.frame174 {\n  display: flex;\n  flex-direction: column;\n  justify-content: flex-start;\n  flex-wrap: nowrap;\n  align-items: flex-end;\n  gap: 10px;\n  box-sizing: border-box;\n  width: -webkit-fill-available;\n}\n.chatBubble {\n  padding: 10px 15px 10px 15px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 15px 0px 15px 15px;\n  background: #f2f9ff;\n  width: 336px;\n  box-shadow: $messenge-shadow-box-shadow;\n}\n\n.frame178_typeChatAdminBlockTypeBot {\n  display: flex;\n  flex-direction: column;\n  flex-wrap: nowrap;\n  gap: 10px;\n  box-sizing: border-box;\n  width: -webkit-fill-available;\n}\n.chatBubble {\n  padding: 10px 15px 10px 15px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 15px 0px 15px 15px;\n  background: $light-blue-background;\n  box-shadow: $messenge-shadow-box-shadow;\n}\n\n.chatBubble {\n  padding: 10px 15px 10px 15px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 15px 0px 15px 15px;\n  background: $light-blue-background;\n  box-shadow: $messenge-shadow-box-shadow;\n}\n\n.chatBubble {\n  padding: 10px 15px 10px 15px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 15px 0px 15px 15px;\n  background: $light-blue-background;\n  box-shadow: $messenge-shadow-box-shadow;\n}\n\n.chatBubble {\n  padding: 10px 15px 10px 15px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 0px 15px 15px 15px;\n  background: $bot-background;\n  box-shadow: $messenge-shadow-box-shadow;\n}\n\n.frame179 {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  flex-wrap: nowrap;\n  align-items: flex-start;\n  gap: 10px;\n  box-sizing: border-box;\n  width: -webkit-fill-available;\n}\n.chatBubble {\n  padding: 10px 15px 10px 15px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 0px 15px 15px 15px;\n  box-shadow: $messenge-shadow-box-shadow;\n}\n\n.chatBubble_wightNormalTypeBot {\n  background: $bot-background;\n}\n\n.chatBubble_wightNormalTypePhoneCall {\n  background: $for-strokes-background;\n}\n\n.frame180 {\n  display: flex;\n  flex-direction: column;\n  justify-content: flex-start;\n  flex-wrap: nowrap;\n  align-items: flex-end;\n  gap: 10px;\n  box-sizing: border-box;\n  width: -webkit-fill-available;\n}\n.chatBubble {\n  padding: 10px 15px 10px 15px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 15px 0px 15px 15px;\n  background: #f2f9ff;\n  box-shadow: $messenge-shadow-box-shadow;\n}\n\n.frame181 {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  flex-wrap: nowrap;\n  align-items: flex-start;\n  gap: 10px;\n  box-sizing: border-box;\n  width: -webkit-fill-available;\n}\n.chatBubble {\n  padding: 10px 15px 10px 15px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 0px 15px 15px 15px;\n  background: $for-strokes-background;\n  box-shadow: $messenge-shadow-box-shadow;\n}\n\n.frame182 {\n  display: flex;\n  flex-direction: column;\n  justify-content: flex-start;\n  flex-wrap: nowrap;\n  align-items: flex-end;\n  gap: 10px;\n  box-sizing: border-box;\n  width: -webkit-fill-available;\n}\n.chatBubble {\n  padding: 10px 15px 10px 15px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 15px 0px 15px 15px;\n  background: #f2f9ff;\n  box-shadow: $messenge-shadow-box-shadow;\n}\n\n.chatBubble {\n  padding: 20px 15px 20px 15px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 15px;\n  background: $light-yellow-background;\n  width: 494px;\n  box-shadow: $messenge-shadow-box-shadow;\n}\n",
+                    "data": "@import \"../tokens.scss\";\n\n.root {\n  padding-right: 30px;\n  padding-bottom: 0px;\n  padding-left: 30px;\n  display: flex;\n  flex-direction: column;\n  justify-content: flex-start;\n  flex-wrap: nowrap;\n  align-items: center;\n  box-sizing: border-box;\n  background: $white-background;\n}\n\n.root_wightNormalTypeBotTypePhoneCall {\n  padding-top: 1.875rem;\n  gap: 1.25rem;\n  height: 61.5rem;\n}\n\n.root_typeChatWightNormalTypeChatAdminBlock {\n  padding-top: 0;\n  gap: 3.375rem;\n  height: 100%;\n}\n\n.root_wightNormal {\n  width: inherit;\n}\n\n.root_wightWideTypeChat {\n  width: 56.375rem;\n}\n.frame176 {\n  display: flex;\n  flex-direction: column;\n  justify-content: flex-start;\n  flex-wrap: nowrap;\n  align-items: flex-end;\n  gap: 10px;\n  box-sizing: border-box;\n  width: -webkit-fill-available;\n}\n.chatBubble {\n  padding: 10px 15px 10px 15px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 15px 0px 15px 15px;\n  box-shadow: $messenge-shadow-box-shadow;\n}\n\n.chatBubble_typeChat {\n  background: $light-blue-background;\n}\n\n.chatBubble_wightNormalTypeChatAdminBlock {\n  background: #f2f9ff;\n}\n\n.frame175 {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  flex-wrap: nowrap;\n  align-items: center;\n  gap: 10px;\n  box-sizing: border-box;\n  width: -webkit-fill-available;\n}\n.a21042024 {\n  display: flex;\n  box-sizing: content-box;\n  color: $dark-blue-color;\n  @include small-text-text;\n  font-weight: 400;\n  text-align: center;\n  width: 130px;\n  height: 10px;\n}\n\n.systemMessenge {\n  padding: 20px 30px 20px 30px;\n  display: flex;\n  box-sizing: border-box;\n  overflow: hidden;\n  border-radius: 15px;\n  border-color: $for-strokes-color;\n  border-style: solid;\n  border-width: 1px;\n  background: $white-background;\n}\n\n.systemMessenge {\n  padding: 20px 30px 20px 30px;\n  display: flex;\n  box-sizing: border-box;\n  overflow: hidden;\n  border-radius: 15px;\n  border-color: $dark-blue-color;\n  border-style: solid;\n  border-width: 1px;\n  background: $white-background;\n}\n\n.frame173 {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  flex-wrap: nowrap;\n  align-items: flex-start;\n  gap: 10px;\n  box-sizing: border-box;\n  width: -webkit-fill-available;\n}\n\n.frame173_typeChat {\n  height: 161px;\n}\n.chatBubble {\n  padding: 10px 15px 10px 15px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 0px 15px 15px 15px;\n  background: $for-strokes-background;\n  box-shadow: $messenge-shadow-box-shadow;\n}\n\n.chatBubble_typeChat {\n  width: 338px;\n}\n\n.chatBubble_typeBotTypePhoneCall {\n  padding: 10px 15px 10px 15px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 0px 15px 15px 15px;\n  box-shadow: $messenge-shadow-box-shadow;\n}\n\n.chatBubble_wightNormalTypeBot {\n  background: $bot-background;\n}\n\n.chatBubble_wightNormalTypePhoneCall {\n  background: $for-strokes-background;\n}\n\n.frame177 {\n  display: flex;\n  flex-direction: column;\n  justify-content: flex-start;\n  flex-wrap: nowrap;\n  align-items: flex-end;\n  gap: 10px;\n  box-sizing: border-box;\n  width: -webkit-fill-available;\n}\n.chatBubble {\n  padding: 10px 15px 10px 15px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 15px 0px 15px 15px;\n  background: #f2f9ff;\n  box-shadow: $messenge-shadow-box-shadow;\n}\n\n.chatBubble_typeChat {\n  width: 336px;\n}\n\n.a2 {\n  display: flex;\n  box-sizing: content-box;\n  color: $dark-blue-color;\n  @include small-text-text;\n  font-weight: 400;\n  text-align: center;\n  text-wrap: wrap;\n  width: 679px;\n}\n\n.frame174 {\n  display: flex;\n  flex-direction: column;\n  justify-content: flex-start;\n  flex-wrap: nowrap;\n  align-items: flex-end;\n  gap: 10px;\n  box-sizing: border-box;\n  width: -webkit-fill-available;\n}\n.chatBubble {\n  padding: 10px 15px 10px 15px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 15px 0px 15px 15px;\n  background: #f2f9ff;\n  width: 336px;\n  box-shadow: $messenge-shadow-box-shadow;\n}\n\n.frame178_typeChatAdminBlockTypeBot {\n  display: flex;\n  flex-direction: column;\n  flex-wrap: nowrap;\n  gap: 10px;\n  box-sizing: border-box;\n  width: -webkit-fill-available;\n}\n.chatBubble {\n  padding: 10px 15px 10px 15px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 15px 0px 15px 15px;\n  background: $light-blue-background;\n  box-shadow: $messenge-shadow-box-shadow;\n}\n\n.chatBubble {\n  padding: 10px 15px 10px 15px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 15px 0px 15px 15px;\n  background: $light-blue-background;\n  box-shadow: $messenge-shadow-box-shadow;\n}\n\n.chatBubble {\n  padding: 10px 15px 10px 15px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 15px 0px 15px 15px;\n  background: $light-blue-background;\n  box-shadow: $messenge-shadow-box-shadow;\n}\n\n.chatBubble {\n  padding: 10px 15px 10px 15px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 0px 15px 15px 15px;\n  background: $bot-background;\n  box-shadow: $messenge-shadow-box-shadow;\n}\n\n.frame179 {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  flex-wrap: nowrap;\n  align-items: flex-start;\n  gap: 10px;\n  box-sizing: border-box;\n  width: -webkit-fill-available;\n}\n.chatBubble {\n  padding: 10px 15px 10px 15px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 0px 15px 15px 15px;\n  box-shadow: $messenge-shadow-box-shadow;\n}\n\n.chatBubble_wightNormalTypeBot {\n  background: $bot-background;\n}\n\n.chatBubble_wightNormalTypePhoneCall {\n  background: $for-strokes-background;\n}\n\n.frame180 {\n  display: flex;\n  flex-direction: column;\n  justify-content: flex-start;\n  flex-wrap: nowrap;\n  align-items: flex-end;\n  gap: 10px;\n  box-sizing: border-box;\n  width: -webkit-fill-available;\n}\n.chatBubble {\n  padding: 10px 15px 10px 15px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 15px 0px 15px 15px;\n  background: #f2f9ff;\n  box-shadow: $messenge-shadow-box-shadow;\n}\n\n.frame181 {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  flex-wrap: nowrap;\n  align-items: flex-start;\n  gap: 10px;\n  box-sizing: border-box;\n  width: -webkit-fill-available;\n}\n.chatBubble {\n  padding: 10px 15px 10px 15px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 0px 15px 15px 15px;\n  background: $for-strokes-background;\n  box-shadow: $messenge-shadow-box-shadow;\n}\n\n.frame182 {\n  display: flex;\n  flex-direction: column;\n  justify-content: flex-start;\n  flex-wrap: nowrap;\n  align-items: flex-end;\n  gap: 10px;\n  box-sizing: border-box;\n  width: -webkit-fill-available;\n}\n.chatBubble {\n  padding: 10px 15px 10px 15px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 15px 0px 15px 15px;\n  background: #f2f9ff;\n  box-shadow: $messenge-shadow-box-shadow;\n}\n\n.chatBubble {\n  padding: 20px 15px 20px 15px;\n  display: flex;\n  box-sizing: border-box;\n  border-radius: 15px;\n  background: $light-yellow-background;\n  width: 494px;\n  box-shadow: $messenge-shadow-box-shadow;\n}\n",
                     "styleUrl": "./chat-md.component.scss"
                 }
             ],
@@ -24403,47 +24403,6 @@
         {
             "name": "IconLarge13MdComponent",
             "id": "component-IconLarge13MdComponent-96bf6975d8976a2f153233e42d227a8ef396bd19466c6ee03de07ad645999e19355a2a449f89d8831b370905d01c35cc2a4e4494167f683dd24175457a5d439a",
-            "file": "src/stories/main-desk/icon-large-13/icon-large13-md.component.ts",
-            "changeDetection": "ChangeDetectionStrategy.OnPush",
-            "encapsulation": [],
-            "entryComponents": [],
-            "inputs": [],
-            "outputs": [],
-            "providers": [],
-            "selector": "app-icon-large-13",
-            "styleUrls": [
-                "./icon-large13-md.component.scss"
-            ],
-            "styles": [],
-            "templateUrl": [
-                "./icon-large13-md.component.html"
-            ],
-            "viewProviders": [],
-            "inputsClass": [],
-            "outputsClass": [],
-            "propertiesClass": [],
-            "methodsClass": [],
-            "deprecated": false,
-            "deprecationMessage": "",
-            "hostBindings": [],
-            "hostListeners": [],
-            "description": "",
-            "rawdescription": "\n",
-            "type": "component",
-            "sourceCode": "import { ChangeDetectionStrategy, Component, Input } from \"@angular/core\";\n@Component({\n  selector: \"app-icon-large-13\",\n  templateUrl: \"./icon-large13-md.component.html\",\n  styleUrls: [\"./icon-large13-md.component.scss\"],\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class IconLarge13MdComponent {}\n",
-            "assetsDirs": [],
-            "styleUrlsData": [
-                {
-                    "data": "@import \"../tokens.scss\";\n\n.icon---large---13_27-5914 {\n  position: relative;\n  box-sizing: border-box;\n}\n.eos-attach-file-filled_27-5909 {\n  top: 0px;\n  left: 0px;\n  position: absolute;\n  display: flex;\n  box-sizing: border-box;\n  overflow: hidden;\n  display: flex;\n}\n.vector_27-5912 {\n  top: 7px;\n  left: 11px;\n  position: absolute;\n  display: flex;\n  display: flex;\n}\n\n.vector_27-5913 {\n  top: 7px;\n  left: 2px;\n  position: absolute;\n  display: flex;\n  display: flex;\n}\n",
-                    "styleUrl": "./icon-large13-md.component.scss"
-                }
-            ],
-            "stylesData": "",
-            "templateData": "<div class=\"icon---large---13_27-5914\">\n  <div class=\"eos-attach-file-filled_27-5909\">\n    <svg\n      width=\"24\"\n      height=\"23\"\n      viewBox=\"0 0 24 23\"\n      fill=\"none\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n    >\n      <path\n        d=\"M14.695 13.676L12.3522 11.3332L11.5713 12.1141L14.695 15.2378L21.3887 8.54412L20.6078 7.76318L14.695 13.676Z\"\n        fill=\"black\"\n      />\n      <path\n        d=\"M5.95479 13.676L3.61199 11.3332L2.83105 12.1141L5.95479 15.2378L12.6485 8.54412L11.8676 7.76318L5.95479 13.676Z\"\n        fill=\"black\"\n      />\n    </svg>\n  </div>\n</div>\n"
-        },
-        {
-            "name": "IconLarge13MdComponent",
-            "id": "component-IconLarge13MdComponent-96bf6975d8976a2f153233e42d227a8ef396bd19466c6ee03de07ad645999e19355a2a449f89d8831b370905d01c35cc2a4e4494167f683dd24175457a5d439a-1",
             "file": "src/stories/icons/icon-large-13/icon-large13-md.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [],
@@ -24476,6 +24435,47 @@
             "styleUrlsData": [
                 {
                     "data": "@import \"../../assets/scss/tokens\";\n\n.icon---large---13_27-5914 {\n  position: relative;\n  box-sizing: border-box;\n}\n.eos-attach-file-filled_27-5909 {\n  top: 0px;\n  left: 0px;\n  position: absolute;\n  display: flex;\n  box-sizing: border-box;\n  overflow: hidden;\n  display: flex;\n}\n.vector_27-5912 {\n  top: 7px;\n  left: 11px;\n  position: absolute;\n  display: flex;\n  display: flex;\n}\n\n.vector_27-5913 {\n  top: 7px;\n  left: 2px;\n  position: absolute;\n  display: flex;\n  display: flex;\n}\n",
+                    "styleUrl": "./icon-large13-md.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<div class=\"icon---large---13_27-5914\">\n  <div class=\"eos-attach-file-filled_27-5909\">\n    <svg\n      width=\"24\"\n      height=\"23\"\n      viewBox=\"0 0 24 23\"\n      fill=\"none\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n    >\n      <path\n        d=\"M14.695 13.676L12.3522 11.3332L11.5713 12.1141L14.695 15.2378L21.3887 8.54412L20.6078 7.76318L14.695 13.676Z\"\n        fill=\"black\"\n      />\n      <path\n        d=\"M5.95479 13.676L3.61199 11.3332L2.83105 12.1141L5.95479 15.2378L12.6485 8.54412L11.8676 7.76318L5.95479 13.676Z\"\n        fill=\"black\"\n      />\n    </svg>\n  </div>\n</div>\n"
+        },
+        {
+            "name": "IconLarge13MdComponent",
+            "id": "component-IconLarge13MdComponent-96bf6975d8976a2f153233e42d227a8ef396bd19466c6ee03de07ad645999e19355a2a449f89d8831b370905d01c35cc2a4e4494167f683dd24175457a5d439a-1",
+            "file": "src/stories/main-desk/icon-large-13/icon-large13-md.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-icon-large-13",
+            "styleUrls": [
+                "./icon-large13-md.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./icon-large13-md.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { ChangeDetectionStrategy, Component, Input } from \"@angular/core\";\n@Component({\n  selector: \"app-icon-large-13\",\n  templateUrl: \"./icon-large13-md.component.html\",\n  styleUrls: [\"./icon-large13-md.component.scss\"],\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class IconLarge13MdComponent {}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@import \"../tokens.scss\";\n\n.icon---large---13_27-5914 {\n  position: relative;\n  box-sizing: border-box;\n}\n.eos-attach-file-filled_27-5909 {\n  top: 0px;\n  left: 0px;\n  position: absolute;\n  display: flex;\n  box-sizing: border-box;\n  overflow: hidden;\n  display: flex;\n}\n.vector_27-5912 {\n  top: 7px;\n  left: 11px;\n  position: absolute;\n  display: flex;\n  display: flex;\n}\n\n.vector_27-5913 {\n  top: 7px;\n  left: 2px;\n  position: absolute;\n  display: flex;\n  display: flex;\n}\n",
                     "styleUrl": "./icon-large13-md.component.scss"
                 }
             ],
@@ -24825,47 +24825,6 @@
         {
             "name": "IconLarge4MdComponent",
             "id": "component-IconLarge4MdComponent-09e52a4b423644a5d30d9ec49fe66ab6f1c026442eeea198c6ded0e1ac995342ff6f9e28c76d5f4222e6a1d37e0deb8b206292d41272f395ce97786d0ceb5566",
-            "file": "src/stories/icons/icon-large-4/icon-large4-md.component.ts",
-            "changeDetection": "ChangeDetectionStrategy.OnPush",
-            "encapsulation": [],
-            "entryComponents": [],
-            "inputs": [],
-            "outputs": [],
-            "providers": [],
-            "selector": "app-icon-large-4",
-            "styleUrls": [
-                "./icon-large4-md.component.scss"
-            ],
-            "styles": [],
-            "templateUrl": [
-                "./icon-large4-md.component.html"
-            ],
-            "viewProviders": [],
-            "inputsClass": [],
-            "outputsClass": [],
-            "propertiesClass": [],
-            "methodsClass": [],
-            "deprecated": false,
-            "deprecationMessage": "",
-            "hostBindings": [],
-            "hostListeners": [],
-            "description": "",
-            "rawdescription": "\n",
-            "type": "component",
-            "sourceCode": "import { ChangeDetectionStrategy, Component, Input } from \"@angular/core\";\n@Component({\n  selector: \"app-icon-large-4\",\n  templateUrl: \"./icon-large4-md.component.html\",\n  styleUrls: [\"./icon-large4-md.component.scss\"],\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class IconLarge4MdComponent {}\n",
-            "assetsDirs": [],
-            "styleUrlsData": [
-                {
-                    "data": "@import \"../../assets/scss/tokens\";\n\n.icon---large---4_10-3782 {\n  position: relative;\n  box-sizing: border-box;\n}\n.eos-attach-file-filled_10-3765 {\n  top: 0px;\n  left: 0px;\n  position: absolute;\n  display: flex;\n  box-sizing: border-box;\n  overflow: hidden;\n  display: flex;\n}\n.x---_1088-26440 {\n  top: 4px;\n  left: 19px;\n  position: absolute;\n  display: flex;\n  display: flex;\n}\n",
-                    "styleUrl": "./icon-large4-md.component.scss"
-                }
-            ],
-            "stylesData": "",
-            "templateData": "<div class=\"icon---large---4_10-3782\">\n  <div class=\"eos-attach-file-filled_10-3765\">\n    <svg\n      width=\"23\"\n      height=\"23\"\n      viewBox=\"0 0 23 23\"\n      fill=\"none\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n    >\n      <path\n        d=\"M13.0105 9.88796C11.5249 8.4024 9.14441 8.35739 7.60467 9.75291L7.46284 9.88796L5.2438 12.107C3.7118 13.6389 3.7118 16.1227 5.2438 17.6546C6.7293 19.1402 9.10981 19.1852 10.6496 17.7896L10.7914 17.6546L12.4557 15.9903C12.7621 15.6839 12.7621 15.1872 12.4557 14.8808C12.1729 14.598 11.7279 14.5762 11.4201 14.8155L11.3461 14.8808L9.68187 16.5451C8.76269 17.4642 7.27242 17.4642 6.35332 16.5451C5.4709 15.6627 5.4356 14.254 6.24743 13.3295L6.35332 13.2165L8.57235 10.9975C9.49154 10.0783 10.9817 10.0783 11.9008 10.9975C12.2073 11.3038 12.704 11.3038 13.0104 10.9975C13.3168 10.6911 13.3168 10.1943 13.0105 9.88796ZM18.0034 4.89505C16.5179 3.40953 14.1373 3.36452 12.5976 4.76L12.4557 4.89505L10.7915 6.55934C10.4851 6.86572 10.4851 7.36248 10.7915 7.66887C11.0743 7.95169 11.5193 7.97345 11.8271 7.73414L11.901 7.66887L13.5653 6.00457C14.4844 5.08541 15.9747 5.08541 16.8939 6.00457C17.7763 6.88697 17.8116 8.29569 16.9998 9.22019L16.8939 9.33316L14.6748 11.5522C13.7556 12.4714 12.2653 12.4713 11.3462 11.5522C11.0399 11.2458 10.5431 11.2458 10.2367 11.5522C9.93026 11.8586 9.93034 12.3554 10.2367 12.6618C11.7222 14.1473 14.1027 14.1923 15.6425 12.7968L15.7843 12.6618L18.0034 10.4427C19.5353 8.91075 19.5353 6.42699 18.0034 4.89505Z\"\n        fill=\"black\"\n      />\n    </svg>\n  </div>\n</div>\n"
-        },
-        {
-            "name": "IconLarge4MdComponent",
-            "id": "component-IconLarge4MdComponent-09e52a4b423644a5d30d9ec49fe66ab6f1c026442eeea198c6ded0e1ac995342ff6f9e28c76d5f4222e6a1d37e0deb8b206292d41272f395ce97786d0ceb5566-1",
             "file": "src/stories/main-desk/icon-large-4/icon-large4-md.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [],
@@ -24898,6 +24857,47 @@
             "styleUrlsData": [
                 {
                     "data": "@import \"../tokens.scss\";\n\n.icon---large---4_10-3782 {\n  position: relative;\n  box-sizing: border-box;\n}\n.eos-attach-file-filled_10-3765 {\n  top: 0px;\n  left: 0px;\n  position: absolute;\n  display: flex;\n  box-sizing: border-box;\n  overflow: hidden;\n  display: flex;\n}\n.x---_1088-26440 {\n  top: 4px;\n  left: 19px;\n  position: absolute;\n  display: flex;\n  display: flex;\n}\n",
+                    "styleUrl": "./icon-large4-md.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<div class=\"icon---large---4_10-3782\">\n  <div class=\"eos-attach-file-filled_10-3765\">\n    <svg\n      width=\"23\"\n      height=\"23\"\n      viewBox=\"0 0 23 23\"\n      fill=\"none\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n    >\n      <path\n        d=\"M13.0105 9.88796C11.5249 8.4024 9.14441 8.35739 7.60467 9.75291L7.46284 9.88796L5.2438 12.107C3.7118 13.6389 3.7118 16.1227 5.2438 17.6546C6.7293 19.1402 9.10981 19.1852 10.6496 17.7896L10.7914 17.6546L12.4557 15.9903C12.7621 15.6839 12.7621 15.1872 12.4557 14.8808C12.1729 14.598 11.7279 14.5762 11.4201 14.8155L11.3461 14.8808L9.68187 16.5451C8.76269 17.4642 7.27242 17.4642 6.35332 16.5451C5.4709 15.6627 5.4356 14.254 6.24743 13.3295L6.35332 13.2165L8.57235 10.9975C9.49154 10.0783 10.9817 10.0783 11.9008 10.9975C12.2073 11.3038 12.704 11.3038 13.0104 10.9975C13.3168 10.6911 13.3168 10.1943 13.0105 9.88796ZM18.0034 4.89505C16.5179 3.40953 14.1373 3.36452 12.5976 4.76L12.4557 4.89505L10.7915 6.55934C10.4851 6.86572 10.4851 7.36248 10.7915 7.66887C11.0743 7.95169 11.5193 7.97345 11.8271 7.73414L11.901 7.66887L13.5653 6.00457C14.4844 5.08541 15.9747 5.08541 16.8939 6.00457C17.7763 6.88697 17.8116 8.29569 16.9998 9.22019L16.8939 9.33316L14.6748 11.5522C13.7556 12.4714 12.2653 12.4713 11.3462 11.5522C11.0399 11.2458 10.5431 11.2458 10.2367 11.5522C9.93026 11.8586 9.93034 12.3554 10.2367 12.6618C11.7222 14.1473 14.1027 14.1923 15.6425 12.7968L15.7843 12.6618L18.0034 10.4427C19.5353 8.91075 19.5353 6.42699 18.0034 4.89505Z\"\n        fill=\"black\"\n      />\n    </svg>\n  </div>\n</div>\n"
+        },
+        {
+            "name": "IconLarge4MdComponent",
+            "id": "component-IconLarge4MdComponent-09e52a4b423644a5d30d9ec49fe66ab6f1c026442eeea198c6ded0e1ac995342ff6f9e28c76d5f4222e6a1d37e0deb8b206292d41272f395ce97786d0ceb5566-1",
+            "file": "src/stories/icons/icon-large-4/icon-large4-md.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-icon-large-4",
+            "styleUrls": [
+                "./icon-large4-md.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./icon-large4-md.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { ChangeDetectionStrategy, Component, Input } from \"@angular/core\";\n@Component({\n  selector: \"app-icon-large-4\",\n  templateUrl: \"./icon-large4-md.component.html\",\n  styleUrls: [\"./icon-large4-md.component.scss\"],\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class IconLarge4MdComponent {}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@import \"../../assets/scss/tokens\";\n\n.icon---large---4_10-3782 {\n  position: relative;\n  box-sizing: border-box;\n}\n.eos-attach-file-filled_10-3765 {\n  top: 0px;\n  left: 0px;\n  position: absolute;\n  display: flex;\n  box-sizing: border-box;\n  overflow: hidden;\n  display: flex;\n}\n.x---_1088-26440 {\n  top: 4px;\n  left: 19px;\n  position: absolute;\n  display: flex;\n  display: flex;\n}\n",
                     "styleUrl": "./icon-large4-md.component.scss"
                 }
             ],
@@ -26732,7 +26732,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "@import \"tokens\";\n\n.chatcolum_1110-41539 {\n  display: flex;\n  flex-direction: column;\n  justify-content: flex-start;\n  flex-wrap: nowrap;\n  align-items: flex-end;\n  gap: 0px;\n  box-sizing: border-box;\n  width: 100%;\n  height: 100%;\n  box-shadow: $new-shadow-box-shadow;\n}\n.callbar_I1110-41539-844-131937 {\n  height: calc(100%*(60/960));\n  width: inherit;\n}\n\n.frame-463_I1110-41539-843-146789 {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  flex-wrap: nowrap;\n  align-items: flex-start;\n  gap: 10px;\n  box-sizing: border-box;\n  overflow: hidden;\n  height: calc(100%*(750/960));\n  width: -webkit-fill-available;\n}\n.chat_I1110-41539-844-131595 {\n  height: calc(100%*(106/960));\n  width: -webkit-fill-available;\n}\n\n.typingbar-reply_I1110-41539-844-131374 {\n  height: calc(100%*(150/960));\n  width: inherit;\n}\n",
+                    "data": "@import \"tokens\";\n\n.chatcolum_1110-41539 {\n  display: flex;\n  flex-direction: column;\n  justify-content: flex-start;\n  flex-wrap: nowrap;\n  align-items: flex-end;\n  gap: 0px;\n  box-sizing: border-box;\n  width: 100%;\n  height: 100%;\n  box-shadow: $new-shadow-box-shadow;\n}\n.callbar_I1110-41539-844-131937 {\n  height: calc(100%*(60/960));\n  width: inherit;\n}\n\n.frame-463_I1110-41539-843-146789 {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  flex-wrap: nowrap;\n  align-items: flex-start;\n  gap: 10px;\n  box-sizing: border-box;\n  overflow: hidden;\n  height: calc(100%*(750/960));\n  width: -webkit-fill-available;\n}\n.chat_I1110-41539-844-131595 {\n  height: calc(100%*(960/960));\n  width: -webkit-fill-available;\n}\n\n.typingbar-reply_I1110-41539-844-131374 {\n  height: calc(100%*(150/960));\n  width: inherit;\n}\n",
                     "styleUrl": "./main-desk.component.scss"
                 }
             ],
@@ -30489,7 +30489,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "@import \"../tokens.scss\";\n\n.typingbar-reply_844-127999 {\n  padding: 22px;\n  display: flex;\n  flex-direction: column;\n  justify-content: flex-end;\n  flex-wrap: nowrap;\n  align-items: flex-end;\n  gap: 8px;\n  box-sizing: border-box;\n  border-radius: 0px 0px 20px 20px;\n  border-color: $for-strokes-color;\n  border-style: solid;\n  border-top-width: 1px;\n  background: $white-background;\n}\n.frame-550_1063-28862 {\n  width: 100%;\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-end;\n  flex-wrap: nowrap;\n  align-items: flex-end;\n  gap: 8px;\n  box-sizing: border-box;\n}\n.frame-551_1063-30434 {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  flex-wrap: nowrap;\n  align-items: flex-start;\n  gap: 8px;\n  box-sizing: border-box;\n  width: 67px;\n  height: 50px;\n}\n.button_1063-29899 {\n  height: 36px;\n}\n\n.frame-549_1063-28348 {\n  display: flex;\n  flex-direction: column;\n  justify-content: flex-start;\n  flex-wrap: nowrap;\n  align-items: flex-start;\n  gap: 8px;\n  box-sizing: border-box;\n  width: calc(100%*(675/750));\n}\n.frame-423_844-127180 {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  flex-wrap: nowrap;\n  align-items: center;\n  gap: 57px;\n  box-sizing: border-box;\n  width: -webkit-fill-available;\n}\n.frame-139_844-127191 {\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-start;\n  flex-wrap: nowrap;\n  align-items: center;\n  gap: 8px;\n  box-sizing: border-box;\n  height: 30px;\n}\n.button_844-127192 {\n  height: 27px;\n}\n\n.button_844-127193 {\n  height: 27px;\n}\n\n.frame-137_844-127181 {\n  padding: 100px 0px 100px 0px;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  flex-wrap: nowrap;\n  align-items: center;\n  gap: 20px;\n  box-sizing: border-box;\n  width: 199px;\n  height: 40px;\n}\n.side-menu-icon-large-38_1014-26333 {\n  position: relative;\n  width: 18px;\n  height: 18px;\n}\n\n.vector-20_844-127183 {\n  display: flex;\n}\n\n.frame-135_844-127184 {\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-end;\n  flex-wrap: nowrap;\n  align-items: center;\n  gap: 10px;\n  box-sizing: border-box;\n}\n.icon---large---10_844-127185 {\n  position: relative;\n  width: 22px;\n  height: 22px;\n}\n\n.icon---large---4_844-127189 {\n  position: relative;\n  width: 22px;\n  height: 22px;\n}\n\n.icon---large---7_844-127186 {\n  position: relative;\n  width: 22px;\n  height: 22px;\n}\n\n.icon---large---2_844-127187 {\n  position: relative;\n  width: 22px;\n  height: 22px;\n}\n\n.icon---large-t--5_844-127190 {\n  position: relative;\n  width: 22px;\n  height: 22px;\n}\n\n.frame-136_844-127195 {\n  width: -webkit-fill-available;\n}\n",
+                    "data": "@import \"../tokens.scss\";\n\n.typingbar-reply_844-127999 {\n  height: 100%;\n  padding: 1.375rem;\n  display: flex;\n  flex-direction: column;\n  justify-content: flex-end;\n  flex-wrap: nowrap;\n  align-items: flex-end;\n  gap: 8px;\n  box-sizing: border-box;\n  border-radius: 0px 0px 20px 20px;\n  border-color: $for-strokes-color;\n  border-style: solid;\n  border-top-width: 1px;\n  background: $white-background;\n}\n.frame-550_1063-28862 {\n  height: 100%;\n  width: 100%;\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-end;\n  flex-wrap: nowrap;\n  align-items: flex-end;\n  gap: 8px;\n  box-sizing: border-box;\n}\n.frame-551_1063-30434 {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  flex-wrap: nowrap;\n  align-items: flex-start;\n  gap: 8px;\n  box-sizing: border-box;\n  width: 67px;\n  height: 50px;\n}\n.button_1063-29899 {\n  height: 36px;\n}\n\n.frame-549_1063-28348 {\n  display: flex;\n  flex-direction: column;\n  justify-content: flex-start;\n  flex-wrap: nowrap;\n  align-items: flex-start;\n  gap: 8px;\n  box-sizing: border-box;\n  width: calc(100%*(675/750));\n}\n.frame-423_844-127180 {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  flex-wrap: nowrap;\n  align-items: center;\n  gap: 57px;\n  box-sizing: border-box;\n  width: -webkit-fill-available;\n}\n.frame-139_844-127191 {\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-start;\n  flex-wrap: nowrap;\n  align-items: center;\n  gap: 8px;\n  box-sizing: border-box;\n  height: 30px;\n}\n.button_844-127192 {\n  height: 27px;\n}\n\n.button_844-127193 {\n  height: 27px;\n}\n\n.frame-137_844-127181 {\n  padding: 6.25rem 0 6.25rem 0;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  flex-wrap: nowrap;\n  align-items: center;\n  gap: 20px;\n  box-sizing: border-box;\n  width: 199px;\n  height: 40px;\n}\n.side-menu-icon-large-38_1014-26333 {\n  position: relative;\n  width: 18px;\n  height: 18px;\n}\n\n.vector-20_844-127183 {\n  display: flex;\n}\n\n.frame-135_844-127184 {\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-end;\n  flex-wrap: nowrap;\n  align-items: center;\n  gap: 10px;\n  box-sizing: border-box;\n}\n.icon---large---10_844-127185 {\n  position: relative;\n  width: 22px;\n  height: 22px;\n}\n\n.icon---large---4_844-127189 {\n  position: relative;\n  width: 22px;\n  height: 22px;\n}\n\n.icon---large---7_844-127186 {\n  position: relative;\n  width: 22px;\n  height: 22px;\n}\n\n.icon---large---2_844-127187 {\n  position: relative;\n  width: 22px;\n  height: 22px;\n}\n\n.icon---large-t--5_844-127190 {\n  position: relative;\n  width: 22px;\n  height: 22px;\n}\n\n.frame-136_844-127195 {\n  width: -webkit-fill-available;\n}\n",
                     "styleUrl": "./typing-bar-reply.component.scss"
                 }
             ],
@@ -31384,6 +31384,26 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/stories/actions/action-avatar/action-avatar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template2.bind({})"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/actions/action-windows-menu/action-windows-menu.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template2.bind({})"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/stories/directive/bubble-avatar/popover.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -31419,26 +31439,6 @@
                 "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/actions/action-avatar/action-avatar.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template2.bind({})"
-            },
-            {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/actions/action-windows-menu/action-windows-menu.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template2.bind({})"
             },
             {
                 "name": "eDenyCauseStr",
@@ -31874,7 +31874,7 @@
                 "name": "LoggedIn",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/pages/background1/background1.stories.ts",
+                "file": "src/stories/pages/chat/chat.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -31884,7 +31884,7 @@
                 "name": "LoggedIn",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/pages/chat/chat.stories.ts",
+                "file": "src/stories/pages/background1/background1.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -31924,7 +31924,7 @@
                 "name": "LoggedOut",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/pages/background1/background1.stories.ts",
+                "file": "src/stories/pages/chat/chat.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -31934,7 +31934,7 @@
                 "name": "LoggedOut",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/pages/chat/chat.stories.ts",
+                "file": "src/stories/pages/background1/background1.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -32043,7 +32043,7 @@
                 "name": "Primary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/pages/background1/background1.stories.ts",
+                "file": "src/stories/pages/chat/chat.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -32053,7 +32053,7 @@
                 "name": "Primary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/pages/chat/chat.stories.ts",
+                "file": "src/stories/pages/background1/background1.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -32132,7 +32132,7 @@
                 "name": "Secondary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/pages/background1/background1.stories.ts",
+                "file": "src/stories/pages/chat/chat.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -32142,7 +32142,7 @@
                 "name": "Secondary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/pages/chat/chat.stories.ts",
+                "file": "src/stories/pages/background1/background1.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -32311,46 +32311,6 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/directive/bubble-avatar/popover.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<PopoverDirective>",
-                "defaultValue": "(args) => ({\r\n  props: args,\r\n  moduleMetadata: { // (3) don't forget it\r\n    declarations: [PopoverDirective, ActionAvatarComponent, BubbleAvatarComponent],\r\n    imports: [CommonModule, FormsModule, ReactiveFormsModule]\r\n  },\r\n  template: `<button [twPopover] = \"mPopover\" > BubbleAvatarDirective Example </button>`\r\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/directive/bubble-windows-menu/menu-popover.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<MenuPopoverDirective>",
-                "defaultValue": "(args) => ({\r\n  props: args,\r\n  moduleMetadata: { // (3) don't forget it\r\n    declarations: [MenuPopoverDirective, ActionAvatarComponent, BubbleWindowsMenuComponent],\r\n    imports: [CommonModule, FormsModule, ReactiveFormsModule]\r\n  },\r\n  template: `<button [menuPopover] = \"mPopover\" > BubbleWindowsMenuComponent Example </button>`\r\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/directive/custom-directive/Highlight.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<HighlightDirective>",
-                "defaultValue": "(args) => ({\r\n  props: args,\r\n  moduleMetadata: { // (3) don't forget it\r\n    declarations: [HighlightDirective],\r\n    imports: [CommonModule]\r\n  },\r\n  template: `<button highlight=\"blue\" colorName=\"blue\" > Highlight Button Example </button>`\r\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/directive/mdb-dropdown-copy/popover-mdb-dropdown.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<PopoverMdbDropdownDirective>",
-                "defaultValue": "(args) => ({\r\n  props: args,\r\n  moduleMetadata: { // (3) don't forget it\r\n    declarations: [PopoverMdbDropdownDirective],\r\n    imports: [CommonModule, FormsModule, ReactiveFormsModule]\r\n  },\r\n  template: `<button [twPopover] = \"mPopover\" > BubbleAvatarDirective Example </button>`\r\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/stories/actions/action-avatar/action-avatar.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -32391,11 +32351,41 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/icons/icon-large-1/icon-large1-md.stories.ts",
+                "file": "src/stories/directive/bubble-avatar/popover.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<IconLarge1MdComponent>",
-                "defaultValue": "(args: IconLarge1MdComponent) => ({\n  props: args,\n})"
+                "type": "Story<PopoverDirective>",
+                "defaultValue": "(args) => ({\r\n  props: args,\r\n  moduleMetadata: { // (3) don't forget it\r\n    declarations: [PopoverDirective, ActionAvatarComponent, BubbleAvatarComponent],\r\n    imports: [CommonModule, FormsModule, ReactiveFormsModule]\r\n  },\r\n  template: `<button [twPopover] = \"mPopover\" > BubbleAvatarDirective Example </button>`\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/directive/bubble-windows-menu/menu-popover.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<MenuPopoverDirective>",
+                "defaultValue": "(args) => ({\r\n  props: args,\r\n  moduleMetadata: { // (3) don't forget it\r\n    declarations: [MenuPopoverDirective, ActionAvatarComponent, BubbleWindowsMenuComponent],\r\n    imports: [CommonModule, FormsModule, ReactiveFormsModule]\r\n  },\r\n  template: `<button [menuPopover] = \"mPopover\" > BubbleWindowsMenuComponent Example </button>`\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/directive/custom-directive/Highlight.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<HighlightDirective>",
+                "defaultValue": "(args) => ({\r\n  props: args,\r\n  moduleMetadata: { // (3) don't forget it\r\n    declarations: [HighlightDirective],\r\n    imports: [CommonModule]\r\n  },\r\n  template: `<button highlight=\"blue\" colorName=\"blue\" > Highlight Button Example </button>`\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/directive/mdb-dropdown-copy/popover-mdb-dropdown.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<PopoverMdbDropdownDirective>",
+                "defaultValue": "(args) => ({\r\n  props: args,\r\n  moduleMetadata: { // (3) don't forget it\r\n    declarations: [PopoverMdbDropdownDirective],\r\n    imports: [CommonModule, FormsModule, ReactiveFormsModule]\r\n  },\r\n  template: `<button [twPopover] = \"mPopover\" > BubbleAvatarDirective Example </button>`\r\n})"
             },
             {
                 "name": "Template",
@@ -32406,6 +32396,16 @@
                 "deprecationMessage": "",
                 "type": "Story<Frame136Component>",
                 "defaultValue": "(args: Frame136Component) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/icons/icon-large-1/icon-large1-md.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<IconLarge1MdComponent>",
+                "defaultValue": "(args: IconLarge1MdComponent) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -32431,6 +32431,16 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/stories/icons/icon-large-13/icon-large13-md.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<IconLarge13MdComponent>",
+                "defaultValue": "(args: IconLarge13MdComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/stories/icons/icon-large-2/icon-large2-md.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -32451,16 +32461,6 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/icons/icon-large-4/icon-large4-md.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<IconLarge4MdComponent>",
-                "defaultValue": "(args: IconLarge4MdComponent) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/stories/icons/icon-large-7/icon-large7-md.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -32471,21 +32471,21 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/icons/icon-large-t-5/icon-large-t5-md.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<IconLargeT5MdComponent>",
-                "defaultValue": "(args: IconLargeT5MdComponent) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/stories/icons/icon-large-9/icon-large9-md.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<IconLarge9MdComponent>",
                 "defaultValue": "(args: IconLarge9MdComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/icons/icon-large-t-5/icon-large-t5-md.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<IconLargeT5MdComponent>",
+                "defaultValue": "(args: IconLargeT5MdComponent) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -32511,21 +32511,21 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/icons/icon-page-7/icon-page7-md.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<IconPage7MdComponent>",
-                "defaultValue": "(args: IconPage7MdComponent) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/stories/icons/icon-small-16/icon-small16-md.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<IconSmall16MdComponent>",
                 "defaultValue": "(args: IconSmall16MdComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/icons/icon-page-7/icon-page7-md.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<IconPage7MdComponent>",
+                "defaultValue": "(args: IconPage7MdComponent) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -32581,21 +32581,21 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/main-desk/chat/chat-md.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<ChatMdComponent>",
-                "defaultValue": "(args: ChatMdComponent) => ({\n  props: {\n    ...args,\n  },\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/stories/main-desk/call-bar/call-bar.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<CallBarComponent>",
                 "defaultValue": "(args: CallBarComponent) => ({\n  props: {\n    ...args,\n  },\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/main-desk/chat/chat-md.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ChatMdComponent>",
+                "defaultValue": "(args: ChatMdComponent) => ({\n  props: {\n    ...args,\n  },\n})"
             },
             {
                 "name": "Template",
@@ -32631,26 +32631,6 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/icons/icon-large-13/icon-large13-md.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<IconLarge13MdComponent>",
-                "defaultValue": "(args: IconLarge13MdComponent) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/main-desk/status-label/status-label.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<StatusLabelComponent>",
-                "defaultValue": "(args: StatusLabelComponent) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/stories/main-desk/system-messenge/system-messenge.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -32671,11 +32651,11 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/pages/background1/background1.stories.ts",
+                "file": "src/stories/main-desk/status-label/status-label.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<Background1Component>",
-                "defaultValue": "(args: Background1Component) => ({\n  props: args,\n})"
+                "type": "Story<StatusLabelComponent>",
+                "defaultValue": "(args: StatusLabelComponent) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -32691,11 +32671,31 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/stories/pages/background1/background1.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<Background1Component>",
+                "defaultValue": "(args: Background1Component) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/stories/main-desk/typing-bar-reply/typing-bar-reply.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<TypingBarReplyComponent>",
                 "defaultValue": "(args: TypingBarReplyComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/icons/icon-large-4/icon-large4-md.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<IconLarge4MdComponent>",
+                "defaultValue": "(args: IconLarge4MdComponent) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -32711,11 +32711,11 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/top-bar/icon-large-17/icon-large-17.stories.ts",
+                "file": "src/stories/top-bar/icon-large-30/icon-large-30.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<IconLarge17Component>",
-                "defaultValue": "(args: IconLarge17Component) => ({\n  props: args,\n})"
+                "type": "Story<IconLarge30Component>",
+                "defaultValue": "(args: IconLarge30Component) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -32731,21 +32731,21 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/top-bar/icon-small-10/icon-small-10.stories.ts",
+                "file": "src/stories/top-bar/icon-large-17/icon-large-17.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<IconSmall10Component>",
-                "defaultValue": "(args: IconSmall10Component) => ({\n  props: args,\n})"
+                "type": "Story<IconLarge17Component>",
+                "defaultValue": "(args: IconLarge17Component) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/top-bar/icon-large-30/icon-large-30.stories.ts",
+                "file": "src/stories/top-bar/icon-small-10/icon-small-10.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<IconLarge30Component>",
-                "defaultValue": "(args: IconLarge30Component) => ({\n  props: args,\n})"
+                "type": "Story<IconSmall10Component>",
+                "defaultValue": "(args: IconSmall10Component) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -35271,6 +35271,70 @@
                     "defaultValue": "(args: ChatMdComponent) => ({\n  props: {\n    ...args,\n  },\n})"
                 }
             ],
+            "src/stories/actions/action-avatar/action-avatar.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/actions/action-avatar/action-avatar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template2.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/actions/action-avatar/action-avatar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ActionAvatarComponent>",
+                    "defaultValue": "(args: ActionAvatarComponent) => ({\n  props: args,\n})"
+                },
+                {
+                    "name": "Template2",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/actions/action-avatar/action-avatar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ActionAvatarComponent>",
+                    "defaultValue": "(args: ActionAvatarComponent) => ({\n  props: args,\n  /*template: '<storybook-button-tadiran ></storybook-button-tadiran>',*/\n\n})"
+                }
+            ],
+            "src/stories/actions/action-windows-menu/action-windows-menu.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/actions/action-windows-menu/action-windows-menu.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template2.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/actions/action-windows-menu/action-windows-menu.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ActionWindowsMenuComponent>",
+                    "defaultValue": "(args: ActionWindowsMenuComponent) => ({\n  props: args,\n})"
+                },
+                {
+                    "name": "Template2",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/actions/action-windows-menu/action-windows-menu.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ActionWindowsMenuComponent>",
+                    "defaultValue": "(args: ActionWindowsMenuComponent) => ({\n  props: args,\n  /*template: '<storybook-button-tadiran ></storybook-button-tadiran>',*/\n\n})"
+                }
+            ],
             "src/stories/directive/bubble-avatar/popover.stories.ts": [
                 {
                     "name": "Default",
@@ -35387,70 +35451,6 @@
                     "deprecationMessage": "",
                     "type": "Story<PopoverMdbDropdownDirective>",
                     "defaultValue": "(args) => ({\r\n  props: args,\r\n  moduleMetadata: { // (3) don't forget it\r\n    declarations: [PopoverMdbDropdownDirective],\r\n    imports: [CommonModule, FormsModule, ReactiveFormsModule]\r\n  },\r\n  template: `<button [twPopover] = \"mPopover\" > BubbleAvatarDirective Example </button>`\r\n})"
-                }
-            ],
-            "src/stories/actions/action-avatar/action-avatar.stories.ts": [
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/actions/action-avatar/action-avatar.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template2.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/actions/action-avatar/action-avatar.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<ActionAvatarComponent>",
-                    "defaultValue": "(args: ActionAvatarComponent) => ({\n  props: args,\n})"
-                },
-                {
-                    "name": "Template2",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/actions/action-avatar/action-avatar.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<ActionAvatarComponent>",
-                    "defaultValue": "(args: ActionAvatarComponent) => ({\n  props: args,\n  /*template: '<storybook-button-tadiran ></storybook-button-tadiran>',*/\n\n})"
-                }
-            ],
-            "src/stories/actions/action-windows-menu/action-windows-menu.stories.ts": [
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/actions/action-windows-menu/action-windows-menu.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template2.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/actions/action-windows-menu/action-windows-menu.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<ActionWindowsMenuComponent>",
-                    "defaultValue": "(args: ActionWindowsMenuComponent) => ({\n  props: args,\n})"
-                },
-                {
-                    "name": "Template2",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/actions/action-windows-menu/action-windows-menu.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<ActionWindowsMenuComponent>",
-                    "defaultValue": "(args: ActionWindowsMenuComponent) => ({\n  props: args,\n  /*template: '<storybook-button-tadiran ></storybook-button-tadiran>',*/\n\n})"
                 }
             ],
             "src/app/AccAgent/acc-agent.service.ts": [
@@ -36383,58 +36383,6 @@
                     "defaultValue": "(args: Page) => ({\n  props: args,\n})"
                 }
             ],
-            "src/stories/pages/background1/background1.stories.ts": [
-                {
-                    "name": "LoggedIn",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/pages/background1/background1.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "LoggedOut",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/pages/background1/background1.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Primary",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/pages/background1/background1.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Secondary",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/pages/background1/background1.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/pages/background1/background1.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<Background1Component>",
-                    "defaultValue": "(args: Background1Component) => ({\n  props: args,\n})"
-                }
-            ],
             "src/stories/pages/chat/chat.stories.ts": [
                 {
                     "name": "LoggedIn",
@@ -36495,6 +36443,58 @@
                     "deprecationMessage": "",
                     "type": "Story<ChatComponent>",
                     "defaultValue": "(args: ChatComponent) => ({\n  props: args,\n})"
+                }
+            ],
+            "src/stories/pages/background1/background1.stories.ts": [
+                {
+                    "name": "LoggedIn",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/pages/background1/background1.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "LoggedOut",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/pages/background1/background1.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/pages/background1/background1.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Secondary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/pages/background1/background1.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/pages/background1/background1.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<Background1Component>",
+                    "defaultValue": "(args: Background1Component) => ({\n  props: args,\n})"
                 }
             ],
             "src/stories/main-desk/main-desk.stories.ts": [

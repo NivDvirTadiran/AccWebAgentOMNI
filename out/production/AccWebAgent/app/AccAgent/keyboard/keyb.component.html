@@ -1,0 +1,10 @@
+    <input #numpadId
+           matInput
+           height="30px" style="background-color: white;text-decoration: underline;"
+           placeholder="Dial number" 
+           [matKeyboard]="'numpad'" name="Numpad"
+           (focusout)="hideKeyb()"
+           (enterClick)="submitForm( numpadId.value)" 
+           (keyup.enter)="submitForm( numpadId.value)">
+
+        

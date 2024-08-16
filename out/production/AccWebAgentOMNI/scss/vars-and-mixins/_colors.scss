@@ -1,0 +1,36 @@
+$colors: (
+    transparent: transparent,
+    color1: #ffffff,                        // Buttons text/bg
+    color1-10: rgba(255,255,255,0.1),       // Sidebar sep
+    color1-70: rgba(255,255,255,0.7),       // Input bg
+    color2: #bd0926,                        // Text color, grid even rows
+    color3: #2d312d,                        // top menu bar
+    color4: #4d535c,                        // 
+    color5: #b1b4b6,                        // Modals header Text
+    color6: #eec1c9,                        // 
+    color7: #df6406,                        // Buttons text/border
+    color8: #34729b,                        // Errors
+    color9: #396faf,                        // Grid headers
+    color9-20: rgba(57, 111, 175, 0.2),     // Titles BG
+    color9-30: rgba(57, 111, 175, 0.3),     // Link tile border
+    color10: #000000,                       // Text color
+    color10-02: rgba(0, 0, 0, 0.02),        // Grid odd rows, disabled inputs, modals body bg, thumbnail bg
+    color10-05: rgba(0, 0, 0, 0.05),        // Grid hovered rows
+    color10-17: rgba(0, 0, 0, 0.17),        // Components border
+    color10-30: rgba(0, 0, 0, 0.3),         // Modals box shadow
+    color10-39: rgba(0, 0, 0, 0.39),        // Tooltip shadow
+    color10-50: rgba(0, 0, 0, 0.50),        // Placeholder
+    color11: #a8acb0,                       // Hint
+    color11-50: rgba(168, 172, 176, 0.5),   // Accordion open, Inputs border
+    color12: #e1e1e1,                       // bg-odd row
+    color13: #b64247,                       // Errors
+);
+
+@each $color in $colors {
+    .bg-#{"" + nth($color, 1)} {
+        background-color: nth($color, 2);
+    }
+     .font-#{"" + nth($color, 1)} {
+      color: nth($color, 2);
+     }
+}
