@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<body>
+     <!-- onload="myFunction()"> -->
+
+<!-- <p>Click the button to open a new browser window.</p> -->
+
+<script>
+var popupBlockerChecker = {
+    check: function(popup_window){
+        var scope = this;
+        if (popup_window) {
+            if(/chrome/.test(navigator.userAgent.toLowerCase())){
+                setTimeout(function () {
+                    scope.is_popup_blocked(scope, popup_window);
+                },200);
+            }else{
+                popup_window.onload = function () {
+                    scope.is_popup_blocked(scope, popup_window);
+                };
+            }
+        } else {
+            scope.displayError();
+        }
+    },
+    is_popup_blocked: function(scope, popup_window){
+        if ((popup_window.innerHeight > 0)==false){ 
+            scope.displayError();
+        }
+    },
+    displayError: function(){
+       alert("Popup Blocker is enabled! Please add this site to your exception list.");
+    }
+};	
+top = localStorage.getItem("AccWebAgentTop"); 
+left = localStorage.getItem("AccWebAgentLeft"); 
+// http://172.28.1.53:6969/AgentLogon    
+protocol = window.location.protocol;
+ip =window.location.hostname;
+port = window.location.port;
+path = window.location.pathname.split("/");
+newpath = path[0];
+localStorage.removeItem("AccWebAgentNo");
+localStorage.removeItem("AccWebAgentExt");
+localStorage.removeItem("AccWebAgentReload");
+params = (new URL(document.location.href)).searchParams;
+console.log("paramas: " + params);
+if (port != "6969" && path.length == 3)
+{
+	newpath =  path[1];
+	fullPath = protocol + "//" + ip + ":" + port + "/" + newpath + "/AgentLogon";
+}
+else
+{
+	fullPath = protocol + "//" + ip + ":" + port + "/" + newpath + "/AgentLogon";
+}
+crmmode =  params.get("crmmode");
+if (crmmode != null)
+{
+	fullPath += "?crmmode=" + crmmode;
+	console.log("full path: " + fullPath);
+
+}
+agentno = params.get("agentno");
+pwd = params.get("pwd");
+ext =  params.get("ext");
+var more = "";
+if (agentno != null)
+{
+    more = (crmmode != null) ? '&' : '?';
+    more+= 'agentno=' + agentno + "&pwd=" + pwd + "&ext=" + ext;
+    fullPath+= more;
+}
+//alert(fullPath);
+pos = "top=" + top + ", left=" + left +",width=250, height=" + (window.innerHeight).toString();
+var newWin = open(fullPath,"", pos);
+popupBlockerChecker.check(newWin);
+// if(!newWin || newWin.closed || typeof newWin.closed=='undefined') 
+// { 
+//   var s  = "ongratulations!\n It is a first time you'are trying to login to Aeonix Contact Center!\nFirst you need to allow PopUp windows in your browser for this site (on the right side) and reload the page." 	
+//    alert(s);
+//    newWin = open(fullPath,"", pos);
+// }
+// open("http://172.28.1.53:6969/AgentLogon","", "left=0,width=240, height=" +  window.screen.availHeight);
+  window.close();
+
+</script>
+
+</body>
+</html>

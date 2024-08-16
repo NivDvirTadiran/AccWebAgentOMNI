@@ -1,0 +1,2 @@
+/*! For license information please see jquery.canvasjs.js.LICENSE.txt */
+!function($,window,document,undefined){$.fn.CanvasJSChart=function(options){if(options){var $el=this.first(),container=this[0],chart=new CanvasJS.Chart(container,options);return $el.children(".canvasjs-chart-container").data("canvasjsChartRef",chart),chart.render(),this}return this.first().children(".canvasjs-chart-container").data("canvasjsChartRef")}}(jQuery,window,document);

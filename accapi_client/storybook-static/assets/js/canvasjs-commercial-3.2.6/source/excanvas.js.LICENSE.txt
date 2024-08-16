@@ -1,0 +1,6 @@
+/**
+* @preserve  excanvas is used to support IE678 which do not implement HTML5 Canvas Element. You can safely remove the following excanvas code if you don't need to support older browsers.
+*
+*  Copyright 2006 Google Inc. https://code.google.com/p/explorercanvas/
+*  Licensed under the Apache License, Version 2.0
+*/
