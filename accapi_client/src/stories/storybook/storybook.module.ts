@@ -94,7 +94,6 @@ import {IconPage7MdComponent} from "../icons/icon-page-7/icon-page7-md.component
 import {IconLarge2MdComponent} from "../icons/icon-large-2/icon-large2-md.component";
 import {SystemMessengeComponent} from "../main-desk/system-messenge/system-messenge.component";
 import {IconLarge13MdComponent} from "../icons/icon-large-13/icon-large13-md.component";
-import {ButtonsBoardComponent} from "../../app/AccAgent/acc-agent-page/buttons-board/buttons-board.component";
 import {IconSmallNoteComponent} from "../icons/icon-small-note/icon-small-note.component";
 
 
@@ -149,7 +148,7 @@ import {IconSmallNoteComponent} from "../icons/icon-small-note/icon-small-note.c
         ActionAvatarComponent, ActionWindowsMenuComponent,
         HighlightDirective,
         BubbleAvatarComponent, BubbleWindowsMenuComponent, DynamicCompDirective,
-        ButtonsBoardComponent, IntroComponent,
+        IntroComponent,
         IconLarge17Component, SedButtonComponent, IconSmall30Component, IconSmall10Component, IconSmall33Component,
         IconSmall11Component, IconSmall12Component, IconRecordComponent, IconLarge30Component, SearchOptionComponent,
         IconSmall7Component, IconSmall16Component, IconSmall6Component, IconSmallNoteComponent,
