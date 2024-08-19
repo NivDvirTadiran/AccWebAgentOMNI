@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
 import { CallBarComponent } from './call-bar.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {ChatBubbleComponent} from "../chat-bubble/chat-bubble.component";
-import {ButtonMdComponent} from "../../buttons/button-md/button-md.component";
+import {ButtonComponent} from "../../buttons/button/button.component";
 import {StatusLabelComponent} from "../status-label/status-label.component";
 import {IconPage2MdComponent} from "../../icons/icon-page-2/icon-page2-md.component";
 import {IconLarge11MdComponent} from "../../icons/icon-large-11/icon-large11-md.component";
@@ -22,7 +22,8 @@ export default {
   },
   decorators: [
     moduleMetadata({
-      declarations: [ChatBubbleComponent, ButtonMdComponent, StatusLabelComponent, IconPage2MdComponent, IconLarge11MdComponent, IconSmall8MdComponent],
+      declarations: [ChatBubbleComponent, ButtonComponent, StatusLabelComponent, IconPage2MdComponent,
+        IconLarge11MdComponent, IconSmall8MdComponent],
       imports: [CommonModule, FormsModule, ReactiveFormsModule ],
     }),
   ],

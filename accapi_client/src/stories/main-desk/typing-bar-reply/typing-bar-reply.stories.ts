@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 
 import { TypingBarReplyComponent } from './typing-bar-reply.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import {ButtonMdComponent} from "../../buttons/button-md/button-md.component";
+import {ButtonComponent} from "../../buttons/button/button.component";
 import {SideMenuIconLarge38Component} from "../../icons/side-menu-icon-large-38/side-menu-icon-large-38.component";
 import {IconLarge10MdComponent} from "../../icons/icon-large-10/icon-large10-md.component";
 import {IconLarge4MdComponent} from "../../icons/icon-large-4/icon-large4-md.component";
@@ -20,7 +20,7 @@ export default {
   parameters: {},
   decorators: [
     moduleMetadata({
-      declarations: [ButtonMdComponent,
+      declarations: [ButtonComponent,
         SideMenuIconLarge38Component,
         IconLarge10MdComponent,
         IconLarge4MdComponent,

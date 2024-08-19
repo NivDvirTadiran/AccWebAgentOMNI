@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 
 import { SideMenuIconLarge38Component } from './side-menu-icon-large-38.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import {IconLarge20MdComponent} from "../../icons/icon-large-20/icon-large20-md.component";
+import {IconLarge20MdComponent} from "../icon-large-20/icon-large20-md.component";
 
 
 export default {

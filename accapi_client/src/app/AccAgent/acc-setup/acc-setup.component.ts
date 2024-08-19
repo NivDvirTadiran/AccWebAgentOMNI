@@ -1,5 +1,5 @@
  //our root app component
-import { Component, NgModule, VERSION,OnInit,NgZone,ViewChild } from '@angular/core';
+import { Component, NgModule, VERSION,OnInit,ViewChild } from '@angular/core';
 import {CdkTextareaAutosize} from '@angular/cdk/text-field';
 import { BrowserModule } from '@angular/platform-browser';
 import {  FileUploader, FileSelectDirective } from 'ng2-file-upload';
@@ -53,7 +53,7 @@ export class AccSetupComponent implements OnInit {
   public TELList: Array<accbutton> = [];
 
 
-    constructor(private ngZone: NgZone,public AAC: AccAgentService) {
+    constructor(public AAC: AccAgentService) {
           this.title = "Select all/Deselect all checkbox - Angular 2";
     this.setupGroups = [
         {

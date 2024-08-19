@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import {ButtonComponent} from "../button/button.component";
+import {ButtonComponent} from "../../buttons/button/button.component";
 import {SearchBarComponent} from "./search-bar.component";
 
 export default {

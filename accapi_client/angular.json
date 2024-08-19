@@ -11,11 +11,13 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "polyfills": [
+              "src/polyfills.ts"
+            ],
             "outputPath": "./dist",
             "index": "src/index.html",
             "main": "src/main.ts",
             "tsConfig": "src/tsconfig.app.json",
-            "polyfills": "src/polyfills.ts",
             "stylePreprocessorOptions": {
               "includePaths": [
                 "src/styles"

@@ -1,0 +1,140 @@
+@import "../../assets/scss/tokens";
+
+.root {
+  padding-top: 4px;
+  padding-bottom: 6px;
+  padding-left: 9px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 3px;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.root_activeYesBoldYesIconYesIconNoSizeSmallPurposeDefault {
+  background: $dark-blue-background;
+}
+
+.root_activeYesBoldYesIconCancelSizeSmallPurposeDefault {
+  background: $red-background;
+}
+
+.root_activeNoBoldYesPurposeDefaultIconYesSizeSmallIconNo {
+  background: $grey-background;
+}
+
+.root_sizeSmallIconYesIconWithXIconNoBoldYesIconCancelActiveYesPurposeDefaultBoldNo {
+  height: 27px;
+}
+
+.root_iconNoSizeLargePurposeDefault {
+  height: 36px;
+}
+
+.root_sizeSmallPurposeDefaultIconYesActiveYesBoldNoIconWithXActiveYesBoldYesIconCancel {
+  padding-right: 9px;
+}
+
+.root_iconNoSizeSmallActiveYesPurposeDefaultBoldNo {
+  padding-right: 10px;
+}
+
+.root_iconYesPurposeDefaultActiveYesBoldNoIconWithXPurposeDefaultActiveYesBoldYesIconCancelPurposeDefaultActiveYesBoldYesIconNoPurposeChatStateSizeLargeIconNoPurposeDefaultActiveNoBoldNoIconNoSizeSmall {
+  justify-content: flex-end;
+}
+
+.root_iconNoSizeSmallActiveYesBoldNoPurposeDefaultBoldYes {
+  justify-content: center;
+}
+
+.root_activeNoBoldNoIconNoSizeLargePurposeDefault {
+  border-color: $dark-gray-color;
+  border-style: solid;
+  border-width: undefinedpx;
+}
+
+.root_activeNoBoldNoSizeSmallIconYesPurposeDefaultIconNo {
+  border-color: $grey-color;
+  border-style: solid;
+  border-width: undefinedpx;
+}
+
+.root_activeYesBoldNoSizeSmallIconYesPurposeDefaultIconWithXPurposeDefaultIconNo {
+  border-color: #43a5ff;
+  border-style: solid;
+  border-width: undefinedpx;
+}
+
+.root_activeYesBoldNoIconNoSizeLargePurposeDefault {
+  border-color: #43a5ff;
+  border-style: solid;
+  border-width: undefinedpx;
+}
+.a {
+  display: flex;
+  box-sizing: content-box;
+  letter-spacing: -1.1%;
+  text-decoration: none;
+  text-wrap: nowrap;
+}
+
+.app-button--dark-blue-color { color: $dark-blue-color; }
+.app-button--white-color { color: $white-color; }
+.app-button--dark-gray-color { color: $dark-gray-color; }
+.app-button--grey-color { color: $grey-color; }
+
+/*
+.a_boldYesIconYesSizeSmallIconNoActiveYesSizeSmallPurposeDefault {
+  color: $white-color;
+}
+
+.a_activeNoBoldNoIconNoSizeLargePurposeDefault {
+  color: $dark-gray-color;
+}
+
+.a_activeNoBoldNoSizeSmallIconYesPurposeDefaultIconNo {
+  color: $grey-color;
+}
+*/
+.a_sizeSmallIconYesIconWithXIconNoActiveYesPurposeDefaultBoldNo {
+  @include small-text-text;
+  font-weight: 400;
+}
+
+.a_iconNoSizeLargePurposeDefault {
+  @include menu-text-bold-text;
+  font-weight: 700;
+}
+
+.a_iconYesIconWithXIconNoSizeSmallActiveYesSizeLargePurposeDefaultBoldNo {
+  text-align: right;
+}
+
+.a_activeNoBoldYesIconNoSizeSmallPurposeDefault {
+  text-align: center;
+}
+
+.iconSmall6_iconYesActiveYesBoldNoIconWithX {
+  position: relative;
+  box-sizing: border-box;
+  width: 13px;
+  height: 13px;
+}
+
+.iconSmall16_boldNoIconWithXBoldYesIconCancel {
+  position: relative;
+  box-sizing: border-box;
+  width: 13px;
+  height: 13px;
+}
+
+.a {
+  display: flex;
+  box-sizing: content-box;
+  @include small-text-text;
+  font-weight: 400;
+  text-align: right;
+  text-wrap: nowrap;
+}

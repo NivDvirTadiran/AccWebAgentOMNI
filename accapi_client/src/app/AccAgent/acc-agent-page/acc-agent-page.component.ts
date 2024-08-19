@@ -20,7 +20,6 @@ import {MenuPopoverDirective} from "../../../stories/directive/bubble-windows-me
 //import {EventSource} from "@fullcalendar/core";
 import {Meta} from "@angular/platform-browser";
 import {StatusBoardComponent} from "./status-board/status-board.component";
-import { Injectable, NgZone } from '@angular/core';
 import { Observable, Subscriber } from 'rxjs';
 import {AppConfig} from "../../config/app.config";
 //import {SseComponent} from "../sse/sse.component";
