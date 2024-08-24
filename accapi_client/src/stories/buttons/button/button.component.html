@@ -33,7 +33,7 @@
     root_sizeSmallPurposeDefaultIconYesActiveYesBoldNoIconWithXActiveYesBoldYesIconCancel:
       size === 'small' &&
       purpose === 'Default' &&
-      (icon === 'Yes' ||
+      (icon === 'Yes' || icon ==='block' ||
         (active === 'Yes' && bold === 'No' && icon === 'with x') ||
         (active === 'Yes' && bold === 'Yes' && icon === 'cancel')),
     root_iconNoSizeSmallActiveYesPurposeDefaultBoldNo:
@@ -187,6 +187,49 @@
         (bold === 'Yes' && icon === 'cancel')
     }"
   ></app-icon-small-16>
+
+    <app-icon-small-32
+            *ngIf="
+      active === 'Yes' &&
+      size === 'small' &&
+      purpose === 'Default' &&
+      (bold === 'No' && icon === 'block')
+    "
+            class=""
+            [ngClass]="{
+      iconSmall16_boldNoIconWithXBoldYesIconCancel:
+        (bold === 'No' && icon === 'block')
+    }"
+    ></app-icon-small-32>
+
+    <app-icon-small-note
+            *ngIf="
+      active === 'Yes' &&
+      size === 'small' &&
+      purpose === 'Default' &&
+      (bold === 'No' && icon === 'note')
+    "
+            class=""
+            [ngClass]="{
+      iconSmall16_boldNoIconWithXBoldYesIconCancel:
+        (bold === 'No' && icon === 'note')
+    }"
+    ></app-icon-small-note>
+
+    <app-icon-small-end
+            *ngIf="
+      active === 'Yes' &&
+      size === 'small' &&
+      purpose === 'Default' &&
+      (bold === 'No' && icon === 'end')
+    "
+            class=""
+            [ngClass]="{
+      iconSmall16_boldNoIconWithXBoldYesIconCancel:
+        (bold === 'No' && icon === 'end')
+    }"
+    ></app-icon-small-end>
+
   <span
     *ngIf="
       active === 'Yes' &&

@@ -6,14 +6,16 @@
   justify-content: flex-start;
   flex-wrap: nowrap;
   align-items: center;
-  gap: 15px;
+  gap: 0.938rem;
   box-sizing: border-box;
+  height: 3.125rem;
 }
 .typeBar {
-  padding: 14px 20px 14px 20px;
+  padding: 0.875rem 1.25rem 0.875rem 1.25rem;
   display: flex;
   box-sizing: border-box;
-  border-radius: 200px;
+  border-radius: 12.5rem;
   background: $light-blue-background;
   width: -webkit-fill-available;
+  height: 3.125rem;
 }

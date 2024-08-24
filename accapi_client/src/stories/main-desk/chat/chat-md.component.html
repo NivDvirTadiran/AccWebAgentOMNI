@@ -7,7 +7,7 @@
     root_wightWideTypeChat: wight === 'wide' && type === 'chat'
   }">
   <div *ngIf="type === 'chat' || (wight === 'normal' && type === 'chat admin block')" class="frame176">
-    <app-chat-bubble [property1]="'Default'" class="chatBubble"
+    <app-chat-bubble [property1]="'Default'"
       [ngClass]="{
         chatBubble_typeChat: type === 'chat',
         chatBubble_wightNormalTypeChatAdminBlock: wight === 'normal' && type === 'chat admin block'
@@ -26,7 +26,7 @@
   </div>
   <div class="frame173" [ngClass]="{ frame173_typeChat: type === 'chat' }">
     <app-chat-bubble *ngIf="type === 'chat' || (wight === 'normal' && type === 'chat admin block')"
-      [property1]="'Variant2'" class="chatBubble" [ngClass]="{ chatBubble_typeChat: type === 'chat' }">
+      [property1]="'Variant2'" [ngClass]="{ chatBubble_typeChat: type === 'chat' }">
     </app-chat-bubble>
     <app-chat-bubble *ngIf="wight === 'normal' && (type === 'bot' || type === 'Phone call')"
       [property1]="'bot + button'"
@@ -39,11 +39,11 @@
   </div>
   <div *ngIf="type === 'chat' || (wight === 'normal' && type === 'bot') || (wight === 'normal' && type === 'Phone call')"
     class="frame177">
-    <app-chat-bubble [property1]="'Default'" class="chatBubble" [ngClass]="{ chatBubble_typeChat: type === 'chat' }"></app-chat-bubble>
+    <app-chat-bubble [property1]="'Default'" [ngClass]="{ chatBubble_typeChat: type === 'chat' }"></app-chat-bubble>
   </div>
   <span *ngIf="type === 'chat'" class="a2">2 הודעות שלא נקראו</span>
   <div *ngIf="type === 'chat' || (wight === 'normal' && type === 'bot')" class="frame174">
-    <app-chat-bubble [property1]="'Default'" class="chatBubble"></app-chat-bubble>
+    <app-chat-bubble [property1]="'Default'"></app-chat-bubble>
   </div>
   <div *ngIf="wight === 'normal' && (type === 'chat admin block' || type === 'bot')"
     class="" [ngClass]="{frame178_typeChatAdminBlockTypeBot: type === 'chat admin block' || type === 'bot'}">

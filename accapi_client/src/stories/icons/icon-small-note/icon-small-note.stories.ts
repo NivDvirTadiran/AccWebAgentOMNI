@@ -3,19 +3,17 @@ import { CommonModule } from '@angular/common';
 
 
 import { IconSmallNoteComponent } from './icon-small-note.component';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+
 
 export default {
   title: 'Design System/icons/IconSmallNote',
   component: IconSmallNoteComponent,
-  parameters: {
-    // More on Story layout: https://storybook.js.org/docs/angular/configure/story-layout
-    layout: 'centered',
-  },
+  parameters: {},
   decorators: [
     moduleMetadata({
       declarations: [],
-      imports: [CommonModule, FormsModule],
+      imports: [CommonModule, FormsModule, ReactiveFormsModule],
     }),
   ],
 } as Meta;

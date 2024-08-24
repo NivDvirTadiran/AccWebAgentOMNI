@@ -13,7 +13,7 @@
   box-shadow: $new-shadow-box-shadow;
 }
 .callbar_I1110-41539-844-131937 {
-  height: calc(100%*(60/960));
+  height: 3.75rem;
   width: inherit;
 }
 
@@ -26,15 +26,15 @@
   gap: 10px;
   box-sizing: border-box;
   overflow: hidden;
-  height: calc(100%*(750/960));
+  height: 100%;
   width: -webkit-fill-available;
 }
 .chat_I1110-41539-844-131595 {
-  height: calc(100%*(960/960));
+  height: 100%;
   width: -webkit-fill-available;
 }
 
 .typingbar-reply_I1110-41539-844-131374 {
-  height: calc(100%*(150/960));
+  height: 9.375rem;
   width: inherit;
 }

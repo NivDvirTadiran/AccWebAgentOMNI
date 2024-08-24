@@ -29,11 +29,11 @@ section {
     justify-content: flex-end;
     align-items: flex-start;
     gap: 1.5rem;
-    flex-shrink: 0;
     border: 10px;
 }
+
 .frame-469_1135-63751 {
-    width: calc(100%*(317/1135));
+    width: calc(100% - 7rem - 1.5rem);
     height: 100%;
 }
 
@@ -44,6 +44,8 @@ section {
     flex-shrink: 0;
 }
 
+
+
 .main-desk-content {
     width: 100%;
     display: flex;
@@ -51,4 +53,24 @@ section {
     flex-direction: column;
     align-items: center;
     flex: 1 0 0;
+}
+
+
+.frame-465_1135-65040 {
+    display: flex;
+    width: calc(100%*(545/1680));
+    height: 100%;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 1.5rem;
+    border: 10px;
+}
+.calls-list_1155-71325 {
+    width: calc(100%*(545/1680));
+    height: 100%;
+}
+
+.side-menu-content {
+    height: 100%;
+    width: 7rem;
 }

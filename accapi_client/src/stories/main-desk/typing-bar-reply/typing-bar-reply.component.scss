@@ -1,5 +1,10 @@
 @import "../tokens.scss";
 
+typing-bar-reply {
+  height: 9.375rem;
+  width: 100%;
+}
+
 .typingbar-reply_844-127999 {
   height: 100%;
   padding: 1.375rem;
@@ -86,6 +91,7 @@
   border-style: solid;
   border-width: 1px;
   height: 27px;
+  color: #43a5ff;
 }
 
 .button_844-127193 {
@@ -98,8 +104,11 @@
   gap: 3px;
   box-sizing: border-box;
   border-radius: 20px;
-  background: #43a5ff;
   height: 27px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #43a5ff;
+  color: #43a5ff;
 }
 
 .frame-137_844-127181 {
@@ -164,5 +173,6 @@
 }
 
 .frame-136_844-127195 {
+  height: 3.125rem;
   width: -webkit-fill-available;
 }

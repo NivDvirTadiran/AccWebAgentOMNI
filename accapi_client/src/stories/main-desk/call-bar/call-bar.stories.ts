@@ -1,4 +1,4 @@
-import { moduleMetadata, Story, Meta } from '@storybook/angular';
+import {moduleMetadata, Story, Meta, Args} from '@storybook/angular';
 import { CommonModule } from '@angular/common';
 
 
@@ -11,23 +11,33 @@ import {IconPage2MdComponent} from "../../icons/icon-page-2/icon-page2-md.compon
 import {IconLarge11MdComponent} from "../../icons/icon-large-11/icon-large11-md.component";
 import {IconSmall8MdComponent} from "../../icons/icon-small-8/icon-small8-md.component";
 
-
+import {
+  statusLabel_block,
+  statusLabel_close,
+  statusLabel_open,
+  statusLabel_timer
+} from "../status-label/status-label.component";
 
 export default {
   title: 'Design System/MainDesk/CallBar',
   component: CallBarComponent,
   parameters: {
     // More on Story layout: https://storybook.js.org/docs/angular/configure/story-layout
-    layout: 'fullscreen',
+    layout: 'centered',
   },
   decorators: [
     moduleMetadata({
-      declarations: [ChatBubbleComponent, ButtonComponent, StatusLabelComponent, IconPage2MdComponent,
+      declarations: [
+          ChatBubbleComponent, ButtonComponent, StatusLabelComponent, IconPage2MdComponent,
         IconLarge11MdComponent, IconSmall8MdComponent],
       imports: [CommonModule, FormsModule, ReactiveFormsModule ],
     }),
   ],
 } as Meta;
+
+
+
+
 
 const Template: Story<CallBarComponent> = (args: CallBarComponent) => ({
   props: {

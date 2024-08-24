@@ -1,34 +1,33 @@
 @import "../tokens.scss";
 
 .root {
-  padding: 0.938rem 1.875rem 0.938px 1.875rem;
+  padding: 0.938rem 1.875rem 0.938rem 1.875rem;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
   gap: 7.25rem;
   box-sizing: border-box;
-  border-bottom-right-radius: 0px;
-  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
   border-color: $for-strokes-color;
   border-style: solid;
-  border-width: undefinedpx;
   background: $white-background;
 }
 
 .root_goalChatOptionAdminBlock {
-  top: 199px;
-  left: 760px;
+  top: 12.438rem;
+  left: 47.5rem;
   position: absolute;
   display: flex;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  height: 70px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  height: 4.375rem;
 }
 
-.root_goalChatOption2GoalChatOptionClientBlockedGoalBotOption1GoalDashboardOptionDefault {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+.figure {
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
   height: 100%;
   border-bottom-width: 1px;
 }
@@ -56,23 +55,21 @@
   gap: 8px;
   box-sizing: border-box;
 }
-.button {
-  padding: 4px 9px 6px 9px;
+.button1 {
   display: flex;
   box-sizing: border-box;
   border-radius: 20px;
-  border-color: $dark-blue-color;
   border-style: solid;
   border-width: 1px;
   height: 27px;
+  border-color: #43a5ff;
+  color: #43a5ff;
 }
 
 .button {
-  padding: 4px 9px 6px 9px;
   display: flex;
   box-sizing: border-box;
   border-radius: 20px;
-  border-color: $dark-blue-color;
   border-style: solid;
   border-width: 1px;
   height: 27px;
@@ -96,40 +93,12 @@
   gap: 6px;
   box-sizing: border-box;
 }
-.statusLabel {
-  padding: 2px 13px 4px 13px;
+.status-label {
+  padding: 0.125rem 0.813rem 0.25rem 0.813rem;
   display: flex;
   box-sizing: border-box;
-  border-radius: 30px;
-  background: $d-9-d-9-d-9-background;
-  width: 57px;
-}
-
-.statusLabel {
-  padding: 2px 13px 4px 13px;
-  display: flex;
-  box-sizing: border-box;
-  border-radius: 30px;
-  background: $d-9-d-9-d-9-background;
-  width: 57px;
-}
-
-.statusLabel {
-  padding: 2px 13px 4px 13px;
-  display: flex;
-  box-sizing: border-box;
-  border-radius: 30px;
-  background: $d-9-d-9-d-9-background;
-  width: 57px;
-}
-
-.statusLabel {
-  padding: 2px 13px 4px 13px;
-  display: flex;
-  box-sizing: border-box;
-  border-radius: 30px;
-  background: $turkiz-background;
-  width: 57px;
+  border-radius: 1.875rem;
+  width: 3.563rem;
 }
 
 .frame199 {
@@ -138,7 +107,7 @@
   justify-content: flex-end;
   flex-wrap: nowrap;
   align-items: center;
-  gap: 0px;
+  gap: 0;
   box-sizing: border-box;
 }
 .a_option2OptionAdminBlock {
@@ -148,7 +117,7 @@
   @include menu-text-bold-text;
   font-weight: 700;
   text-align: right;
-  text-wrap: nowrap;
+  text-wrap: none;
 }
 
 .a {
@@ -158,7 +127,7 @@
   @include menu-text-bold-text;
   font-weight: 700;
   text-align: right;
-  text-wrap: nowrap;
+  text-wrap: none;
 }
 
 .frame379 {
@@ -171,7 +140,6 @@
   box-sizing: border-box;
 }
 .button {
-  padding: 4px 9px 6px 9px;
   display: flex;
   box-sizing: border-box;
   border-radius: 20px;
@@ -181,67 +149,6 @@
   height: 27px;
 }
 
-.frame263 {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  flex-wrap: nowrap;
-  align-items: center;
-  box-sizing: border-box;
-}
-.statusLabel {
-  padding: 2px 13px 4px 13px;
-  display: flex;
-  box-sizing: border-box;
-  border-radius: 30px;
-  background: $d-9-d-9-d-9-background;
-  width: 57px;
-}
-
-.statusLabel {
-  padding: 2px 13px 4px 13px;
-  display: flex;
-  box-sizing: border-box;
-  border-radius: 30px;
-  background: $d-9-d-9-d-9-background;
-  width: 57px;
-}
-
-.statusLabel {
-  padding: 2px 13px 4px 13px;
-  display: flex;
-  box-sizing: border-box;
-  border-radius: 30px;
-  background: $d-9-d-9-d-9-background;
-  width: 57px;
-}
-
-.statusLabel {
-  padding: 2px 13px 4px 13px;
-  display: flex;
-  box-sizing: border-box;
-  border-radius: 30px;
-  background: $turkiz-background;
-  width: 57px;
-}
-
-.statusLabel {
-  padding: 2px 13px 4px 13px;
-  display: flex;
-  box-sizing: border-box;
-  border-radius: 30px;
-  background: $d-9-d-9-d-9-background;
-  width: 57px;
-}
-
-.statusLabel {
-  padding: 2px 13px 4px 13px;
-  display: flex;
-  box-sizing: border-box;
-  border-radius: 30px;
-  background: $turkiz-background;
-  width: 57px;
-}
 
 .frame199 {
   display: flex;
@@ -258,7 +165,7 @@
   @include menu-text-bold-text;
   font-weight: 700;
   text-align: right;
-  text-wrap: nowrap;
+  text-wrap: none;
 }
 
 .a {
@@ -268,7 +175,7 @@
   @include menu-text-bold-text;
   font-weight: 700;
   text-align: right;
-  text-wrap: nowrap;
+  text-wrap: none;
 }
 
 .iconPage2 {
@@ -312,7 +219,7 @@
   @include small-text-text;
   font-weight: 400;
   text-align: right;
-  text-wrap: nowrap;
+  text-wrap: none;
 }
 
 .iconSmall8 {
@@ -332,19 +239,15 @@
   box-sizing: border-box;
 }
 .button {
-  padding: 4px 9px 6px 9px;
   display: flex;
   box-sizing: border-box;
   border-radius: 20px;
-  background: $grey-background;
   height: 27px;
 }
 
 .button {
-  padding: 4px 9px 6px 9px;
   display: flex;
   box-sizing: border-box;
   border-radius: 20px;
-  background: $grey-background;
   height: 27px;
 }

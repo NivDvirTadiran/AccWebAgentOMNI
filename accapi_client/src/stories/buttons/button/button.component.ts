@@ -8,7 +8,7 @@ import { ChangeDetectionStrategy, Component, Input } from "@angular/core";
 export class ButtonComponent {
   @Input() active: "Yes" | "No" = "Yes";
   @Input() bold: "Yes" | "No" = "No";
-  @Input() icon: "Yes" | "No" | "with x" | "cancel" = "Yes";
+  @Input() icon: "Yes" | "No" | "block" | "note" | "end" | "with x" | "cancel" = "Yes";
   @Input() size: "small" | "Large" = "small";
   @Input() purpose: "Default" | "chat state" = "Default";
   @Input() text: string = "text";

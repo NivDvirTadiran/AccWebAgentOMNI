@@ -589,7 +589,8 @@ void AccapiWebAdmin_c::adminSupLogoff(SUP_c* sup, supEntry* entry, string note)
   if (rc == BSWRC_OK)
   {
     SendToAuditLog(entry->m_supName, "WEBADMIN", "", "", "Logout", "", "", 0, my_IP);//userentry->m_Ip);
-    sup->m__supEntriesVec.clear();
+    //18-Aug-2024 YR BZ#59940
+    sup->deleteSupentry(entry->sessionId);
     accapi_my_print(0, "adminSupLogoff => %s sm ClientId: %d %s\n", sup->m_supName, entry->m_ClientId, note.c_str());
   }
 }

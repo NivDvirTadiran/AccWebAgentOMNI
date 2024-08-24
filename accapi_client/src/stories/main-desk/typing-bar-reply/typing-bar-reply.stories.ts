@@ -11,13 +11,14 @@ import {IconLarge4MdComponent} from "../../icons/icon-large-4/icon-large4-md.com
 import {IconLarge1MdComponent} from "../../icons/icon-large-1/icon-large1-md.component";
 import {IconLarge2MdComponent} from "../../icons/icon-large-2/icon-large2-md.component";
 import {IconLargeT5MdComponent} from "../../icons/icon-large-t-5/icon-large-t5-md.component";
+import {IconLarge7MdComponent} from "../../icons/icon-large-7/icon-large7-md.component";
 import {Frame136Component} from "../../frames/frame-136/frame-136.component";
 
 
 export default {
   title: 'Design System/MainDesk/TypingBarReply',
   component: TypingBarReplyComponent,
-  parameters: {},
+  parameters: {layout: 'centered'},
   decorators: [
     moduleMetadata({
       declarations: [ButtonComponent,
@@ -27,6 +28,7 @@ export default {
         IconLarge1MdComponent,
         IconLarge2MdComponent,
         IconLargeT5MdComponent,
+        IconLarge7MdComponent,
         Frame136Component],
       imports: [CommonModule, FormsModule, ReactiveFormsModule],
     }),

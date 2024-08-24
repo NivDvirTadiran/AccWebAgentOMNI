@@ -13,7 +13,7 @@ export default {
   component: PopoverMdbDropdownDirective, // (2) don't forget it
   decorators: [
     moduleMetadata({
-      declarations: [ PopoverMdbDropdownDirective, MdbDropdownDirective],
+      declarations: [ MdbDropdownDirective],
       imports: [CommonModule, FormsModule, ReactiveFormsModule],
     }),
     componentWrapperDecorator(story => `<div style="margin: 9em">${story}</div>`),
@@ -29,7 +29,7 @@ const mPopover: PopoverOptions = {
 const Template: Story<PopoverMdbDropdownDirective> = (args) => ({
   props: args,
   moduleMetadata: { // (3) don't forget it
-    declarations: [PopoverMdbDropdownDirective],
+    declarations: [],
     imports: [CommonModule, FormsModule, ReactiveFormsModule]
   },
   template: `<button [twPopover] = "mPopover" > BubbleAvatarDirective Example </button>`

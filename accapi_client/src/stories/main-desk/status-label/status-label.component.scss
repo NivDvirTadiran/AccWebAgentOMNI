@@ -1,65 +1,32 @@
 @import "../tokens.scss";
 
 .root {
-  padding: 2px 13px 4px 13px;
+  padding: 0.125rem 0.813rem 0.25rem 0.813rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: nowrap;
   align-items: center;
-  gap: 14px;
+  gap: 0.875rem;
   box-sizing: border-box;
-  border-radius: 30px;
+  border-radius: 1.875rem;
 }
 
-.root_statusOpen {
-  background: $turkiz-background;
+app-status-label {
+  width: 3.563rem;
+  height: 1.375rem;
 }
 
-.root_statusBlock {
-  top: 377px;
-  left: 5px;
-  position: absolute;
-  display: flex;
-  background: $black-background;
-}
 
-.root_statusTimedStatusTimeHover {
-  background: $yellow-background;
-}
+.app-status-label--Black { background: $black-background; }
+.app-status-label--Pink { background: $pink-background; }
+.app-status-label--Yellow { background: $yellow-background; }
+.app-status-label--Purple { background: $purple-background; }
+.app-status-label--Green { background: $green-background; }
+.app-status-label--Turkiz { background: $turkiz-background; }
+.app-status-label--Gray { background: $d-9-d-9-d-9-background; }
 
-.root_statusNew {
-  top: 97px;
-  left: 17px;
-  position: absolute;
-  display: flex;
-  background: $pink-background;
-}
 
-.root_statusWaiting {
-  background: $purple-background;
-}
-
-.root_statusClosed {
-  background: $green-background;
-}
-
-.root_statusGrayClosedStatusGrayNewStatusGrayTimedStatusGrayWaiting {
-  background: $d-9-d-9-d-9-background;
-}
-
-.root_statusOpenStatusTimedStatusTimeHoverStatusNewStatusWaitingStatusClosedStatusGrayClosedStatusGrayNewStatusGrayTimedStatusGrayWaiting {
-  width: 57px;
-}
-.a {
-  display: flex;
-  box-sizing: content-box;
-  color: $white-color;
-  @include small-text-bold-text;
-  font-weight: 700;
-  text-align: right;
-  text-wrap: nowrap;
-}
 
 .a {
   display: flex;
@@ -68,45 +35,7 @@
   @include small-text-bold-text;
   font-weight: 700;
   text-align: right;
-  text-wrap: nowrap;
 }
 
-.a {
-  display: flex;
-  box-sizing: content-box;
-  color: $white-color;
-  @include small-text-bold-text;
-  font-weight: 700;
-  text-align: right;
-  text-wrap: nowrap;
-}
 
-.a {
-  display: flex;
-  box-sizing: content-box;
-  color: $white-color;
-  @include small-text-bold-text;
-  font-weight: 700;
-  text-align: right;
-  text-wrap: nowrap;
-}
 
-.a {
-  display: flex;
-  box-sizing: content-box;
-  color: $white-color;
-  @include small-text-bold-text;
-  font-weight: 700;
-  text-align: right;
-  text-wrap: nowrap;
-}
-
-.a {
-  display: flex;
-  box-sizing: content-box;
-  color: $white-color;
-  @include small-text-bold-text;
-  font-weight: 700;
-  text-align: right;
-  text-wrap: nowrap;
-}

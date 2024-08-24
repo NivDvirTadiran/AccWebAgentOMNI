@@ -1097,8 +1097,9 @@ int AgentExists(string agent_no, int clientId, string sessionId, string action, 
       }
       entry = new supEntry(sup_type, sessionId, clientId, &sup->m_supName[0], sup->m_supLevel);
       accapi_my_print(0, "AgentExists, Add new user on supervisor: %s, sessionId: %s\n", entry->m_supName.c_str(), sessionId.c_str());
-      sup->m__supEntriesVec.push_back(entry);
-      entry->m_sid = clientId;
+      //entry->m_sid = clientId;
+      sup->addSupentry(entry);
+      //sup->m__supEntriesVec.push_back(entry);
     }
   }
   return 0;//agent not exists
@@ -1466,9 +1467,10 @@ void GetAgentGroups(AgentDbInfo_c* ADI)
   accapi_my_print(12, "GetAgentGroups, agent_no: %s,groups: %s\n", ADI->m_Number, ADI->m_primary_groups.c_str());
   delete[] gg;
 }
-//=================================[getsupagents]===========================================
 
-void getsupagents()
+
+//=================================[getsupagents]===========================================
+void getsupagents(bool initializing)
 {
   DBManager_c db_manager1;
   Statement_c  sup_st;
@@ -1478,30 +1480,81 @@ void getsupagents()
   Ulong_t      sup_counter = 0;
   bool         complete_init_sup = true;
   RetCode_t rc = db_manager1.ExecuteSelectSyn(sup_st, sup_rs, executionResult);
-  sup_map.clear();
+
+  if (initializing)
+    accapi_my_print(0, "getsupagents - initializing\n");
+  else
+    accapi_my_print(0, "getsupagents - going to iterate on sup_map\n");
+
+  //sup_map.clear();
   while (sup_rs.Next())
   {
-    Ulong_t agent_id;
-    SUP_c* supRec = new SUP_c();
+    Ulong_t     user_id;
+    Ulong_t     agent_id;
+    char        sup_name[NAME_SIZEX + 1];
+    SUP_c* supRec = NULL;
+
+    sup_rs.GetUlongByName("user_id", user_id);
     sup_rs.GetUlongByName("agent_id", agent_id); // Get the agent_id from the DBI
-    supRec->m_agentId = agent_id;
+    sup_rs.GetStringByName("sup_name", sup_name);
+    string sup_name_s = &sup_name[0];
 
-    AgentDbInfo_c* ADI = AGENTINFOfind(agent_id);
-    if (ADI != NULL)
+    if (initializing)
     {
-      ADI->m_Sup = 1;
-      accapi_my_print(5, "getsupagents, found sup agent  FromDB, %s, ADI->m_Sup: %d\n", ADI->m_Number, ADI->m_Sup);
-    }
+      SUP_c* supRec = new SUP_c();
+      supRec->m_userId = user_id;
+      supRec->m_agentId = agent_id;
+      sup_rs.GetStringByName("sup_name", supRec->m_supName);
+      sup_rs.GetStringByName("sup_password", supRec->m_supPass);
+      sup_rs.GetUlongByName("sup_level", supRec->m_supLevel);
+      sup_map[sup_name_s] = *supRec;
+      accapi_my_print(0, "Insert to sup_map a SUP with name %s\n,", sup_name_s.c_str());
+    }//end if (initializing)
+    else
+    {
+      SUP_MAP_IT it = sup_map.find(sup_name_s);
+      if (it != sup_map.end())
+      {
+        accapi_my_print(0, "Find in sup_map (by name) SUP with name %s - update SUP with new params\n,", sup_name_s.c_str());
+        supRec = &it->second;
+        supRec->m_userId = user_id;
+        supRec->m_agentId = agent_id;
+        sup_rs.GetStringByName("sup_password", supRec->m_supPass);
+        sup_rs.GetUlongByName("sup_level", supRec->m_supLevel);
 
-    sup_rs.GetStringByName("sup_name", supRec->m_supName);
-    //for (int i = 0; supRec->m_supName[i] != 0; ++i) 
-    //  supRec->m_supName[i] = tolower(supRec->m_supName[i]);
-    sup_rs.GetStringByName("sup_password", supRec->m_supPass);
-    sup_rs.GetUlongByName("sup_level", supRec->m_supLevel);
-    sup_rs.GetUlongByName("user_id", supRec->m_userId);
-    string s = &supRec->m_supName[0];
-    accapi_my_print(5, "getsuptable %s,%s,%d\n", supRec->m_supName, supRec->m_supPass, supRec->m_supLevel);
-    sup_map[s] = *supRec;
+        if (supRec->m_agentId != ER_NULL_ID)
+        {
+          AgentDbInfo_c* ADI = AGENTINFOfind(agent_id);
+          if (ADI != NULL)
+          {
+            ADI->m_Sup = 1;
+            accapi_my_print(5, "getsupagents, found sup agent FromDB, %s, ADI->m_Sup: %d\n", ADI->m_Number, ADI->m_Sup);
+          }
+        }
+      }
+      else
+      {
+        SUP_c* supRec_new = new SUP_c();
+        for (SUP_MAP_IT it = sup_map.begin(); it != sup_map.end(); ++it)
+        {
+          supRec = &it->second;
+          if (supRec != NULL && supRec->m_userId == user_id)
+          {
+            accapi_my_print(0, "Find in sup_map (by user_id) SUP with name %s - erase old name (%s), insert new name and update SUP with new params\n,", sup_name_s.c_str(), supRec->m_supName);
+            if (!supRec->m__supEntriesVec.empty())
+              supRec_new->m__supEntriesVec = supRec->m__supEntriesVec;
+            supRec_new->m_userId = user_id;
+            supRec_new->m_agentId = agent_id;
+            sup_rs.GetStringByName("sup_name", supRec_new->m_supName);
+            sup_rs.GetStringByName("sup_password", supRec_new->m_supPass);
+            sup_rs.GetUlongByName("sup_level", supRec_new->m_supLevel);
+            sup_map.erase(it);
+            sup_map[sup_name_s] = *supRec_new;
+            break;
+          }
+        }
+      }
+    }//end if not initializing
   }
   accapi_my_print(0, "+++++++++++++++  Sup Map Size - %d\n", sup_map.size());
 }
@@ -1599,7 +1652,7 @@ void GetAgentsFromDB(bool isChanged)
 
   accapi_my_print(0, "+++++++++++++++  Agents Map Size - %d\n", agents_db.size());
   
-  getsupagents();
+  getsupagents(true);
   
   agent_db_iterator = agents_db.begin();
 }
@@ -1688,7 +1741,7 @@ void UpdateAgentsFromDB(Ulong_t id, Commands_e command)
       AGENTINFO_MUTEX.Unlock();
     }
   }
-  getsupagents();
+  getsupagents(false);
 }
 //=============================[GetServicesFromDB]==========================================
 //SELECT srv_id, srv_name FROM `services`;
@@ -2080,7 +2133,7 @@ void AccapiWorkThread_c::GetAllTables(bool isChanged)
   getLangTableFromDB();
   getMailAccountsTableFromDB();
   getDbConnectionsTableFromDB();
-  getsupagents();
+  //getsupagents(true);
   GetIrns();
   string gccsstr = "";
   ReadAndPrepareaccAgentEvents(gccsstr);

@@ -120,7 +120,7 @@ void getDbConnectionsTableFromDB();
 void getCOSTableFromDB();
 void GetCPFromDB();
 void GetWUFromDB();
-void getsupagents();
+void getsupagents(bool initializing = false);
 void LoadIVrApp();
 void getLangTableFromDB();
 //void SendOneTableChangesToAllLogonSup(string action, string json);

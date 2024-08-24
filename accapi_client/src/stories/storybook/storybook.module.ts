@@ -94,7 +94,27 @@ import {IconPage7MdComponent} from "../icons/icon-page-7/icon-page7-md.component
 import {IconLarge2MdComponent} from "../icons/icon-large-2/icon-large2-md.component";
 import {SystemMessengeComponent} from "../main-desk/system-messenge/system-messenge.component";
 import {IconLarge13MdComponent} from "../icons/icon-large-13/icon-large13-md.component";
+import {Frame465Component} from "../frames/frame-465/frame-465.component";
+import {SideMenuComponent} from "../right-bar/export-result/side-menu/side-menu.component";
+import {ProfileBarComponent} from "../right-bar/export-result/profile-bar/profile-bar.component";
+import {MenulistComponent} from "../right-bar/export-result/menulist/menulist.component";
+import {MenuSectionComponent} from "../right-bar/export-result/menu-section/menu-section.component";
+import {FoldMenuComponent} from "../right-bar/export-result/fold-menu/fold-menu.component";
+import {IconArrowsComponent} from "../right-bar/export-result/icon-arrows/icon-arrows.component";
+import {IconStatusComponent} from "../right-bar/export-result/icon-status/icon-status.component";
+import {IconSmall5Component} from "../right-bar/export-result/icon-small-5/icon-small-5.component";
+import {IconPage6Component} from "../right-bar/export-result/icon-page-6/icon-page-6.component";
+import {CallListComponent} from "../call-list/call-list.component";
+import {Frame460Component} from "../call-list/export-result/frame-460/frame-460.component";
+import {CallsBarComponent} from "../call-bar/calls-bar.component";
+import {CallItemComponent} from "../call-list/export-result/call-item/call-item.component";
+import {CallsFilterComponent} from "../call-list/export-result/calls-filter/calls-filter.component";
+import {
+    DropDownSwitcherComponent
+} from "../call-list/export-result/calls-filter/export-result/drop-down-switcher/drop-down-switcher.component";
 import {IconSmallNoteComponent} from "../icons/icon-small-note/icon-small-note.component";
+//import {IconSmallEndComponent} from "../icons/icon-small-end/icon-small-end.component";
+
 
 
 
@@ -115,18 +135,23 @@ import {IconSmallNoteComponent} from "../icons/icon-small-note/icon-small-note.c
         IntroComponent,
         IconLarge17Component, SedButtonComponent, IconSmall30Component, IconSmall10Component, IconSmall33Component,
         IconSmall11Component, IconSmall12Component, IconRecordComponent, IconLarge30Component, SearchOptionComponent,
-        IconSmall7Component, IconSmall16Component, IconSmall6Component, IconSmallNoteComponent,
+        IconSmall7Component, IconSmall16Component, IconSmall6Component,
         TopBarComponent, TelephoneTestComponent, SearchBarComponent,
-        ChatComponent, MainDeskComponent,
-
+        ChatComponent,
+        SideMenuComponent,
 
 
         MainDeskComponent, CallBarComponent, ChatMdComponent, TypingBarReplyComponent,
         ButtonComponent, StatusLabelComponent, IconLarge11MdComponent, IconSmall8MdComponent, IconPage2MdComponent,
         ChatBubbleComponent, SystemMessengeComponent, SideMenuIconLarge38Component, IconLarge10MdComponent, IconLarge4MdComponent,
-        IconLarge1MdComponent, IconLarge2MdComponent, IconLargeT5MdComponent, Frame136Component,
+        IconLarge1MdComponent, IconLarge2MdComponent, IconLargeT5MdComponent,
         IconLarge13MdComponent, IconPage7MdComponent, IconSmall32Component, IconLarge20MdComponent,
         TypeBarComponent, IconLarge9MdComponent, IconLarge7MdComponent, IconLarge6MdComponent, IconSmall6Component,
+        /*MenulistComponent, MenuSectionComponent, FoldMenuComponent,*/ IconArrowsComponent,
+        //IconStatusComponent, IconSmall5Component, IconPage6Component, ProfileBarComponent,
+
+        Frame136Component, Frame465Component, ProfileBarComponent, MenulistComponent, FoldMenuComponent, CallListComponent,
+        Frame460Component, CallsBarComponent, CallItemComponent, CallsFilterComponent, DropDownSwitcherComponent, IconSmallNoteComponent,
     ],
     imports: [
         CommonModule, FormsModule, ReactiveFormsModule,
@@ -138,7 +163,7 @@ import {IconSmallNoteComponent} from "../icons/icon-small-note/icon-small-note.c
         InputsModule, MDBRootModule,
         MdbCarouselModule, MdbCheckboxModule, MdbCollapseModule, MdbDropdownModule, MdbFormsModule,
         MdbModalModule, MdbPopoverModule, MdbRadioModule, MdbRangeModule, MdbRippleModule, MdbScrollspyModule,
-        MdbTabsModule, MdbTooltipModule, MdbValidationModule,
+        MdbTabsModule, MdbTooltipModule, MdbValidationModule, MenuSectionComponent,
     ],
   providers: [
   ],
@@ -151,11 +176,12 @@ import {IconSmallNoteComponent} from "../icons/icon-small-note/icon-small-note.c
         IntroComponent,
         IconLarge17Component, SedButtonComponent, IconSmall30Component, IconSmall10Component, IconSmall33Component,
         IconSmall11Component, IconSmall12Component, IconRecordComponent, IconLarge30Component, SearchOptionComponent,
-        IconSmall7Component, IconSmall16Component, IconSmall6Component, IconSmallNoteComponent,
-        TopBarComponent, TelephoneTestComponent, SearchBarComponent,
-        ChatComponent, MainDeskComponent,
+        IconSmall7Component, IconSmall16Component, IconSmall6Component,
+        TopBarComponent, TelephoneTestComponent, SearchBarComponent,// ProfileBarComponent,
+        ChatComponent, MainDeskComponent, Frame465Component, SideMenuComponent, CallListComponent,// SideMenuComponent, Frame465Component, MenulistComponent
 
-
+        IconArrowsComponent,
+        Frame460Component, CallBarComponent, CallsBarComponent, CallItemComponent, CallsFilterComponent
     ],
   bootstrap: [ ]
 })

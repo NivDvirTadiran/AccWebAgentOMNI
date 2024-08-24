@@ -185,20 +185,7 @@ public:
   string        crmfile_part;
   Ulong_t       selectedScript;
   //g
-  supEntry(ACC_WebApps_t sup_type, string session, int sid, string name, Ushort_t level)
-  {
-    m_supType = sup_type;
-    sessionId = session;
-    m_sid = sid;
-    m_Ip = "";
-    m_supName = name;
-    m_ClientId = -1;
-    m_uploadFiles = NULL;
-    m_supLevel = level;
-    wsfile_part = "";
-    crmfile_part = "";
-    selectedScript = -1;
-  }
+  supEntry(ACC_WebApps_t sup_type, string session, int sid, string name, Ushort_t level);
 };
 
 
@@ -214,52 +201,15 @@ public:
   vector<supEntry*> m__supEntriesVec;
   time_t            m_LastKeeAliveTime;
 
-  SUP_c()
-  {
-    m_userId = -1;
-    memset(m_supName, 0, sizeof(char[NAME_SIZEX + 1]));
-    memset(m_supPass, 0, sizeof(char[NAME_SIZEX + 1]));
-    m_agentId = -1;
-    m_supLevel = 10;
-    m_LastKeeAliveTime = time(0);
-  }
+  SUP_c();
+  ~SUP_c();
 
-  //
-  supEntry* getSupentry(string sessionId)
-  {
-    supEntry* ret = NULL;
-    for (size_t i = 0; i < m__supEntriesVec.size(); ++i)
-    {
-      if (m__supEntriesVec[i]->sessionId == sessionId)
-      {
-        ret = m__supEntriesVec[i];
-        break;
-      }
-    }
-
-    if ((ret == NULL) && (m__supEntriesVec.size() == 1))
-      ret = m__supEntriesVec[0];
-
-    return ret;
-  }
-  //
-  void  setSupentry(string sessionId, Ulong_t clientId)
-  {
-    for (int i = 0; i < (int)m__supEntriesVec.size(); ++i)
-    {
-      if (m__supEntriesVec[i]->sessionId == sessionId)
-      {
-        m__supEntriesVec[i]->m_ClientId = clientId;
-        break;
-      }
-    }
-  }
-  //
-  void  deleteSupentry(string sessionId)
-  {
-    m__supEntriesVec.clear();
-  }
+  supEntry* getSupentry(string sessionId);
+  void      addSupentry(supEntry* sup_entry);
+  void      setSupentry(string sessionId, Ulong_t clientId);
+  void      deleteSupentry(string sessionId);
 };
+
 //
 typedef std::map<string,SUP_c>  SUP_MAP;
 typedef SUP_MAP::iterator       SUP_MAP_IT;
@@ -524,8 +474,8 @@ _USING_BSW
 class AccapiTimer_c : public BswTimer_c
 {
 public:
+  AccapiTimer_c();
   AccapiTimer_c(Ushort_t type);
-  AccapiTimer_c() {}
   void InitPtr();
 
   void OnTimer();
