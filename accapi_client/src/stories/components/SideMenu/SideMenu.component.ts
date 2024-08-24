@@ -1,6 +1,6 @@
 import { Component, ViewEncapsulation, HostBinding } from "@angular/core";
 
-import { ProfileBar } from "/";
+import { ProfileBar } from "../ProfileBar/ProfileBar.component";
 import { Menulist } from "../Menulist/Menulist.component";
 import { FoldMenu } from "../FoldMenu/FoldMenu.component";
 @Component({
