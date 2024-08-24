@@ -1,0 +1,27 @@
+.icon-small-33 {
+  height: 14px;
+  width: 14px;
+  position: relative;
+}
+.fold-menu,
+.icon-small-33-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.fold-menu {
+  width: 40px;
+  height: 40px;
+  box-shadow: var(--newshadow);
+  border-radius: var(--br-xl);
+  background-color: var(--white);
+  flex-direction: column;
+  padding: var(--padding-smi);
+  box-sizing: border-box;
+}
+@media screen and (max-width: 80px) {
+  .fold-menu {
+    width: calc(100% - 40px);
+  }
+}
