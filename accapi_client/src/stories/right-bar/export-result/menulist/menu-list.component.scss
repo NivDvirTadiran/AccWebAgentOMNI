@@ -1,0 +1,52 @@
+.icon-page-9 {
+  margin: 0;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.div1 {
+  height: 22px;
+  position: relative;
+  letter-spacing: -0.01em;
+  font-weight: 500;
+  display: inline-block;
+}
+.icon-page-9-parent {
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-7xs);
+}
+.icon-page-9-parent,
+.menu-section1,
+
+
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 0px;
+  box-sizing: border-box;
+}
+
+.menu-section1 {
+  background-color: var(--darkblue);
+  border-bottom: 1px solid var(--for-strokes);
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-xl-1) var(--padding-6xs) var(--padding-lgi);
+}
+.menulist {
+  border-radius: var(--br-xl);
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0;
+  text-align: center;
+  font-size: var(--menu-text-size);
+  color: var(--white);
+  font-family: var(--menu-text);
+  overflow: hidden;
+}

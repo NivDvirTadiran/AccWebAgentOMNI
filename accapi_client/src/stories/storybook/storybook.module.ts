@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
-import {CommonModule, HashLocationStrategy, LocationStrategy} from '@angular/common';
-//import { BrowserModule } from '@angular/platform-browser';
+import {CommonModule, NgOptimizedImage} from '@angular/common';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 
@@ -97,7 +96,7 @@ import {IconLarge13MdComponent} from "../icons/icon-large-13/icon-large13-md.com
 import {Frame465Component} from "../frames/frame-465/frame-465.component";
 import {SideMenuComponent} from "../right-bar/export-result/side-menu/side-menu.component";
 import {ProfileBarComponent} from "../right-bar/export-result/profile-bar/profile-bar.component";
-import {MenulistComponent} from "../right-bar/export-result/menulist/menulist.component";
+import {MenuListComponent} from "../right-bar/export-result/menulist/menu-list.component";
 import {MenuSectionComponent} from "../right-bar/export-result/menu-section/menu-section.component";
 import {FoldMenuComponent} from "../right-bar/export-result/fold-menu/fold-menu.component";
 import {IconArrowsComponent} from "../right-bar/export-result/icon-arrows/icon-arrows.component";
@@ -109,11 +108,14 @@ import {Frame460Component} from "../call-list/export-result/frame-460/frame-460.
 import {CallsBarComponent} from "../call-bar/calls-bar.component";
 import {CallItemComponent} from "../call-list/export-result/call-item/call-item.component";
 import {CallsFilterComponent} from "../call-list/export-result/calls-filter/calls-filter.component";
-import {
-    DropDownSwitcherComponent
-} from "../call-list/export-result/calls-filter/export-result/drop-down-switcher/drop-down-switcher.component";
+import {IconChannel1Component} from "../call-list/export-result/icon-channel-1/icon-channel-1.component";
+
+import { DropDownSwitcherComponent} from "../call-list/export-result/calls-filter/export-result/drop-down-switcher/drop-down-switcher.component";
 import {IconSmallNoteComponent} from "../icons/icon-small-note/icon-small-note.component";
-//import {IconSmallEndComponent} from "../icons/icon-small-end/icon-small-end.component";
+import {IconSmallEndComponent} from "../icons/icon-small-end/icon-small-end.component";
+import {NotificationComponent} from "../call-list/export-result/notification/notification.component";
+import {IconCheckboxComponent} from "../call-list/export-result/icon-checkbox/icon-checkbox.component";
+//import { DropDownStatusComponent } from "../call-list/export-result/calls-filter/export-result/drop-down-status/drop-down-status.component";
 
 
 
@@ -135,7 +137,7 @@ import {IconSmallNoteComponent} from "../icons/icon-small-note/icon-small-note.c
         IntroComponent,
         IconLarge17Component, SedButtonComponent, IconSmall30Component, IconSmall10Component, IconSmall33Component,
         IconSmall11Component, IconSmall12Component, IconRecordComponent, IconLarge30Component, SearchOptionComponent,
-        IconSmall7Component, IconSmall16Component, IconSmall6Component,
+        IconSmall7Component, IconSmall16Component, IconSmall6Component, IconCheckboxComponent, //DropDownStatusComponent,
         TopBarComponent, TelephoneTestComponent, SearchBarComponent,
         ChatComponent,
         SideMenuComponent,
@@ -144,14 +146,15 @@ import {IconSmallNoteComponent} from "../icons/icon-small-note/icon-small-note.c
         MainDeskComponent, CallBarComponent, ChatMdComponent, TypingBarReplyComponent,
         ButtonComponent, StatusLabelComponent, IconLarge11MdComponent, IconSmall8MdComponent, IconPage2MdComponent,
         ChatBubbleComponent, SystemMessengeComponent, SideMenuIconLarge38Component, IconLarge10MdComponent, IconLarge4MdComponent,
-        IconLarge1MdComponent, IconLarge2MdComponent, IconLargeT5MdComponent,
+        IconLarge1MdComponent, IconLarge2MdComponent, IconLargeT5MdComponent, IconSmall5Component,
         IconLarge13MdComponent, IconPage7MdComponent, IconSmall32Component, IconLarge20MdComponent,
         TypeBarComponent, IconLarge9MdComponent, IconLarge7MdComponent, IconLarge6MdComponent, IconSmall6Component,
-        /*MenulistComponent, MenuSectionComponent, FoldMenuComponent,*/ IconArrowsComponent,
-        //IconStatusComponent, IconSmall5Component, IconPage6Component, ProfileBarComponent,
+        IconArrowsComponent,
 
-        Frame136Component, Frame465Component, ProfileBarComponent, MenulistComponent, FoldMenuComponent, CallListComponent,
+
+        Frame136Component, Frame465Component, ProfileBarComponent, MenuListComponent, FoldMenuComponent, CallListComponent,
         Frame460Component, CallsBarComponent, CallItemComponent, CallsFilterComponent, DropDownSwitcherComponent, IconSmallNoteComponent,
+        MenuSectionComponent,
     ],
     imports: [
         CommonModule, FormsModule, ReactiveFormsModule,
@@ -163,10 +166,10 @@ import {IconSmallNoteComponent} from "../icons/icon-small-note/icon-small-note.c
         InputsModule, MDBRootModule,
         MdbCarouselModule, MdbCheckboxModule, MdbCollapseModule, MdbDropdownModule, MdbFormsModule,
         MdbModalModule, MdbPopoverModule, MdbRadioModule, MdbRangeModule, MdbRippleModule, MdbScrollspyModule,
-        MdbTabsModule, MdbTooltipModule, MdbValidationModule, MenuSectionComponent,
+        MdbTabsModule, MdbTooltipModule, MdbValidationModule, NgOptimizedImage,
     ],
-  providers: [
-  ],
+    providers: [
+    ],
     exports: [
         Background1Component, ButtonExComponent, ButtonComponent,
         MenuPopoverDirective, PopoverDirective,
@@ -176,13 +179,14 @@ import {IconSmallNoteComponent} from "../icons/icon-small-note/icon-small-note.c
         IntroComponent,
         IconLarge17Component, SedButtonComponent, IconSmall30Component, IconSmall10Component, IconSmall33Component,
         IconSmall11Component, IconSmall12Component, IconRecordComponent, IconLarge30Component, SearchOptionComponent,
-        IconSmall7Component, IconSmall16Component, IconSmall6Component,
-        TopBarComponent, TelephoneTestComponent, SearchBarComponent,// ProfileBarComponent,
-        ChatComponent, MainDeskComponent, Frame465Component, SideMenuComponent, CallListComponent,// SideMenuComponent, Frame465Component, MenulistComponent
+        IconSmall7Component, IconSmall16Component, IconSmall6Component, IconSmall5Component,
+        TopBarComponent, TelephoneTestComponent, SearchBarComponent,
+        ChatComponent, MainDeskComponent, Frame465Component, SideMenuComponent, CallListComponent,
 
         IconArrowsComponent,
-        Frame460Component, CallBarComponent, CallsBarComponent, CallItemComponent, CallsFilterComponent
+        Frame460Component, CallBarComponent, CallsBarComponent, CallItemComponent, CallsFilterComponent,
+        MenuSectionComponent, MenuListComponent
     ],
-  bootstrap: [ ]
+    bootstrap: [ ]
 })
 export class StorybookModule { }

@@ -1,0 +1,39 @@
+<section class="callitem2" [ngStyle]="callItemStyle">
+  <div class="frame-parent1">
+    <div class="frame-wrapper1">
+      <div class="icon-large-17-container">
+        <img class="icon-large-172" loading="lazy" alt="" [src]="iconLarge17" />
+      </div>
+    </div>
+    <div class="frame-parent2" [ngStyle]="frameDivStyle">
+      <div class="container" [ngStyle]="frameDiv1Style">
+        <b class="b2" [ngStyle]="b1Style">שם הלקוח</b>
+      </div>
+      <img class="icon-channel-11" loading="lazy" alt="" [src]="iconChannel1" />
+    </div>
+  </div>
+  <div class="status-label-group">
+    <status-label
+      [prop]="prop"
+      [propHeight]="propHeight1"
+      [propWidth]="propWidth1"
+      [propBackgroundColor]="propBackgroundColor"
+      [propAlignSelf]="propAlignSelf1"
+      [propFlex]="propFlex1"
+      [propTextDecoration]="propTextDecoration1"
+      [propFontWeight]="propFontWeight1"
+      [propDisplay]="propDisplay1"
+      [propMinWidth]="propMinWidth1">
+    </status-label>
+    <div class="frame-parent3">
+      <div class="group" [ngStyle]="frameDiv2Style">
+        <div class="div5" [ngStyle]="div1Style">{{prop1}}</div>
+        <div class="div6" [ngStyle]="div2Style">12 דקות</div>
+      </div>
+      <div class="notification2" *ngIf="!notification">
+        <div class="notification-inner" *ngIf="!ellipseDiv"></div>
+        <div class="div7" *ngIf="!div" [ngStyle]="div3Style">1</div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,26 @@
+.side-menu {
+  height: 100%;
+  width: 7rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.profilebar_I1135-65042-91-10062 {
+  position: relative;
+  width: 7rem;
+  height: 9.375rem;
+}
+
+.menulist_I1135-65042-91-10061 {
+  width: 7rem;
+  height: calc(100% - 9.375rem - (0.75rem)*2 - 1.25rem);
+  overflow: hidden;
+}
+
+.fold-menu_I1135-65042-843-64872 {
+  width: 40px;
+  height: 40px;
+}

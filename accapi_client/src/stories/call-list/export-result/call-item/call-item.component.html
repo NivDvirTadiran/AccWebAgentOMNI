@@ -1,0 +1,850 @@
+<div
+  class="root"
+  [ngClass]="{
+    root_checkboxNoStateDefaultNotificationYesStatusOpenStateDefaultNotificationYesStatusBlockFlagNoStateDefaultNotificationNoStatusOpenFlagNoStateDashboardNotificationNoStatusOpenFlagNoStateDefaultNotificationNoStatusTimedFlagNo:
+      checkbox === 'No' &&
+      ((state === 'Default' && notification === 'Yes' && status === 'Open') ||
+        (state === 'Default' &&
+          notification === 'Yes' &&
+          status === 'Block' &&
+          flag === 'No') ||
+        (state === 'Default' &&
+          notification === 'No' &&
+          status === 'Open' &&
+          flag === 'No') ||
+        (state === 'Dashboard' &&
+          notification === 'No' &&
+          status === 'Open' &&
+          flag === 'No') ||
+        (state === 'Default' &&
+          notification === 'No' &&
+          status === 'Timer' &&
+          flag === 'No')),
+    root_checkboxNoStateHoverNotificationFlagHoverStatusTimedStateDefaultCheckboxYesNotificationNoStatusTimedStateDefaultCheckboxYesNotificationYesStatusOpenFlagYesStateHoverNotificationYesStatusBlockStateSelectedNotificationYesStatusBlockStateSelectedNotificationNoStatusOpenStatePhoneNotificationNoStatusOpenStateHoverNotificationYesStatusOpenStateHoverNotificationNoStatusOpenFlagNoStateDefaultCheckboxYesNotificationNoStatusOpenStateDashboardHoverNotificationNoStatusOpen:
+      checkbox === 'No' ||
+      (state === 'Hover' &&
+        notification === 'flag hover' &&
+        status === 'Timer') ||
+      (state === 'Default' &&
+        checkbox === 'Yes' &&
+        notification === 'No' &&
+        status === 'Timer') ||
+      (state === 'Default' &&
+        checkbox === 'Yes' &&
+        notification === 'Yes' &&
+        status === 'Open' &&
+        flag === 'Yes') ||
+      (state === 'Hover' && notification === 'Yes' && status === 'Block') ||
+      (state === 'Selected' && notification === 'Yes' && status === 'Block') ||
+      (state === 'Selected' && notification === 'No' && status === 'Open') ||
+      (state === 'Phone' && notification === 'No' && status === 'Open') ||
+      (state === 'Hover' && notification === 'Yes' && status === 'Open') ||
+      (state === 'Hover' && notification === 'No' && status === 'Open') ||
+      flag === 'No' ||
+      (state === 'Default' &&
+        checkbox === 'Yes' &&
+        notification === 'No' &&
+        status === 'Open') ||
+      (state === 'Dashboard hover' &&
+        notification === 'No' &&
+        status === 'Open'),
+    root_stateDefaultCheckboxNoNotificationYesStatusOpenFlagNo:
+      state === 'Default' &&
+      checkbox === 'No' &&
+      notification === 'Yes' &&
+      status === 'Open' &&
+      flag === 'No',
+    root_flagYesNotificationFlagHoverStatusTimedNotificationNoStatusTimedNotificationYesStatusBlockNotificationNoStatusOpenCheckboxNoStateSelectedNotificationYesStatusOpenFlagNoStateHoverStateDefault:
+      flag === 'Yes' ||
+      (notification === 'flag hover' && status === 'Timer') ||
+      (notification === 'No' && status === 'Timer') ||
+      (notification === 'Yes' && status === 'Block') ||
+      (notification === 'No' && status === 'Open') ||
+      checkbox === 'No' ||
+      state === 'Selected' ||
+      (notification === 'Yes' && status === 'Open') ||
+      flag === 'No' ||
+      state === 'Hover' ||
+      state === 'Default',
+    root_flagNoStateSelectedCheckboxNoNotificationYesStatusBlockStateSelectedNotificationNoStatusOpenStatePhoneCheckboxNoNotificationNoStatusOpen:
+      flag === 'No' &&
+      ((state === 'Selected' &&
+        checkbox === 'No' &&
+        notification === 'Yes' &&
+        status === 'Block') ||
+        (state === 'Selected' && notification === 'No' && status === 'Open') ||
+        (state === 'Phone' &&
+          checkbox === 'No' &&
+          notification === 'No' &&
+          status === 'Open')),
+    root_checkboxNoStateDefaultNotificationYesStatusOpenStateHoverNotificationFlagHoverStatusTimedStateDefaultNotificationNoStatusTimedFlagYesStateDefaultNotificationYesStatusBlockStateHoverNotificationYesStatusBlockStateDefaultNotificationNoStatusOpenStateDashboardNotificationNoStatusOpenStateHoverNotificationYesStatusOpenStateHoverNotificationNoStatusOpenFlagNoStateDashboardHoverNotificationNoStatusOpen:
+      checkbox === 'No' ||
+      (state === 'Default' && notification === 'Yes' && status === 'Open') ||
+      (state === 'Hover' &&
+        notification === 'flag hover' &&
+        status === 'Timer') ||
+      (state === 'Default' && notification === 'No' && status === 'Timer') ||
+      flag === 'Yes' ||
+      (state === 'Default' && notification === 'Yes' && status === 'Block') ||
+      (state === 'Hover' && notification === 'Yes' && status === 'Block') ||
+      (state === 'Default' && notification === 'No' && status === 'Open') ||
+      (state === 'Dashboard' && notification === 'No' && status === 'Open') ||
+      (state === 'Hover' && notification === 'Yes' && status === 'Open') ||
+      (state === 'Hover' && notification === 'No' && status === 'Open') ||
+      flag === 'No' ||
+      (state === 'Dashboard hover' &&
+        notification === 'No' &&
+        status === 'Open'),
+    root_statePhoneCheckboxNoNotificationNoStatusOpenFlagNo:
+      state === 'Phone' &&
+      checkbox === 'No' &&
+      notification === 'No' &&
+      status === 'Open' &&
+      flag === 'No'
+  }"
+>
+  <div class="frame433">
+      <div class="frame170">
+          <app-icon-large-17 class="iconLarge17"></app-icon-large-17>
+          <app-icon-checkbox
+                  *ngIf="
+          state === 'Hover' &&
+          checkbox === 'No' &&
+          ((notification === 'Yes' && status === 'Open' && flag === 'Yes') ||
+            (notification === 'flag hover' &&
+              status === 'Timer' &&
+              flag === 'No'))
+        "
+                  [property1]="'Small'"
+                  [check]="'Empty'"
+                  [color]="'black'"
+                  class=""
+                  [ngClass]="{
+          iconCheckbox_notificationYesStatusOpenFlagYesNotificationFlagHoverStatusTimedFlagNo:
+            (notification === 'Yes' && status === 'Open' && flag === 'Yes') ||
+            (notification === 'flag hover' &&
+              status === 'Timer' &&
+              flag === 'No')
+        }"
+          ></app-icon-checkbox>
+          <app-icon-checkbox
+                  *ngIf="
+          state === 'Default' &&
+          checkbox === 'Yes' &&
+          ((notification === 'No' && status === 'Timer' && flag === 'No') ||
+            (notification === 'Yes' && status === 'Open' && flag === 'Yes'))
+        "
+                  [property1]="'Small'"
+                  [check]="'Fill'"
+                  [color]="'black'"
+                  class=""
+                  [ngClass]="{
+          iconCheckbox_notificationNoStatusTimedFlagNoNotificationYesStatusOpenFlagYes:
+            (notification === 'No' && status === 'Timer' && flag === 'No') ||
+            (notification === 'Yes' && status === 'Open' && flag === 'Yes')
+        }"
+          ></app-icon-checkbox>
+      </div>
+      <div class="a15">
+          <span class="a1">קבוצת מכירות</span>
+      </div>
+  </div>
+  <div
+    *ngIf="
+      checkbox === 'No' ||
+      (state === 'Default' && notification === 'Yes' && status === 'Open') ||
+      (state === 'Hover' && notification === 'Yes' && status === 'Open') ||
+      (state === 'Hover' &&
+        notification === 'flag hover' &&
+        status === 'Timer' &&
+        flag === 'No') ||
+      (state === 'Default' &&
+        notification === 'No' &&
+        status === 'Timer' &&
+        flag === 'No') ||
+      flag === 'Yes' ||
+      (state === 'Default' &&
+        notification === 'Yes' &&
+        status === 'Block' &&
+        flag === 'No') ||
+      (state === 'Hover' &&
+        notification === 'Yes' &&
+        status === 'Block' &&
+        flag === 'No') ||
+      (state === 'Default' &&
+        notification === 'No' &&
+        status === 'Open' &&
+        flag === 'No') ||
+      (state === 'Dashboard' &&
+        notification === 'No' &&
+        status === 'Open' &&
+        flag === 'No') ||
+      (state === 'Selected' &&
+        notification === 'Yes' &&
+        status === 'Block' &&
+        flag === 'No') ||
+      (state === 'Selected' &&
+        notification === 'No' &&
+        status === 'Open' &&
+        flag === 'No')
+    "
+    class="frame168"
+  >
+
+    <div class="frame167">
+      <span
+        *ngIf="
+          checkbox === 'No' ||
+          (state === 'Default' &&
+            notification === 'Yes' &&
+            status === 'Open') ||
+          (state === 'Hover' && notification === 'Yes' && status === 'Open') ||
+          (state === 'Hover' &&
+            notification === 'flag hover' &&
+            status === 'Timer' &&
+            flag === 'No') ||
+          (state === 'Default' &&
+            notification === 'No' &&
+            status === 'Timer' &&
+            flag === 'No') ||
+          flag === 'Yes' ||
+          (state === 'Default' &&
+            notification === 'No' &&
+            status === 'Open' &&
+            flag === 'No') ||
+          (state === 'Dashboard' &&
+            notification === 'No' &&
+            status === 'Open' &&
+            flag === 'No') ||
+          (state === 'Selected' &&
+            notification === 'No' &&
+            status === 'Open' &&
+            flag === 'No')
+        "
+        class="a"
+        >שם הלקוח</span
+      >
+      <app-icon-channel-1 class="iconChannel1"></app-icon-channel-1>
+      <span
+        *ngIf="
+          checkbox === 'No' &&
+          notification === 'Yes' &&
+          status === 'Block' &&
+          flag === 'No' &&
+          (state === 'Default' || state === 'Hover' || state === 'Selected')
+        "
+        class=""
+        [ngClass]="{
+          a_stateDefaultStateHoverStateSelected:
+            state === 'Default' || state === 'Hover' || state === 'Selected'
+        }"
+        >שם הנציג</span
+      >
+    </div>
+  </div>
+  <div
+    *ngIf="
+      state === 'Default' &&
+      checkbox === 'No' &&
+      notification === 'Yes' &&
+      status === 'Open' &&
+      flag === 'No'
+    "
+    class="frame431"
+  >
+    <app-status-label [statusLabel]=statusLabel_open></app-status-label>
+    <div class="frame169">
+      <div class="frame185">
+        <span class="reciveMessage">...הודעה חדשה שהתקבלה</span>
+        <span class="a12">דקות 12</span>
+      </div>
+      <app-notification
+        [property1]="'Default'"
+        class="notification"
+      ></app-notification>
+    </div>
+  </div>
+  <div
+    *ngIf="
+      state === 'Default' &&
+      checkbox === 'No' &&
+      notification === 'Yes' &&
+      status === 'Open' &&
+      flag === 'Yes'
+    "
+    class="frame433"
+  >
+    <div class="frame172">
+      <app-status-label
+              [statusLabel]=statusLabel_open
+
+      ></app-status-label>
+      <app-notification
+        [property1]="'flag'"
+        class="notification"
+      ></app-notification>
+    </div>
+    <div class="frame169">
+      <div class="frame185">
+        <span class="reciveMessage">...הודעה חדשה שהתקבלה</span>
+        <span class="a1">שעה 1</span>
+      </div>
+      <app-notification
+        [property1]="'Default'"
+        class="notification"
+      ></app-notification>
+    </div>
+  </div>
+  <div
+    *ngIf="
+      state === 'Hover' &&
+      checkbox === 'No' &&
+      notification === 'Yes' &&
+      status === 'Open' &&
+      flag === 'Yes'
+    "
+    class="frame450"
+  >
+    <div class="frame172">
+      <app-status-label
+              [statusLabel]=statusLabel_open
+
+      ></app-status-label>
+      <app-notification
+        [property1]="'flag'"
+        class="notification"
+      ></app-notification>
+    </div>
+    <div class="frame169">
+      <div class="frame185">
+        <span class="reciveMessage">...הודעה חדשה שהתקבלה</span>
+        <span class="a1">1 שעה</span>
+      </div>
+      <app-notification
+        [property1]="'Default'"
+        class="notification"
+      ></app-notification>
+    </div>
+  </div>
+  <div
+    *ngIf="
+      state === 'Hover' &&
+      checkbox === 'No' &&
+      notification === 'flag hover' &&
+      status === 'Timer' &&
+      flag === 'No'"
+
+    class="frame456">
+
+    <app-status-label [statusLabel]=statusLabel_timer ></app-status-label>
+    <div class="frame169">
+      <div class="frame185">
+        <span class="sendMessage">...הודעה אחרונה שנשלחה</span>
+        <span class="a12">דקות 12</span>
+      </div>
+      <app-notification
+        [property1]="'Default'"
+        class="notification"
+      ></app-notification>
+    </div>
+  </div>
+  <div
+    *ngIf="
+      state === 'Default' &&
+      checkbox === 'Yes' &&
+      notification === 'No' &&
+      status === 'Timer' &&
+      flag === 'No'
+    "
+    class="frame457"
+  >
+    <app-status-label [statusLabel]=statusLabel_timer ></app-status-label>
+    <div class="frame169">
+      <div class="frame185">
+        <span class="sendMessage">...הודעה אחרונה שנשלחה</span>
+        <span class="a12">דקות 12</span>
+      </div>
+      <app-notification
+        [property1]="'Default'"
+        class="notification">
+      </app-notification>
+    </div>
+  </div>
+  <div
+    *ngIf="
+      state === 'Default' &&
+      checkbox === 'Yes' &&
+      notification === 'Yes' &&
+      status === 'Open' &&
+      flag === 'Yes'"
+
+    class="frame451">
+
+    <div class="frame172">
+      <app-status-label
+              [statusLabel]=statusLabel_open
+        >
+      </app-status-label>
+      <app-notification
+        [property1]="'flag'"
+        class="notification">
+      </app-notification>
+    </div>
+    <div class="frame169">
+      <div class="frame185">
+        <span class="sendMessage">...הודעה אחרונה שנשלחה</span>
+        <span class="a12">דקות 12</span>
+      </div>
+      <app-notification
+        [property1]="'Default'"
+        class="notification">
+      </app-notification>
+    </div>
+  </div>
+  <div
+    *ngIf="
+      state === 'Default' &&
+      checkbox === 'No' &&
+      notification === 'Yes' &&
+      status === 'Block' &&
+      flag === 'No'"
+
+    class="frame435">
+
+    <app-status-label [statusLabel]=statusLabel_block ></app-status-label>
+    <div class="frame169">
+      <div class="frame185">
+        <span class="a">בקשה לחסימת לקוח</span>
+        <span class="a12">דקות 12</span>
+      </div>
+      <app-notification
+        [property1]="'block'"
+        class="notification">
+      </app-notification>
+    </div>
+  </div>
+  <div
+    *ngIf="
+      state === 'Hover' &&
+      checkbox === 'No' &&
+      notification === 'Yes' &&
+      status === 'Block' &&
+      flag === 'No'"
+
+    class="frame444">
+
+    <app-status-label [statusLabel]=statusLabel_block ></app-status-label>
+    <div class="frame169">
+      <div class="frame185">
+        <span class="a">בקשה לחסימת לקוח</span>
+        <span class="a12">דקות 12</span>
+      </div>
+      <app-notification
+        [property1]="'block'"
+        class="notification">
+      </app-notification>
+    </div>
+  </div>
+  <div
+    *ngIf="
+      checkbox === 'No' &&
+      notification === 'No' &&
+      status === 'Open' &&
+      flag === 'No' &&
+      (state === 'Default' || state === 'Dashboard')"
+
+    class=""
+    [ngClass]="{
+      frame436_stateDefaultStateDashboard:
+        state === 'Default' || state === 'Dashboard'
+    }">
+
+    <app-status-label
+      *ngIf="state === 'Default' || state === 'Dashboard'"
+      [statusLabel]=statusLabel_open
+      >
+    </app-status-label>
+    <div *ngIf="state === 'Default' || state === 'Dashboard'" class="frame169">
+      <div class="frame185">
+        <span class="sendMessage">...הודעה אחרונה שנשלחה</span>
+        <span class="a12">דקות 12</span>
+      </div>
+      <app-notification
+        [property1]="'Default'"
+        class="notification">
+      </app-notification>
+    </div>
+  </div>
+  <div
+    *ngIf="
+      state === 'Default' &&
+      checkbox === 'No' &&
+      notification === 'No' &&
+      status === 'Timer' &&
+      flag === 'No'"
+    class="frame454">
+
+    <app-status-label [statusLabel]=statusLabel_timer ></app-status-label>
+    <div class="frame169">
+      <div class="frame185">
+        <span class="sendMessage">...הודעה אחרונה שנשלחה</span>
+        <span class="a12">12 דקות</span>
+      </div>
+      <app-notification
+        [property1]="'Default'"
+        class="notification">
+      </app-notification>
+    </div>
+  </div>
+  <div
+    *ngIf="
+      state === 'Selected' &&
+      checkbox === 'No' &&
+      notification === 'Yes' &&
+      status === 'Block' &&
+      flag === 'No'"
+
+    class="frame443">
+
+    <app-status-label [statusLabel]=statusLabel_block ></app-status-label>
+    <div class="frame169">
+      <div class="frame169">
+        <div class="frame186">
+          <span class="a">בקשה לחסימת לקוח</span>
+          <span class="a12">12 דקות</span>
+        </div>
+        <app-notification
+          [property1]="'block'"
+          class="notification">
+        </app-notification>
+      </div>
+    </div>
+  </div>
+  <div
+    *ngIf="
+      state === 'Selected' &&
+      checkbox === 'No' &&
+      notification === 'No' &&
+      status === 'Open' &&
+      flag === 'No'"
+
+    class="frame438">
+
+    <app-status-label [statusLabel]=statusLabel_open></app-status-label>
+    <div class="frame169">
+      <div class="frame169">
+        <div class="frame186">
+          <span class="sendMessage">...הודעה אחרונה שנשלחה</span>
+          <span class="a12">12 דקות</span>
+        </div>
+        <app-notification
+          [property1]="'Default'"
+          class="notification">
+        </app-notification>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="status === 'Open' && flag === 'No' &&
+      ((state === 'Selected' && checkbox === 'Yes' && notification === 'No') ||
+        (state === 'Phone' && checkbox === 'No' && notification === 'No') ||
+        (state === 'Hover' && notification === 'Yes') ||
+        (state === 'Hover' && notification === 'No') ||
+        (state === 'Default' && checkbox === 'Yes' && notification === 'No') ||
+        (state === 'Dashboard hover' && checkbox === 'No' && notification === 'No'))"
+
+    class=""
+    [ngClass]="{
+      frame173_stateSelectedCheckboxYesNotificationNoStatePhoneCheckboxNoNotificationNoStateHoverNotificationYesStateHoverNotificationNoStateDefaultCheckboxYesNotificationNoStateDashboardHoverCheckboxNoNotificationNo:
+        (state === 'Selected' && checkbox === 'Yes' && notification === 'No') ||
+        (state === 'Phone' && checkbox === 'No' && notification === 'No') ||
+        (state === 'Hover' && notification === 'Yes') ||
+        (state === 'Hover' && notification === 'No') ||
+        (state === 'Default' && checkbox === 'Yes' && notification === 'No') ||
+        (state === 'Dashboard hover' &&
+          checkbox === 'No' &&
+          notification === 'No')
+    }">
+
+    <div
+      *ngIf="
+        (state === 'Selected' && checkbox === 'Yes' && notification === 'No') ||
+        (state === 'Phone' && checkbox === 'No' && notification === 'No') ||
+        (state === 'Hover' && notification === 'Yes') ||
+        (state === 'Hover' && notification === 'No') ||
+        (state === 'Default' && checkbox === 'Yes' && notification === 'No') ||
+        (state === 'Dashboard hover' &&
+          checkbox === 'No' &&
+          notification === 'No')"
+
+      class="frame170"
+      [ngClass]="{
+        frame170_statusOpenFlagNoStateSelectedCheckboxYesNotificationNoStatePhoneCheckboxNoNotificationNoStateHoverNotificationYesStateHoverNotificationNoStateDefaultCheckboxYesNotificationNo:
+          status === 'Open' && flag === 'No' &&
+          ((state === 'Selected' && checkbox === 'Yes' && notification === 'No') ||
+            (state === 'Phone' && checkbox === 'No' && notification === 'No') ||
+            (state === 'Hover' && notification === 'Yes') ||
+            (state === 'Hover' && notification === 'No') ||
+            (state === 'Default' && checkbox === 'Yes' && notification === 'No'))
+      }">
+      <app-icon-large-17 class="iconLarge17"></app-icon-large-17>
+      <app-icon-checkbox
+        *ngIf="checkbox === 'Yes' && status === 'Open' && flag === 'No' &&
+          ((state === 'Selected' && notification === 'No') ||
+            (state === 'Hover' && notification === 'Yes') ||
+            (state === 'Hover' && notification === 'No') ||
+            (state === 'Default' && notification === 'No'))"
+        [property1]="'Small'"
+        [check]="'Fill'"
+        [color]="'black'"
+        class=""
+        [ngClass]="{
+          iconCheckbox_stateSelectedNotificationNoStateHoverNotificationYesStateHoverNotificationNoStateDefaultNotificationNo:
+            (state === 'Selected' && notification === 'No') ||
+            (state === 'Hover' && notification === 'Yes') ||
+            (state === 'Hover' && notification === 'No') ||
+            (state === 'Default' && notification === 'No')
+        }">
+      </app-icon-checkbox>
+      <app-icon-checkbox
+        *ngIf="
+          state === 'Hover' &&
+          checkbox === 'No' &&
+          status === 'Open' &&
+          flag === 'No' &&
+          (notification === 'Yes' || notification === 'No')"
+        [property1]="'Small'"
+        [check]="'Empty'"
+        [color]="'black'"
+        class=""
+        [ngClass]="{
+          iconCheckbox_notificationYesNotificationNo:
+            notification === 'Yes' || notification === 'No'
+        }">
+      </app-icon-checkbox>
+      <app-button *ngIf="
+          state === 'Dashboard hover' &&
+          checkbox === 'No' &&
+          notification === 'No' &&
+          status === 'Open' &&
+          flag === 'No'"
+        [active]="'Yes'"
+        [bold]="'No'"
+        [icon]="'No'"
+        [size]="'small'"
+        [purpose]="'Default'"
+        class="button">
+      </app-button>
+    </div>
+    <div *ngIf="
+        (state === 'Selected' && checkbox === 'Yes' && notification === 'No') ||
+        (state === 'Phone' && checkbox === 'No' && notification === 'No') ||
+        (state === 'Hover' && notification === 'Yes') ||
+        (state === 'Hover' && notification === 'No') ||
+        (state === 'Default' && checkbox === 'Yes' && notification === 'No') ||
+        (state === 'Dashboard hover' &&
+          checkbox === 'No' &&
+          notification === 'No')"
+      class="frame167">
+
+      <span class="a">שם הלקוח</span>
+      <app-icon-channel-1 *ngIf="
+          status === 'Open' &&
+          flag === 'No' &&
+          ((state === 'Selected' &&
+            checkbox === 'Yes' &&
+            notification === 'No') ||
+            (state === 'Hover' && notification === 'Yes') ||
+            (state === 'Hover' && notification === 'No') ||
+            (state === 'Default' &&
+              checkbox === 'Yes' &&
+              notification === 'No') ||
+            (state === 'Dashboard hover' &&
+              checkbox === 'No' &&
+              notification === 'No'))"
+        class=""
+        [ngClass]="{
+          iconChannel1_stateSelectedCheckboxYesNotificationNoStateHoverNotificationYesStateHoverNotificationNoStateDefaultCheckboxYesNotificationNoStateDashboardHoverCheckboxNoNotificationNo:
+            (state === 'Selected' &&
+              checkbox === 'Yes' &&
+              notification === 'No') ||
+            (state === 'Hover' && notification === 'Yes') ||
+            (state === 'Hover' && notification === 'No') ||
+            (state === 'Default' &&
+              checkbox === 'Yes' &&
+              notification === 'No') ||
+            (state === 'Dashboard hover' &&
+              checkbox === 'No' &&
+              notification === 'No')
+        }">
+      </app-icon-channel-1>
+      <app-icon-channel-7 *ngIf="
+          state === 'Phone' &&
+          checkbox === 'No' &&
+          notification === 'No' &&
+          status === 'Open' &&
+          flag === 'No'"
+        class="iconChannel7">
+      </app-icon-channel-7>
+    </div>
+  </div>
+
+
+  <div *ngIf="
+      state === 'Selected' &&
+      checkbox === 'Yes' &&
+      notification === 'No' &&
+      status === 'Open' &&
+      flag === 'No'"
+    class="frame439">
+
+    <app-status-label [statusLabel]=statusLabel_open ></app-status-label>
+    <div class="frame169">
+      <div class="frame169">
+        <div class="frame186">
+          <span class="sendMessage">...הודעה אחרונה שנשלחה</span>
+          <span class="a12">12 דקות</span>
+        </div>
+        <app-notification
+          [property1]="'Default'"
+          class="notification"
+        ></app-notification>
+      </div>
+    </div>
+  </div>
+
+
+  <div *ngIf="
+      state === 'Phone' &&
+      checkbox === 'No' &&
+      notification === 'No' &&
+      status === 'Open' &&
+      flag === 'No'"
+    class="frame458">
+
+    <app-status-label [statusLabel]=statusLabel_open></app-status-label>
+    <div class="frame169">
+      <div class="frame169">
+        <div class="frame186">
+          <span class="a12">12 דקות</span>
+        </div>
+        <app-notification
+          [property1]="'Default'"
+          class="notification"
+        ></app-notification>
+      </div>
+    </div>
+  </div>
+
+
+  <div *ngIf="
+      state === 'Hover' &&
+      checkbox === 'No' &&
+      notification === 'Yes' &&
+      status === 'Open' &&
+      flag === 'No'"
+    class="frame432">
+
+    <app-status-label [statusLabel]=statusLabel_open></app-status-label>
+    <div class="frame169">
+      <div class="frame186">
+        <span class="reciveMessage">...הודעה חדשה שהתקבלה</span>
+        <span class="a12">12 דקות</span>
+      </div>
+      <app-notification
+        [property1]="'Default'"
+        class="notification">
+      </app-notification>
+    </div>
+  </div>
+
+
+  <div *ngIf="
+      state === 'Hover' &&
+      checkbox === 'No' &&
+      notification === 'No' &&
+      status === 'Open' &&
+      flag === 'No'"
+    class="frame437">
+
+    <app-status-label [statusLable]="'statusLable_open'"></app-status-label>
+    <div class="frame169">
+      <div class="frame186">
+        <span class="sendMessage">...הודעה אחרונה שנשלחה</span>
+        <span class="a12">12 דקות</span>
+      </div>
+      <app-notification
+        [property1]="'Default'"
+        class="notification"
+      ></app-notification>
+    </div>
+  </div>
+
+
+  <div *ngIf="
+      state === 'Hover' &&
+      checkbox === 'Yes' &&
+      notification === 'Yes' &&
+      status === 'Open' &&
+      flag === 'No'"
+    class="frame440">
+
+    <app-status-label [statusLabel]="statusLabel_open"></app-status-label>
+    <div class="frame169">
+      <div class="frame186">
+        <span class="sendMessage">...הודעה אחרונה שנשלחה</span>
+        <span class="a12">12 דקות</span>
+      </div>
+      <app-notification
+        [property1]="'Default'"
+        class="notification">
+      </app-notification>
+    </div>
+  </div>
+
+
+  <div *ngIf="
+      checkbox === 'Yes' &&
+      notification === 'No' &&
+      status === 'Open' &&
+      flag === 'No' &&
+      (state === 'Hover' || state === 'Default')"
+    class="" [ngClass]="{frame442_stateHoverStateDefault: state === 'Hover' || state === 'Default'}">
+    <app-status-label *ngIf="state === 'Hover' || state === 'Default'"
+      [statusLabel]=statusLabel_open >
+    </app-status-label>
+    <div *ngIf="state === 'Hover' || state === 'Default'" class="frame169">
+      <div class="frame186">
+        <span class="sendMessage">...הודעה אחרונה שנשלחה</span>
+        <span class="a12">12 דקות</span>
+      </div>
+      <app-notification
+        [property1]="'Default'"
+        class="notification">
+      </app-notification>
+    </div>
+  </div>
+
+
+  <div *ngIf="
+      state === 'Dashboard hover' &&
+      checkbox === 'No' &&
+      notification === 'No' &&
+      status === 'Open' &&
+      flag === 'No'"
+    class="frame448">
+
+    <app-status-label [statusLabel]=statusLabel_open></app-status-label>
+    <div class="frame169">
+      <div class="frame186">
+        <span class="sendMessage">...הודעה אחרונה שנשלחה</span>
+        <span class="a12">12 דקות</span>
+      </div>
+      <app-notification
+        [property1]="'Default'"
+        class="notification"
+      ></app-notification>
+    </div>
+  </div>
+
+
+</div>

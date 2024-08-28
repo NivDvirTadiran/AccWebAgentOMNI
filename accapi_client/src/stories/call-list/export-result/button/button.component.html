@@ -1,0 +1,201 @@
+<div
+  class="root"
+  [ngClass]="{
+    root_activeYesBoldYesIconYesIconNoSizeSmallPurposeDefault:
+      active === 'Yes' &&
+      bold === 'Yes' &&
+      (icon === 'Yes' ||
+        icon === 'No' ||
+        size === 'small' ||
+        purpose === 'Default'),
+    root_activeYesBoldYesIconCancelSizeSmallPurposeDefault:
+      active === 'Yes' &&
+      bold === 'Yes' &&
+      icon === 'cancel' &&
+      size === 'small' &&
+      purpose === 'Default',
+    root_activeNoBoldYesPurposeDefaultIconYesSizeSmallIconNo:
+      active === 'No' &&
+      bold === 'Yes' &&
+      purpose === 'Default' &&
+      ((icon === 'Yes' && size === 'small') || icon === 'No'),
+    root_sizeSmallIconYesIconWithXIconNoBoldYesIconCancelActiveYesPurposeDefaultBoldNo:
+      size === 'small' &&
+      (icon === 'Yes' ||
+        icon === 'with x' ||
+        icon === 'No' ||
+        (bold === 'Yes' && icon === 'cancel') ||
+        active === 'Yes' ||
+        purpose === 'Default' ||
+        bold === 'No'),
+    root_iconNoSizeLargePurposeDefault:
+      icon === 'No' && size === 'Large' && purpose === 'Default',
+    root_sizeSmallPurposeDefaultIconYesActiveYesBoldNoIconWithXActiveYesBoldYesIconCancel:
+      size === 'small' &&
+      purpose === 'Default' &&
+      (icon === 'Yes' ||
+        (active === 'Yes' && bold === 'No' && icon === 'with x') ||
+        (active === 'Yes' && bold === 'Yes' && icon === 'cancel')),
+    root_iconNoSizeSmallActiveYesPurposeDefaultBoldNo:
+      icon === 'No' &&
+      (size === 'small' ||
+        active === 'Yes' ||
+        purpose === 'Default' ||
+        bold === 'No'),
+    root_iconYesPurposeDefaultActiveYesBoldNoIconWithXPurposeDefaultActiveYesBoldYesIconCancelPurposeDefaultActiveYesBoldYesIconNoPurposeChatStateSizeLargeIconNoPurposeDefaultActiveNoBoldNoIconNoSizeSmall:
+      (icon === 'Yes' && purpose === 'Default') ||
+      (active === 'Yes' &&
+        bold === 'No' &&
+        icon === 'with x' &&
+        purpose === 'Default') ||
+      (active === 'Yes' &&
+        bold === 'Yes' &&
+        icon === 'cancel' &&
+        purpose === 'Default') ||
+      (active === 'Yes' &&
+        bold === 'Yes' &&
+        icon === 'No' &&
+        purpose === 'chat state') ||
+      size === 'Large' ||
+      (icon === 'No' && purpose === 'Default') ||
+      (active === 'No' && bold === 'No' && icon === 'No') ||
+      size === 'small',
+    root_iconNoSizeSmallActiveYesBoldNoPurposeDefaultBoldYes:
+      icon === 'No' &&
+      size === 'small' &&
+      (active === 'Yes' ||
+        bold === 'No' ||
+        purpose === 'Default' ||
+        bold === 'Yes'),
+    root_activeNoBoldNoIconNoSizeLargePurposeDefault:
+      active === 'No' &&
+      bold === 'No' &&
+      icon === 'No' &&
+      size === 'Large' &&
+      purpose === 'Default',
+    root_activeNoBoldNoSizeSmallIconYesPurposeDefaultIconNo:
+      active === 'No' &&
+      bold === 'No' &&
+      size === 'small' &&
+      ((icon === 'Yes' && purpose === 'Default') || icon === 'No'),
+    root_activeYesBoldNoSizeSmallIconYesPurposeDefaultIconWithXPurposeDefaultIconNo:
+      active === 'Yes' &&
+      bold === 'No' &&
+      size === 'small' &&
+      ((icon === 'Yes' && purpose === 'Default') ||
+        (icon === 'with x' && purpose === 'Default') ||
+        icon === 'No'),
+    root_activeYesBoldNoIconNoSizeLargePurposeDefault:
+      active === 'Yes' &&
+      bold === 'No' &&
+      icon === 'No' &&
+      size === 'Large' &&
+      purpose === 'Default',
+  }"
+>
+  <span
+    *ngIf="
+      icon === 'Yes' ||
+      icon === 'with x' ||
+      icon === 'No' ||
+      size === 'small' ||
+      active === 'Yes' ||
+      purpose === 'Default' ||
+      bold === 'No'
+    "
+    class="a"
+    [ngClass]="{
+      a_activeYesBoldNoIconYesIconWithXIconNoSizeSmallPurposeDefault:
+        active === 'Yes' &&
+        bold === 'No' &&
+        (icon === 'Yes' ||
+          icon === 'with x' ||
+          icon === 'No' ||
+          size === 'small' ||
+          purpose === 'Default'),
+      a_boldYesIconYesSizeSmallIconNoActiveYesSizeSmallPurposeDefault:
+        bold === 'Yes' &&
+        ((icon === 'Yes' && size === 'small') ||
+          icon === 'No' ||
+          (active === 'Yes' && size === 'small') ||
+          purpose === 'Default'),
+      a_activeNoBoldNoIconNoSizeLargePurposeDefault:
+        active === 'No' &&
+        bold === 'No' &&
+        icon === 'No' &&
+        size === 'Large' &&
+        purpose === 'Default',
+      a_activeNoBoldNoSizeSmallIconYesPurposeDefaultIconNo:
+        active === 'No' &&
+        bold === 'No' &&
+        size === 'small' &&
+        ((icon === 'Yes' && purpose === 'Default') || icon === 'No'),
+      a_sizeSmallIconYesIconWithXIconNoActiveYesPurposeDefaultBoldNo:
+        size === 'small' &&
+        (icon === 'Yes' ||
+          icon === 'with x' ||
+          icon === 'No' ||
+          active === 'Yes' ||
+          purpose === 'Default' ||
+          bold === 'No'),
+      a_iconNoSizeLargePurposeDefault:
+        icon === 'No' && size === 'Large' && purpose === 'Default',
+      a_iconYesIconWithXIconNoSizeSmallActiveYesSizeLargePurposeDefaultBoldNo:
+        icon === 'Yes' ||
+        icon === 'with x' ||
+        icon === 'No' ||
+        size === 'small' ||
+        active === 'Yes' ||
+        size === 'Large' ||
+        purpose === 'Default' ||
+        bold === 'No',
+      a_activeNoBoldYesIconNoSizeSmallPurposeDefault:
+        active === 'No' &&
+        bold === 'Yes' &&
+        icon === 'No' &&
+        size === 'small' &&
+        purpose === 'Default',
+    }"
+    >פניה חדשה</span
+  >
+  <app-icon-small-6
+    *ngIf="
+      size === 'small' &&
+      purpose === 'Default' &&
+      (icon === 'Yes' ||
+        (active === 'Yes' && bold === 'No' && icon === 'with x'))
+    "
+    class=""
+    [ngClass]="{
+      iconSmall6_iconYesActiveYesBoldNoIconWithX:
+        icon === 'Yes' ||
+        (active === 'Yes' && bold === 'No' && icon === 'with x'),
+    }"
+  ></app-icon-small-6>
+  <app-icon-small-16
+    *ngIf="
+      active === 'Yes' &&
+      size === 'small' &&
+      purpose === 'Default' &&
+      ((bold === 'No' && icon === 'with x') ||
+        (bold === 'Yes' && icon === 'cancel'))
+    "
+    class=""
+    [ngClass]="{
+      iconSmall16_boldNoIconWithXBoldYesIconCancel:
+        (bold === 'No' && icon === 'with x') ||
+        (bold === 'Yes' && icon === 'cancel'),
+    }"
+  ></app-icon-small-16>
+  <span
+    *ngIf="
+      active === 'Yes' &&
+      bold === 'Yes' &&
+      icon === 'cancel' &&
+      size === 'small' &&
+      purpose === 'Default'
+    "
+    class="a"
+    >ביטול</span
+  >
+</div>

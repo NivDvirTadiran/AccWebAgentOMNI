@@ -1,0 +1,23 @@
+.root {
+  position: relative;
+  box-sizing: border-box;
+  background: #ffffff;
+}
+.vector {
+  display: flex;
+  box-sizing: content-box;
+}
+
+.vector_property1SmallProperty2Down {
+  top: 8px;
+  left: 10px;
+  position: absolute;
+  display: flex;
+}
+
+.vector_property1SmallProperty2Up {
+  top: 5px;
+  left: 3px;
+  position: absolute;
+  display: flex;
+}
