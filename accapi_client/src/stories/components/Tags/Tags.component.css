@@ -1,0 +1,90 @@
+.a4 {
+  text-decoration: none;
+  flex: 1;
+  position: relative;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+  color: inherit;
+}
+.icon-large-37 {
+  height: 22.4px;
+  width: 22.4px;
+  position: relative;
+  min-height: 22px;
+}
+.parent6 {
+  width: 66.4px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.a5 {
+  text-decoration: none;
+  position: relative;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+  color: inherit;
+  display: inline-block;
+  min-width: 36px;
+}
+.button1 {
+  flex: 1;
+  border-radius: var(--br-xl);
+  background-color: var(--for-strokes);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-8xs-5) var(--padding-3xs) var(--padding-6xs-5)
+    var(--padding-4xs);
+  white-space: nowrap;
+}
+.a8 {
+  text-decoration: none;
+  position: relative;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+  color: inherit;
+  display: inline-block;
+  min-width: 26px;
+}
+.button4 {
+  border-radius: var(--br-xl);
+  background-color: var(--for-strokes);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-8xs-5) var(--padding-3xs) var(--padding-6xs-5)
+    var(--padding-4xs);
+}
+.new-request-buttons,
+.new-request-buttons-parent,
+.tags {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-8xs);
+}
+.new-request-buttons-parent,
+.tags {
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--gap-3xs);
+  text-align: center;
+  font-size: var(--small-text-size);
+}
+.tags {
+  box-shadow: 1px 1px 10px rgba(67, 165, 255, 0.15);
+  border-radius: var(--br-xl);
+  background-color: var(--color-white);
+  padding: var(--padding-xl) var(--padding-11xl) var(--padding-14xl-6)
+    var(--padding-43xl);
+  text-align: right;
+  font-size: var(--menu-text-size);
+  color: var(--darkblue);
+  font-family: var(--small-text);
+}
