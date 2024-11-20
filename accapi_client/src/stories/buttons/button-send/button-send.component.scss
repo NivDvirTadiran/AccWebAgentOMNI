@@ -1,0 +1,69 @@
+
+
+.button {
+
+
+
+}
+
+
+
+.button-send {
+  display: flex;
+  gap: 3px;
+  background: #BCBCBC;
+  border-radius: 20px;
+  justify-content: center;
+
+  height: 36px;
+  padding: 4px 10px 6px 9px;
+  align-items: center;
+  flex-shrink: 0;
+  font-style: normal;
+  line-height: 11px;
+
+  color: #FFFFFF;
+  font-size: 16px;
+  //font-family: Noto Sans Hebrew, ui-serif;
+  text-align: right;
+  font-weight: 700;
+  border: 0;
+
+  &:hover {
+    background: #43A5FF;
+  }
+
+  &:focus {
+    background: #ccd8e7;
+  }
+
+  &:active {
+    box-shadow: none;
+    background: linear-gradient(116.01deg, #43A5FF 2.44%, #ccd8e7 93.73%);
+  }
+
+}
+
+
+
+.button-send--small {
+  font-size: 20.7945px;
+  padding: 10px 16px;
+}
+.button-send--medium {
+  font-size: 16px;
+  padding: 4px 10px 6px 9px;
+}
+.button-send--large {
+  font-size: 28px;
+  padding: 17px 136px;
+}
+
+.button-send--disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.button-send--enabled {
+  opacity: unset;
+  cursor: unset;
+}

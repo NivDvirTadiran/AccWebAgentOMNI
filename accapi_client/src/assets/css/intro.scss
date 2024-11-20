@@ -113,8 +113,18 @@ html {
   width: 2.75em;
   height: 2.75em;
 }
-
-
+.cube__face:nth-child(1) {
+  transform: rotateX(90deg) translateZ(1.375em);
+  background: #fff;
+}
+.cube__face:nth-child(2) {
+  transform: rotateY(90deg) translateZ(1.375em);
+  background: #a9a9a9;
+}
+.cube__face:nth-child(3) {
+  transform: translateZ(1.375em);
+  background: #dcdcdc;
+}
 
 .squisher {
   transform-origin: 0 1.375em;
@@ -130,3 +140,70 @@ html {
     transform: scaleY(0.5);
   }
 }
+
+.circle_bow {
+  display: inline;
+  mix-blend-mode: normal;
+  fill: #0090d6;
+  fill-opacity: 1;
+  fill-rule: evenodd;
+  stroke-width: 0.250122;
+  marker-start: url(#ThreeDots);
+  marker-mid: url(#DartArrow);
+  paint-order: stroke fill markers
+}
+
+
+
+.cube__face:nth-child(1) {
+  transform: translate3d(-4.875em, 0, -4.875em);
+}.cube__face .squisher2 {
+   animation-delay: 0s;
+ }
+.circle_bow:nth-child(2) {
+  transform: translate3d(-1.625em, 0, -4.875em);
+}
+.circle_bow:nth-child(2) .squisher2 {
+  animation-delay: 0.5s;
+}
+.circle_bow:nth-child(3) {
+  transform: translate3d(1.625em, 0, -4.875em);
+}
+.circle_bow:nth-child(3) .squisher2 {
+  animation-delay: 1s;
+}
+
+.squisher2 {
+  transform-origin: 0 1.375em;
+  transform: scaleY(0);
+  animation: ani2 3.5s ease-in-out infinite;
+}
+
+
+@keyframes ani2 {
+  100%, 100%, 10% {
+    transform: scaleY(0);
+  }
+  25% {
+    transform: scaleY(0.5);
+  }
+}
+
+.intro {
+  transform: rotateX(0deg) rotateY(0deg);
+}
+.intro, .intro * {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-style: preserve-3d;
+}
+
+
+.svg1 {
+  position: absolute;
+  top: calc(50% - 150px);
+  left: calc(50% - 150px);
+  transform-style: preserve-3d;
+}
+

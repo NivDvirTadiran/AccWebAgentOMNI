@@ -9,7 +9,7 @@
 }
 
 /* Variables */
-$sedButton-width: 20px;
+$sedButton-width: 30px;
 $sedButton-height: 20px;
 
 
@@ -101,19 +101,7 @@ $sedButton-height: 20px;
   gap: 7px;
   box-sizing: border-box;
 }
-.sedButton {
-  position: relative;
-  box-sizing: border-box;
-  width: $sedButton-width;
-  height: $sedButton-height;
-}
 
-.sedButton {
-  position: relative;
-  box-sizing: border-box;
-  width: $sedButton-width;
-  height: $sedButton-height;
-}
 
 .frame256 {
   padding: 1px 8px 3px 8px;
@@ -185,19 +173,6 @@ $sedButton-height: 20px;
   align-items: center;
   gap: 7px;
   box-sizing: border-box;
-}
-.sedButton {
-  position: relative;
-  box-sizing: border-box;
-  width: $sedButton-width;
-  height: $sedButton-height;
-}
-
-.sedButton {
-  position: relative;
-  box-sizing: border-box;
-  width: $sedButton-width;
-  height: $sedButton-height;
 }
 
 .frame393 {
@@ -285,22 +260,10 @@ $sedButton-height: 20px;
   gap: 7px;
   box-sizing: border-box;
 }
-.sedButton {
-  position: relative;
-  box-sizing: border-box;
-  width: $sedButton-width;
-  height: $sedButton-height;
-}
 
 
 .sedButton {
-  position: relative;
-  box-sizing: border-box;
-  width: $sedButton-width;
-  height: $sedButton-height;
-}
-
-.sedButton {
+  top: -5px;
   position: relative;
   box-sizing: border-box;
   width: $sedButton-width;

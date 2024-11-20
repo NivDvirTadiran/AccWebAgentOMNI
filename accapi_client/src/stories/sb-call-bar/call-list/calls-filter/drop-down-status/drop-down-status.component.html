@@ -1,0 +1,15 @@
+<div class="dropdownswitcher_I3242-63361-125-6073">
+
+    <label  [dir]="'rtl'"  for="statusSelect"></label>
+    <select #sortStatus [dir]="'rtl'" name="status" id="statusSelect" class="sort-status" (change)="onSelected()">
+        <option disabled selected value>סינון סטטוס:</option>
+        <option value="all">הכל</option>
+        <option value="new">חדש</option>
+        <option value="open">פתוח</option>
+        <option value="waiting">ממתין</option>
+        <option value="timer">מתוזמן</option>
+        <option value="close">סגור</option>
+    </select>
+
+
+</div>

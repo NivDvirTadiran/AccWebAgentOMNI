@@ -1,15 +1,16 @@
 <div class="menulist">
     <app-menu-section
+            (click)="changeList('הפניות שלי')"
             [propBorderRadius]="'1.25rem 1.25rem 0px 0px'"
             [propBackgroundColor]="'#fff'"
             [propBorderBottom]="'1px solid #dff0ff'"
             [iconPage3]="'./stories/assets/icons/icon--page--6.svg'"
-            [prop]="'פניות בתור'" [propColor]="'#43a5ff'"
+            [prop]="'הפניות שלי'" [propColor]="'#43a5ff'"
             [propHeight]="'1.375rem'" [propDisplay]="'inline-block'">
     </app-menu-section>
-    <app-menu-section [propBorderBottom]="'1px solid #dff0ff'" [iconPage3]="'./stories/assets/icons/icon--page--8.svg'" [prop]="'כל הפניות'" [propColor]="'#fff'" [propHeight]="'1.375rem'" [propDisplay]="'unset'"> </app-menu-section>
-    <app-menu-section [propBorderBottom]="'1px solid #dff0ff'" [iconPage3]="'./stories/assets/icons/icon--page--5.svg'" [prop]="'פניות בתור'" [propColor]="'#fff'" [propHeight]="'1.375rem'" [propDisplay]="'inline-block'"> </app-menu-section>
-    <app-menu-section [propBorderBottom]="'1px solid #dff0ff'" [iconPage3]="'./stories/assets/icons/icon--page--7.svg'" [prop]="'בוט'" [propColor]="'#fff'" [propHeight]="'1.375rem'" [propDisplay]="'inline-block'"> </app-menu-section>
+    <app-menu-section (click)="changeList('כל הפניות')" [propBorderBottom]="'1px solid #dff0ff'" [iconPage3]="'./stories/assets/icons/icon--page--8.svg'" [prop]="'כל הפניות'" [propColor]="'#fff'" [propHeight]="'1.375rem'" [propDisplay]="'unset'"> </app-menu-section>
+    <app-menu-section (click)="changeList('פניות בתור')" [propBorderBottom]="'1px solid #dff0ff'" [iconPage3]="'./stories/assets/icons/icon--page--5.svg'" [prop]="'פניות בתור'" [propColor]="'#fff'" [propHeight]="'1.375rem'" [propDisplay]="'inline-block'"> </app-menu-section>
+    <app-menu-section (click)="changeList('בוט')" [propBorderBottom]="'1px solid #dff0ff'" [iconPage3]="'./stories/assets/icons/icon--page--7.svg'" [prop]="'בוט'" [propColor]="'#fff'" [propHeight]="'1.375rem'" [propDisplay]="'inline-block'"> </app-menu-section>
     <app-menu-section [propBorderBottom]="'1px solid #dff0ff'" [iconPage3]="'./stories/assets/icons/icon--page--2.svg'" [prop]="'לוח תצוגה'" [propColor]="'#fff'" [propHeight]="'1.375rem'" [propDisplay]="'unset'"> </app-menu-section>
     <app-menu-section [propBorderBottom]="'1px solid #dff0ff'" [iconPage3]="'./stories/assets/icons/icon--page--9.svg'" [prop]="'תצוגות נוספות'" [propColor]="'#fff'" [propHeight]="'1.375rem'" [propDisplay]="'inline-block'"> </app-menu-section>
     <app-menu-section [propBorderBottom]="'1px solid #dff0ff'" [iconPage3]="'./stories/assets/icons/icon--page--4@2x.png'" [prop]="'דו”חות'" [propColor]="'#fff'" [propHeight]="'1.375rem'" [propDisplay]="'inline-block'"> </app-menu-section>

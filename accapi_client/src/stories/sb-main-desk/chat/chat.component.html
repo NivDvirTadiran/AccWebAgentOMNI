@@ -1,0 +1,12 @@
+<div class="root bundles-gap">
+    <div class="bundle"  *ngFor="let messages of chatLog">
+        <ng-container *ngFor="let msg of messages">
+            <app-chat-bubble *ngIf="msg.participant != 'Summary'" class="chatBubble-new" [chatBubble]="msg"></app-chat-bubble>
+
+            <app-system-messenge class="systemMessage" *ngIf="msg.participant == 'Summary'" [closeDate]="msg.date" [property1]="property1"></app-system-messenge>
+        </ng-container>
+    </div>
+
+
+
+</div>

@@ -1,4 +1,5 @@
-import {ChangeDetectionStrategy, Component, HostBinding, Input} from "@angular/core";
+import {ChangeDetectionStrategy, Component, EventEmitter, HostBinding, Input, Output} from "@angular/core";
+import {Status} from "../agent-status/agent-status.component";
 @Component({
   selector: "sb-side-menu",
   templateUrl: "./side-menu.component.html",
@@ -6,6 +7,8 @@ import {ChangeDetectionStrategy, Component, HostBinding, Input} from "@angular/c
 })
 export class SideMenuComponent {
   @HostBinding("style.display") display = "contents";
+  @Input() agentStatus: Status;
+  @Output() onChangeStatusRequest = new EventEmitter<Status>();
 
   constructor() {}
 }

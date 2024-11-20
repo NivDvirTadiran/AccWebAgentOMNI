@@ -1,0 +1,18 @@
+<div class="typebar_10-4065" [formGroup]="this.typeBarData.currentForm">
+  <div class="frame-138_10-4131">
+    <!--app-icon-large-9 class="icon---large---11_10-4132"></app-icon-large-9>
+    <app-icon-large-7 class="icon---large---13_10-4165"></app-icon-large-7>
+    <app-icon-large-6 class="icon---large---12_10-4133"></app-icon-large-6-->
+  </div>
+    <input #mInput
+           [focus]="this.typeBarData.toFocus"
+           [dir]="typeBarData.direction"
+           type="text"
+           class="inputField"
+           placeholder="הקלידו ׳/׳ לפעילות. Ctr+Enter לשליחת הודעה"
+           name="message"
+           formControlName="message"
+           required
+           (keydown.enter)="onKeyDownEvent()"
+    />
+</div>

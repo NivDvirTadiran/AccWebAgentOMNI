@@ -1,0 +1,35 @@
+@import "src/stories/assets/scss/style.scss";
+
+.icon-large-12 {
+    height: 22.4px;
+    width: 22.4px;
+    position: relative;
+    min-height: 22px;
+}
+.b11 {
+    position: relative;
+    letter-spacing: -0.01em;
+    display: inline-block;
+    min-width: 65px;
+}
+.parent7,
+.sidecategory {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 0 0 $padding-53xl;
+    gap: $gap-8xs;
+}
+.sidecategory {
+    flex: 1;
+    background-color: $color-white;
+    border-bottom: 1px solid $for-strokes;
+    justify-content: space-between;
+    padding: $padding-4xl-8 $padding-11xl $padding-3xl;
+    gap: $gap-xl;
+    text-align: right;
+    font-size: $menu-text-size;
+    color: $darkblue;
+    font-family: $small-text;
+}

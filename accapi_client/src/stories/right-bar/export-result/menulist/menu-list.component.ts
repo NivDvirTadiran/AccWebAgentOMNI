@@ -9,4 +9,8 @@ export class MenuListComponent {
   @HostBinding("style.display") display = "contents";
 
   constructor() {}
+
+  changeList(title: string){
+
+  }
 }

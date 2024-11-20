@@ -15,12 +15,28 @@
     <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="myValues">
         <value>
-          <list size="5">
+          <list size="4">
             <item index="0" class="java.lang.String" itemvalue="ng-cloak" />
             <item index="1" class="java.lang.String" itemvalue="ng-app" />
             <item index="2" class="java.lang.String" itemvalue="ng-controller" />
             <item index="3" class="java.lang.String" itemvalue="ng-repeat" />
-            <item index="4" class="java.lang.String" itemvalue="xlink:href" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="8">
+            <item index="0" class="java.lang.String" itemvalue="nobr" />
+            <item index="1" class="java.lang.String" itemvalue="noembed" />
+            <item index="2" class="java.lang.String" itemvalue="comment" />
+            <item index="3" class="java.lang.String" itemvalue="noscript" />
+            <item index="4" class="java.lang.String" itemvalue="embed" />
+            <item index="5" class="java.lang.String" itemvalue="script" />
+            <item index="6" class="java.lang.String" itemvalue="chat-widget" />
+            <item index="7" class="java.lang.String" itemvalue="app-login-form" />
           </list>
         </value>
       </option>

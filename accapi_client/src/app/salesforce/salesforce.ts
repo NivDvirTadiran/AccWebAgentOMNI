@@ -1,5 +1,5 @@
 import { AccAgentService } from "src/app/AccAgent/acc-agent.service";
-import { OneCall } from 'src/app/AccAgent/data-model.interface';
+import { OneCall } from 'src/app/AccAgent/one-call.interface';
 import { AsapScheduler } from "rxjs/internal/scheduler/AsapScheduler";
 
 declare var sforce: any; //main object of salesforce opencti javascript

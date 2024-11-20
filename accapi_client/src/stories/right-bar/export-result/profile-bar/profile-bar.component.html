@@ -4,13 +4,13 @@
         <div class="frame-child" ></div>
       </div>
       <a class="a">שם משתמש</a>
-      <div class="status">
-        <div class="statusswitcher">
-          <img class="icon-arrows" loading="lazy" alt="" src="./stories/assets/icons/icon--arrows.svg" />
-          <a class="a1">פעיל</a>
-          <img class="icon-status" loading="lazy" alt="" src="./stories/assets/icons/icon--status.svg" />
-        </div>
-        <div class="status-placeholder">03:22</div>
+      <!--<div  [twPopover]="this.popover" [bubbleOn]="true" class="status">-->
+      <div   class="status">
+        <agent-status
+                [agentStatus]="this.agentStatus"
+                (onChangeStatusRequest)="this.onChangeStatusRequest.emit($event)">
+        </agent-status>
       </div>
+      <div class="status-placeholder">03:22</div>
       <img class="icon-small-5" loading="lazy" alt="" src="./stories/assets/icons/icon--small--5.svg" />
 </section>

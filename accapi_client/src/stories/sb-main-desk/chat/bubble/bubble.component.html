@@ -1,0 +1,116 @@
+
+<!--<div
+        class="app-chat-bubble"
+        [ngClass]="{
+    root_property1Note: property1 === 'note',
+    root_property1DefaultProperty1Variant2Property1BotProperty1BlockProperty1BotButtonProperty1BlockRequestOptions:
+      property1 === 'Default' ||
+      property1 === 'Variant2' ||
+      property1 === 'bot' ||
+      property1 === 'block' ||
+      property1 === 'bot + button' ||
+      property1 === 'block request options',
+    root_property1DefaultProperty1BlockProperty1BlockRequestOptions:
+      property1 === 'Default' ||
+      property1 === 'block' ||
+      property1 === 'block request options',
+    root_property1Variant2: property1 === 'Variant2',
+    root_property1BotProperty1BotButton:
+      property1 === 'bot' || property1 === 'bot + button',
+    root_property1DefaultProperty1Variant2Property1BotProperty1Block:
+      property1 === 'Default' ||
+      property1 === 'Variant2' ||
+      property1 === 'bot' ||
+      property1 === 'block',
+    root_property1BotButtonProperty1BlockRequestOptions:
+      property1 === 'bot + button' || property1 === 'block request options',
+    root_property1Variant2Property1BotProperty1BotButton:
+      property1 === 'Variant2' ||
+      property1 === 'bot' ||
+      property1 === 'bot + button',
+    root_property1DefaultProperty1NoteProperty1BlockProperty1BlockRequestOptions:
+      property1 === 'Default' ||
+      property1 === 'note' ||
+      property1 === 'block' ||
+      property1 === 'block request options',
+    root_property1NoteProperty1Variant2Property1BotProperty1BotButton:
+      property1 === 'note' ||
+      property1 === 'Variant2' ||
+      property1 === 'bot' ||
+      property1 === 'bot + button',
+    root_property1Block: property1 === 'block'
+  }">
+    <span *ngIf="property1 === 'Default' || property1 === 'Variant2'" class="a">הודעה</span>
+    <span *ngIf="property1 === 'Default'" class="a5">5 ימים</span>
+    <span *ngIf="property1 === 'note'" class="mailTbsiCoIl">:mail&#64;tbsi.co.il</span>
+    <span *ngIf="property1 === 'note'" class="a">הערה לדוגמא לגבי השיחה. הערה לדוגמא לגבי השיחה.
+  </span>
+    <span *ngIf="property1 === 'note'" class="a">עכשיו</span>
+    <div *ngIf="property1 === 'Variant2' || property1 === 'bot' || property1 === 'block' || property1 === 'bot + button' || property1 === 'block request options'"
+         class="frame151">
+    <span *ngIf=" property1 === 'Variant2' || property1 === 'bot' || property1 === 'bot + button'" class="a5"
+          [ngClass]="{
+        a5_property1Variant2: property1 === 'Variant2',
+        a5_property1BotProperty1BotButton:
+          property1 === 'bot' || property1 === 'bot + button'
+      }">5 ימים</span>
+        <app-icon-large-13
+                *ngIf="property1 === 'Variant2' || property1 === 'bot' || property1 === 'bot + button'"
+                class="iconLarge13"></app-icon-large-13>
+        <span
+                *ngIf="property1 === 'block' || property1 === 'block request options'"
+                class="a12">12 דק׳</span>
+    </div>
+    <div *ngIf="property1 === 'bot' || property1 === 'block' || property1 === 'bot + button' || property1 === 'block request options'" class="frame371">
+        <span *ngIf="property1 === 'bot'" class="a">הודעה</span>
+        <app-icon-page-7 *ngIf="property1 === 'bot' || property1 === 'bot + button'" class="iconPage7"></app-icon-page-7>
+        <span *ngIf="property1 === 'block'" class="a">מבקש לחסום את הלקוח</span>
+        <span *ngIf="property1 === 'bot + button'" class="a">ברוכים הבאים</span>
+        <span *ngIf="property1 === 'block request options'" class="a">אופציות לבחירה</span>
+        <app-icon-small-32 *ngIf="property1 === 'block request options'" class="iconSmall32"></app-icon-small-32>
+    </div>
+    <div *ngIf="property1 === 'bot + button' || property1 === 'block request options'" class="frame376"
+         [ngClass]="{ frame376_property1BotButton: property1 === 'bot + button' }">
+        <div class="frame197"
+             [ngClass]="{
+        frame197_property1BlockRequestOptions:
+          property1 === 'block request options',
+        frame197_property1BotButton: property1 === 'bot + button'
+      }">
+            <div class="frame372">
+                <span *ngIf="property1 === 'bot + button'" class="a">אופציה א׳</span>
+                <span *ngIf="property1 === 'block request options'" class="a"
+                >חסימת הלקוח</span>
+            </div>
+        </div>
+        <div *ngIf="property1 === 'bot + button'" class="frame374">
+            <div class="frame372">
+                <span class="a">אופציה ב׳</span>
+            </div>
+        </div>
+        <div *ngIf="property1 === 'bot + button'" class="frame375">
+            <div class="frame372">
+                <span class="a">אופציה ג׳</span>
+            </div>
+        </div>
+    </div>
+</div>-->
+
+<div [ngClass]="envelope" *ngIf="isShow()">
+
+    <div [ngClass]="classes">
+        <div class="frame371">
+            <span  class="a">{{chatBubble.message}}</span>
+            <app-icon-page-7 *ngIf="chatBubble.participant === 'Bot'" class="iconPage7"></app-icon-page-7>
+        </div>
+
+        <div class="message_details">
+            <span  class="lifeLong">{{moment(chatBubble.date).locale('he').fromNow()}}</span>
+            <app-icon-large-13
+                    class="iconLarge13">
+            </app-icon-large-13>
+        </div>
+    </div>
+
+
+</div>

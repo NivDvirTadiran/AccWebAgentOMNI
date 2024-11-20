@@ -1,0 +1,54 @@
+{
+  "applicationInfo": {
+    "apiURL": "https://172.28.31.87:8443/ExternalServices/msg",
+    "assetsLocation": "/aeonix/msg/ChatWidget",
+    "supportIcon": "support.png",
+    "clientIcon": "user.png",
+    "fileIcon":"document.svg",
+    "attachmentIcon":"attachment.png",
+    "locationIcon":"location.png",
+    "target": "5001",
+    "tenantId": 0,
+    "direction": "ltr",
+    "logo": "logo.png",
+    "loginFields": [
+      {
+        "name": "name",
+        "label": "Name",
+        "value": "",
+        "type": "text",
+        "validators": {}
+      },
+      {
+        "name": "phone",
+        "label": "Phone",
+        "value": "",
+        "type": "text",
+        "validators": {
+          "required": true,
+          "minLength": 1
+        }
+      },
+      {
+        "name": "email",
+        "label": "Email",
+        "value": "",
+        "type": "text",
+        "validators": {}
+      }
+    ],
+    "lables": {
+      "loginButton": "Start Support",
+      "loginTitle": "Support",
+      "loginError": "Cant open chat",
+      "chatTitle": "support",
+      "online": "online",
+      "offline": "offline",
+      "messagePlaceHolder": "Type message"
+    },
+    "bg-color-1": "olive",
+    "fg-color-1": "white",
+    "bg-color-2": "#eeee30",
+    "fg-color-2": "black"
+  }
+}

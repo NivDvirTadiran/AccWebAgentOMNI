@@ -1,3 +1,5 @@
+@import "src/stories/assets/scss/style.scss";
+
 .side-menu {
   height: 100%;
   width: 7rem;
@@ -23,4 +25,12 @@
 .fold-menu_I1135-65042-843-64872 {
   width: 40px;
   height: 40px;
+}
+
+.fold-menu-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: $br-xl;
+  object-fit: contain;
+  rotate: 180deg;
 }

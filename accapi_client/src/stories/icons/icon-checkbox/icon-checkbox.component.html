@@ -1,0 +1,62 @@
+<div
+  class="root" (click)="checkChange.emit($event)"
+  [ngClass]="{
+    root_property1SmallCheckFillColorHover:
+      property1 === 'Small' && check === 'Fill' && color === 'hover'
+  }"
+>
+  <div
+    class="rectangle170"
+    [ngClass]="{
+      rectangle170_property1SmallColorBlackCheckEmptyColorGreenCheckFillColorHover:
+        property1 === 'Small' &&
+        (color === 'black' ||
+          (check === 'Empty' && color === 'Green') ||
+          (check === 'Fill' && color === 'hover')),
+      rectangle170_property1SmallCheckFillColorGreen:
+        property1 === 'Small' && check === 'Fill' && color === 'Green'
+    }"
+  >
+    <svg
+      width="13"
+      height="12"
+      viewBox="0 0 13 12"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        x="1.40332"
+        y="0.609863"
+        width="10.7805"
+        height="10.7805"
+        rx="1.5"
+        stroke="black"
+      />
+    </svg>
+  </div>
+  <div
+    *ngIf="property1 === 'Small' && check === 'Fill'"
+    class="vector38"
+    [ngClass]="{
+      vector38_property1SmallCheckFillColorBlack:
+        property1 === 'Small' && check === 'Fill' && color === 'black',
+      vector38_property1SmallCheckFillColorHover:
+        property1 === 'Small' && check === 'Fill' && color === 'hover',
+      vector38_property1SmallCheckFillColorGreen:
+        property1 === 'Small' && check === 'Fill' && color === 'Green'
+    }"
+  >
+    <svg
+      width="8"
+      height="7"
+      viewBox="0 0 8 7"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0.920896 4.28724L2.85959 6.13777L6.66602 1.18018"
+        stroke="black"
+      />
+    </svg>
+  </div>
+</div>

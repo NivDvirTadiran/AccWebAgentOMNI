@@ -89,7 +89,7 @@ import {MdbCarouselModule} from "mdb-angular-ui-kit/carousel";
 import {MdbAccordionModule} from "mdb-angular-ui-kit/accordion";
 import {NgbDatepickerModule} from "@ng-bootstrap/ng-bootstrap";
 
-import {InputsModule, MDBBootstrapModulesPro, MDBSpinningPreloader} from 'ng-uikit-pro-standard';
+import {InputsModule, MDBBootstrapModulesPro, MDBSpinningPreloader, SidenavModule} from 'ng-uikit-pro-standard';
 
 
 import {ExtendedModule} from "@angular/flex-layout";
@@ -98,8 +98,10 @@ import { ButtonsBoardComponent } from './AccAgent/acc-agent-page/buttons-board/b
 import {SseComponent} from "./AccAgent/sse/sse.component";
 import {AccOmniPageComponent} from './AccOMNI/acc-omni-page/acc-omni-page.component';
 import {StorybookModule} from "../stories/storybook/storybook.module";
-import {MDBRootModule} from "angular-bootstrap-md";
+import {MDBRootModule} from "ng-uikit-pro-standard";
 import {platformBrowserDynamic} from "@angular/platform-browser-dynamic";
+import {MainDeskComponent} from "./AccOMNI/acc-omni-page/main-desk/main-desk.component";
+import {CallsBarComponent} from "./AccOMNI/acc-omni-page/calls-bar/calls-bar.component";
 
 
 @NgModule({
@@ -144,7 +146,7 @@ import {platformBrowserDynamic} from "@angular/platform-browser-dynamic";
         DragDropModule,
 
         CoreModule,
-        AppRoutingModule, ExtendedModule,
+        AppRoutingModule, ExtendedModule, SidenavModule,
 
     ],
     declarations: [
@@ -166,6 +168,8 @@ import {platformBrowserDynamic} from "@angular/platform-browser-dynamic";
         ScrollContainerComponent,
         PhoneBook,
         SseComponent,
+        MainDeskComponent,
+        CallsBarComponent
 /*PopoverMdbDropdownDirective, DynamicCompDirective, */
     ],
   providers: [
@@ -178,7 +182,7 @@ import {platformBrowserDynamic} from "@angular/platform-browser-dynamic";
     AccCallProfileComponent,
     MDBSpinningPreloader,
     authInterceptorProviders,
-    AppComponent
+    AppComponent,
   ],
 
   bootstrap: [AppComponent]

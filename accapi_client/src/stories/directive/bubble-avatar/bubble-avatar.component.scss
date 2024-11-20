@@ -13,16 +13,16 @@
   box-sizing: border-box;
   position: absolute;
   border: 2px solid #3D8ECF;
-  width: 200px;
+  width: 100px;
   border-radius: 10px;
   background: #fff;
   top: 100%;
   color: #000000;
   display: block;
-  left: 17px;
+  right: 17px;
   margin-bottom: 15px;
   opacity: 0;
-  padding: 20px;
+  padding: 2px;
   pointer-events: none;
   /*width: 100%;*/
   -webkit-transform: translateY(10px);
@@ -47,13 +47,13 @@
   border-left: solid transparent 10px;
   border-right: solid transparent;
   border-right-width: 10px;
-  border-bottom: solid  #3D8ECF 10px;
+  border-bottom: solid  rgba(0, 0, 0, 0.37) 10px;
 
 
   top: -11.5px;
   content: "";
   height: 7px;
-  left: 20%;
+  left: 50%;
   margin-left: -13px;
   position: absolute;
   width: 0;
@@ -79,14 +79,16 @@
   top: -9px;
   content: "";
   height: 7px;
-  left: 20%;
+  left: 50%;
   margin-left: -13px;
   position: absolute;
   width: 0;
 
 
 }
-
+.bubble-avatar--true .tooltip::after  {
+  left: 50%;
+}
 
 
 
@@ -100,6 +102,34 @@
   -o-transform: translateY(0px);
   transform: translateY(0px);
 }
+
+.bubble-avatar--true {
+  position: absolute;
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+.bubble-avatar-side--left {
+  border: 2px solid rgba(0, 0, 0, 0.37);
+  left: 50%;
+  top: 115%;
+
+/*
+  box-sizing: border-box;
+  position: absolute;
+  border-radius: 10px;
+  background: #fff;
+  color: #000000;
+*/
+
+}
+
+
 
 /* IE can just show/hide with no transition */
 .lte8 .wrapper .tooltip {

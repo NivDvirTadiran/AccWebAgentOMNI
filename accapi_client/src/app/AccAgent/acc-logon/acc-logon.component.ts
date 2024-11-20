@@ -26,9 +26,9 @@ export class AccLogonComponent implements OnInit, AfterViewInit {
     };
 
   //public uploader: FileUploader = new FileUploader({url: URL, itemAlias: 'photo'});
-  agentNo: String = '';
-  password: String = '';
-  extension: String = '';
+  agentNo: String = '1002';
+  password: String = '1';
+  extension: String = '3510';
   version = " 4.1.32";
   public hide: boolean = true;
   public isGrey:boolean = true;

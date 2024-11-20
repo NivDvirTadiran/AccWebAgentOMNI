@@ -1,17 +1,7 @@
-
-<!--div *ngIf="this.sessionId">
-    <sse #sse (accNotificationsEventArrived)="this.AAC.GetAccNotificationsBySSE($event)"
-         [sessionId]="this.sessionId" (close)="sse.ngOnDestroy()">
-
-    </sse>
-</div-->
-
-
-.
-<!--/. SideNav slide-out button -->
-<sb-chat #chat
+<acc-omni-page (togglePhone)="sidenav.toggle()"></acc-omni-page>
+<!--sb-chat #chat
     (onMessageReady)="this.sendChatMes($event)" >
-</sb-chat>
+</sb-chat-->
 <!-- Sidebar navigation -->
 <mdb-sidenav #sidenav class="" style="transform: translateX(0%);"  >
 
@@ -41,9 +31,9 @@
         <div class="container" style="margin-right: 5px;margin-left: 5px;">
             <div class="row" style="text-align: center;margin-right: 0;margin-left: 0;">
                 <!-- ----- current agent status  ----------- -->
-                <li class="col-2"  style="display: flex;padding: 0;">
+                <li class="col-2"  style="display: flex;padding: 0;justify-content: center;align-items: center;">
                     <a class="icon-md fa-3x" style="padding-top: 5px;padding-right: 0;padding-bottom: 0;padding-left: 0;color: #07185a;">
-                        <mdb-icon fab icon="user"  class="fa advance"> </mdb-icon></a>
+                        <mdb-icon fab icon="user"  class="fa advance" style="font-size: xxx-large"> </mdb-icon></a>
                 </li>
 
                 <li class="col-6" style="align-content: center">
@@ -183,7 +173,7 @@
 
     <mdb-navbar>
 
-        <div  *ngIf=true >
+        <div>
             <mat-grid-list [cols]="footercol" rowHeight="40px">
                 <mat-grid-tile title="{{'Windows' | translate}}">
                     <button  mat-button class="fa fa-table footer_img" [matMenuTriggerFor]="menu"
@@ -437,7 +427,8 @@
 </mdb-sidenav>
 <!--/. Sidebar navigation -->
 
-<a  mdbBtn (click)="sidenav.toggle()" color="primary" class="p-3 button-collapse" style="position: absolute; top: 5px;left: 48%;">
+<a hidden mdbBtn (click)="sidenav.toggle()" color="primary" class="p-3 button-collapse"
+    style="position: absolute; top: 5px;left: 48%;width: 10px;height: 10px;">
 
     <mdb-icon fas icon="bars"></mdb-icon>
 </a>

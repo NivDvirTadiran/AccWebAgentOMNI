@@ -5,7 +5,7 @@
         <mat-grid-tile *ngFor="let tile of tiles ;index as i" [colspan]=1 [rowspan]="1"
                        [style.background]="tile.color">
             <button mdbBtn style="">
-                <ul  id="{{tile.id}}" (click)='imgClicks(i,$event)' (drop)="imgDrop(i,$event) "
+                <ul  id="{{tile.id}}" (click)='imgClicks(i,$event)' (drop)="imgDrop(i,$event)"
                      (mouseup)="imgMouseUp(i,$event)">
                     <img (dragstart)="imgDrag(i,$event)" (dragover)="imgDragOver(i,$event)" class="{{tile.class}}"
                          title="{{tile.title}}" src="{{tile.img}}" alt="...">

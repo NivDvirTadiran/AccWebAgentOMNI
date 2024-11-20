@@ -1,4 +1,4 @@
-<div class="tooltip" [ngClass]="{'tooltip-display' : show}">
+<div class="tooltip" [ngClass]="classes ">
   <!--button (click)="loadCarComponent()">Load Car Component</button-->
   <span *ngIf="!isDynamic">{{popover}}</span>
   <ng-template    appDynamicComp>

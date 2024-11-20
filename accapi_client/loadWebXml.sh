@@ -2,7 +2,7 @@
 
 pwd;
 ls 'accapi_client/dist/';
-sed -e "s/%ACC_VERSION%/8.0.107/g" -i  accapi_client/dist/main*
+sed -e "s/%ACC_VERSION%/8.5.034/g" -i  accapi_client/dist/main*
 
 
 sleep 1;

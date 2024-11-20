@@ -9,6 +9,7 @@ import {
 } from '@angular/core';
 import { PopoverOptions } from '../popover.interface';
 import {BubbleAvatarComponent} from "./bubble-avatar.component";
+import {AccAgentService} from "../../../app/AccAgent/acc-agent.service";
 
 @Directive({
   selector: '[twPopover]',
@@ -45,7 +46,7 @@ export class PopoverDirective {
   @Input() highlight: any;
   @Input() header: string = '';
   @Input() bubbleOn: boolean = true;
-  @Input() AAC: any;
+  @Input() side: "left" | "right" = "left";
 
   @Output() actionButton: EventEmitter<any> = new EventEmitter<any> ();
   @Output() avatarButton: EventEmitter<any> = new EventEmitter<any> ();
@@ -67,6 +68,7 @@ export class PopoverDirective {
     comp.instance.options = this.popover;
     comp.instance.header = this.header;
     comp.instance.bubbleOn = this.bubbleOn;
+    comp.instance.side = this.side;
 
 
 

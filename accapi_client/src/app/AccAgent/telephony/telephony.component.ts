@@ -3,8 +3,9 @@ import { Component, OnInit, OnDestroy, ElementRef, AfterViewInit } from '@angula
 //import { FormControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ViewChild, NgModule } from '@angular/core';
 import { AccAgentService } from '../acc-agent.service';
-import { AgentStatus,AccCallState,CallTypes, CallTypesText,OneCall } from '../data-model.interface';
+import { AgentStatus,AccCallState,CallTypes, CallTypesText } from '../data-model.interface';
 import * as assert from "assert";
+import {OneCall} from "../one-call.interface";
 
 
 @Component({

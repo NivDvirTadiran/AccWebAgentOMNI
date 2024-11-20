@@ -1,0 +1,27 @@
+<div class="dropdownswitcher_I3242-63361-125-6073" (mouseleave)="onLeave()">
+
+    <div (click)="showDropDown=!showDropDown">
+          <app-icon-arrows
+            [property1]="'Small'"
+            [property2]="'Down'"
+            class="icon---arrows_I3242-63361-125-6073-125-4884">
+          </app-icon-arrows>
+          <span class="text-------------------2-_I3242-63361-125-6073-125-4885">סינון לפי ערוצים (2)</span>
+    </div>
+    <div class="drop-show" *ngIf="showDropDown">
+        <div class="cleanAll" (click)="cleanAll()">
+            <label >נקה הכל</label>
+        </div>
+        <div class="channelLine" *ngFor="let a of list">
+           <input type="checkbox" [(ngModel)]="a.checked"
+                  (change)="getSelectedValue(a.checked,a.name)" />
+           <img class="icon-large-172" loading="lazy" alt="" [src]="a.icon" />
+           <span>{{a.name}}</span>
+
+        </div>
+
+
+    </div>
+
+
+</div>

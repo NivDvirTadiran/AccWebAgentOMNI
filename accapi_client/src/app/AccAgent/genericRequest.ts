@@ -90,6 +90,7 @@ export class CoreApiService {
         if (error.status != 200)
         {
           console.log("Error", error);
+          this.handleError<any>('put')
         }
       }
     )

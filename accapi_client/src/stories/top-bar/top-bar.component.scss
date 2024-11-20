@@ -1,4 +1,19 @@
 @import "../assets/scss/tokens";
+@import "../assets/scss/style";
+
+.logo {
+  place-items: center;
+  background: #e3edf7;
+  background-image: url('~src/stories/assets/Campus.png');
+  background-repeat: round;
+  width: $campus-logo-width;
+  height:$campus-logo-height;
+
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+  1px 1px 10px rgba(255,255,255,0.7);
+  cursor: pointer;
+  transition: transform 0.5s;
+}
 
 .topbar_1110-46397 {
   position: relative;
@@ -12,16 +27,16 @@
   right: 12.5rem;
   position: absolute;
   display: flex;
-  width: 275px;
+  width: calc(275px + 24px);
   height: 40px;
 }
 
 .searchbar_I1110-46397-84-9057 {
   top: 25px;
-  left: 365px;
+  left: calc(365px + 24px);
   position: absolute;
   display: flex;
-  width: 397px;
+  width: calc(397px + 24px);
   height: 40px;
 }
 
@@ -33,47 +48,38 @@
 }
 
 .frame-172_I1110-46397-83-8945 {
-  padding: 0px 30px 0px 30px;
-  top: 0px;
-  left: 0px;
-  position: absolute;
   display: flex;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  flex-wrap: nowrap;
   align-items: center;
-  gap: 8px;
+  flex-wrap: nowrap;
   box-sizing: border-box;
   background: #ffffff;
-  width: 186px;
+  width: 210px;
   height: 90px;
 }
 .group-1_I1110-46397-83-8946 {
-  width: 102px;
-  height: 37px;
+  width: $campus-logo-width;
+  height: $campus-logo-height;
 }
 .generic-logo-1_I1110-46397-83-8947 {
   position: relative;
   box-sizing: border-box;
   background: #ffffff;
-  width: 102px;
-  height: 37px;
+  width: $campus-logo-width;
+  height: $campus-logo-height;
 }
 .generic-logo-1_I1110-46397-83-8948 {
   top: 0px;
   left: 0px;
   position: absolute;
   display: flex;
-  display: flex;
 }
 
 .frame-445_I1110-46397-843-82829 {
   padding: 13px 16px 13px 16px;
   top: 13px;
-  left: 203px;
+  left: 227px;
   position: absolute;
-  display: flex;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

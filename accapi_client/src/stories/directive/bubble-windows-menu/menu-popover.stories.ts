@@ -10,7 +10,7 @@ import {ActionWindowsMenuComponent} from "../../actions/action-windows-menu/acti
 
 
 export default {
-  title: 'Design System/Atoms/Directives/BubbleWindowsMenuDirective',
+  title: 'Design System/Atoms/Directives/BubbleWindowsMenu',
   component: BubbleWindowsMenuComponent, // (2) don't forget it
   decorators: [
     moduleMetadata({
@@ -30,13 +30,13 @@ const mPopover: PopoverOptions = {
 const Template: Story<MenuPopoverDirective> = (args) => ({
   props: args,
   moduleMetadata: { // (3) don't forget it
-    declarations: [MenuPopoverDirective, ActionAvatarComponent, BubbleWindowsMenuComponent],
+    declarations: [MenuPopoverDirective, ActionWindowsMenuComponent, BubbleWindowsMenuComponent],
     imports: [CommonModule, FormsModule, ReactiveFormsModule]
   },
-  template: `<button [menuPopover] = "mPopover" > BubbleWindowsMenuComponent Example </button>`
+  template: `<button [menuPopover] = "mPopover" > BubbleWindows Example </button>`
 });
 
-export const Default = Template.bind({});
-Default.args = {
+export const Menu = Template.bind({});
+Menu.args = {
   popover: mPopover,
 };

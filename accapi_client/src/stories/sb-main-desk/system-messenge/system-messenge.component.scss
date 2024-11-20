@@ -1,0 +1,92 @@
+@import "../tokens.scss";
+
+.root {
+  padding: 10px 30px 10px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 15px;
+  background: $white-background;
+}
+
+.root_property1Default {
+  border-color: $for-strokes-color;
+  border-style: solid;
+  border-width: undefinedpx;
+}
+
+.root_property1Block {
+  border-color: $black-color;
+  border-style: solid;
+  border-width: undefinedpx;
+}
+.frame225 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 5px;
+  box-sizing: border-box;
+}
+.mymailTbsiCoIl {
+  display: flex;
+  box-sizing: content-box;
+  color: $dark-blue-color;
+  @include menu-text-text;
+  font-weight: 500;
+  text-align: center;
+  text-wrap: nowrap;
+  padding: 0.5rem 1.75rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+
+  border-radius: 0.9375rem;
+  border: 1px solid var(--For-strokes, #DFF0FF);
+  background: var(--White, #FFF);
+}
+
+.a12 {
+  display: flex;
+  box-sizing: content-box;
+  @include small-text-text;
+  font-weight: 400;
+  text-wrap: nowrap;
+}
+
+.a12_property1Default {
+  color: $dark-blue-color;
+  text-align: center;
+}
+
+.a12_property1Block {
+  color: $black-color;
+  text-align: left;
+}
+
+.a {
+  display: flex;
+  box-sizing: content-box;
+  color: $black-color;
+  @include menu-text-text;
+  font-weight: 500;
+  text-align: left;
+  text-wrap: nowrap;
+}
+
+.timeStyle {
+  box-sizing: content-box;
+  color: $dark-blue-color;
+  @include menu-text-text;
+  font-weight: 300;
+  text-align: center;
+  text-wrap: nowrap;
+  font-size: 0.8rem;
+}

@@ -1,20 +1,22 @@
+
 <article>
 <div class="chat---typing_1135-63748">
-    <sb-top-bar class="top-bar-content">
+    <sb-top-bar class="top-bar-content" (click)="togglePhone.emit()">
 
     </sb-top-bar>
-
+    <!--<p>onViewSessionId: {{onViewSessionId}} </p>-->
     <section>
         <div class="frame-460_1135-63749">
             <div class="frame-466_1135-63750">
 
-                <div class="frame-469_1135-63751">
-                    <!--svg width="317" height=100%></svg-->
-                </div>
+                <sb-details-bar
+                        class="frame-469_1135-63751">
+                </sb-details-bar>
 
-                <sb-main-desk class="main-desk-content">
-
-                </sb-main-desk>
+                <main-desk #maindesk
+                        class="main-desk-content"
+                        [onViewSessionId]="onViewSessionId">
+                </main-desk>
 
             </div>
 
@@ -24,12 +26,18 @@
             <div class="frame-465_1135-65040">
 
                 <div class="frame-469_1135-63751">
-                    <sb-calls-bar class="calls-list_1155-71325"> </sb-calls-bar>
+                    <call-bar #callsbar
+                            class="calls-list_1155-71325"
+                            (onViewSessionIdChange)="onChangeSession($event)"
+                            [onViewSessionId]="onViewSessionId">
+                    </call-bar>
                 </div>
 
 
-                <sb-side-menu class="side-menu-content">
-
+                <sb-side-menu
+                        class="side-menu-content"
+                        [agentStatus]="this.agentStatus"
+                        (onChangeStatusRequest)="onChangeStatusRequest($event)">
                 </sb-side-menu>
 
             </div>
@@ -38,3 +46,7 @@
 
 </div>
 </article>
+
+
+<chat-widget style="display: flex;height: 100%;width: 100%;flex-direction: row-reverse;" theme="blue" config-source="assets/msg/ChatWidget/chat-widget-config-acc.json" class="ng-tns-c23-0" ng-version="10.0.3"></chat-widget>
+

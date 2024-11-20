@@ -1,0 +1,14 @@
+@import "src/stories/assets/scss/style.scss";
+
+
+.sidecategory1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: right;
+  font-size: $menu-text-size;
+  color: $darkblue;
+  font-family: $small-text;
+}

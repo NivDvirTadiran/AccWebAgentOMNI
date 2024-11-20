@@ -1,0 +1,19 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 1.25rem;
+}
+
+.callsfilter_3242-63361 {
+    border-radius: 1.25rem 1.25rem 0 0;
+    height: 9.375rem;
+    width: -webkit-fill-available;
+}
+
+calls-list-new {
+  height: calc(100% - 9.375rem);
+  overflow: hidden;
+  border-radius: 20px;
+}

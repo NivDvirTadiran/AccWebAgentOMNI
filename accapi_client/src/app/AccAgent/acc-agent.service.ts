@@ -1,7 +1,6 @@
 import { OnDestroy, OnInit, Injectable } from '@angular/core';
 import {
-    UserStatusModel, LoginUser, Agent, AccCallState, oneTab, CP_CODES,
-    OneCall, AccAgentConf, AgentStatus, AccNotifications, AgentCallStateTxt,
+    UserStatusModel, LoginUser, Agent, AccCallState, oneTab, CP_CODES, AccAgentConf, AgentStatus, AccNotifications, AgentCallStateTxt,
     Key_Desc, AgentStatusTxt, CP_EXT, CP_EXT_FIELDS,
     eDenyCauseStr, CallTypes, OneQueuedCall, COS, CPini, CALL_TYPE,PSWTotals,QUEUED_ACD_GROUP} from './data-model.interface';
 //import { Sse } from './Sse';
@@ -20,6 +19,10 @@ import {AuthService} from "../_helpers/auth.service";
 import {TokenStorageService} from "../_helpers/token-storage.service";
 import {IAppConfig} from "../config/iapp.config";
 import {SseComponent} from "./sse/sse.component";
+import {statusLabel_close, statusLabel_new} from "../../stories/sb-main-desk/call-bar/status-label/status-label.component";
+import {AccCallProfileService} from "./acc-call-profile/acc-call-profile.service";
+import { OneCall } from './one-call.interface';
+import {TelephonyComponent} from "./telephony/telephony.component";
 const httpOptions = {
     headers: new HttpHeaders({ "Content-Type": "application/json" })
 };
@@ -42,7 +45,10 @@ export class AccAgentService implements OnInit, OnDestroy {
     public sessionId = null;
     public isAeonixAppCenterOn:boolean = false;
     public agaenLogin: LoginUser = new LoginUser("", "", "");
+    public telephonyComponent: TelephonyComponent = new TelephonyComponent(this);
     public agent: Agent = null;
+    public variableSource: BehaviorSubject<AgentStatus> = new BehaviorSubject<AgentStatus>(this.agent?.m_AgentStatus);
+    public variable$ = this.variableSource.asObservable();
     public appConfig: any;
     public ACC: AccAgentConf;
     public callsArray: OneCall[] = [];
@@ -116,9 +122,13 @@ export class AccAgentService implements OnInit, OnDestroy {
     public isSupervisorHelp:boolean = false;
     public agentsReadyList:any[] = [{}];
     public windowObjectReference: any;
-    public sse: SseComponent;
+    public sse: SseComponent = null;
 
-
+    // function to update the value of the BehaviorSubject
+    updateVariableSource(variable: AgentStatus) {
+        this.agent?.setMAgentStatus(variable);
+        this.variableSource.next(variable);
+    }
 
 
     public CheckOnSecondBoubdry()
@@ -162,8 +172,16 @@ export class AccAgentService implements OnInit, OnDestroy {
     public currentLang: string;
     public answerIdx = 0;
     public busyIdx = 1;
-    public ACC_VERSION: string = '8.0.107';
+<<<<<<< .mine
+    public ACC_VERSION: string = '8.5.034';
     //public ACC_VERSION: string = '%ACC_VERSION%';
+||||||| .r409499
+    public ACC_VERSION: string = '8.5.037';
+    //public ACC_VERSION: string = '%ACC_VERSION%';
+=======
+    //public ACC_VERSION: string = '8.5.042';
+    public ACC_VERSION: string = '%ACC_VERSION%';
+>>>>>>> .r411336
     public ACCVERSION = "";
  
     //
@@ -186,7 +204,8 @@ export class AccAgentService implements OnInit, OnDestroy {
     // ======================= [constructor] ==============================
     constructor(private router: Router, public coreApiService: CoreApiService,
                 private http: HttpClient, private trnslt: TranslateService, public snackBar: MatSnackBar,
-                public  authService: AuthService, private tokenService: TokenStorageService) {
+                public  authService: AuthService, private tokenService: TokenStorageService,
+                public callProfService: AccCallProfileService) {
         //private sse1: Sse) {
         this.currentLang = this.trnslt.currentLang;
         this.CallStatus_ElapsedTime = -1;
@@ -312,6 +331,8 @@ export class AccAgentService implements OnInit, OnDestroy {
         //this.sse = sse1;
         var ip = window.location.origin;
         this.callStatDataSource = [];
+
+        this.callProfService.setAAC(this);
     }
 
     //
@@ -471,6 +492,11 @@ export class AccAgentService implements OnInit, OnDestroy {
             }
             this.userStatus.userReleased = false;
         }
+    }
+    // ======================= [setAccOMNIPage] ==========================
+    public accOMNIPage: any = null;
+    public setAccOMNIPage(accOMNIPage) {
+        this.accOMNIPage = accOMNIPage;
     }
     // ======================= [setAccAgentPage] ==========================
     public accagentPage: any = null;
@@ -644,13 +670,14 @@ export class AccAgentService implements OnInit, OnDestroy {
                 if (TT.isfinishedBeforenextTimeInterval != true) { this.log("X1") }
                 else {
                     TT.isfinishedBeforenextTimeInterval = false;
-                    if (this.sse?.isSubscribed != true) { TT.Send_KeepAliveToAcc()} //send keapalive to accapi
-                     TT.Send_getGroupQueueCPInfoToAcc(); // check if to get ACD queue detalis
-                    //
-
-                    if (this.sse?.isSubscribed != true) { TT.GetAccNotification(); }
+                    TT.Send_getGroupQueueCPInfoToAcc(); // check if to get ACD queue detalis
+                    if (this.sse?.isSubscribed != true) {
+                        TT.Send_KeepAliveToAcc() //send keapalive to accapi
+                        TT.GetAccNotification();
+                    } else {
+                        TT.timerSubscribe();
+                    }
                     TT.CheckCloseWindow();
-
                 }
                 TT.isfinishedBeforenextTimeInterval = true;
             });
@@ -868,15 +895,16 @@ export class AccAgentService implements OnInit, OnDestroy {
             }
         },
         error => {
-                   this.log('getAACStatus  Error' + error);
+                 this.log('getAACStatus  Error' + error);
         });
     }
     tomactNotConnectedDate:any = 0;
 
-
+    // ===================[GetAccNotificationsBySSE]=============================
     public GetAccNotificationsBySSE(notification: AccNotifications[])// string agentNo,int checkInterval,int checkCount, AgentStatus CheckedAgentStatus, AgentStatus CheckedCallStatus, out Agent A,out string err)
     {
-        this.HandleNotifications(notification);
+        var TT: any = this;
+        TT.HandleNotifications(notification);
 
         this.SetAgentStatus();
         this.CheckOnSecondBoubdry();
@@ -898,71 +926,73 @@ export class AccAgentService implements OnInit, OnDestroy {
         }
         var TT: any = this;
         var aaa: Observable<any> = this.httprequests.get<AccNotifications[]>(fullurl);
-        aaa.subscribe(notification => {
-            if (notification == undefined) {
-                //if (TT.NotificationInterval != 5000) {
-                    TT.NotificationInterval = 1000;
-                    TT.timerSubscribe();
-                //}
-                TT.NoConnectionToAcc = true;
-                TT.NoConnectionReason = 2; // Tomacat disconnected move to available tomact
-                if (TT.tomactNotConnectedDate == 0) {TT.tomactNotConnectedDate = Math.floor (Date.now() / 1000);}
-            }
-            else if (notification.length > 0) {
-                if (notification.length > 1 && TT.NotificationInterval > 250 && TT.NoConnectionToAcc == false) {
-                    TT.NotificationInterval = 250; // every second
-                    TT.countEmptyNotification = 0;
-                    TT.timerSubscribe();
-                }
-                TT.HandleNotifications(notification);
-                notification = [];
-            }
-            else {
-                TT.countEmptyNotification++;
-                if (TT.NotificationInterval == 250 && this.countEmptyNotification >= 5) {
-                    TT.NotificationInterval = 1000; // every second
-                    TT.countEmptyNotification = 0;
+        aaa.subscribe(
+            notification => {
+                    if (notification == undefined) {
+                        //if (TT.NotificationInterval != 5000) {
+                            TT.NotificationInterval = 1000;
+                            TT.timerSubscribe();
+                        //}
+                        TT.NoConnectionToAcc = true;
+                        TT.NoConnectionReason = 2; // Tomacat disconnected move to available tomact
+                        if (TT.tomactNotConnectedDate == 0) {TT.tomactNotConnectedDate = Math.floor (Date.now() / 1000);}
+                    }
+                    else if (notification.length > 0) {
+                        if (notification.length > 1 && TT.NotificationInterval > 250 && TT.NoConnectionToAcc == false) {
+                            TT.NotificationInterval = 250; // every second
+                            TT.countEmptyNotification = 0;
+                            TT.timerSubscribe();
+                        }
+                        TT.HandleNotifications(notification);
+                        notification = [];
+                    }
+                    else {
+                        TT.countEmptyNotification++;
+                        if (TT.NotificationInterval == 250 && this.countEmptyNotification >= 5) {
+                            TT.NotificationInterval = 1000; // every second
+                            TT.countEmptyNotification = 0;
 
-                    if (TT.agent != null && TT.agent.m_AgentStatus == AgentStatus.Idle) {
-                        //TT.donthing = true;;
-                    }
-                    TT.timerSubscribe();
-                }
-                 // connection reconnected to web server
-                if (TT.NoConnectionToAcc == true) {
-                    if (TT.NoConnectionReason == 2) {
-                        var now:any  = Math.floor(Date.now() / 1000);
-                        var deltNotConnected =   now -  TT.tomactNotConnectedDate;
-                        TT.tomactNotConnectedDate = 0;
-                        if (deltNotConnected < 5){
-                            TT.m_StartStatusDateSaved = null;
-                            TT.NoConnectionReason = 0;
-                            TT.NoConnectionToAcc = false;
-                            TT.ForceLogToServer("***** Tomcat reconnect again after: " + deltNotConnected + " - proceed normal *****");
+                            if (TT.agent != null && TT.agent.m_AgentStatus == AgentStatus.Idle) {
+                                //TT.donthing = true;;
+                            }
+                            TT.timerSubscribe();
                         }
-                        else{
-                            TT.RestoreConnectionAcc();
-                            TT.ForceLogToServer("***** Tomcat reconnect again after: " + deltNotConnected + " - relogon *****");
+                         // connection reconnected to web server
+                        if (TT.NoConnectionToAcc == true) {
+                            if (TT.NoConnectionReason == 2) {
+                                var now:any  = Math.floor(Date.now() / 1000);
+                                var deltNotConnected =   now -  TT.tomactNotConnectedDate;
+                                TT.tomactNotConnectedDate = 0;
+                                if (deltNotConnected < 5){
+                                    TT.m_StartStatusDateSaved = null;
+                                    TT.NoConnectionReason = 0;
+                                    TT.NoConnectionToAcc = false;
+                                    TT.ForceLogToServer("***** Tomcat reconnect again after: " + deltNotConnected + " - proceed normal *****");
+                                }
+                                else{
+                                    TT.RestoreConnectionAcc();
+                                    TT.ForceLogToServer("***** Tomcat reconnect again after: " + deltNotConnected + " - relogon *****");
+                                }
+                            }
+                            else if (TT.NoConnectionReason == 1) {// connected from tomcat to acc
+                                console.log("else if (TT.NoConnectionReason == 1)-> restore connection")
+                                TT.RestoreConnectionAcc();
+                            }
                         }
                     }
-                    else if (TT.NoConnectionReason == 1) {// connected from tomcat to acc
-                        console.log("else if (TT.NoConnectionReason == 1)-> restore connection")
-                        TT.RestoreConnectionAcc();
-                    }
-                }
-            }
-        },
+                },
             error => {
-                this.log('GetAccNotification() => agent notification  Error: ' + error.status);
-                this.NoConnectionToAcc = true;
-                TT.NoConnectionReason = 2; // Tomacat
-                if (TT.tomactNotConnectedDate == 0){TT.tomactNotConnectedDate = Math.floor(Date.now() / 1000);}
+                    this.log('GetAccNotification() => agent notification  Error: ' + error.status);
+                    this.NoConnectionToAcc = true;
+                    TT.NoConnectionReason = 2; // Tomacat
+                    if (TT.tomactNotConnectedDate == 0){ TT.tomactNotConnectedDate = Math.floor(Date.now() / 1000); }
 
-                if (TT.agent != null){
-                    TT.m_StartStatusDateSaved = TT.agent.m_AgentStateTime;
-                }
-    
-        });
+                    if (TT.agent != null){ TT.m_StartStatusDateSaved = TT.agent.m_AgentStateTime; }
+            }
+        );
+
+
+
         // end subscribe
         if (this.NoConnectionToAcc == false && this.agent != null) {
 
@@ -1215,7 +1245,7 @@ export class AccAgentService implements OnInit, OnDestroy {
     accRequests(notification: AccNotifications) {
         notification.sessionid = this.sessionId;
         var fullurl = this.localurl + this.accrequestP;
-        this.httprequests.put(fullurl, JSON.stringify(notification));
+        return this.httprequests.put(fullurl, JSON.stringify(notification));
         // if (notification.action != "keepalive") {
         //     this.log(notification.params);
         // }
@@ -1305,14 +1335,14 @@ export class AccAgentService implements OnInit, OnDestroy {
        }
        // ============================= getCurrentCallId ==============================
        getCurrentCallId() {
-           if (this.agent.m_CallIndex != -1) {
+           if (this.agent != null && this.agent?.m_CallIndex != -1) {
                return this.callsArray[this.agent.m_CallIndex].m_CallId;
            }
            else return "";
        }
        // ============================= getCurrentCall ==============================
        getCurrentCall() {
-           if (this.agent.m_CallIndex != -1) {
+           if (this.agent.m_CallIndex && this.agent.m_CallIndex != -1) {
                return this.callsArray[this.agent.m_CallIndex];
            }
            else return null;
@@ -1365,7 +1395,7 @@ export class AccAgentService implements OnInit, OnDestroy {
 
        // ============================[StartRinging]=================================
        StartRinging(index) {
-           this.agent.m_AgentStatus = AgentStatus.Ringing;
+           this.updateVariableSource(AgentStatus.Ringing);
            this.fa_step_forward = this.step_no_ring;
            this.CheckRinging();
            if (this.callsArray[index].m_Acd == "ACD")
@@ -1395,18 +1425,19 @@ export class AccAgentService implements OnInit, OnDestroy {
                return;
            }
            //
-           this.agent.m_AgentStatus = AgentStatus.Busy;
+           this.updateVariableSource(AgentStatus.Busy);
            if (this.callsArray[idx].m_CallState == AccCallState.RESERVED)
            {
-               this.agent.m_AgentStatus = AgentStatus.RESERVED;
+               this.updateVariableSource(AgentStatus.RESERVED);
            }
-           if (call.m_Acd == "ACD") { this.agent.m_AgentStatus = AgentStatus.ACD; }
-           if (call.m_Acd == "OMNI") { this.agent.m_AgentStatus = AgentStatus.Omni; }
-           if (call.m_Acd == "OACD") { this.agent.m_AgentStatus = AgentStatus.OACD; }
+           if (call.m_Acd == "ACD") { this.updateVariableSource(AgentStatus.ACD); }
+           if (call.m_Acd == "OMNI") { this.updateVariableSource(AgentStatus.Omni); }
+           if (call.m_Acd == "OACD") { this.updateVariableSource(AgentStatus.OACD); }
            if (this.agent.m_AgentStatus == AgentStatus.Logout) {
-               this.agent.m_AgentStatus = AgentStatus.LogoutBusy;
-               if (call.m_Acd == "ACD") { this.agent.m_AgentStatus = AgentStatus.LogoutAcd; }
+               this.updateVariableSource(AgentStatus.LogoutBusy);
+               if (call.m_Acd == "ACD") { this.updateVariableSource(AgentStatus.LogoutAcd); }
            }
+           this.updateVariableSource(this.agent.m_AgentStatus)
        }
        // ============================= getMostRecentCallIdx ==================
        public getMostRecentCallIdx() {
@@ -1426,7 +1457,7 @@ export class AccAgentService implements OnInit, OnDestroy {
                }
            }
            if (foundCall == null) {
-               this.agent.m_AgentStatus = AgentStatus.DontCare;
+               this.updateVariableSource(AgentStatus.DontCare);
            }
            else {
                if (foundCall.m_CallState == AccCallState.Ringing) {
@@ -1435,7 +1466,7 @@ export class AccAgentService implements OnInit, OnDestroy {
                }
                else if (this.agent.m_AgentStatus == AgentStatus.Ringing) {
                    console.log("getMostRecentCallIdx=> change call status of most recent to busy /acd ");
-                   this.agent.m_AgentStatus = AgentStatus.Busy;
+                   this.updateVariableSource(AgentStatus.Busy);
                }
            }
 
@@ -1661,6 +1692,7 @@ export class AccAgentService implements OnInit, OnDestroy {
                        return this.getMostRecentCallIdx();
                    }
                    var oc: OneCall = new OneCall(response[12]);
+
                    this.callsArray.push(oc);
                    index = this.callsArray.map(e => e.m_CallId).indexOf(response[12]);
                }
@@ -1698,6 +1730,10 @@ export class AccAgentService implements OnInit, OnDestroy {
                    if (this.callsArray[index].m_Acd == "ACD")
                    {
                        this.HandleCRMEvent("OnClearedACD", this.callsArray[index]);
+                   }
+                   else if (this.callsArray[index].m_Acd == "OACD")
+                   {
+                       this.HandleCRMEvent("OnClearedOACD", this.callsArray[index]);
                    }
                    else
                    {
@@ -1748,7 +1784,15 @@ export class AccAgentService implements OnInit, OnDestroy {
 
            for (idx = 0; idx < this.callsArray.length; ++idx) {
                this.callsArray[idx].m_CallPrevState = this.callsArray[idx].m_CallState;
-               if (this.callsArray[idx].m_Acd == "N"){
+               if (this.callsArray[idx].m_Acd == "ACD"){
+                   b = true;
+                   this.HandleCRMEvent("OnClearedACD", this.callsArray[idx]);
+               }
+               else if (this.callsArray[idx].m_Acd == "OACD"){
+                   b = true;
+                   this.HandleCRMEvent("OnClearedOACD", this.callsArray[idx]);
+               }
+               else if (this.callsArray[idx].m_Acd == "N"){
                    b = true;
                    this.HandleCRMEvent("OnCleared", this.callsArray[idx]);
                }
@@ -1952,7 +1996,7 @@ export class AccAgentService implements OnInit, OnDestroy {
                                break;
                            //
                            case "BUSY":
-                               this.agent.m_AgentStatus = AgentStatus.SemiBusy;
+                               this.updateVariableSource(AgentStatus.SemiBusy);
                                console.log("DEVICE BUSY");
                                break;
                            //
@@ -2018,7 +2062,7 @@ export class AccAgentService implements OnInit, OnDestroy {
                    //
                    case "login":
                        //2019-10-08 AlisherM BZ#50840: NOTE: function displayOnLogonImage will not change login status of agent, this will be done by SetLoginStatus in order to prevent duplicate OnLoggedIn events
-                       this.SetLoginStatus(true);
+                       //this.SetLoginStatus(true);
                        var isPrimary = this.HandleloginPrimaryLogoutGroups(response[13], true);
                        if (this.isMainPageReady == true) {
                            this.displayOnLogonImage(isPrimary);
@@ -2029,6 +2073,7 @@ export class AccAgentService implements OnInit, OnDestroy {
                        break;
                    //
                    case "logout":
+                       this.SetLoginStatus(false);
                        var isPrimary = this.HandleloginPrimaryLogoutGroups(response[13], false);
                        if (this.isMainPageReady == true) {
                            this.agentsReadyList = [];
@@ -2121,7 +2166,7 @@ export class AccAgentService implements OnInit, OnDestroy {
                        var rsrvdidx = this.callsArray.map(e => e.m_CallState).indexOf(AccCallState.RESERVED);
                        if (rsrvdidx != -1) {
                            this.callsArray.splice(rsrvdidx,1);
-                           this.agent.m_AgentStatus = AgentStatus.DontCare;
+                           this.updateVariableSource(AgentStatus.DontCare);
                            this.getMostRecentCallIdx();
                        }
                        switch (response[3]) {
@@ -2160,7 +2205,7 @@ export class AccAgentService implements OnInit, OnDestroy {
                                    this.agent.m_AgentStateTime = this.agent.m_LastIdleStateTime;
                                }
                                this.agent.m_LastIdleStateTime = this.agent.m_AgentStateTime;
-                               this.agent.m_AgentStatus = AgentStatus.Idle;
+                               this.updateVariableSource(AgentStatus.Idle);
                                this.agent.ReleaseCode = "01";
                                this.displayOnLogonImage(true);
                                this.displayOnOffreleaseImage();
@@ -2188,7 +2233,7 @@ export class AccAgentService implements OnInit, OnDestroy {
 
                                //2019-10-08 AlisherM BZ#50840: prevent duplicate sending event OnRelease: this.userStatus.userReleased will be changed only in "release" action
                                //this.userStatus.userReleased = true;
-                               this.agent.m_AgentStatus = AgentStatus.Release;
+                               this.updateVariableSource(AgentStatus.Release);
                                this.agent.m_LastReleaseStateTime = this.agent.m_AgentStateTime;
                                this.displayOnOffreleaseImage();
                                break;
@@ -2228,7 +2273,7 @@ export class AccAgentService implements OnInit, OnDestroy {
                                this.agent.m_CallIndex = index;
                                this.updateCallsCount();
                                this.callsArray[index].m_CallState = AccCallState.RESERVED;
-                               this.agent.m_AgentStatus = AgentStatus.RESERVED;
+                               this.updateVariableSource(AgentStatus.RESERVED);
 
                                this.HandleCRMEvent("OnReserved",  this.callsArray[index]);
 
@@ -2236,28 +2281,28 @@ export class AccAgentService implements OnInit, OnDestroy {
                            //
                            case "otalk":
                                {
-                                   this.agent.m_AgentStatus = AgentStatus.OACD;
+                                   this.updateVariableSource(AgentStatus.OACD);
                                    // var row: OneCall = this.getCurrentRowCallId();
                                    // if (row != null) { row.m_Acd = "OACD"; }
-                                   // else { this.agent.m_AgentStatus = AgentStatus.OACD; }
+                                   // else { this.updateVariableSource(AgentStatus.OACD); }
                                }
                                break;
                            //
                            case "talk":
-                               //this.agent.m_AgentStatus = AgentStatus.ACD;
+                               //this.updateVariableSource(AgentStatus.ACD);
                                //this.PrepareAndPutNotification("QueryAgentCalls", "QueryAgentCalls" + ",000," + this.agent.m_AgentNo + "," + this.agent.m_Extension + ",");
                                break;
                            //
                            case "busy":
-                               this.agent.m_AgentStatus = AgentStatus.Busy;
+                               this.updateVariableSource(AgentStatus.Busy);
                                break;
                            //
                            case "omni":
-                               this.agent.m_AgentStatus = AgentStatus.Omni;
+                               this.updateVariableSource(AgentStatus.Omni);
                                this.agent.isOmni = true;
                                break;
                            case "ring":
-                               this.agent.m_AgentStatus = AgentStatus.Ringing;
+                               this.updateVariableSource(AgentStatus.Ringing);
                                break;
                        }
                        break;
@@ -2270,7 +2315,7 @@ export class AccAgentService implements OnInit, OnDestroy {
                                break;
                            case "signout":
                                this.SetLoginStatus(false);
-                                this.agent.m_AgentStatus = AgentStatus.Logout;
+                                this.updateVariableSource(AgentStatus.Logout);
                                break;
                        }
                        break;
@@ -2293,8 +2338,10 @@ export class AccAgentService implements OnInit, OnDestroy {
                            this.agent.m_CallIndex = index;
                            this.callsArray[index].m_DeliveredResponse = response;
                            this.callsArray[index].m_StartStatusDate = new Date();
+                           this.callProfService.initChatLog(index);
+                           this.callProfService.initSessionDetails(index);
                        }
-                       else{
+                       else {
                            if (this.agent.m_StartConsultationTo == "" )
                            {
                                index = this.UpdateFromToCallId(response, AccCallState.Cleared);
@@ -2316,7 +2363,7 @@ export class AccAgentService implements OnInit, OnDestroy {
                            let callidX =  this.callsArray[index].m_CallId;
 
                            if (this.agaenLogin.auto == 1) {
-                               this.agent.m_AgentStatus = AgentStatus.Ringing;
+                               this.updateVariableSource(AgentStatus.Ringing);
                                this.autoAnswerTime = new Date();
                                this.autoAnswerTime.setTime(this.autoAnswerTime.getTime() + this.agaenLogin.ringsecs * 1000);
                                this.log("Auto answer, call id: " + callidX + " set ringing to " + this.agaenLogin.ringsecs * 1000);
@@ -2348,60 +2395,64 @@ export class AccAgentService implements OnInit, OnDestroy {
                        this.updateCallsCount();
                        break;
                    //
-                   case "established":
-                       //"params":"1552197371,1001,established,outbound,,2001,2001,2002,2002,,-1,-1,3,,N"},
-                       var prevState: AgentStatus = this.agent.m_AgentStatus
-                       //this.agent.m_LastReleaseStateTime = null;
-                       index = this.UpdateFromToCallId(response, AccCallState.Connected);
-                       if (this.callsArray[index].m_DeliveredResponse.length == 0 ) {
+                    case "established":
+                        //"params":"1552197371,1001,established,outbound,,2001,2001,2002,2002,,-1,-1,3,,N"},
+                        var prevState: AgentStatus = this.agent.m_AgentStatus
+                        //this.agent.m_LastReleaseStateTime = null;
+                        index = this.UpdateFromToCallId(response, AccCallState.Connected);
+                        if (this.callsArray[index].m_DeliveredResponse.length == 0 ) {
                            this.callsArray[index].m_DeliveredResponse = response;
-                       }
-                       this.lastCallType = -2;
-                       this.lastcallIconMedia = "";
-                       this.callsArray[index].m_CallType = Number(response[10]);
-                       this.callsArray[index].m_CallCause = Number(response[11]);
-                       this.agent.m_CallIndex = index;
-                       var oc: OneCall = this.callsArray[index];
-                       if (prevState == AgentStatus.Ringing ||response[7] == this.agent.m_Extension) {// incomming
-                        //1-Nov-2023 YR BZ#57958
-                        oc.m_StartStatusDate = new Date();
-                        if (oc.m_Acd == "ACD") {
-                            this.agent.m_AgentStatus = AgentStatus.ACD;
-                           }
-                           else if (oc.m_Acd == "OMNI") {
-                               this.agent.m_AgentStatus = AgentStatus.Omni;
-                           }
-                           else if (oc.m_Acd == "OACD") {
-                               this.agent.m_AgentStatus = AgentStatus.OACD;
-                               this.SetReinstCallBackOnOff(1);
-                           }
-                           else {
-                               this.agent.m_AgentStatus = AgentStatus.Busy;
-                           }
-                       }
-                       else if (prevState != AgentStatus.OACD && prevState != AgentStatus.Omni) {
-                           this.agent.m_AgentStatus = AgentStatus.Busy;
-                           oc.m_Acd = "N";
-                       }
-                       if (this.agent.m_StartConsultation == index)
-                       {
-                           this.setAccButton("ConferenceCompleteId", 1, false);
-                           this.agent.m_StartConsultationAnswered = true;
-                       }
+                        }
+                        this.lastCallType = -2;
+                        this.lastcallIconMedia = "";
+                        this.callsArray[index].m_CallType = Number(response[10]);
+                        this.callsArray[index].m_CallCause = Number(response[11]);
+                        this.agent.m_CallIndex = index;
+                        var oc: OneCall = this.callsArray[index];
+                        if (prevState == AgentStatus.Ringing || response[7] == this.agent.m_Extension) {// incomming
+                            //1-Nov-2023 YR BZ#57958
+                            oc.m_StartStatusDate = new Date();
+                            if (oc.m_Acd == "ACD") {
+                                this.updateVariableSource(AgentStatus.ACD);
+                            }
+                            else if (oc.m_Acd == "OMNI") {
+                                this.updateVariableSource(AgentStatus.Omni);
+                            }
+                            else if (oc.m_Acd == "OACD") {
+                                this.updateVariableSource(AgentStatus.OACD);
+                                this.SetReinstCallBackOnOff(1);
+                            }
+                            else {
+                                this.updateVariableSource(AgentStatus.Busy);
+                            }
+                        }
+                        else if (prevState != AgentStatus.OACD && prevState != AgentStatus.Omni) {
+                            this.updateVariableSource(AgentStatus.Busy);
+                            oc.m_Acd = "N";
+                        }
+                        if (this.agent.m_StartConsultation == index)
+                        {
+                            this.setAccButton("ConferenceCompleteId", 1, false);
+                            this.agent.m_StartConsultationAnswered = true;
+                        }
 
-                       if (this.callsArray[index].m_Acd == "ACD")
-                       {
-                           this.HandleCRMEvent("OnConnectedACD", this.callsArray[index]);
-                       }
-                       else
-                       {
-                           this.HandleCRMEvent("OnConnected", this.callsArray[index]);
-                       }
-                       this.agent.m_LastIdleStateTime = null;
-                       // Log.Debug("++++++++++ Agent: " + this.agent.m_AgentNo + "    ESTABLISHED: to/extstenstion: + " + this.agent.m_To + "/" + this.agent.m_Extension + "  callid: " + this.agent.m_CallId + " state: " + this.agent.m_CallStatus.toString());
-                       break;
-                   //
-                   case "cleared":
+                        if (this.callsArray[index].m_Acd == "ACD")
+                        {
+                            this.HandleCRMEvent("OnConnectedACD", this.callsArray[index]);
+                        }
+                        else if (this.callsArray[index].m_Acd == "OACD")
+                        {
+                            this.HandleCRMEvent("OnConnectedACD", this.callsArray[index]);
+                        }
+                        else
+                        {
+                            this.HandleCRMEvent("OnConnected", this.callsArray[index]);
+                        }
+                        this.agent.m_LastIdleStateTime = null;
+                        // Log.Debug("++++++++++ Agent: " + this.agent.m_AgentNo + "    ESTABLISHED: to/extstenstion: + " + this.agent.m_To + "/" + this.agent.m_Extension + "  callid: " + this.agent.m_CallId + " state: " + this.agent.m_CallStatus.toString());
+                        break;
+                    //
+                    case "cleared":
                        this.callIconMedia = 'assets/images/CallTypeIcons/no_icon.ico';
                        this.callIconType = 'assets/images/CallTypeIcons/no_icon.ico';
                        this.callIconRecord = 'assets/images/CallTypeIcons/RecordUnactive.svg';
@@ -2552,7 +2603,7 @@ export class AccAgentService implements OnInit, OnDestroy {
                        break;
                    case "signout":
                        this.SetLoginStatus(false);
-                       this.agent.m_AgentStatus = AgentStatus.Logout;
+                       this.updateVariableSource(AgentStatus.Logout);
                        this.displayOffLogonImage(false);
 
                        break;
@@ -2876,8 +2927,11 @@ export class AccAgentService implements OnInit, OnDestroy {
                        break;
                    //
                    case 'callomnimessage':
-                       let message = response[5];
-                       this.accagentPage.receiveChatMes(message);
+                       let message = response[4];
+                       let msg_callId = response[12];
+                       console.log("callomnimessage: " + response);
+                       console.log("callomnimessage - message: " + message + "     callId: " + msg_callId);
+                       this.accOMNIPage?.mainDesk?.receiveChatMes(message, msg_callId);
                        break;
                    //
                    default:
@@ -3023,7 +3077,7 @@ export class AccAgentService implements OnInit, OnDestroy {
                let button: AccOneButton2 = AccButtons[index];
 
                //let tilesbuttons = this.tiles.filter(x => x.id.includes(id.split('.')[0]));
-               let tilesbuttons = this.tiles.filter(x => x.id.includes(id));
+               let tilesbuttons = this.tiles.filter(x => x.id?.includes(id));
                for (let i = 0; i < tilesbuttons.length; ++i) {
                     let tile: accbutton = tilesbuttons[i];
                     tile.isdisable = false;
@@ -3039,7 +3093,7 @@ export class AccAgentService implements OnInit, OnDestroy {
                    }
                    else {
                        tile.title = bt + "\n" + tile.title.split("\n")[1];
-                       if (classY){tile.class += " " + classY};
+                       if (classY){tile.class += " " + classY;}
                    }
                    tile.img = button.Array[idx].img;
                    if (button.Array[idx].isdisable != undefined)
@@ -3305,53 +3359,44 @@ export class AccAgentService implements OnInit, OnDestroy {
        }
        //===========================[SetAgentStatus]=====================================
        lastcallIconMedia: string = "";
-       SetAgentStatus()
-       {
+       SetAgentStatus() {
            var moretext: string = ""
            var callid = this.getCurrentCallId();
            var call: OneCall = null
            var index = this.callsArray.map(e => e.m_CallId).indexOf(callid);
-           if (index == -1)
-           {
-               if (this.callIconMedia != this.lastcallIconMedia)
-               {
+           if (index == -1) {
+               if (this.callIconMedia != this.lastcallIconMedia) {
                    this.callIconMedia = 'assets/images/CallTypeIcons/no_icon.ico';
                    this.callIconType = 'assets/images/CallTypeIcons/no_icon.ico';
                    this.callIconRecord = 'assets/images/CallTypeIcons/RecordUnactive.svg';
                    this.lastcallIconMedia = this.callIconMedia;
                }
                this.curentCall = '';
-               if (this.accagentPage != null && index == -1){
+               if (this.accagentPage != null && index == -1) {
                    this.accagentPage.SetCurrentCP([]);
                }
-               var ts = Math.floor((Date.now() - this.agent.m_AgentStateTime) / 1000);
+               var ts = Math.floor((Date.now() - this.agent?.m_AgentStateTime) / 1000);
                //this.log("SetAgentStatus (index == -1) ts<" + ts + ">");
                if (this.userStatus.userLogin == false) {
-                   this.agent.m_AgentStatus = AgentStatus.Logout;
+                   this.updateVariableSource(AgentStatus.Logout);
                }
-               else if (this.userStatus.userWrauped == true)
-               {
-                   this.agent.m_AgentStatus = AgentStatus.WrapUp;
-                   if (this.agent.WrapUpCode != "1" && this.agent.WrapUpCode != "01")
-                   {
-                       var i = this.ACC.m_WrapUpCodesList.map(e => e.Key).indexOf(this.agent.WrapUpCode);
+               else if (this.userStatus?.userWrauped == true) {
+                   this.updateVariableSource(AgentStatus.WrapUp);
+                   if (this.agent?.WrapUpCode != "1" && this.agent?.WrapUpCode != "01") {
+                       var i = this.ACC.m_WrapUpCodesList.map(e => e.Key).indexOf(this.agent?.WrapUpCode);
                        if (i != -1)
                            moretext = " - " + this.ACC.m_WrapUpCodesList[i].Desc;
                    }
                }
-               else if (this.userStatus.userReleased == true)
-               {
-                   if (this.agent.ReleaseCode == "2")
-                   {
-                       this.agent.m_AgentStatus = AgentStatus.ForceRelease;
+               else if (this.userStatus?.userReleased == true) {
+                   if (this.agent?.ReleaseCode == "2") {
+                       this.updateVariableSource(AgentStatus.ForceRelease);
                        //moretext = "Force Release" ;
                    }
-                   else
-                   {
-                       this.agent.m_AgentStatus = AgentStatus.Release;
-                       if (this.agent.ReleaseCode != "1" && this.agent.ReleaseCode != "01")
-                       {
-                           var i = this.ACC.m_ReleaseCodesList.map(e => e.Key).indexOf(this.agent.ReleaseCode);
+                   else {
+                       this.updateVariableSource(AgentStatus.Release);
+                       if (this.agent?.ReleaseCode != "1" && this.agent?.ReleaseCode != "01") {
+                           var i = this.ACC.m_ReleaseCodesList.map(e => e.Key).indexOf(this.agent?.ReleaseCode);
                            if (i != -1)
                                moretext = "\n" + this.ACC.m_ReleaseCodesList[i].Desc;
                        }
@@ -3359,25 +3404,22 @@ export class AccAgentService implements OnInit, OnDestroy {
                    this.PSWtot.releaseTime = this.PSWtot.makeTime((ts + this.PSWtot.releaseTimeNo).toString());
                    this.PSWtot.loginTime = this.PSWtot.makeTime((ts + this.PSWtot.loginTimeNo).toString());
                }
-               else if (this.agent.isOmni)
-               {
-                   this.agent.m_AgentStatus = AgentStatus.Omni;
+               else if (this.agent?.isOmni) {
+                   this.updateVariableSource(AgentStatus.Omni);
                }
                else if(this.agent.m_AgentStatus == AgentStatus.RESERVED ||
                        this.agent.m_AgentStatus == AgentStatus.SemiBusy ||
-                       this.agent.m_AgentStatus == AgentStatus.OACD)
-               {
-                   this.agent.m_AgentStatus = this.agent.m_AgentStatus;
+                       this.agent.m_AgentStatus == AgentStatus.OACD) {
+                   //this.agent.m_AgentStatus = this.agent.m_AgentStatus;
                }
-               else
-               {
-                   this.agent.m_AgentStatus = AgentStatus.Idle;
-                   if (this.ShowPST == true){
+               else {
+                   this.updateVariableSource(AgentStatus.Idle);
+                   if (this.ShowPST == true) {
                        this.sendStatisticsRequest();
                    }
                    //this.agent.m_LastIdleStateTime = new Date();
                }
-               var s = this.agent.m_AgentStatus;
+               var s = this.agent?.m_AgentStatus;
            }
            else
            {
@@ -3427,7 +3469,7 @@ export class AccAgentService implements OnInit, OnDestroy {
                }
            }
            else {
-               status = (this.agent.m_isLogon == false ? "logout " : "") + s;
+               status = (this.agent?.m_isLogon == false ? "logout " : "") + s;
            }
 
            this.CurrStatus = status;
@@ -3438,6 +3480,7 @@ export class AccAgentService implements OnInit, OnDestroy {
            // var node  = document.getElementsByClassName("accLogId");
            var textContent = node.textContent;
            node.textContent = this.CurrStatus;
+
            //this.log(this.CurrStatus);
        }
 
@@ -3512,8 +3555,8 @@ export class AccAgentService implements OnInit, OnDestroy {
  
             var ae = localStorage.getItem("AccWebAgentExt");
             var ap = atob(localStorage.getItem("AccWebAgentReload"));
-            this.m_isLogonSaved = (localStorage.getItem("AccWebAgentlogin") == 'true') ? true : false;
-            this.userStatus.userReleased =  (localStorage.getItem("AccWebAgentRelease") == 'true') ? true : false;
+            this.m_isLogonSaved = (localStorage.getItem("AccWebAgentlogin") == 'true');
+            this.userStatus.userReleased =  (localStorage.getItem("AccWebAgentRelease") == 'true');
             this.agaenLogin = new LoginUser(an, ap, ae);
             this.sessionId = localStorage.getItem("AccWebAgentSessionId");
             this.agaenLogin.auto = 0;
@@ -3589,7 +3632,7 @@ export class AccAgentService implements OnInit, OnDestroy {
     }
     //=================[saveEtasIni]===============================
     public saveEtasIni() {
-        if (this.etasIni == undefined || this.etasIni == null){ console.log("try to save NULL etas");}
+        if (this.etasIni == undefined){ console.log("try to save NULL etas");}
         var etasiniStr: string = "";
         etasiniStr = JSON.stringify(this.etasIni, null, 4);
         var etasEncodedb64: string = this.b64EncodeUnicode(etasiniStr);
@@ -4698,6 +4741,9 @@ export class AccAgentService implements OnInit, OnDestroy {
             case "OnClearedACD":
                 event_config = this.CRM.Event.OnClearedACD;
                 break;
+            case "OnClearedOACD":
+                event_config = this.CRM.Event.OnClearedOACD;
+                break;
             case "Salesforce_OnClickToDial":
                 event_config = this.CRM.Event.Salesforce_OnClickToDial;
                 break;
@@ -5014,7 +5060,7 @@ export class AccAgentService implements OnInit, OnDestroy {
                 newUrl += value1;
             }
             else {
-                entry = cps.find(b => b.includes(this.ACC.m_CallProfileLists[cpentry].Key + '|'));
+                entry = cps.find(b => b?.includes(this.ACC.m_CallProfileLists[cpentry].Key + '|'));
                 if (entry == null) { continue; }
                 var value: string[] = entry.split('|');
                 newUrl += value[1];
@@ -5085,8 +5131,7 @@ export class AccAgentService implements OnInit, OnDestroy {
         return new_str;
     }
 
-    GetCPFValueByName(cpf_name: string, oc: OneCall) 
-    {
+    GetCPFValueByName(cpf_name: string, oc: OneCall) {
         //cpf_name - call profile field name without delimeters
         //return value of call profile field name or
         //CPF_DOES_NOT_EXIST - if string provided by cpf_name is not existing call profile field name
@@ -5145,8 +5190,7 @@ export class AccAgentService implements OnInit, OnDestroy {
     } //end of GetCPFValueByName
 
     //2019-10-02 AlisherM BZ#50840: add call profile name/value to call, used in onClickToDial event with simulated call
-    AddCPFtoCall(cpf_name: string, cpf_value: string, oc: OneCall)
-    {
+    AddCPFtoCall(cpf_name: string, cpf_value: string, oc: OneCall) {
         var cpf_entry: number = this.ACC.m_CallProfileLists.map(x => x.Desc).indexOf(cpf_name);
         var cpf_key: string;
         this.log("AddCPFtoCall <" + cpf_name + ":" + cpf_value);

@@ -6,6 +6,7 @@ import {CommonModule} from "@angular/common";
 import {BubbleAvatarComponent} from "../../directive/bubble-avatar/bubble-avatar.component";
 import {PopoverDirective} from "../../directive/bubble-avatar/popover.directive";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {HighlightDirective} from "../../directive/custom-directive/Highlight.directive";
 //import {TranslatePipe} from "../../../app/storybook/pipes/translate/translate.pipe";
 //import {TranslateService} from "../../../app/storybook/pipes/translate/translate.service";
 
@@ -15,10 +16,11 @@ export default {
   component: ActionAvatarComponent,
   decorators: [
     moduleMetadata({
-      declarations: [BubbleAvatarComponent, PopoverDirective],
+      declarations: [BubbleAvatarComponent, PopoverDirective, BubbleAvatarComponent, HighlightDirective],
       imports: [CommonModule, ReactiveFormsModule],
     }),
-    /*componentWrapperDecorator<ButtonContinueComponent>((story) => `<div class="container" style="height: 200px">${story}</div>`),*/
+  /*componentWrapperDecorator(story => `<bubble-avatar>${story}</bubble-avatar>`)*/
+    componentWrapperDecorator<ActionAvatarComponent>((story) => `<div class="container" style="height: 200px">${story}</div>`),
   ],
   // More on argTypes: https://storybook.js.org/docs/angular/api/argtypes
 } as Meta;

@@ -1,0 +1,62 @@
+{
+    "applicationInfo": {
+        "apiURL": "https://aeonix7.aeonix4cloud.co.il:8417/ExternalServices/msg",
+        "assetsLocation": "https://aeonix7.aeonix4cloud.co.il:8417/aeonix/msg/ChatWidget",
+        "supportIcon": "support.png",
+        "clientIcon": "user.png",
+        "attachmentIcon":"attachment.png",
+        "locationIcon":"location.png",
+        "fileIcon":"document.svg",
+        "target": "4008",
+        "tenantId": 0,
+        "direction": "ltr",
+        "logo": "idfLogo.png",
+        "callBackButton":false,
+        "loginFields": [
+            {
+                "name": "firstName",
+                "label": "שם פרטי",
+                "value": "",
+                "type": "text",
+                "validators": {}
+            },
+            {
+                "name": "lastName",
+                "label": "שם משפחה",
+                "value": "",
+                "type": "text",
+                "validators": {}
+            },
+            {
+                "name": "id",
+                "label": "מס אישי",
+                "value": "",
+                "type": "text",
+                "validators": {
+                    "required": true,
+                    "minLength": 1
+                }
+            },
+            {
+                "name": "compny",
+                "label": "חברה ",
+                "value": "",
+                "type": "text",
+                "validators": {}
+            }
+        ],
+        "lables": {
+            "loginButton": "הרשם",
+            "loginTitle": "תמיכה",
+            "loginError": "אי אפשר לפתוח צאט",
+            "chatTitle": "support",
+            "online": "online",
+            "offline": "offline",
+            "messagePlaceHolder": "Type message"
+        },
+        "bg-color-1": "olive",
+        "fg-color-1": "white",
+        "bg-color-2": "#eeee30",
+        "fg-color-2": "black"
+    }
+}

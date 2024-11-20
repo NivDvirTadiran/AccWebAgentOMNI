@@ -1,0 +1,16 @@
+<div class="content">
+    <app-calls-filter
+            (checkChangeValue)="updateChecked($event)"
+            (ChangeStatus)="sortStatus($event)"
+            (channelFilter)="filterByChannel($event)"
+            [type]="'Default'"
+            [actionBar]="'No'"
+            class="callsfilter_3242-63361">
+    </app-calls-filter>
+    <app-calls-actions [hidden]="isSelected" (onChange)="onStatusChange($event)"></app-calls-actions>
+    <calls-list-new
+            (activeSessionChange)="activeSessionChange($event)"
+            (checkedChange)="isOneSelected()"
+            [sessions]="sessions">
+    </calls-list-new>
+ </div>

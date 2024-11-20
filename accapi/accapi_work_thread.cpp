@@ -763,7 +763,7 @@ int CheckKeepAlive(AccapiWorkThread_c* SWT, int keepalive_check_intreval, int ke
     for (it = agents_db.begin(); it != agents_db.end(); ++it)
     {
       AgentDbInfo_c& ADI = it->second;
-      if (ADI.m_allready_confirmed == true)
+      if ((ADI.m_allready_confirmed == true) && (ADI.m_ignore_keepalive == false))
       {
         int diff = ttt - ADI.m_LastKeeAliveTime;
         //2019-06-19 AlisherM & Shaul BZ#50087: check if time values are valid
@@ -777,6 +777,9 @@ int CheckKeepAlive(AccapiWorkThread_c* SWT, int keepalive_check_intreval, int ke
         {
           accapi_my_print(0, "CheckKeepAlive WARNING: agent %s, sessionid %s, diff %d > keepalive_timeout %d, force logoff agent due to keepalive timeout, sending agentDenied, ttt %d, m_LastKeeAliveTime %d\n", &ADI.m_Number[0], ADI.m_SessionId.c_str(), diff, keepalive_timeout, ttt, ADI.m_LastKeeAliveTime);
           //sea_provider.LogoutAgent(requestid++,ADI.m_Agent_id);
+          accapi_my_print(0, "IGNORE sending agentDenied: agent %s, sessionid %s, \n", &ADI.m_Number[0], ADI.m_SessionId.c_str());
+          ADI.m_ignore_keepalive = true;
+          /*
           SWT->agentDisconnect(&ADI, true);
           REPORT report;
           // try to logon to other extension and denied for some reason
@@ -784,6 +787,7 @@ int CheckKeepAlive(AccapiWorkThread_c* SWT, int keepalive_check_intreval, int ke
           report.m_CallingCalledDevId = ADI.m_Extenstion;
           report.m_Code1 = 16;
           SWT->m_sea_reply.UpdateAgentDbInfo(ADI.m_Number, AccapiCrmType_c::Login, report, ADI.m_AgentWSid, ADI.m_SessionId);
+          */
           //sendResponse(ADI.m_AgentWSid,"KEEPALIVE CHECK");
         }
         else if (diff > keepalive_check_intreval)
@@ -955,11 +959,28 @@ SUP_c* getSupUser(string user)
   //for (int i = 0; i < user.length(); ++i)
   //  s[i] = tolower(s[i]);
 
+  /*
   SUP_MAP_IT it = sup_map.find(user);
   if (it != sup_map.end())
   {
     return &it->second;
   }
+  */
+
+  //20-Nov-2024 YR BZ#60291
+  SUP_c* sup = NULL, * S;
+  SUP_MAP_IT it = sup_map.begin();
+  for (it; it != sup_map.end(); ++it)
+  {
+    S = &(*it).second;
+    if (user == &S->m_supName[0])
+    {
+      sup = S;
+      return S;
+      //break;
+    }
+  }
+
   return NULL;
 }
 
@@ -3271,9 +3292,22 @@ void AccapiWorkThread_c::PostEventHandling()
         ErCallId_t call_id = atoi(splited[3].c_str());
         ErDevId_t message = splited[4];
         accapi_my_print(0, "API_AGENTOMNIMESSAGE, agent: %s\n", splited[2].c_str());
+        //Ulong_t msg_type = atoi(splited[6].c_str());
+        //sea_provider.AgentOmniMessage(requestid++, ADI->m_Number, ADI->m_Extenstion, call_id, msg_type, message);
         sea_provider.AgentOmniMessage(requestid++, ADI->m_Number, ADI->m_Extenstion, call_id, message);
-        }
+      }
         break;
+
+        /*
+      case API_AGENTC2GSEARCH:
+      {
+        ErCallId_t call_id = atoi(splited[3].c_str());
+        ErDevId_t message = splited[4];
+        accapi_my_print(0, "API_AGENTC2GSEARCH, agent: %s\n", splited[2].c_str());
+        //sea_provider.AgentOmniMessage(requestid++, ADI->m_Number, ADI->m_Extenstion, call_id, message);
+      }
+      break;
+      */
 
       default:
         switch (code)

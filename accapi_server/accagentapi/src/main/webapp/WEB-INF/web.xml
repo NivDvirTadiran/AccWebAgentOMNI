@@ -1,5 +1,4 @@
-<web-app 
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
   <display-name>Archetype Created Web Application</display-name>
 
 <filter>
@@ -101,7 +100,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com
 </filter-mapping> -->
   <context-param>   
  <param-name>ACCServerAddress1</param-name>
-	   <param-value>172.28.31.88</param-value>
+	   <param-value>172.28.31.87</param-value>
     </context-param>
     <context-param>
 	   <param-name>ACCServerPort1</param-name>
@@ -109,7 +108,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com
     </context-param>
     <context-param>
 	     <param-name>ACCServerAddress2</param-name>
-	     <param-value>172.28.31.87</param-value>
+	     <param-value>172.28.31.88</param-value>
     </context-param>
     <context-param>
 		<param-name>ACCServerPort2</param-name>

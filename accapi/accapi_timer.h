@@ -114,6 +114,7 @@ public:
     m_isLogin = false;
     m_LastEvent = -1;
     m_LastEventTime = 0;
+    m_ignore_keepalive = false;
   }
 
   bool      m_isLogin;
@@ -144,6 +145,7 @@ public:
   bool      m_LoginLogout;
   int       m_LastEvent;      // avoid send same event in less than second
   time_t    m_LastEventTime;  // avoid send same event in less than second
+  bool      m_ignore_keepalive;
   vector<REPORT> m_report;
 };
 

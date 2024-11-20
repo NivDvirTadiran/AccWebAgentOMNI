@@ -1,0 +1,35 @@
+<div
+        class="root"
+        [ngClass]="{
+    root_property1Default: property1 === 'Default',
+    root_property1Block: property1 === 'Block'
+  }"
+>
+    <div class="frame225">
+
+        <div *ngIf="property1 === 'Close'">
+            <div class="timeStyle">{{closeDate.toLocaleDateString()}}</div>
+            <div class="mymailTbsiCoIl" >
+            <span>
+            הקריאה נסגרה
+            </span>
+                <span class="timeStyle">{{moment(closeDate).locale('he').fromNow()}}</span>
+            </div>
+        </div>
+<!--        <span *ngIf="property1 === 'Default'" class="mymailTbsiCoIl">-->
+<!--        עברה אל קריאות אל mymail&#64;tbsi.co.il-->
+<!--    </span>-->
+
+        <!--    <span-->
+        <!--      class="a12"-->
+        <!--      [ngClass]="{-->
+        <!--        a12_property1Default: property1 === 'Default',-->
+        <!--        a12_property1Block: property1 === 'Block'-->
+        <!--      }"-->
+        <!--      >12 דקות</span-->
+        <!--    >-->
+        <span *ngIf="property1 === 'Block'" class="a"
+        >הנציג העביר בקשה לחסימת הלקוח</span
+        >
+    </div>
+</div>

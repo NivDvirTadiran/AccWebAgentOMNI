@@ -2,7 +2,7 @@
     position: absolute;
     box-sizing: border-box;
     overflow: hidden;
-    background: #f2f9ff;
+    background: #F2F9FF;
     width: 100%;
     height: 100%;
 }
@@ -47,12 +47,9 @@ section {
 
 
 .main-desk-content {
+    border-radius: 1.25rem;
     width: 100%;
-    display: flex;
     height: 100%;
-    flex-direction: column;
-    align-items: center;
-    flex: 1 0 0;
 }
 
 

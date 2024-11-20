@@ -1,0 +1,31 @@
+@import "src/stories/assets/scss/style.scss";
+
+
+.div19 {
+  position: relative;
+  letter-spacing: -0.01em;
+  display: inline-block;
+  min-width: 60px;
+}
+.icon-large-19 {
+  height: 13px;
+  width: 13px;
+  position: relative;
+}
+.button {
+  width: 94px;
+  border-radius: $br-xl;
+  border: 1px solid $darkblue;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: $padding-10xs $padding-5xs $padding-8xs;
+  gap: $gap-10xs;
+  white-space: nowrap;
+  text-align: right;
+  font-size: $small-text-size;
+  color: $darkblue;
+  font-family: $small-text;
+}

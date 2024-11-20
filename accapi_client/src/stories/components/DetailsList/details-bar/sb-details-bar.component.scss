@@ -1,0 +1,25 @@
+@import "src/stories/assets/scss/style.scss";
+
+
+.fold-menu-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: $br-xl;
+  object-fit: contain;
+}
+.tags-parent {
+  height: 100%;
+  width: 317px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 80px) {
+  .fold-menu-icon {
+    width: calc(100% - 40px);
+  }
+}

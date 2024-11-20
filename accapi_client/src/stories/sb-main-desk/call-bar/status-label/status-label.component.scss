@@ -1,0 +1,57 @@
+@import "../../../assets/scss/tokens.scss";
+
+.root {
+  padding: 0.125rem 0.813rem 0.25rem 0.813rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0.875rem;
+  box-sizing: border-box;
+  border-radius: 1.875rem;
+}
+
+app-status-label {
+  width: 3.563rem;
+  height: 1.375rem;
+}
+
+
+.app-status-label--Black { background: $black-background; }
+.app-status-label--Pink { background: $pink-background; }
+.app-status-label--Yellow { background: $yellow-background; }
+.app-status-label--Purple { background: $purple-background; }
+.app-status-label--Green { background: $green-background; }
+.app-status-label--Turkiz { background: $turkiz-background; }
+.app-status-label--Gray { background: $d-9-d-9-d-9-background; }
+
+
+.statusLabelWaiting {
+  background: $purple-background;
+  cursor: pointer;
+}
+.statusLabelClose {
+  background: $green-background;
+  cursor: pointer;
+}
+.statusLabelOpen {
+  background: $turkiz-background;
+  cursor: pointer;
+}
+.statusLabelTimer {
+  background: $yellow-background;
+  cursor: pointer;
+}
+
+.a {
+  display: flex;
+  box-sizing: content-box;
+  color: $white-color;
+  @include small-text-bold-text;
+  font-weight: 700;
+  text-align: right;
+}
+
+
+

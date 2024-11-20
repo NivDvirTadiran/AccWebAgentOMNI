@@ -1,0 +1,58 @@
+{
+    "applicationInfo": {
+        "apiURL": "/ExternalServices/msg",
+        "assetsLocation": "/aeonix/msg/ChatWidget",
+        "supportIcon": "support.png",
+        "clientIcon": "user.png",
+		"fileIcon":"document.svg",
+		"attachmentIcon":"attachment.png",
+		"locationIcon":"location.png",
+        "target": "2002",
+        "tenantId": 100,
+        "direction": "rtl",
+        "logo": "logo.png",
+        "loginFields": [
+            {
+                "name": "name",
+                "label": "שם",
+                "value": "",
+                "type": "text",
+                "validators": {}
+            },
+            {
+                "name": "phone",
+                "label": "טלפון",
+                "value": "",
+                "type": "text",
+                "validators": {
+                    "required": true,
+                    "minLength": 1,
+					"callMeBackField" : true
+                }
+            },
+            {
+                "name": "email",
+                "label": "אימייל",
+                "value": "",
+                "type": "text",
+                "validators": {
+					"callMeBackField" : true					
+				}
+            }
+        ],
+        "lables": {
+            "loginButton": "התחל",
+            "loginTitle": "תמיכה",
+            "loginError": "תקלה בפתיחת הצאט",
+            "chatTitle": "תמיכה",
+            "online": "מחובר",
+            "offline": "מנותק",
+            "messagePlaceHolder": "הכנס הודעה",
+			"callMeBack" : "תתקשרו אלי"
+        },
+        "bg-color-1": "olive",
+        "fg-color-1": "white",
+        "bg-color-2": "#eeee30",
+        "fg-color-2": "black"
+    }
+}

@@ -15,13 +15,21 @@
     <file type="web" url="file://$PROJECT_DIR$/out/artifacts/accWebAgent/WEB-INF/web.xml" />
     <file type="web" url="file://$PROJECT_DIR$/out/production/AccWebAgent/main/webapp/WEB-INF/web.xml" />
   </component>
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="FLOW" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/accapi_server/accagentapi/pom.xml" />
+        <option value="$PROJECT_DIR$/accapi_server/Selenium/pom.xml" />
       </list>
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />
+  </component>
+  <component name="PWA">
+    <option name="enabled" value="true" />
+    <option name="wasEnabledAtLeastOnce" value="true" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="temurin-1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />

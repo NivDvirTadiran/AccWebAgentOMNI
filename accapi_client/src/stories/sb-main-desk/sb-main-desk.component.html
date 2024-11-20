@@ -1,0 +1,23 @@
+<div class="chatcolum">
+
+    <app-call-bar
+            class="callbar"
+            (closeSession)="closeSession($event)"
+            [goal]="'Chat'"
+            [activeSession]="activeSession"
+            [option]="'2'">
+    </app-call-bar>
+
+    <div class="frame-463_I1110-41539-843-146789">
+        <app-chat
+                class="chat"
+                [property1]="property1"
+                [chatLog]="mainDaskData.chatLog">
+        </app-chat>
+    </div>
+
+    <app-typing-bar-reply
+            class="typingbar-reply"
+            (onSendMessage)="onSendMessage.emit($event)">
+    </app-typing-bar-reply>
+</div>

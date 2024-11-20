@@ -1,0 +1,37 @@
+<section [ngClass]="callItem.clicked ? 'callitem2Focus' : 'callitem2'" tabindex="0">
+  <div class="frame-parent1">
+    <div class="frame-wrapper1">
+      <div class="icon-large-17-container">
+         <img class="icon-large-172" loading="lazy" alt="" [src]="getIconSrc" />
+         <app-icon-checkbox
+              [check]="isChecked"
+              (checkChange)="changeValue()"
+              class="checkboxIcon">
+         </app-icon-checkbox>
+      </div>
+    </div>
+    <div class="frame-parent2" [ngStyle]="frameDivStyle">
+      <div class="container" [ngStyle]="frameDiv1Style">
+        <b class="b2" [ngStyle]="b1Style">{{callItem.customerName}}</b>
+      </div>
+      <img class="icon-channel-11" loading="lazy" alt="" [src]="getChannelIcon" />
+    </div>
+  </div>
+  <div class="status-label-group">
+        <app-status-label [statusLabel]="callItem.status" [grayed]="callItem.isGrayed"></app-status-label>
+
+        <div class="frame-parent3">
+          <div class="group" [ngStyle]="frameDiv2Style">
+            <div class="div5" [ngStyle]="div1Style">{{callItem.lastMessage}}</div>
+            <div class="div6" [ngStyle]="div2Style">{{moment(callItem.lastMessageTime).locale('he').fromNow()}}</div>
+          </div>
+          <div class="notification2" *ngIf="!callItem.notification">
+            <div class="notification-inner" *ngIf="!callItem.ellipseDiv"></div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20" fill="none">
+                  <circle cx="9.5" cy="9.99939" r="9" stroke="#43A5FF"/>
+              </svg>
+            <div class="div7" *ngIf="!callItem.div" [ngStyle]="div3Style">1</div>
+          </div>
+        </div>
+  </div>
+</section>

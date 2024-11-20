@@ -1,0 +1,56 @@
+<!--<div id="myModal" class="modal-wrapper">-->
+<div class="modal fade show" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-modal="true" role="dialog" style="display: block; padding-left: 0px;">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content modal-style">
+                <span class="close" (click)="closeIcon()">&times;</span>
+
+                <div class="close-div">
+                    <img class="status-icon" loading="lazy" alt="" src="./stories/assets/Status.svg" />
+                    <p class="closeSession">סגירת פניה</p>
+                </div>
+                <p class="beforeClose">לפני סגירת הפניה יש להוסיף סיכום שיחה</p>
+
+                <div class="typebar_10-4065" [formGroup]="this.currentForm">
+                    <div class="frame-138_10-4131">
+                    </div>
+                    <input #modalInput
+                           [focus]="false"
+                           type="text"
+                           class="inputField"
+                           placeholder="כתיבת סיכום שיחה"
+                           name="message"
+                           formControlName="message"
+                           required
+                    />
+                </div>
+
+                <button-send class="send-button" [label]= label (click)="closePopup()"></button-send>
+        </div>
+    </div>
+</div>
+<!--</div>-->
+
+
+
+<!--<div mdbModal #basicModal="mdbModal" class="modal fade right" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel"-->
+<!--     aria-hidden="true">-->
+<!--    <div class="modal-dialog modal-full-height modal-right" role="document">-->
+<!--        <div class="modal-content">-->
+<!--            <div class="modal-header">-->
+<!--                <h4 class="modal-title w-100" id="myModalLabel">Modal title</h4>-->
+
+<!--                <button type="button" class="close pull-right" aria-label="Close" (click)="basicModal.hide()">-->
+<!--                    <span aria-hidden="true">×</span>-->
+<!--                </button>-->
+<!--            </div>-->
+<!--            <div class="modal-body">-->
+<!--                <ng-content></ng-content>-->
+<!--            </div>-->
+<!--            <div class="modal-footer">-->
+<!--                <button type="button" mdbBtn color="secondary" class="waves-light" aria-label="Close" (click)="basicModal.hide()" mdbWavesEffect>Close</button>-->
+<!--                <button type="button" mdbBtn color="primary" class="relative waves-light" mdbWavesEffect>Save!</button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+

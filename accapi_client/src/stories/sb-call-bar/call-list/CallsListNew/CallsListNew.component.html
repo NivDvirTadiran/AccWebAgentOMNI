@@ -1,0 +1,117 @@
+<div class="calls-list-new">
+
+<!--  <section class="callitem">-->
+<!--    <div class="client-info-container">-->
+<!--      <div class="client-icon-background-wrapper">-->
+<!--        <div class="client-icon-background">-->
+<!--          <img class="icon-large-17" loading="lazy" alt="" src="./stories/assets/icons/icon--large--17.svg"/>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="client-name-background-parent">-->
+<!--        <div class="client-name-background">-->
+<!--          <a class="a">שם הלקוח</a>-->
+<!--        </div>-->
+<!--        <img class="icon-channel-1" loading="lazy" alt="" src="./stories/assets/icons/icon--channel--1@2x.png"/>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="call-status-container">-->
+<!--      <div class="status-label-container">-->
+<!--        <status-label-->
+<!--          [prop]="'פתוח'"-->
+<!--          [propHeight]="'unset'"-->
+<!--          [propWidth]="'unset'"-->
+<!--          [propBackgroundColor]="'#2ec9df'"-->
+<!--          [propAlignSelf]="'unset'"-->
+<!--          [propFlex]="'unset'"-->
+<!--          [propTextDecoration]="'none'"-->
+<!--          [propFontWeight]="'700'"-->
+<!--          [propDisplay]="'inline-block'"-->
+<!--          [propMinWidth]="'29px'">-->
+
+<!--        </status-label>-->
+<!--        <div class="notification-indicator">-->
+<!--          <img class="notification-icon" loading="lazy" alt="" src="./stories/assets/icons/notification.svg"/>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="last-message-container">-->
+<!--        <div class="last-message-content">-->
+<!--          <div class="div">הודעה חדשה שהתקבלה...</div>-->
+<!--          <a class="a1">1 שעה</a>-->
+<!--        </div>-->
+<!--        <notification1 [propTextDecoration]="'none'"> </notification1>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </section>-->
+    <ng-container *ngFor="let session of sessions.sort(sortSession)">
+        <call-item (click)="onClickItem(session)" class="callItem" [callItem]="session" *ngIf="session.isShowItem" (checkedChange)="isChecked($event)" ></call-item>
+    </ng-container>
+<!--  <call-item-->
+<!--    [iconLarge17]="'./stories/assets/icons/icon&#45;&#45;large&#45;&#45;17.svg'"-->
+<!--    [iconChannel1]="'./stories/assets/icons/icon&#45;&#45;channel&#45;&#45;3.svg'"-->
+<!--    [prop1]="'הודעה חדשה שהתקבלה...'"-->
+<!--    [notification]="true"-->
+<!--    [ellipseDiv]="true"-->
+<!--    [div]="true"-->
+<!--    [propBorderTop]="'unset'"-->
+<!--    [propWidth]="'unset'"-->
+<!--    [propFlex]="'unset'"-->
+<!--    [propAlignSelf]="'unset'"-->
+<!--    [propHeight]="'unset'"-->
+<!--    [propDisplay]="'inline-block'"-->
+<!--    [propTextDecoration]="'none'"-->
+<!--    [propFontWeight]="'700'"-->
+<!--    [propMinWidth]="'73px'"-->
+<!--    [propWidth2]="'unset'"-->
+<!--    [propFlex2]="'1'"-->
+<!--    [propColor]="'#43a5ff'"-->
+<!--    [propWidth3]="'unset'"-->
+<!--    [propHeight2]="'unset'"-->
+<!--    [propMinWidth2]="'43px'"-->
+<!--    [propWidth4]="'36.84%'"-->
+<!--    [propHeight3]="'89.47%'"-->
+<!--    [propMinWidth3]="'7px'"-->
+<!--    [prop]="statusLabel_new"-->
+<!--    [checked]="isAll"-->
+<!--    (checkedChange)="isChecked($event)">-->
+<!--  </call-item>-->
+
+<!--  <section class="callitem1">-->
+<!--    <div class="frame-parent">-->
+<!--      <div class="frame-wrapper">-->
+<!--        <div class="icon-large-17-wrapper">-->
+<!--          <img class="icon-large-171" loading="lazy" alt="" src="./stories/assets/icons/icon&#45;&#45;large&#45;&#45;17.svg" />-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="frame-group">-->
+<!--        <div class="wrapper"> <b class="b">שם הלקוח</b> </div>-->
+<!--        <img class="icon-channel-4" loading="lazy" alt="" src="./stories/assets/icons/icon&#45;&#45;channel&#45;&#45;4.svg" />-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="status-label-parent">-->
+<!--      <status-label-->
+<!--        [prop]="'פתוח'"-->
+<!--        [propHeight]="'unset'"-->
+<!--        [propWidth]="'unset'"-->
+<!--        [propBackgroundColor]="'#2ec9df'"-->
+<!--        [propAlignSelf]="'unset'"-->
+<!--        [propFlex]="'unset'"-->
+<!--        [propTextDecoration]="'unset'"-->
+<!--        [propFontWeight]="'unset'"-->
+<!--        [propDisplay]="'inline-block'"-->
+<!--        [propMinWidth]="'29px'">-->
+<!--      </status-label>-->
+<!--      <div class="frame-container">-->
+<!--        <div class="frame-div">-->
+<!--          <div class="parent">-->
+<!--            <div class="div1">הודעה אחרונה שנשלחה...</div>-->
+<!--            <div class="div2">12 דקות</div>-->
+<!--          </div>-->
+<!--          <div class="notification">-->
+<!--            <div class="notification-child"></div>-->
+<!--            <div class="div3">1</div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </section>-->
+</div>

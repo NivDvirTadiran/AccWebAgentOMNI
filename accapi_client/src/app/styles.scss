@@ -3,6 +3,13 @@
 //@import "~src/scss/fontawesome.scss";
 $custom-file-text: (); // --> Warning: 1 rules skipped due to selector errors: .custom-file-input:lang(en) ~ .custom-file-label -> unmatched pseudo-class :lang
 @import "angular-bootstrap-md/assets/scss/bootstrap/bootstrap.scss";
+
+
+.modal {
+  background-color: rgba(67, 67, 68, 0.54);
+}
+
+
 .mat-grid-tile .mat-figure.mat-figure {
   justify-content: center;
   align-items: start;

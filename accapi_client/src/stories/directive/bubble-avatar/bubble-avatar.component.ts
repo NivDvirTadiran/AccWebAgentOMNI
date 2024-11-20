@@ -25,6 +25,7 @@ export class BubbleAvatarComponent implements OnInit, AfterViewInit{
   @Input() display: any;
   @Input() popover: any;
   @Input() bubbleOn?: boolean;
+  @Input() side?: "left" | "right" = "left";
   @Input() header?: string;
   @Input()  options?: PopoverOptions;
   show: boolean = false;
@@ -71,6 +72,13 @@ export class BubbleAvatarComponent implements OnInit, AfterViewInit{
 
   setBubbleOn(bubbleOn: boolean) {
     this.bubbleOn = bubbleOn;
+  }
+
+
+  public get classes(): string[] {
+    const mode = this.show ? 'tooltip-display' : '';
+
+    return [mode, `bubble-avatar-side--${this.side}`]; //"\'tooltip-display\': this.show"]
   }
 
 }

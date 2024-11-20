@@ -1,0 +1,56 @@
+@import "../stories/assets/scss/tokens.scss";
+@import "../stories/assets/scss/style.scss";
+
+
+.statusswitcher {
+  border-radius: $br-xl;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: $padding-11xs $padding-10xs;
+  gap: $gap-10xs;
+}
+
+.icon-arrows {
+  position: relative;
+}
+.icon-arrows {
+  height: 13px;
+  width: 13px;
+}
+
+.aaa {
+  position: relative;
+
+  border: 0;
+
+}
+
+.chooseAgentStatusButton {
+  position: relative;
+  border: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url("~src/stories/assets/icons/icon--arrows.svg");
+}
+
+
+.a1 {
+  border-color: transparent;
+  width: 20px;
+  height: 20px;
+  text-decoration: none;
+  position: relative;
+  letter-spacing: -0.01em;
+  color: inherit;
+
+
+  @include small-text-text;
+}
+
+.icon-status {
+  height: 12px;
+  width: 12px;
+  position: relative;
+}

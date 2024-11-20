@@ -1,0 +1,146 @@
+/* Variables */
+$collection-1-color-2: #4998d8;
+$collection-1-color-3: #4998d8;
+$collection-1-color-4: #4998d8;
+$collection-1-color-5: #fa9621;
+$collection-1-color-6: #2ec9df;
+$collection-1-dark-blue: #4998d8;
+$collection-1-red: #e93939;
+$collection-1-color: $collection-1-dark-blue;
+
+/* Styles */
+$black-background: #000000;
+$black-color: #000000;
+$dark-gray-background: #a4a4a4;
+$dark-gray-color: #a4a4a4;
+$light-blue-background: #f8fbfe;
+$light-blue-color: #f8fbfe;
+$white-background: #ffffff;
+$white-color: #ffffff;
+$for-strokes-background: #dff0ff;
+$for-strokes-color: #dff0ff;
+$dark-blue-background: #43a5ff;
+$dark-blue-color: #43a5ff;
+$grey-background: #bcbcbc;
+$grey-color: #bcbcbc;
+$green-background: #1fc777;
+$green-color: #1fc777;
+$yellow-background: #fac321;
+$yellow-color: #fac321;
+$pink-background: #fd5ec3;
+$pink-color: #fd5ec3;
+$orange-background: #fa9621;
+$orange-color: #fa9621;
+$purple-background: #9963d5;
+$purple-color: #9963d5;
+$d-9-d-9-d-9-background: #d9d9d9;
+$d-9-d-9-d-9-color: #d9d9d9;
+$turkiz-background: #2ec9df;
+$turkiz-color: #2ec9df;
+$gradient-background: linear-gradient(180deg, #43a5ff 0%, #58a6e4 100%);
+$gradient-color: #43a5ff;
+$light-yellow-background: #fffbe6;
+$light-yellow-color: #fffbe6;
+$light-orange-background: #f4f4f4;
+$light-orange-color: #f4f4f4;
+$red-background: #ff5151;
+$red-color: #ff5151;
+$bot-background: #d0f8e5;
+$bot-color: #d0f8e5;
+@mixin bigtext-text {
+  font-family: Noto Sans Hebrew, system-ui;
+  font-style: Medium;
+  font-size: 300px;
+  letter-spacing: -1.1%;
+  line-height: auto;
+  text-decoration-line: none;
+  text-transform: none;
+}
+@mixin big-text-text {
+  font-family: Noto Sans Hebrew, system-ui;
+  font-style: Regular;
+  font-size: 26px;
+  letter-spacing: -1.1%;
+  line-height: auto;
+  text-decoration-line: none;
+  text-transform: none;
+}
+@mixin big-text-bold-text {
+  font-family: Noto Sans Hebrew, system-ui;
+  font-style: Bold;
+  font-size: 26px;
+  letter-spacing: -1.1%;
+  line-height: auto;
+  text-decoration-line: none;
+  text-transform: none;
+}
+@mixin menu-text-text {
+  font-family: Noto Sans Hebrew, system-ui;
+  font-style: Medium;
+  font-size: 16px;
+  letter-spacing: -1.1%;
+  line-height: auto;
+  text-decoration-line: none;
+  text-transform: none;
+}
+@mixin menu-text-bold-text {
+  font-family: Noto Sans Hebrew, system-ui;
+  font-style: Bold;
+  font-size: 16px;
+  letter-spacing: -1.1%;
+  line-height: auto;
+  text-decoration-line: none;
+  text-transform: none;
+}
+@mixin small-text-text {
+  font-family: Noto Sans Hebrew, system-ui;
+  font-style: Regular;
+  font-size: 12px;
+  letter-spacing: -1.1%;
+  line-height: auto;
+  text-decoration-line: none;
+  text-transform: none;
+}
+@mixin small-text-bold-text {
+  font-family: Noto Sans Hebrew, system-ui;
+  font-style: Bold;
+  font-size: 12px;
+  letter-spacing: -1.1%;
+  line-height: auto;
+  text-decoration-line: none;
+  text-transform: none;
+}
+@mixin xs-text-text {
+  font-family: Noto Sans Hebrew, system-ui;
+  font-style: Regular;
+  font-size: 8px;
+  letter-spacing: -1.1%;
+  line-height: auto;
+  text-decoration-line: none;
+  text-transform: none;
+}
+@mixin xs-text-bold-text {
+  font-family: Noto Sans Hebrew, system-ui;
+  font-style: Bold;
+  font-size: 8px;
+  letter-spacing: -1.1%;
+  line-height: auto;
+  text-decoration-line: none;
+  text-transform: none;
+}
+$bar-shadow-rtl-text-shadow: -5px 0px 20px #00000019;
+$bar-shadow-rtl-box-shadow: -5px 0px 20px 0px #00000019;
+$bar-shadow-ttb-text-shadow: -5px 5px 20px #3d8ecf19;
+$bar-shadow-ttb-box-shadow: -5px 5px 20px 0px #3d8ecf19;
+$messenge-shadow-text-shadow: 0px 2px 2px #4998d819;
+$messenge-shadow-box-shadow: 0px 2px 2px 0px #4998d819;
+$bar-shadow-btt-text-shadow: 5px 5px 20px #3d8ecf19;
+$bar-shadow-btt-box-shadow: 5px 5px 20px 0px #3d8ecf19;
+$drop-down-shadow-text-shadow: 5px 5px 7px #005aa319;
+$drop-down-shadow-box-shadow: 5px 5px 7px 0px #005aa319;
+$widget-shadow-text-shadow: 0px 3px 10px #549fe511;
+$widget-shadow-box-shadow: 0px 3px 10px 0px #549fe511;
+$widget-text-shadow: 0px 3px 10px #549fe511;
+$widget-box-shadow: 0px 3px 10px 0px #549fe511;
+$new-shadow-text-shadow: 1px 1px 10px #43a5ff26;
+$new-shadow-box-shadow: 1px 1px 10px 0px #43a5ff26;

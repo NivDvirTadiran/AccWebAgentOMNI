@@ -1,7 +1,9 @@
+@import "src/stories/assets/scss/style.scss";
+
 .icon-page-9 {
   margin: 0;
-  width: 25px;
-  height: 25px;
+  width: 1.563rem;
+  height: 1.563rem;
   position: relative;
   overflow: hidden;
   flex-shrink: 0;
@@ -16,7 +18,7 @@
 .icon-page-9-parent {
   align-items: center;
   justify-content: flex-start;
-  gap: var(--gap-7xs);
+  gap: $gap-7xs;
 }
 .icon-page-9-parent,
 .menu-section1,
@@ -33,20 +35,22 @@
 }
 
 .menu-section1 {
-  background-color: var(--darkblue);
-  border-bottom: 1px solid var(--for-strokes);
+  background-color: $darkblue;
+  border-bottom: 1px solid $for-strokes;
   align-items: center;
   justify-content: center;
-  padding: var(--padding-xl-1) var(--padding-6xs) var(--padding-lgi);
+  padding: $padding-xl-1  $padding-6xs  $padding-lgi;
 }
 .menulist {
-  border-radius: var(--br-xl);
+  box-shadow: 1px 1px 10px rgba(67, 165, 255, 0.15);
+  width: 7rem;
+  border-radius: $br-xl;
   align-items: flex-start;
   justify-content: flex-start;
   padding: 0;
   text-align: center;
-  font-size: var(--menu-text-size);
-  color: var(--white);
-  font-family: var(--menu-text);
+  font-size: $menu-text-size;
+  color: $white;
+  font-family: $menu-text;
   overflow: hidden;
 }

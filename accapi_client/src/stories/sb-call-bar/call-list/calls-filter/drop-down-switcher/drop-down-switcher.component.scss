@@ -1,0 +1,168 @@
+.dropdownswitcher_I3242-63361-125-6073 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 14px;
+  box-sizing: border-box;
+  border-color: #000000;
+  border-style: solid;
+  border-bottom-width: 1px;
+  width: 146px;
+}
+.icon---arrows_I3242-63361-125-6073-125-4884 {
+  position: relative;
+  width: 13px;
+  height: 13px;
+  direction: rtl;
+  margin-right: 15px;
+  float: left;
+}
+
+.text-------------------2-_I3242-63361-125-6073-125-4885 {
+  color: #000000;
+  font-size: 12px;
+  letter-spacing: -1.1%;
+  text-decoration: none;
+  text-align: right;
+  text-wrap: wrap;
+  width: 117px;
+  direction: rtl;
+}
+
+.dropdown-check-list {
+  display: inline-block;
+}
+
+.dropdown-check-list .anchor {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 50px 5px 10px;
+  font-size: 12px;
+}
+
+.dropdown-check-list .anchor:after {
+  position: absolute;
+  content: "";
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+  padding: 5px;
+  right: 10px;
+  top: 20%;
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.dropdown-check-list .anchor:active:after {
+  right: 8px;
+  top: 21%;
+}
+
+.dropdown-check-list ul.items {
+  padding: 2px;
+  display: none;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.dropdown-check-list ul.items li {
+  list-style: none;
+}
+
+.dropdown-check-list.visible .anchor {
+  color: #0094ff;
+}
+
+.dropdown-check-list.visible .items {
+  display: block;
+}
+
+
+
+
+.drop-toggle{
+  background-color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  cursor: hand;
+  border: 1px solid #ccc;
+  width: 233px;
+  text-align: left;
+}
+.drop-toggle i{
+  float:right;
+}
+.drop-show {
+  padding: 4px;
+  width: 150px;
+  background-color: #FFF;
+  border: 1px solid #BABABA;
+  position: absolute;
+  z-index: 100;
+  -webkit-box-shadow: 0 6px 10px rgba(0,0,0,.15);
+  -moz-box-shadow: 0 6px 10px rgba(0,0,0,.15);
+  box-shadow: 0 6px 10px rgba(0,0,0,.15);
+  margin-left: 1px;
+  margin-top: 170px;
+  direction: rtl;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.drop-show div{
+  display:block;
+  cursor: pointer;
+  direction: rtl;
+  text-align: right;
+  font-size: 12px;
+}
+.drop-show div input{
+  vertical-align: top;
+  direction: rtl;
+  text-align: right;
+  margin-left: 7px;
+}
+.drop-show div span{
+  display:inline-block;
+  direction: rtl;
+  text-align: right;
+  font-size: 12px;
+}
+
+.icon-large-172 {
+  height: 15px;
+  width: 15px;
+  position: relative;
+  margin-left: 5px;
+}
+
+.channelLine {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dff0ff;
+  padding-top: 5px;
+  padding-right: 5px;
+}
+
+.channelLine:hover {
+  background-color: #F8FBFE;
+}
+
+.cleanAll {
+  border-bottom: 1px solid #dff0ff;
+  padding-top: 5px;
+  padding-right: 5px;
+}
+
+.cleanAll:hover {
+  background-color: #F8FBFE;
+}
+
+
+

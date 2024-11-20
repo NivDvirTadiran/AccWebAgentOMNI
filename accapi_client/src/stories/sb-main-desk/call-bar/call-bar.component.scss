@@ -1,0 +1,253 @@
+@import "../tokens.scss";
+
+.root {
+  padding: 0.938rem 1.875rem 0.938rem 1.875rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-color: $for-strokes-color;
+  border-style: solid;
+  background: $white-background;
+}
+
+.root_goalChatOptionAdminBlock {
+  top: 12.438rem;
+  left: 47.5rem;
+  position: absolute;
+  display: flex;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  height: 4.375rem;
+}
+
+.figure {
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
+  height: 100%;
+  border-bottom-width: 1px;
+}
+
+.root_goalChatOption2GoalChatOptionAdminBlockGoalBotOption1GoalDashboardOptionDefault {
+  justify-content: space-between;
+}
+
+.root_goalChatOptionClientBlocked {
+  justify-content: flex-end;
+}
+
+.root_goalDashboardOptionDefault {
+  top: 208px;
+  left: -1px;
+  position: absolute;
+  display: flex;
+}
+.frame379 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 8px;
+  box-sizing: border-box;
+}
+.button1 {
+  display: flex;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 1px;
+  height: 27px;
+  border-color: #43a5ff;
+  color: #43a5ff;
+}
+
+.button {
+  display: flex;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 1px;
+  height: 27px;
+}
+
+.frame380_option2OptionAdminBlockOptionClientBlocked {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 16px;
+  box-sizing: border-box;
+}
+.frame263 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 6px;
+  box-sizing: border-box;
+}
+.status-label {
+  padding: 0.125rem 0.813rem 0.25rem 0.813rem;
+  display: flex;
+  box-sizing: border-box;
+  border-radius: 1.875rem;
+  width: 3.563rem;
+}
+
+.frame199 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0;
+  box-sizing: border-box;
+}
+.a_option2OptionAdminBlock {
+  display: flex;
+  box-sizing: content-box;
+  color: $dark-blue-color;
+  @include menu-text-bold-text;
+  font-weight: 700;
+  text-align: right;
+  text-wrap: none;
+}
+
+.a {
+  display: flex;
+  box-sizing: content-box;
+  color: $dark-blue-color;
+  @include menu-text-bold-text;
+  font-weight: 700;
+  text-align: right;
+  text-wrap: none;
+}
+
+.frame379 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 8px;
+  box-sizing: border-box;
+}
+.button {
+  display: flex;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border-color: $black-color;
+  border-style: solid;
+  border-width: 1px;
+  height: 27px;
+}
+
+
+.frame199 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  align-items: center;
+  box-sizing: border-box;
+}
+.a {
+  display: flex;
+  box-sizing: content-box;
+  color: $dark-gray-color;
+  @include menu-text-bold-text;
+  font-weight: 700;
+  text-align: right;
+  text-wrap: none;
+}
+
+.a {
+  display: flex;
+  box-sizing: content-box;
+  color: $black-color;
+  @include menu-text-bold-text;
+  font-weight: 700;
+  text-align: right;
+  text-wrap: none;
+}
+
+.iconPage2 {
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: #ffffff;
+  width: 22px;
+  height: 22px;
+}
+
+.frame331 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 3px;
+  box-sizing: border-box;
+}
+.iconLarge11 {
+  position: relative;
+  box-sizing: border-box;
+  width: 22px;
+  height: 22px;
+}
+
+.frame332 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 3px;
+  box-sizing: border-box;
+}
+.a {
+  display: flex;
+  box-sizing: content-box;
+  color: $dark-blue-color;
+  @include small-text-text;
+  font-weight: 400;
+  text-align: right;
+  text-wrap: none;
+}
+
+.iconSmall8 {
+  position: relative;
+  box-sizing: border-box;
+  width: 13px;
+  height: 13px;
+}
+
+.frame223 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 11px;
+  box-sizing: border-box;
+}
+.button {
+  display: flex;
+  box-sizing: border-box;
+  border-radius: 20px;
+  height: 27px;
+}
+
+.button {
+  display: flex;
+  box-sizing: border-box;
+  border-radius: 20px;
+  height: 27px;
+}

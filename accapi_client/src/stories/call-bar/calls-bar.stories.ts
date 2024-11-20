@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {CallsBarComponent} from "./calls-bar.component";
-import {CallListComponent} from "../call-list/call-list.component";
+import {CallListComponent} from "../sb-call-bar/call-list/call-list.component";
 
 
 export default {

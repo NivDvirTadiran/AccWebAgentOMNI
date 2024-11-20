@@ -5,7 +5,7 @@ import { FormControl, FormBuilder, FormGroup} from '@angular/forms';
 import { ViewChild, NgModule } from '@angular/core';
 import { AccAgentService } from '../acc-agent.service';
 import { AccButtons, accbutton} from '../tel-win-btn/AccBtnsDef'
-import { UserStatusModel,COS, oneTab, AccCallState, OneCall, Key_Desc, AgentStatus, CallTypes, CallTypesText,
+import { UserStatusModel,COS, oneTab, AccCallState, Key_Desc, AgentStatus, CallTypes, CallTypesText,
     QUEUED_ACD_GROUP,barchart } from 'src/app/AccAgent/data-model.interface';
 import { TranslateService } from '@ngx-translate/core';
 import * as CanvasJS from 'src/assets/js/canvasjs-commercial-3.2.6/canvasjs.min.js';
@@ -13,7 +13,7 @@ import { SidenavComponent } from 'ng-uikit-pro-standard';
 import decorateStory from "@storybook/angular/dist/ts3.9/client/preview/decorateStory";
 
 import {BsDropdownDirective} from "ng-uikit-pro-standard/lib/free/dropdown/dropdown.directive";
-import ChatComponent from "src/stories/pages/chat/chat.component";
+import OldChatComponent from "src/stories/pages/chat/oldChatComponent";
 import {PopoverOptions} from "src/stories/directive/popover.interface";
 import {ActionWindowsMenuComponent} from "../../../stories/actions/action-windows-menu/action-windows-menu.component";
 import {MenuPopoverDirective} from "../../../stories/directive/bubble-windows-menu/menu-popover.directive";
@@ -26,6 +26,7 @@ import {AppConfig} from "../../config/app.config";
 import {TokenStorageService} from "../../_helpers/token-storage.service";
 import {ButtonsBoardComponent} from "./buttons-board/buttons-board.component";
 import {filter} from "rxjs/operators";
+import {OneCall} from "../one-call.interface";
 
 
 
@@ -92,10 +93,8 @@ export class AccAgentPage implements OnInit, OnDestroy, AfterViewInit {
         username: new FormControl('Nancy'),
         exension: new FormControl('Drew'),
     });
-    //@ViewChild('sidenav', { static: true}) sidenav: MatSidenav;
-    @ViewChild('sidenav') public sidenav: SidenavComponent;
 
-    @ViewChild('chat', {static: false}) chat?: ChatComponent;
+    @ViewChild('sidenav') public sidenav: SidenavComponent;
 
     @ViewChild('dropdown') public dropdown: MenuPopoverDirective;
 
@@ -103,10 +102,6 @@ export class AccAgentPage implements OnInit, OnDestroy, AfterViewInit {
 
     @ViewChild('buttonsboard') buttonsboard?: ButtonsBoardComponent;
 
-    //@ViewChild('sse') sse: SseComponent;
-
-    //@ViewChild('timer', { static: false }) ul?: ElementRef;
-    //@ViewChild("multipleGroupSelect") multipleGroupSelect:MatSelect;
 
     public tiles: Array<accbutton> = [];
     public ACDList: Array<accbutton> = [];
@@ -118,45 +113,21 @@ export class AccAgentPage implements OnInit, OnDestroy, AfterViewInit {
         this.AAC.onResize(event);
     }
 
-
-    public receiveChatMes(message: string) {
-        this.chat.addMessage(this.AAC.curentCall, message);
-    }
-
-    public sendChatMes(message: string) {
-        //"1711554770,1002,updateagentmode,echat,,,3002,,,,-1,-1,0,,N"
-        //let message = event.message;
-        this.AAC.sendChatMes(message);
-    }
-
-/*
-    replacePassFormDialogRef() {
-        console.log('The replace password form dialog after opened');
-        const focusTraps = document.getElementById('slide-out');
-        if (focusTraps)
-        focusTraps.setAttribute('style', '"color: black;"');
-    });
-*/
     // ==========================================[ngAfterViewInit]==============================
     ngAfterViewInit() {
         this.AAC.setaccForm(this);
         this.AAC.isMainPageReady = true;
         this.AAC.log("AccAgentPage=>ngAfterViewInit");
-        this.sidenav.show();
+        this.sidenav.hide()
         this.renderer.setStyle(this.sidenav.sideNav.nativeElement,'width','30rem');
         this.renderer.setStyle(this.sidenav.sideNav.nativeElement,'background-color','#F4F4F4');
         //this.renderer.setStyle(this.sidenav.sideNav.nativeElement,'background-image','accapi_client/src/assets/images/Aeonix_Logo.png');
         this.renderer.setStyle(this.sidenav.sideNav.nativeElement,'color','#07185A');
 
         //Promise.resolve().then(() => {this.dropdown.popoverComponentRef?.instance.showPopup();});
-
-
-
     }
- // ]====================================================================
-    // ]====================================================================
-    // ]==============================[HostListener]========================
 
+    // ]==============================[HostListener]========================
     @HostListener('window:unload', ['$event'])
     unloadHandler(event: Event) {
          this.AAC.ForceLogToServer('unloadHandler');
@@ -179,6 +150,8 @@ export class AccAgentPage implements OnInit, OnDestroy, AfterViewInit {
         localStorage.setItem("AccWebAgentLeft",window.screenLeft.toString()); 
         this.AAC.agentLogoff(false,true);
     }
+
+
     // ==========================================[ngOnInit] ====================================
     ngOnInit() {
         if (this.AAC.agent == null || this.AAC.agent.m_AgentNo == "") {

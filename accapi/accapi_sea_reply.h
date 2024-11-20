@@ -310,13 +310,17 @@ enum
     OnDenied = 10,
     OnIncoming = 11,
     OnIncomingACD = 12,
-    OnConnected = 13,
-    OnConnectedACD = 14,
-    OnHeld = 15,
-    OnRetrieved = 16,
-    OnConferenced = 17,
-    OnCleared = 18,
-    OnClearedACD = 19
+    OnIncomingOACD = 13,
+    OnConnected = 14,
+    OnConnectedACD = 15,
+    OnConnectedOACD = 16,
+    OnHeld = 17,
+    OnRetrieved = 18,
+    OnConferenced = 19,
+    OnCleared = 20,
+    OnClearedACD = 21,
+    OnClearedOACD = 22,
+    OnAbandoned = 23
 };
 
 struct opertaion
@@ -336,17 +340,21 @@ static opertaion HTTPEVENTS[50] = {
     {"OnResumed",       OnResumed},       //    =  6,
     {"OnWrapUp",        OnWrapUp},        //    =  7,
     {"OnReserved",      OnReserved},      //    =  8,
-    {"OnSilentStarted", OnSilentStarted}, //    =  9
+    {"OnSilentStarted", OnSilentStarted}, //    =  9,
     {"OnDenied",        OnDenied},        //    = 10,
     {"OnIncoming",      OnIncoming},      //    = 11,
     {"OnIncomingACD",   OnIncomingACD},   //    = 12,
-    {"OnConnected",     OnConnected},     //    = 13,
-    {"OnConnectedACD",  OnConnectedACD},  //    = 14
-    {"OnHeld",          OnHeld},          //    = 15,
-    {"OnRetrieved",     OnRetrieved},     //    = 16,
-    {"OnConferenced",   OnConferenced},   //    = 17,
-    {"OnCleared",       OnCleared},       //    = 18,
-    {"OnClearedACD",    OnClearedACD},    //    = 19
+    {"OnIncomingOACD",  OnIncomingOACD},  //    = 13,
+    {"OnConnected",     OnConnected},     //    = 14,
+    {"OnConnectedACD",  OnConnectedACD},  //    = 15,
+    {"OnConnectedOACD", OnConnectedOACD}, //    = 16,
+    {"OnHeld",          OnHeld},          //    = 17,
+    {"OnRetrieved",     OnRetrieved},     //    = 18,
+    {"OnConferenced",   OnConferenced},   //    = 19,
+    {"OnCleared",       OnCleared},       //    = 20,
+    {"OnClearedACD",    OnClearedACD},    //    = 21,
+    {"OnClearedOACD",   OnClearedOACD},   //    = 22,
+    {"OnAbandoned",     OnAbandoned},     //    = 23,
     {"ENDDD",           999},             //    = 999
 };
 

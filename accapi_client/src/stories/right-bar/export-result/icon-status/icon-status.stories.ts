@@ -6,7 +6,7 @@ import { IconStatusComponent } from './icon-status.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 export default {
-  title: 'Design System/icons/IconStatus',
+  title: 'Design System/RightBar/IconStatus',
   component: IconStatusComponent,
   parameters: {},
   decorators: [
